@@ -12,7 +12,7 @@ taxonomy:
 visible: true
 ---
 
-# Anleitung DIGAME (GitHub)
+# Anleitung DIGAME
 ### Herzlich Willkommen bei der webbasierten Anleitung
 <br>
 <br>

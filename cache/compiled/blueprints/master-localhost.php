@@ -1,7 +1,7 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\Config',
-    'checksum' => '4df98cfdf46a965fa94d0d5724a521e2:17605b9f45085f09c0c05c6fd4589f14',
+    'checksum' => '4df98cfdf46a965fa94d0d5724a521e2:66b769f1ec748262174d9487d223e7c8',
     'files' => [
         'user/plugins' => [
             'plugins/error' => [
@@ -15,10 +15,6 @@ return [
             'plugins/simplesearch' => [
                 'file' => 'user/plugins/simplesearch/blueprints.yaml',
                 'modified' => 1424351618
-            ],
-            'plugins/simplesearch_old' => [
-                'file' => 'user/plugins/simplesearch_old/blueprints.yaml',
-                'modified' => 1408950710
             ]
         ],
         'system/blueprints/config' => [
@@ -134,46 +130,6 @@ return [
                     'or' => 'Or - Boolean ||'
                 ],
                 'name' => 'plugins.simplesearch.filter_combinator'
-            ],
-            'plugins.simplesearch_old.enabled' => [
-                'type' => 'toggle',
-                'label' => 'Plugin status',
-                'highlight' => 1,
-                'default' => 0,
-                'options' => [
-                    1 => 'Enabled',
-                    0 => 'Disabled'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.simplesearch_old.enabled',
-                'validation' => true
-            ],
-            'plugins.simplesearch_old.filters.category' => [
-                'type' => 'text',
-                'label' => 'Category filter',
-                'help' => 'Comma separated list of category names',
-                'validate' => [
-                    'type' => 'commalist'
-                ],
-                'name' => 'plugins.simplesearch_old.filters.category',
-                'validation' => true
-            ],
-            'plugins.simplesearch_old.built_in_css' => [
-                'type' => 'toggle',
-                'label' => 'Use built in CSS',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'Enabled',
-                    0 => 'Disabled'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.simplesearch_old.built_in_css',
-                'validation' => true
             ],
             'site.title' => [
                 'type' => 'text',
@@ -662,13 +618,6 @@ return [
                     'built_in_css' => 'plugins.simplesearch.built_in_css',
                     'filters' => 'plugins.simplesearch.filters',
                     'filter_combinator' => 'plugins.simplesearch.filter_combinator'
-                ],
-                'simplesearch_old' => [
-                    'enabled' => 'plugins.simplesearch_old.enabled',
-                    'filters' => [
-                        'category' => 'plugins.simplesearch_old.filters.category'
-                    ],
-                    'built_in_css' => 'plugins.simplesearch_old.built_in_css'
                 ]
             ],
             'site' => [
