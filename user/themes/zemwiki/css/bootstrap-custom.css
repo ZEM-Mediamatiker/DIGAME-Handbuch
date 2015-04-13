@@ -355,6 +355,19 @@ header{
 	height: 60px;	
 }
 
+.copywrapper{
+	width: 300px;
+	background: red;
+	bottom: 0px;
+	background: rgba(255,255,255,1);
+	padding: 15px 15px 15px 25px;
+	text-align: center;
+}
+
+.copywrapper a{
+	color: #838383;
+}
+
 /*	Alle Formatierungen im Zusammenhang mit dem Hauptbereich / Body. */
 
 #body{
