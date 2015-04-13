@@ -1,0 +1,31 @@
+
+s:2800:"<h2>Grundaufbau DIGAME</h2>
+<p>DIGAME kann in 5 Grundbereiche aufgeteilt werden:</p>
+<ul>
+<li>
+<p>Im Menü-Bereich (2) sind alle Menüs aufgeführt über welche ein Benutzer verfügt. Für die tägliche Arbeit reicht das Menü Katalog. In diesem befindet sich der Anwender nachdem er sich angemeldet hat. Das Menü Passwort ändern kann vom Anwender zum Ändern seines Passworts verwendet werden. Der Benutzer wird jedoch nicht automatisch dazu aufgefordert. Die restlichen Menüs bieten administrative Funktionalitäten an. Im Arbeits-Bereich (3) kann mit einer einfachen Suche nach bestimmten Media Assets gesucht werden. Über die Erweiterte Suche können die Suchparameter verfeinert werden. Über den Knopf Asset erzeugen kann ein neues Media Asset erstellt werden.</p>
+</li>
+<li>
+<p>Im Filter-Bereich (4) werden Media Assets nach bestimmten Kriterien aufgelistet. Die gefundenen Assets können auf Datei Typ und Rechte Publikation eingeschränkt werden.</p>
+</li>
+<li>
+<p>Im Anzeige-Bereich (5) werden alle über (3 oder 4) gefundenen Media Assets angezeigt.</p>
+</li>
+<li>Im Filter-Bereich (4) werden Media Assets nach bestimmten Kriterien aufgelistet. Die gefundenen Assets können auf Datei Typ und Rechte Publikation eingeschränkt werden.</li>
+</ul>
+<p><img src="/gravTest/images/e/8/4/4/5/e84452c71a426da70fcc2799261dc3988d4f7950-overview.png" class="" alt="" /></p>
+<h6>Bild: Programmoberfläche von DIGAME.</h6>
+<hr />
+<h2>An- und Abmelden</h2>
+<p>Der Benutzer muss sich bei DIGAME an- und abmelden. Der Benutzer gibt dazu seinen Benutzernamen (1) und sein Passwort (2) ein. Bevor er den Knopf Anmelden (5) betätigt muss er in (3) seine Organisation wählen. Falls der Benutzer eine falsche Organisation auswählt kann er sich nicht anmelden. Über (4) kann die gewünschte Applikationssprache gewählt werden. Momentan sind die Sprachen Englisch und Deutsch möglich.</p>
+<p><img src="/gravTest/images/e/4/8/d/9/e48d9d749620112a46c793be7d73a3e627a195f9-login.png" class="" alt="" /></p>
+<h6>Bild: Das Anmeldefenster beim Programmstart.</h6>
+<p>Die Benutzeridentifikation wird rechts oben in der Menüleiste angezeigt (Abbildung 2: Grundaufbau). Durch betätigen des Knopfs Abmelden wird der Benutzer am System abgemeldet.</p>
+<hr />
+<h2>Passwort ändern</h2>
+<p>Der Benutzer kann jederzeit sein Passwort ändern. Dazu muss er im Menü-Bereich (2) aus Abbildung 2: Grundaufbau das Menü Passwort ändern wählen.</p>
+<p>return</p>
+<p>In Feld (1) wird der Benutzername des angemeldeten Benutzers dargestellt. Dieser kann vom Benutzer nicht geändert werden.
+Im Feld (2) muss der Benutzer das aktuelle Passwort eingeben.
+Im Feld (3) muss der Benutzer das neue Passwort eingeben.
+Im Feld (4) muss der Benutzer das neue Passwort zur Bestätigung ein zweites Mal eingeben.</p>";

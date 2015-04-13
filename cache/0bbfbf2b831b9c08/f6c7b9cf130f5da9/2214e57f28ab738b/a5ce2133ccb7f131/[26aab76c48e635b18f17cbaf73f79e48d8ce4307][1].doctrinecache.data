@@ -1,0 +1,99 @@
+
+s:2198:"<h1>Übersicht</h1>
+<h3>Hier finden Sie alle wichtigen Links und Informationen</h3>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>Live <br></p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Link</th>
+<th>Art</th>
+<th>Bemerkung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.mediathek.admin.ch/" title="Frontend aufrufen"><a href="https://www.mediathek.admin.ch">https://www.mediathek.admin.ch</a></a></td>
+<td>Frontend</td>
+<td>Live-Hardware</td>
+</tr>
+<tr>
+<td><a href="https://www.digame.mediathek.admin.ch" title="Backend aufrufen"><a href="https://www.digame.mediathek.admin.ch">https://www.digame.mediathek.admin.ch</a></a></td>
+<td>Backend</td>
+<td>Live-Hardware</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>Integration <br></p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Link</th>
+<th>Art</th>
+<th>Bemerkung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.mediathek.admin.ch/" title="Frontend aufrufen"><a href="https://www.test.mediathek.admin.ch">https://www.test.mediathek.admin.ch</a></a></td>
+<td>Frontend</td>
+<td>Live-Hardware</td>
+</tr>
+<tr>
+<td><a href="https://www.digame.mediathek.admin.ch" title="Backend aufrufen"><a href="https://www.test.digame.mediathek.admin.ch">https://www.test.digame.mediathek.admin.ch</a></a></td>
+<td>Backend</td>
+<td>Live-Hardware</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>Test <br></p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Link</th>
+<th>Art</th>
+<th>Bemerkung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.mediathek.admin.ch/" title="Frontend aufrufen"><a href="https://www.mediathek.admin.ch">https://www.mediathek.admin.ch</a></a></td>
+<td>Frontend</td>
+<td>Live-Hardware</td>
+</tr>
+<tr>
+<td><a href="https://www.digame.mediathek.admin.ch" title="Backend aufrufen"><a href="https://www.digame.mediathek.admin.ch">https://www.digame.mediathek.admin.ch</a></a></td>
+<td>Backend</td>
+<td>Live-Hardware</td>
+</tr>
+</tbody>
+</table>";

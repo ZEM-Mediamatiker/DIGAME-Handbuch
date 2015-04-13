@@ -1,0 +1,84 @@
+
+s:2034:"<h1>Hier wird Markdown getestet!</h1>
+<p>Hier teste ich die verschiednen Möglichkeiten, die einem die Markup-Sprache bietet.</p>
+<h1>h1 Heading</h1>
+<h2>h2 Heading</h2>
+<h3>h3 Heading</h3>
+<h4>h4 Heading</h4>
+<h5>h5 Heading</h5>
+<h6>h6 Heading</h6>
+<p>Folgend kommen drei verschiedene Arten, eine horizontale Linie zu erstellen.</p>
+<hr />
+<p>^  drei _</p>
+<hr />
+<p>^ drei -</p>
+<hr />
+<p>^ drei *</p>
+<p>Kommen wir zu den tollen Texteffekten. <strong>Wie wäre es mit einem fett geschriebenen Text?</strong> Wir können natürlich auch <em>kursiv schreiben</em> oder aber wir lassen <del>einen Text einfach durchstrichen</del>.</p>
+<blockquote>
+<p>Wenn wir etwas hervorheben wollen, geht das am besten mit einem Blockquote.</p>
+<blockquote>
+<p>Selbstverständlich können wir auch einen untergeordneten Punkt erstellen.</p>
+<blockquote>
+<p>Das ist ein gelber Hinweis</p>
+<blockquote>
+<p>Das ist ein roter Hinweis</p>
+<blockquote>
+<p>Das ist ein blauer Hinweis</p>
+<blockquote>
+<p>Und zu guter Letzt: Das ist ein grüner Hinweis.</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>Manchmal muss man auch Dinge aufzählen. Dies macht man ganz einfach folgendermassen:</p>
+<ul>
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3
+<ul>
+<li>Item 3.1</li>
+<li>Item 3.2</li>
+<li>Item 3.3</li>
+</ul></li>
+<li>Item 4
+<ul>
+<li>Item 4.1</li>
+<li>Item 4.2</li>
+</ul></li>
+<li>Item 5</li>
+</ul>
+<ol>
+<li>Auch nummerierte Listen stellen kein Problem dar.</li>
+<li>Beispielsweise ein zweiter Punkt.
+<ol>
+<li>Ob das auch geht?</li>
+</ol></li>
+<li>Wenn es geklappt hat, steht dieser Punkt wieder vorne.</li>
+</ol>
+<p>Wenn man seiner Website einen Titel geben will, geht das so:</p>
+<p><code>&lt;title&gt; Das ist der Titel meiner Website | ZEM&lt;/title&gt;</code></p>
+<table>
+<thead>
+<tr>
+<th>Auto</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Audi</td>
+<td>Kompakter Sportwagen</td>
+</tr>
+<tr>
+<td>----:</td>
+<td>----:</td>
+</tr>
+<tr>
+<td>BMW</td>
+<td>Sportlicher Citywagen</td>
+</tr>
+</tbody>
+</table>";

@@ -1,0 +1,50 @@
+<?php
+return [
+    '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
+    'filename' => 'user/plugins/simplesearch Kopie/blueprints.yaml',
+    'modified' => 1408950710,
+    'data' => [
+        'name' => 'SimpleSearch Plugin',
+        'version' => '1.0.0',
+        'description' => 'This plugin allows for searching of filtered content.',
+        'validation' => 'strict',
+        'form' => [
+            'fields' => [
+                'enabled' => [
+                    'type' => 'toggle',
+                    'label' => 'Plugin status',
+                    'highlight' => 1,
+                    'default' => 0,
+                    'options' => [
+                        1 => 'Enabled',
+                        0 => 'Disabled'
+                    ],
+                    'validate' => [
+                        'type' => 'bool'
+                    ]
+                ],
+                'filters.category' => [
+                    'type' => 'text',
+                    'label' => 'Category filter',
+                    'help' => 'Comma separated list of category names',
+                    'validate' => [
+                        'type' => 'commalist'
+                    ]
+                ],
+                'built_in_css' => [
+                    'type' => 'toggle',
+                    'label' => 'Use built in CSS',
+                    'highlight' => 1,
+                    'default' => 1,
+                    'options' => [
+                        1 => 'Enabled',
+                        0 => 'Disabled'
+                    ],
+                    'validate' => [
+                        'type' => 'bool'
+                    ]
+                ]
+            ]
+        ]
+    ]
+];
