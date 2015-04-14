@@ -62,11 +62,21 @@ h1{
 	letter-spacing: -3px;
 }
 
+h4{
+	margin-top: 20px;
+}
+
 h3{
 	font-size: 20px;
 	text-align: center;
 	font-family: "Raleway","Helvetica","Tahoma","Geneva","Arial",sans-serif;
 	color: #3C3C3C;
+}
+
+h3.searchresulttitle{
+	text-align: left;
+	margin: 0px;
+	font-size: 25px;
 }
 
 h6{
@@ -179,9 +189,20 @@ header{
 }
 
 .search-row{
-	background: red;
+	background: rgba(247,247,247,0.45);
+	margin-bottom: 50px;
+	
 }
 
+.search-result-header{
+	background: rgba(247,247,247,1);
+	padding: 10px;
+}
+
+.search-result{
+	padding: 10px;
+	opacity: 0.3;
+}
 
 
 

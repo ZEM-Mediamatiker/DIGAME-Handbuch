@@ -23,7 +23,8 @@ Die Anwendung Digame stellt dokumentenbasierte Web Services zur Verfügung, übe
 
 #### Protokolle
 
-Die Webservices werden als REST Services über HTTPS realisiert. Die Antworten werden als XML- oder JSON Daten (abhängig vom Http Request) zurückgegeben. <br>
+Die Webservices werden als REST Services über HTTPS realisiert. Die Antworten werden als XML- oder JSON Daten (abhängig vom Http Request) zurückgegeben. 
+<br>
 
 #### Sicherheit
 
@@ -70,9 +71,6 @@ Alle Parameter, die in der URL stehen, müssen den Konventionen einer URL entspr
 | richtig | Soldat%20mit%20Hund |
 
 
-<br>
-***
-
 #### Respondse Formate (XML)
 
 Beispiel einer Antwort bei einer ‚Usertoken‘ Abfrage (Authentication)<br>
@@ -102,7 +100,8 @@ Beispiel einer Antwort bei einer ‚Asset Suche‘ Abfrage (1 Asset wird zurück
     
 #### Respondse Formate (JSON)
 
-Beispiel einer Antwort bei einer ‚Usertoken‘ Abfrage (Authentication)<br>
+Beispiel einer Antwort bei einer ‚Usertoken‘ Abfrage (Authentication)
+<br>
 
 
     { 
@@ -123,6 +122,9 @@ Beispiel einer Antwort bei einer ‚Asset Suche‘ Abfrage (1 Asset wird zurück
             &usertoken=PD94bWwgdmVyc2 ... WJsZT4=" 
         } 
     ]
+    
+<br>
+***
 
 
 

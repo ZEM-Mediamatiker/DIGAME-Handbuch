@@ -89,53 +89,54 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
         $this->env->loadTemplate("partials/header.html.twig")->display($context);
         // line 97
         echo "        \t\t
-        \t\t<div class=\"copywrapper\">
-      \t\t\t\t&copy; 2015 | <a href=\"http://zem.ch\" target=\"_blank\" alt=\"Zentrum elektronische Medien\">Zentrum elektronische Medien</a><br>
-      \t\t\t\tVersion: 2.0\t
-      \t\t\t</div>
+        \t\t
       \t\t
       \t\t\t</div>
       \t\t\t<div class=\"clearfix\"></div>
+      \t\t\t<div class=\"copywrapper\">
+      \t\t\t\t&copy; 2015 | <a href=\"http://zem.ch\" target=\"_blank\" alt=\"Zentrum elektronische Medien\">Zentrum elektronische Medien</a><br>
+      \t\t\t\tVersion: 2.0\t
+      \t\t\t</div>
       \t\t</section>
       \t
       \t\t<section id=\"content\" class=\"cbp-spmenu-push\">
       \t\t\t<div class=\"padding\">
       \t\t
       \t\t\t";
-        // line 110
-        $this->displayBlock('content', $context, $blocks);
         // line 111
+        $this->displayBlock('content', $context, $blocks);
+        // line 112
         echo "      \t\t
       \t\t\t</div>
       \t\t\t
       \t\t\t";
-        // line 114
-        $context["progress"] = $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "collection", array(0 => array("items" => array("@taxonomy.category" => "digame"), "order" => array("by" => "default", "dir" => "asc"))), "method");
         // line 115
+        $context["progress"] = $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "collection", array(0 => array("items" => array("@taxonomy.category" => "digame"), "order" => array("by" => "default", "dir" => "asc"))), "method");
+        // line 116
         echo "      \t\t\t
       \t\t\t<div id=\"navigation\">
       \t\t\t
       \t\t\t\t";
-        // line 118
+        // line 119
         if ( !$this->getAttribute((isset($context["progress"]) ? $context["progress"] : null), "isFirst", array(0 => $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "path", array())), "method")) {
-            // line 119
+            // line 120
             echo "      \t\t\t\t<a class=\"nav nav-prev\" href=\"";
             echo $this->getAttribute($this->getAttribute((isset($context["progress"]) ? $context["progress"] : null), "nextSibling", array(0 => $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "path", array())), "method"), "url", array());
             echo "\"><i class=\"icon-navigation-arrows\">&#59237;</i></a>
       \t\t\t\t";
         }
-        // line 121
+        // line 122
         echo "      \t\t\t\t
       \t\t\t\t";
-        // line 122
+        // line 123
         if ( !$this->getAttribute((isset($context["progress"]) ? $context["progress"] : null), "isLast", array(0 => $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "path", array())), "method")) {
-            // line 123
+            // line 124
             echo "      \t\t\t\t<a class=\"nav nav-next\" href=\"";
             echo $this->getAttribute($this->getAttribute((isset($context["progress"]) ? $context["progress"] : null), "prevSibling", array(0 => $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "path", array())), "method"), "url", array());
             echo "\"><i class=\"icon-navigation-arrows\">&#59238;</i></a>
       \t\t\t\t";
         }
-        // line 125
+        // line 126
         echo "      \t\t\t\t
       \t\t\t</div>
       \t\t\t
@@ -148,19 +149,19 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
       \t\t</section>     
 
         ";
-        // line 137
-        echo "        ";
         // line 138
         echo "        ";
         // line 139
+        echo "        ";
+        // line 140
         echo "        <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js\"></script>       
         <script src=\"";
-        // line 140
+        // line 141
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
         echo "/js/bootstrap.min.js\"></script>
         
         <script src=\"";
-        // line 142
+        // line 143
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
         echo "/js/classie.js\"></script>
 \t\t<script>
@@ -304,7 +305,7 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
         ";
     }
 
-    // line 110
+    // line 111
     public function block_content($context, array $blocks = array())
     {
     }
@@ -321,6 +322,6 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
 
     public function getDebugInfo()
     {
-        return array (  308 => 110,  300 => 40,  294 => 36,  290 => 35,  286 => 34,  282 => 33,  278 => 32,  274 => 31,  270 => 30,  266 => 29,  262 => 28,  256 => 25,  251 => 24,  245 => 21,  236 => 18,  230 => 16,  224 => 14,  221 => 13,  215 => 11,  209 => 9,  207 => 8,  202 => 5,  199 => 4,  164 => 142,  159 => 140,  156 => 139,  154 => 138,  152 => 137,  139 => 125,  133 => 123,  131 => 122,  128 => 121,  122 => 119,  120 => 118,  115 => 115,  113 => 114,  108 => 111,  106 => 110,  91 => 97,  88 => 96,  80 => 90,  44 => 59,  28 => 45,  26 => 4,  21 => 1,);
+        return array (  309 => 111,  301 => 40,  295 => 36,  291 => 35,  287 => 34,  283 => 33,  279 => 32,  275 => 31,  271 => 30,  267 => 29,  263 => 28,  257 => 25,  252 => 24,  246 => 21,  237 => 18,  231 => 16,  225 => 14,  222 => 13,  216 => 11,  210 => 9,  208 => 8,  203 => 5,  200 => 4,  165 => 143,  160 => 141,  157 => 140,  155 => 139,  153 => 138,  140 => 126,  134 => 124,  132 => 123,  129 => 122,  123 => 120,  121 => 119,  116 => 116,  114 => 115,  109 => 112,  107 => 111,  91 => 97,  88 => 96,  80 => 90,  44 => 59,  28 => 45,  26 => 4,  21 => 1,);
     }
 }
