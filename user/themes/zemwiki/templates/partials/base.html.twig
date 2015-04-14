@@ -94,11 +94,18 @@
       		
       			{# include the header + navigation #}
         		{% include 'partials/header.html.twig' %}
+        		
+        		
       		
+      			</div>
+      			<div class="clearfix"></div>
+      			<div class="copywrapper">
+      				&copy; 2015 | <a href="http://zem.ch" target="_blank" alt="Zentrum elektronische Medien">Zentrum elektronische Medien</a><br>
+      				Version: 2.0	
       			</div>
       		</section>
       	
-      		<section id="body" class="cbp-spmenu-push">
+      		<section id="content" class="cbp-spmenu-push">
       			<div class="padding">
       		
       			{% block content %}{% endblock %}
@@ -119,6 +126,10 @@
       				
       			</div>
       			
+      			<div class="clearfix"></div>
+      			
+      			
+      			
       			
       			
       		</section>     
@@ -132,7 +143,7 @@
         <script src="{{ theme_url }}/js/classie.js"></script>
 		<script>
 			var menuLeft = document.getElementById( 'sidebar' ),
-				bodyContainer = document.getElementById( 'body' ),
+				bodyContainer = document.getElementById( 'content' ),
 				showLeftPush = document.getElementById( 'showLeftPush' ),
 
 				body = document.body;			

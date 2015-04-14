@@ -88,74 +88,85 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
         echo "        \t\t";
         $this->env->loadTemplate("partials/header.html.twig")->display($context);
         // line 97
-        echo "      \t\t
+        echo "        \t\t
+        \t\t
+      \t\t
+      \t\t\t</div>
+      \t\t\t<div class=\"clearfix\"></div>
+      \t\t\t<div class=\"copywrapper\">
+      \t\t\t\t&copy; 2015 | <a href=\"http://zem.ch\" target=\"_blank\" alt=\"Zentrum elektronische Medien\">Zentrum elektronische Medien</a><br>
+      \t\t\t\tVersion: 2.0\t
       \t\t\t</div>
       \t\t</section>
       \t
-      \t\t<section id=\"body\" class=\"cbp-spmenu-push\">
+      \t\t<section id=\"content\" class=\"cbp-spmenu-push\">
       \t\t\t<div class=\"padding\">
       \t\t
       \t\t\t";
-        // line 104
+        // line 111
         $this->displayBlock('content', $context, $blocks);
-        // line 105
+        // line 112
         echo "      \t\t
       \t\t\t</div>
       \t\t\t
       \t\t\t";
-        // line 108
+        // line 115
         $context["progress"] = $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "collection", array(0 => array("items" => array("@taxonomy.category" => "digame"), "order" => array("by" => "default", "dir" => "asc"))), "method");
-        // line 109
+        // line 116
         echo "      \t\t\t
       \t\t\t<div id=\"navigation\">
       \t\t\t
       \t\t\t\t";
-        // line 112
+        // line 119
         if ( !$this->getAttribute((isset($context["progress"]) ? $context["progress"] : null), "isFirst", array(0 => $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "path", array())), "method")) {
-            // line 113
+            // line 120
             echo "      \t\t\t\t<a class=\"nav nav-prev\" href=\"";
             echo $this->getAttribute($this->getAttribute((isset($context["progress"]) ? $context["progress"] : null), "nextSibling", array(0 => $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "path", array())), "method"), "url", array());
             echo "\"><i class=\"icon-navigation-arrows\">&#59237;</i></a>
       \t\t\t\t";
         }
-        // line 115
+        // line 122
         echo "      \t\t\t\t
       \t\t\t\t";
-        // line 116
+        // line 123
         if ( !$this->getAttribute((isset($context["progress"]) ? $context["progress"] : null), "isLast", array(0 => $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "path", array())), "method")) {
-            // line 117
+            // line 124
             echo "      \t\t\t\t<a class=\"nav nav-next\" href=\"";
             echo $this->getAttribute($this->getAttribute((isset($context["progress"]) ? $context["progress"] : null), "prevSibling", array(0 => $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "path", array())), "method"), "url", array());
             echo "\"><i class=\"icon-navigation-arrows\">&#59238;</i></a>
       \t\t\t\t";
         }
-        // line 119
+        // line 126
         echo "      \t\t\t\t
       \t\t\t</div>
+      \t\t\t
+      \t\t\t<div class=\"clearfix\"></div>
+      \t\t\t
+      \t\t\t
       \t\t\t
       \t\t\t
       \t\t\t
       \t\t</section>     
 
         ";
-        // line 127
+        // line 138
         echo "        ";
-        // line 128
+        // line 139
         echo "        ";
-        // line 129
+        // line 140
         echo "        <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js\"></script>       
         <script src=\"";
-        // line 130
+        // line 141
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
         echo "/js/bootstrap.min.js\"></script>
         
         <script src=\"";
-        // line 132
+        // line 143
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
         echo "/js/classie.js\"></script>
 \t\t<script>
 \t\t\tvar menuLeft = document.getElementById( 'sidebar' ),
-\t\t\t\tbodyContainer = document.getElementById( 'body' ),
+\t\t\t\tbodyContainer = document.getElementById( 'content' ),
 \t\t\t\tshowLeftPush = document.getElementById( 'showLeftPush' ),
 
 \t\t\t\tbody = document.body;\t\t\t
@@ -294,7 +305,7 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
         ";
     }
 
-    // line 104
+    // line 111
     public function block_content($context, array $blocks = array())
     {
     }
@@ -311,6 +322,6 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
 
     public function getDebugInfo()
     {
-        return array (  298 => 104,  290 => 40,  284 => 36,  280 => 35,  276 => 34,  272 => 33,  268 => 32,  264 => 31,  260 => 30,  256 => 29,  252 => 28,  246 => 25,  241 => 24,  235 => 21,  226 => 18,  220 => 16,  214 => 14,  211 => 13,  205 => 11,  199 => 9,  197 => 8,  192 => 5,  189 => 4,  154 => 132,  149 => 130,  146 => 129,  144 => 128,  142 => 127,  133 => 119,  127 => 117,  125 => 116,  122 => 115,  116 => 113,  114 => 112,  109 => 109,  107 => 108,  102 => 105,  100 => 104,  91 => 97,  88 => 96,  80 => 90,  44 => 59,  28 => 45,  26 => 4,  21 => 1,);
+        return array (  309 => 111,  301 => 40,  295 => 36,  291 => 35,  287 => 34,  283 => 33,  279 => 32,  275 => 31,  271 => 30,  267 => 29,  263 => 28,  257 => 25,  252 => 24,  246 => 21,  237 => 18,  231 => 16,  225 => 14,  222 => 13,  216 => 11,  210 => 9,  208 => 8,  203 => 5,  200 => 4,  165 => 143,  160 => 141,  157 => 140,  155 => 139,  153 => 138,  140 => 126,  134 => 124,  132 => 123,  129 => 122,  123 => 120,  121 => 119,  116 => 116,  114 => 115,  109 => 112,  107 => 111,  91 => 97,  88 => 96,  80 => 90,  44 => 59,  28 => 45,  26 => 4,  21 => 1,);
     }
 }
