@@ -14,7 +14,8 @@ visible: true
 
 ## Vorschaubilder
 ***
-Zeigt das Bild welches in den jeweiligen Ansichten ausser Vollbild dargestellt wird. Unter (2) wird das aktuell gewählte Vorschaubild dargestellt. Für ein Media Asset können mehrere Vorschaubilder definiert werden. Mit dem Plusknopf aus (3) kann ein weiteres Bild hinzugefügt werden. Mit dem Knopf mit dem Kreuz kann ein Bild wieder entfernt werden.Weiter kann ein Vorschaubild mit niedriger Auflösung dem Media Asset hinzugefügt werden.
+Zeigt das Bild welches in den jeweiligen Ansichten ausser Vollbild dargestellt wird. Unter (2) wird das aktuell gewählte Vorschaubild dargestellt. Für ein Media Asset können mehrere Vorschaubilder definiert werden. Mit dem Plusknopf aus (3) kann ein weiteres Bild hinzugefügt werden. Mit dem Knopf mit dem Kreuz kann ein Bild wieder entfernt werden.
+Weiter kann ein Vorschaubild mit niedriger Auflösung dem Media Asset hinzugefügt werden.
 
 <br>
 {{ media['vorschaubild.png'].html() }}

@@ -12,7 +12,7 @@ taxonomy:
 visible: true
 ---
 
-# Anwendungsfunktionen
+# Anwenderfunktionen
 
 ### Hier finden Sie die wichtigsten Funktionen der Anwendung DIGAME
 

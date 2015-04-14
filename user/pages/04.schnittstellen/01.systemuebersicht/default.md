@@ -22,9 +22,9 @@ In der untenstehenden Darstellung sind drei Applikationen aufgeführt:
 
 - Digame Portal dient dem Zentrum elektronische Medien (ZEM) zur Publikation ihrer Media Assets.
 
-- Drittanwendung; Anbindung beliebiger Applikationen (bspw. CMS) über eine Schnittstelle.
+- Drittanwendung; Anbindung beliebiger Applikationen (bspw. CMS) über eine Schnittstelle.
 
-All diesen drei Teilen zugrunde liegt der Serverteil welcher die Funktionalität enthält und die Daten zu den Media Assets in einer Datenbank verwaltet. Ein weiterer zentraler Teil, sind die mandantenspezifischen Metadatenschema. Jeder Mandant kann über ein eigenes Metadatenschema verfügen. Mit den Metadaten wird den Media Assets „Leben eingehaucht“. Es können Daten wie Titel, Beschreibung, Ort der Aufnahme, Datum der Aufnahme usw. definiert werden.
+All diesen drei Teilen zugrunde liegt der Serverteil welcher die Funktionalität enthält und die Daten zu den Media Assets in einer Datenbank verwaltet. Ein weiterer zentraler Teil, sind die mandantenspezifischen Metadatenschema. Jeder Mandant kann über ein eigenes Metadatenschema verfügen. Mit den Metadaten wird den Media Assets „Leben eingehaucht“. Es können Daten wie Titel, Beschreibung, Ort der Aufnahme, Datum der Aufnahme usw. definiert werden.
 
 <br>
 
