@@ -1,6 +1,6 @@
 ---
-title: Anwenderfunktionen
-menu: Anwenderfunktionen
+title: Schnittstellen
+menu: Schnittstellen
 description: Your page description goes here
 keywords: [1,2]
 author: Stefan Eckstein

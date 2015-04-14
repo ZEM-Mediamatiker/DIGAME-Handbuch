@@ -26,29 +26,31 @@ visible: true
 
 <br>
 
->>>>>Version 6.2<br>
+>>>>>Version 2.0<br>
 
 
 |  | Change |
 | --- | --- |
+| + | Copyright und Informationen zur Version in der Sidebar eingefügt |
+| + | Abschnitt "Schnittstellen" hinzugefügt |
 | ^ | Update auf die GRAV-Version 0.9.23 |
 
->>>>>Version 6.1<br>
+>>>>>Version 1.2<br>
 
 
 |  | Change |
 | --- | --- |
 | + | Changelog eingeführt |
 
->>>>>Version 6.0<br>
+>>>>>Version 1.1<br>
 
 
 |  | Change |
 | --- | --- |
 | + | Druckversion eingeführt |
-| + | Button zum direkten Druck in Navigationsleiste in Desktop- und Tabletansicht. |
-| ^ | Alle Bilder haben nun die richtigen Beschriftungen passend zum Text. |
-| - | Speicherplatzverwendung verringert. :) |
+| + | Button zum direkten Druck in Navigationsleiste in Desktop- und Tabletansicht |
+| ^ | Alle Bilder haben nun die richtigen Beschriftungen passend zum Text |
+| - | Speicherplatzverwendung verringert :) |
 
 
 <br>

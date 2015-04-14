@@ -2,6 +2,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	border-collapse: collapse;
 }
 
 html{
@@ -52,8 +53,8 @@ hr{
 header{
 	height: 100px;
 	margin-bottom: 20px;
-	
 }
+
 
 
 ul, ol{
@@ -66,8 +67,8 @@ ul, ol{
 
 #logo{
 	margin: 10px 10px 10px 20px;
-	height: 60px;
-	width: 25%;	
+	height: 30px;
+	width: 30px;	
 	background: url(../images/layout/logo_vbs.png);
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
@@ -153,6 +154,10 @@ img{
 
 #navigation{
 	display: none;
+}
+
+th {
+	text-align: left;
 }
 
 

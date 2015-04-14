@@ -178,6 +178,10 @@ header{
 	transition: 0.25s ease 0s;
 }
 
+.search-row{
+	background: red;
+}
+
 
 
 
@@ -370,7 +374,7 @@ header{
 
 /*	Alle Formatierungen im Zusammenhang mit dem Hauptbereich / Body. */
 
-#body{
+#content{
 	overflow-y: auto;
 	top: 80px;
 	right: 0px;
@@ -394,7 +398,7 @@ header{
 	font-size: 1em;
 }
 
-#body .nav{
+#content .nav{
 	position: fixed;
 	top: 80px;
 	bottom: 0px;
@@ -409,11 +413,11 @@ header{
 	transition: all 0.6s ease 0s;
 }
 
-#body .nav:hover{
+#content .nav:hover{
 	background: rgba(247,247,247,0.6);
 }
 
-#body .nav .icon-navigation-arrows{
+#content .nav .icon-navigation-arrows{
 	vertical-align: middle;
 	display: table-cell;
 	font-style: normal;
@@ -422,15 +426,15 @@ header{
 	transition: all 0.6s ease 0s;
 }
 
-#body .nav .icon-navigation-arrows:hover{
+#content .nav .icon-navigation-arrows:hover{
 	color: #3C3C3C;
 }
 
-#body .nav.nav-prev{
+#content .nav.nav-prev{
 	content: '&#59237;';
 }
 
-#body .nav.nav-next{
+#content .nav.nav-next{
 	right: 0px;
 }
 
@@ -516,12 +520,6 @@ header{
 		+ MEDIAQUERRIES +
 --------------------------------------------------------------*/
 
-@media only screen and (min-width: 1400px){
-		
-	.padding{
-		padding: 3em 25% 3em 6em;
-	}
-}
 
 /* -------------------------------------------------------------
 		+ Endgeräte über 1024px +
@@ -529,13 +527,25 @@ header{
 
 @media only screen and (min-width: 1024px){
 	
-	#body{
+	#content{
 		position: absolute;
 		left: 300px;
 	}
 	
 	.cbp-spmenu-push-toright {
     	left: 0px !important;
+	}
+}
+
+@media only screen and (min-width: 1400px){
+		
+	.padding{
+		padding: 3em 25% 3em 6em;
+	}
+	
+	#content{
+		position: relative;
+		min-height: 100%;
 	}
 }
 
@@ -746,6 +756,7 @@ header{
 		height: 40px;
 		width: 40px;	
 		background: url(../images/layout/logo_vbs.png);
+		background-size:cover;
 		background-repeat: no-repeat;
 		transition: 0.2s;
 	}
@@ -811,7 +822,7 @@ header{
 		background: none;
 	}
     
-    #body{
+    #content{
     	z-index: 82;
 		overflow-y: auto;
 		height: 100% !important;
@@ -826,7 +837,7 @@ header{
 		padding: 1.7em 3em 10em 3em;
 	}
 	
-	#body #navigation{
+	#content #navigation{
 		position: fixed;
 		width: 100%;
 		display: table;
@@ -834,7 +845,7 @@ header{
 		bottom: 0px;
 }
 	
-	#body .nav{
+	#content .nav{
 		position: relative;
 		top: auto;
 		width: 50%;
@@ -843,15 +854,15 @@ header{
 		
 	}
 	
-	#body .nav:hover{
+	#content .nav:hover{
 		background: rgba(247,247,247,0.9);
 	}
 	
-	#body .nav.nav-prev{
+	#content .nav.nav-prev{
 		float: left;
 	}	
 	
-	#body .nav.nav-next{
+	#content .nav.nav-next{
 		float: none;
 		border-left: 1px solid rgba(60,60,60,0.2);
 	}
@@ -876,6 +887,7 @@ header{
 		height: 40px;
 		width: 40px;	
 		background: url(../images/layout/logo_vbs.png);
+		background-size:cover;
 		background-repeat: no-repeat;
 		transition: 0.2s;
 	}
@@ -978,18 +990,19 @@ header{
 		padding: 0;
 	}	
 	
-	#body{
+	#content{
 		top: 60px;
 	}		
 		
 	table, thead, tbody, th, td, tr { 
-		display: block; 
+		/*display: block; */
 	}
 	
 	thead tr { 
-		position: absolute;
+		/*position: absolute;
 		top: -9999px;
-		left: -9999px;
+		left: -9999px;*/
+		background: red;
 	}	
 	
 	td { 

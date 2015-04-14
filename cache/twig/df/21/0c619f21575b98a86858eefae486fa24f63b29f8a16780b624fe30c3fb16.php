@@ -18,14 +18,13 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo "<!-- AAARGH! -->
-<!DOCTYPE html>
+        echo "<!DOCTYPE html>
 <html lang=\"en\">
     <head>
         ";
-        // line 5
+        // line 4
         $this->displayBlock('head', $context, $blocks);
-        // line 46
+        // line 45
         echo "    </head>
 
       <body>
@@ -41,7 +40,7 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
       \t\t\t
       \t\t\t<div id=\"title\">
       \t\t\t\t<h3 class=\"header-title\"><a href=\"";
-        // line 60
+        // line 59
         echo (isset($context["base_url_absolute"]) ? $context["base_url_absolute"] : null);
         echo "\">";
         echo $this->getAttribute($this->getAttribute((isset($context["config"]) ? $context["config"] : null), "site", array()), "title", array());
@@ -77,7 +76,7 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
       \t\t\t
       \t\t\t<div class=\"searchwrapper\">
       \t\t\t\t<form method=\"POST\" action=\"";
-        // line 91
+        // line 90
         echo (isset($context["base_url_relative"]) ? $context["base_url_relative"] : null);
         echo "/search/query:\" onsubmit=\"onSearch(this)\">     \t\t\t\t
       \t\t\t\t\t<input id=\"searchfield\" type=\"text\" placeholder=\"Suche.\" >
@@ -85,20 +84,21 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
       \t\t\t</div>
       \t\t
       \t\t\t";
-        // line 97
+        // line 96
         echo "        \t\t";
         $this->env->loadTemplate("partials/header.html.twig")->display($context);
-        // line 98
+        // line 97
         echo "        \t\t
         \t\t<div class=\"copywrapper\">
       \t\t\t\t&copy; 2015 | <a href=\"http://zem.ch\" target=\"_blank\" alt=\"Zentrum elektronische Medien\">Zentrum elektronische Medien</a><br>
-      \t\t\t\tVersion: 6.2\t
+      \t\t\t\tVersion: 2.0\t
       \t\t\t</div>
       \t\t
       \t\t\t</div>
+      \t\t\t<div class=\"clearfix\"></div>
       \t\t</section>
       \t
-      \t\t<section id=\"body\" class=\"cbp-spmenu-push\">
+      \t\t<section id=\"content\" class=\"cbp-spmenu-push\">
       \t\t\t<div class=\"padding\">
       \t\t
       \t\t\t";
@@ -139,6 +139,8 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
         echo "      \t\t\t\t
       \t\t\t</div>
       \t\t\t
+      \t\t\t<div class=\"clearfix\"></div>
+      \t\t\t
       \t\t\t
       \t\t\t
       \t\t\t
@@ -146,24 +148,24 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
       \t\t</section>     
 
         ";
-        // line 135
-        echo "        ";
-        // line 136
-        echo "        ";
         // line 137
+        echo "        ";
+        // line 138
+        echo "        ";
+        // line 139
         echo "        <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js\"></script>       
         <script src=\"";
-        // line 138
+        // line 140
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
         echo "/js/bootstrap.min.js\"></script>
         
         <script src=\"";
-        // line 140
+        // line 142
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
         echo "/js/classie.js\"></script>
 \t\t<script>
 \t\t\tvar menuLeft = document.getElementById( 'sidebar' ),
-\t\t\t\tbodyContainer = document.getElementById( 'body' ),
+\t\t\t\tbodyContainer = document.getElementById( 'content' ),
 \t\t\t\tshowLeftPush = document.getElementById( 'showLeftPush' ),
 
 \t\t\t\tbody = document.body;\t\t\t
@@ -193,44 +195,44 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
 </html>";
     }
 
-    // line 5
+    // line 4
     public function block_head($context, array $blocks = array())
     {
-        // line 6
+        // line 5
         echo "        <meta charset=\"utf-8\">
         <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
         ";
-        // line 9
+        // line 8
         if ($this->getAttribute((isset($context["header"]) ? $context["header"] : null), "description", array())) {
-            // line 10
+            // line 9
             echo "        <meta name=\"description\" content=\"";
             echo $this->getAttribute((isset($context["header"]) ? $context["header"] : null), "description", array());
             echo "\">
         ";
         } else {
-            // line 12
+            // line 11
             echo "        <meta name=\"description\" content=\"";
             echo $this->getAttribute((isset($context["site"]) ? $context["site"] : null), "description", array());
             echo "\">
         ";
         }
-        // line 14
+        // line 13
         echo "        ";
         if ($this->getAttribute((isset($context["header"]) ? $context["header"] : null), "robots", array())) {
-            // line 15
+            // line 14
             echo "        <meta name=\"robots\" content=\"";
             echo $this->getAttribute((isset($context["header"]) ? $context["header"] : null), "robots", array());
             echo "\">
         ";
         }
-        // line 17
+        // line 16
         echo "        <link rel=\"icon\" type=\"image/png\" href=\"";
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
         echo "/images/favicon.png\">
 
         <title>";
-        // line 19
+        // line 18
         if ($this->getAttribute((isset($context["header"]) ? $context["header"] : null), "title", array())) {
             echo $this->getAttribute((isset($context["header"]) ? $context["header"] : null), "title", array());
             echo " | ";
@@ -239,62 +241,62 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
         echo "</title>
 
         ";
-        // line 22
+        // line 21
         echo "        <link href=\"";
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
         echo "/css/bootstrap.min.css\" rel=\"stylesheet\" media=\"screen\">
 
         ";
-        // line 25
+        // line 24
         echo "        <link href=\"";
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
         echo "/css/print.css\" rel=\"stylesheet\" media=\"print\">
         <link href=\"";
-        // line 26
+        // line 25
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
         echo "/css/bootstrap-custom.css\" rel=\"stylesheet\" media=\"screen\">
         
         
         <link rel=\"apple-touch-icon\" href=\"";
-        // line 29
+        // line 28
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
         echo "/images/touch-images/apple-touch-icon.png\" />
     \t<link rel=\"apple-touch-icon\" sizes=\"57x57\" href=\"";
-        // line 30
+        // line 29
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
         echo "/images/touch-images/apple-touch-icon-57x57.png\" />
     \t<link rel=\"apple-touch-icon\" sizes=\"60x60\" href=\"";
-        // line 31
+        // line 30
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
         echo "/images/touch-images/apple-touch-icon-60x60.png\" />
     \t<link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"";
-        // line 32
+        // line 31
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
         echo "/images/touch-images/apple-touch-icon-72x72.png\" />
     \t<link rel=\"apple-touch-icon\" sizes=\"76x76\" href=\"";
-        // line 33
+        // line 32
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
         echo "/images/touch-images/apple-touch-icon-76x76.png\" />
     \t<link rel=\"apple-touch-icon\" sizes=\"114x114\" href=\"";
-        // line 34
+        // line 33
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
         echo "/images/touch-images/apple-touch-icon-114x114.png\" />
     \t<link rel=\"apple-touch-icon\" sizes=\"120x120\" href=\"";
-        // line 35
+        // line 34
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
         echo "/images/touch-images/apple-touch-icon-120x120.png\" />
     \t<link rel=\"apple-touch-icon\" sizes=\"144x144\" href=\"";
-        // line 36
+        // line 35
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
         echo "/images/touch-images/apple-touch-icon-144x144.png\" />
     \t<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"";
-        // line 37
+        // line 36
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
         echo "/images/touch-images/apple-touch-icon-152x152.png\" />
         
 
         ";
-        // line 41
+        // line 40
         echo "        <!--[if lt IE 9]>
         <script src=\"https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js\"></script>
         <script src=\"https://oss.maxcdn.com/respond/1.4.2/respond.min.js\"></script>
@@ -319,6 +321,6 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
 
     public function getDebugInfo()
     {
-        return array (  306 => 110,  298 => 41,  292 => 37,  288 => 36,  284 => 35,  280 => 34,  276 => 33,  272 => 32,  268 => 31,  264 => 30,  260 => 29,  254 => 26,  249 => 25,  243 => 22,  234 => 19,  228 => 17,  222 => 15,  219 => 14,  213 => 12,  207 => 10,  205 => 9,  200 => 6,  197 => 5,  162 => 140,  157 => 138,  154 => 137,  152 => 136,  150 => 135,  139 => 125,  133 => 123,  131 => 122,  128 => 121,  122 => 119,  120 => 118,  115 => 115,  113 => 114,  108 => 111,  106 => 110,  92 => 98,  89 => 97,  81 => 91,  45 => 60,  29 => 46,  27 => 5,  21 => 1,);
+        return array (  308 => 110,  300 => 40,  294 => 36,  290 => 35,  286 => 34,  282 => 33,  278 => 32,  274 => 31,  270 => 30,  266 => 29,  262 => 28,  256 => 25,  251 => 24,  245 => 21,  236 => 18,  230 => 16,  224 => 14,  221 => 13,  215 => 11,  209 => 9,  207 => 8,  202 => 5,  199 => 4,  164 => 142,  159 => 140,  156 => 139,  154 => 138,  152 => 137,  139 => 125,  133 => 123,  131 => 122,  128 => 121,  122 => 119,  120 => 118,  115 => 115,  113 => 114,  108 => 111,  106 => 110,  91 => 97,  88 => 96,  80 => 90,  44 => 59,  28 => 45,  26 => 4,  21 => 1,);
     }
 }
