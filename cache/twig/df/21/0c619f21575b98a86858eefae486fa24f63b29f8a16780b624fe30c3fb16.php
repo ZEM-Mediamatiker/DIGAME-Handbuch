@@ -30,8 +30,47 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
       <body>
       
       \t<input type=\"checkbox\" id=\"navbtn\">
-      
-      \t<header id=\"header\">      \t\t\t
+      \t
+      \t<section id=\"left-page\">
+      \t\t
+      \t\t
+      \t\t<section id=\"sidebar\">
+      \t\t\t<!--<div class=\"sidepadding\">-->
+      \t\t\t
+      \t\t\t<div class=\"searchwrapper\">
+      \t\t\t\t<form method=\"POST\" action=\"";
+        // line 58
+        echo (isset($context["base_url_relative"]) ? $context["base_url_relative"] : null);
+        echo "/search/query:\" onsubmit=\"onSearch(this)\">     \t\t\t\t
+      \t\t\t\t\t<input id=\"searchfield\" type=\"text\" placeholder=\"Suche.\" >
+      \t\t\t\t</form>\t\t\t\t
+      \t\t\t</div>
+      \t\t
+      \t\t\t";
+        // line 64
+        echo "        \t\t";
+        $this->env->loadTemplate("partials/header.html.twig")->display($context);
+        // line 65
+        echo "        \t\t
+        \t\t
+      \t\t
+      \t\t\t<!--</div>-->
+      \t\t\t<div class=\"clearfix\"></div>
+      \t\t\t<div class=\"copywrapper\">
+      \t\t\t\t&copy; 2015 | <a href=\"http://zem.ch\" target=\"_blank\" alt=\"Zentrum elektronische Medien\">Zentrum elektronische Medien</a><br>
+      \t\t\t\tVersion: 2.0\t
+      \t\t\t</div>
+      \t\t</section>
+      \t\t
+      \t
+      \t</section>
+      \t
+      \t
+      \t
+      \t<section id=\"right-page\" class=\"cbp-spmenu-push\">
+      \t
+      \t
+      \t\t<header id=\"header\">      \t\t\t
       \t\t\t
       \t\t\t<div id=\"logo\">      \t\t\t
       \t\t\t</div> \t
@@ -40,7 +79,7 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
       \t\t\t
       \t\t\t<div id=\"title\">
       \t\t\t\t<h3 class=\"header-title\"><a href=\"";
-        // line 59
+        // line 92
         echo (isset($context["base_url_absolute"]) ? $context["base_url_absolute"] : null);
         echo "\">";
         echo $this->getAttribute($this->getAttribute((isset($context["config"]) ? $context["config"] : null), "site", array()), "title", array());
@@ -67,76 +106,48 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
             \t\t</div> 
             \t\t</label>
         \t\t</div>   \t\t \t\t
-      \t</header>
-      \t
-      \t
-      \t
-      \t\t<section id=\"sidebar\">
-      \t\t\t<div class=\"sidepadding\">
-      \t\t\t
-      \t\t\t<div class=\"searchwrapper\">
-      \t\t\t\t<form method=\"POST\" action=\"";
-        // line 90
-        echo (isset($context["base_url_relative"]) ? $context["base_url_relative"] : null);
-        echo "/search/query:\" onsubmit=\"onSearch(this)\">     \t\t\t\t
-      \t\t\t\t\t<input id=\"searchfield\" type=\"text\" placeholder=\"Suche.\" >
-      \t\t\t\t</form>\t\t\t\t
-      \t\t\t</div>
+      \t\t</header>
       \t\t
-      \t\t\t";
-        // line 96
-        echo "        \t\t";
-        $this->env->loadTemplate("partials/header.html.twig")->display($context);
-        // line 97
-        echo "        \t\t
-        \t\t
+      \t\t<div class=\"clearfix\"></div>
       \t\t
-      \t\t\t</div>
-      \t\t\t<div class=\"clearfix\"></div>
-      \t\t\t<div class=\"copywrapper\">
-      \t\t\t\t&copy; 2015 | <a href=\"http://zem.ch\" target=\"_blank\" alt=\"Zentrum elektronische Medien\">Zentrum elektronische Medien</a><br>
-      \t\t\t\tVersion: 2.0\t
-      \t\t\t</div>
-      \t\t</section>
-      \t
-      \t\t<section id=\"content\" class=\"cbp-spmenu-push\">
+      \t\t<section id=\"content\">
       \t\t\t<div class=\"padding\">
       \t\t
       \t\t\t";
-        // line 111
+        // line 122
         $this->displayBlock('content', $context, $blocks);
-        // line 112
+        // line 123
         echo "      \t\t
       \t\t\t</div>
       \t\t\t
       \t\t\t";
-        // line 115
+        // line 126
         $context["progress"] = $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "collection", array(0 => array("items" => array("@taxonomy.category" => "digame"), "order" => array("by" => "default", "dir" => "asc"))), "method");
-        // line 116
+        // line 127
         echo "      \t\t\t
       \t\t\t<div id=\"navigation\">
       \t\t\t
       \t\t\t\t";
-        // line 119
+        // line 130
         if ( !$this->getAttribute((isset($context["progress"]) ? $context["progress"] : null), "isFirst", array(0 => $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "path", array())), "method")) {
-            // line 120
+            // line 131
             echo "      \t\t\t\t<a class=\"nav nav-prev\" href=\"";
             echo $this->getAttribute($this->getAttribute((isset($context["progress"]) ? $context["progress"] : null), "nextSibling", array(0 => $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "path", array())), "method"), "url", array());
             echo "\"><i class=\"icon-navigation-arrows\">&#59237;</i></a>
       \t\t\t\t";
         }
-        // line 122
+        // line 133
         echo "      \t\t\t\t
       \t\t\t\t";
-        // line 123
+        // line 134
         if ( !$this->getAttribute((isset($context["progress"]) ? $context["progress"] : null), "isLast", array(0 => $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "path", array())), "method")) {
-            // line 124
+            // line 135
             echo "      \t\t\t\t<a class=\"nav nav-next\" href=\"";
             echo $this->getAttribute($this->getAttribute((isset($context["progress"]) ? $context["progress"] : null), "prevSibling", array(0 => $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "path", array())), "method"), "url", array());
             echo "\"><i class=\"icon-navigation-arrows\">&#59238;</i></a>
       \t\t\t\t";
         }
-        // line 126
+        // line 137
         echo "      \t\t\t\t
       \t\t\t</div>
       \t\t\t
@@ -146,27 +157,40 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
       \t\t\t
       \t\t\t
       \t\t\t
-      \t\t</section>     
+      \t\t</section>
+      \t\t
+      \t\t<div class=\"clearfix\"></div>
+      \t
+      \t
+      \t</section>
+      
+      \t
+      \t
+      \t
+      \t
+      \t\t
+      \t
+      \t\t     
 
         ";
-        // line 138
+        // line 162
         echo "        ";
-        // line 139
+        // line 163
         echo "        ";
-        // line 140
+        // line 164
         echo "        <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js\"></script>       
         <script src=\"";
-        // line 141
+        // line 165
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
         echo "/js/bootstrap.min.js\"></script>
         
         <script src=\"";
-        // line 143
+        // line 167
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
         echo "/js/classie.js\"></script>
 \t\t<script>
-\t\t\tvar menuLeft = document.getElementById( 'sidebar' ),
-\t\t\t\tbodyContainer = document.getElementById( 'content' ),
+\t\t\tvar menuLeft = document.getElementById( 'left-page' ),
+\t\t\t\tbodyContainer = document.getElementById( 'right-page' ),
 \t\t\t\tshowLeftPush = document.getElementById( 'showLeftPush' ),
 
 \t\t\t\tbody = document.body;\t\t\t
@@ -305,7 +329,7 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
         ";
     }
 
-    // line 111
+    // line 122
     public function block_content($context, array $blocks = array())
     {
     }
@@ -322,6 +346,6 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
 
     public function getDebugInfo()
     {
-        return array (  309 => 111,  301 => 40,  295 => 36,  291 => 35,  287 => 34,  283 => 33,  279 => 32,  275 => 31,  271 => 30,  267 => 29,  263 => 28,  257 => 25,  252 => 24,  246 => 21,  237 => 18,  231 => 16,  225 => 14,  222 => 13,  216 => 11,  210 => 9,  208 => 8,  203 => 5,  200 => 4,  165 => 143,  160 => 141,  157 => 140,  155 => 139,  153 => 138,  140 => 126,  134 => 124,  132 => 123,  129 => 122,  123 => 120,  121 => 119,  116 => 116,  114 => 115,  109 => 112,  107 => 111,  91 => 97,  88 => 96,  80 => 90,  44 => 59,  28 => 45,  26 => 4,  21 => 1,);
+        return array (  333 => 122,  325 => 40,  319 => 36,  315 => 35,  311 => 34,  307 => 33,  303 => 32,  299 => 31,  295 => 30,  291 => 29,  287 => 28,  281 => 25,  276 => 24,  270 => 21,  261 => 18,  255 => 16,  249 => 14,  246 => 13,  240 => 11,  234 => 9,  232 => 8,  227 => 5,  224 => 4,  189 => 167,  184 => 165,  181 => 164,  179 => 163,  177 => 162,  151 => 137,  145 => 135,  143 => 134,  140 => 133,  134 => 131,  132 => 130,  127 => 127,  125 => 126,  120 => 123,  118 => 122,  83 => 92,  54 => 65,  51 => 64,  43 => 58,  28 => 45,  26 => 4,  21 => 1,);
     }
 }

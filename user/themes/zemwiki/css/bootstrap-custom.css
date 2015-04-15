@@ -100,6 +100,34 @@ p {
 
 /*	Alle Formatierungen im Zusammenhang mit dem Header. */
 
+#left-page{
+	width: 300px;
+	height: 100%;
+	background: red;
+	background: rgba(247,247,247,1);
+	left: 0px;
+	z-index: 80;
+	bottom: 0px;
+	top: 0px;
+	overflow-y: auto;
+	position: fixed;
+	transition: 0.5s ease-in-out;
+}
+
+#right-page{
+	overflow-y: auto;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	/*left: 300px;*/
+	z-index: 81;
+	background: rgb(255,255,255);
+	-webkit-box-shadow: -5px 0 55px 2px #343434;
+	box-shadow: 30px 0 55px 2px #343434;
+	position: fixed;
+}
+
+
 header{
 	width: 100%;
 	height: 80px;
@@ -210,12 +238,12 @@ header{
 /*	Alle Formatierungen im Zusammenhang mit dem Navigationsbutton. */
 
 .menu{
-	position: fixed;
+	position: absolute;
     z-index: 100;
    	width: 60px;
     height: 80px;
     top: 0;
-    right: 0px;
+    left: 0px;
     padding: 10px;
     padding-top: 15px;
     display: inline;
@@ -233,27 +261,27 @@ header{
 	zu einem X um. Der Checkbox-Hack ist dafür zuständig, dass die Form
 	auch nach dem und bis zum nächsten Klicken erhalten bleibt. */
 
-#navbtn:checked ~ #header .menu .menutransform .linie.top.left {
+#navbtn:checked ~ #right-page #header .menu .menutransform .linie.top.left {
 	width: 20%;
 }
 
-#navbtn:checked ~ #header .menu .menutransform .linie.top.right{
+#navbtn:checked ~ #right-page #header .menu .menutransform .linie.top.right{
 	width: 65%;
 }
 
-#navbtn:checked ~ #header .menu .menutransform .linie.mid.left{
+#navbtn:checked ~ #right-page #header .menu .menutransform .linie.mid.left{
     width: 20%;
 }
 
-#navbtn:checked ~ #header .menu .menutransform .linie.mid.right{
+#navbtn:checked ~ #right-page #header .menu .menutransform .linie.mid.right{
     width: 65%;
 }
 
-#navbtn:checked ~ #header .menu .menutransform .linie.bottom.right{
+#navbtn:checked ~ #right-page #header .menu .menutransform .linie.bottom.right{
    width: 65%;
 }
 
-#navbtn:checked ~ #header .menu .menutransform .linie.bottom.left{
+#navbtn:checked ~ #right-page #header .menu .menutransform .linie.bottom.left{
     width: 20%;
 }
 
@@ -309,16 +337,14 @@ header{
 /*	Alle Formatierungen im Zusammenhang mit der Sidebar / Navigationsbar. */
 
 #sidebar{
-	width: 300px;
-	position: absolute;
-	position: fixed;
-	background: rgba(247,247,247,1);
+	/*background: rgba(247,247,247,1);
 	left: 0px;
-	top: 80px;
 	z-index: 80;
 	bottom: 0px;
+	top: 0px;
 	overflow-y: auto;
-	transition: 0.3s ease-in-out;
+	position: absloute;
+	transition: 0.3s ease-in-out;*/
 }
 
 #searchfield{
@@ -334,12 +360,12 @@ header{
 	overflow-x: hidden;
 }
 
-.sidepadding ol {
+#sidebar ol {
     counter-reset: item;
     background: url(../images/layout/nav_line.png);
 }
 
-.sidepadding ol li {
+#sidebar ol li {
     display: block;
     position: relative;
     line-height: 50px;
@@ -348,7 +374,7 @@ header{
 /*	Diese Eigenschaften nummerieren die ordered-list mit fortlaufenden Nummern.
 	Die passen sich an der jeweiligen Stufe an. */
 	
-.sidepadding ol li:before {
+#sidebar ol li:before {
 	color: #afafaf;
 	font-size: 14px;
     content: counters(item, ".")".";
@@ -358,20 +384,20 @@ header{
     right: 5px; /* Abstand zwischen Nummer und Text */
 }
 
-.sidepadding ol li a {
-	margin: -15px -100% -17px -100%;
-    padding: 17px 100% 17px 100%;
+#sidebar ol li a {
+	margin: -15px 0px -17px -100%;
+    padding: 17px 0px 17px 100%;
     letter-spacing: 1.2px;
     font-size: 16px;
 	color: #838383;
 	transition: 0.2s;
 }
 
-.sidepadding ol li a:hover{
+#sidebar ol li a:hover{
 	color: rgb(60,60,60);	
 }
 
-.sidepadding ol li ol {
+#sidebar ol li ol {
 	background: none;
 }
 
@@ -396,14 +422,15 @@ header{
 /*	Alle Formatierungen im Zusammenhang mit dem Hauptbereich / Body. */
 
 #content{
-	overflow-y: auto;
-	top: 80px;
-	right: 0px;
+	overflow-y: scroll;
+	padding-top: 80px;
+	height: 100%;
+	/*right: 0px;
 	bottom: 0px;
 	z-index: 81;
 	background: rgb(255,255,255);
 	-webkit-box-shadow: -5px 0 55px 2px #343434;
-	box-shadow: 30px 0 55px 2px #343434;
+	box-shadow: 30px 0 55px 2px #343434;*/
 }
 
 .padding{
@@ -503,7 +530,7 @@ header{
     border-left: 1px solid #258ecd;
 }
  
-#sidebar.cbp-spmenu-open {
+#left-page.cbp-spmenu-open {
     left: -100px;
 }
  
@@ -516,7 +543,7 @@ header{
 .cbp-spmenu-push {
     overflow-x: hidden;
     position: relative;
-    left: 0;
+    left: 300px;
 }
  
 .cbp-spmenu-push-toright {
@@ -531,9 +558,9 @@ header{
  
 .cbp-spmenu,
 .cbp-spmenu-push {
-    -webkit-transition: 0.3s ease-in-out;
-    -moz-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
 
@@ -549,13 +576,13 @@ header{
 @media only screen and (min-width: 1024px){
 	
 	#content{
-		position: absolute;
-		left: 300px;
+		/*position: absolute;
+		left: 300px;*/
 	}
 	
-	.cbp-spmenu-push-toright {
+	/*.cbp-spmenu-push-toright {
     	left: 0px !important;
-	}
+	}*/
 }
 
 @media only screen and (min-width: 1400px){
@@ -576,6 +603,34 @@ header{
 
 @media only screen and (max-width: 1024px){
 
+	#left-page{
+		width: 300px;
+		height: 100%;
+		background: red;
+		background: rgba(247,247,247,1);
+		left: -100px;
+		z-index: 80;
+		bottom: 0px;
+		top: 0px;
+		overflow-y: auto;
+		position: fixed;
+		transition: 0.5s ease-in-out;
+	}
+
+	#right-page{
+		overflow-y: auto;
+		top: 0px;
+		right: 0px;
+		bottom: 0px;
+		/*left: 300px;*/
+		z-index: 81;
+		background: rgb(255,255,255);
+		-webkit-box-shadow: -5px 0 55px 2px #343434;
+		box-shadow: 30px 0 55px 2px #343434;
+		position: relative;
+		min-height: 100%;
+	}
+	
 	.cbp-spmenu {
     	background: #47a3da;
     	position: fixed;
@@ -613,7 +668,7 @@ header{
     	border-left: 1px solid #258ecd;
 	}
  
-	#sidebar.cbp-spmenu-open {
+	#left-page.cbp-spmenu-open {
     	left: 0px;
 	}
  
@@ -637,9 +692,9 @@ header{
  
 	.cbp-spmenu,
 	.cbp-spmenu-push {
-    	-webkit-transition: 0.3s ease-in-out;
-    	-moz-transition: 0.3s ease-in-out;
-    	transition: 0.3s ease-in-out;
+    	-webkit-transition: 0.5s ease-in-out;
+    	-moz-transition: 0.5s ease-in-out;
+    	transition: 0.5s ease-in-out;
 	}
 	
 	#header{
@@ -681,7 +736,7 @@ header{
 	zu einem X um. Der Checkbox-Hack ist dafür zuständig, dass die Form
 	auch nach dem und bis zum nächsten Klicken erhalten bleibt. */
 
-	#navbtn:checked ~ #header .menu .menutransform .linie.top.left {
+	#navbtn:checked ~ #right-page #header .menu .menutransform .linie.top.left {
 		transform: translate(1px, 2px) rotate(45deg) scaleX(1.25);
 		-o-transform: translate(1px, 2px) rotate(45deg) scaleX(1.25);
 		-webkit-transform: translate(1px, 2px) rotate(45deg) scaleX(1.25);
@@ -690,7 +745,7 @@ header{
 		width: 50%;
 	}
 
-	#navbtn:checked ~ #header .menu .menutransform .linie.top.right{
+	#navbtn:checked ~ #right-page #header .menu .menutransform .linie.top.right{
 		transform: translate(0px, 2px) rotate(-45deg) scaleX(1.25);
 		-o-transform: translate(0px, 2px) rotate(-45deg) scaleX(1.25);
 		-webkit-transform: translate(0px, 2px) rotate(-45deg) scaleX(1.25);
@@ -699,7 +754,7 @@ header{
 		width: 50%;
 	}
 	
-	#navbtn:checked ~ #header .menu .menutransform .linie.mid.left{
+	#navbtn:checked ~ #right-page #header .menu .menutransform .linie.mid.left{
 		transform: translate(3px, 0px) scaleX(0);
 		-o-transform: translate(3px, 0px) scaleX(0);
 		-webkit-transform: translate(3px, 0px) scaleX(0);
@@ -708,7 +763,7 @@ header{
 		width: 50%;
 	}
 	
-	#navbtn:checked ~ #header .menu .menutransform .linie.mid.right{
+	#navbtn:checked ~ #right-page #header .menu .menutransform .linie.mid.right{
 		transform: translate(-3px, 0px) scaleX(0);
 		-o-transform: translate(-3px, 0px) scaleX(0);
 		-webkit-transform: translate(-3px, 0px) scaleX(0);
@@ -717,7 +772,7 @@ header{
 		width: 50%;
 	}
 	
-	#navbtn:checked ~ #header .menu .menutransform .linie.bottom.right{
+	#navbtn:checked ~ #right-page #header .menu .menutransform .linie.bottom.right{
 		transform: translate(0px, -2px) rotate(45deg) scaleX(1.25);
 		-o-transform: translate(0px, -2px) rotate(45deg) scaleX(1.25);
 		-webkit-transform: translate(0px, -2px) rotate(45deg) scaleX(1.25);
@@ -726,7 +781,7 @@ header{
 		width: 50%;
 	}
 	
-	#navbtn:checked ~ #header .menu .menutransform .linie.bottom.left{
+	#navbtn:checked ~ #right-page #header .menu .menutransform .linie.bottom.left{
 		transform: translate(1px, -2px) rotate(-45deg) scaleX(1.25);
 		-o-transform: translate(1px, -2px) rotate(-45deg) scaleX(1.25);
 		-webkit-transform: translate(1px, -2px) rotate(-45deg) scaleX(1.25);
@@ -803,7 +858,7 @@ header{
 		display: block;
 	}
 		
-	#sidebar{
+	/*#sidebar{
 		width: 300px;
 		position: absolute;
 		position: fixed;
@@ -815,17 +870,17 @@ header{
 		bottom: 0px;
 		overflow-y: auto;
 		transition: 0.3s ease-in-out;		
-	}
+	}*/
 	
-	.sidepadding ol{
+	#sidebar ol{
 		background: url(../images/layout/nav_line.png);	
 	}
 	
-	.sidepadding ol li{
+	#sidebar ol li{
 		line-height: 50px;
 	}
 	
-	.sidepadding ol li a {
+	#sidebar ol li a {
 		margin: -15px -100% -17px -100%;
     	padding: 17px 100% 17px 100%;
     	letter-spacing: 1.2px;
@@ -833,26 +888,22 @@ header{
 		color: #838383;
 	}
 	
-	.sidepadding ol li ol li a {
+	#sidebar ol li ol li a {
 		margin: -15px 100% -17px -100%;
     	padding: 17px 100% 17px 100%;
 		color: #838383;
 	}
 	
-	.sidepadding ol li ol {
+	#sidebar ol li ol {
 		background: none;
 	}
     
     #content{
-    	z-index: 82;
-		overflow-y: auto;
-		height: 100% !important;
-		top: 60px;
-		right: 0px;
-		bottom: 0px;
-		-webkit-box-shadow: -5px 0 55px 2px #343434;
-		box-shadow: 30px 0 55px 2px #343434;
-	}    
+		/*top: 60px;*/
+		position: fixed;
+		height: 100%;
+		width: 100%;
+	}  
     
     .padding{
 		padding: 1.7em 3em 10em 3em;
@@ -966,22 +1017,22 @@ header{
     	transition: 0.2s;
 }
 	
-	#sidebar{
+	#left-page{
 		width: 300px;
 		background: rgba(247,247,247,1);
-		top: 60px;
+		top: 0px;
 		left: -100px;
 	}	
 	
-	.sidepadding ol{
+	#sidebar ol{
 		background: url(../images/layout/nav_line.png);	
 	}
 	
-	.sidepadding ol li{
+	#sidebar ol li{
 		line-height: 50px;
 	}
 	
-	.sidepadding ol li a {
+	#sidebar ol li a {
 		margin: -15px -100% -17px -100%;
     	padding: 17px 100% 17px 100%;
     	letter-spacing: 1.2px;
@@ -989,30 +1040,33 @@ header{
 		color: #838383;
 	}
 	
-	.sidepadding ol li ol li a {
+	#sidebar ol li ol li a {
 		margin: -15px 100% -17px -100%;
     	padding: 17px 100% 17px 100%;
 		color: #838383;
 	}
 	
-	.sidepadding ol li a:hover{
+	#sidebar ol li a:hover{
 		color: #838383;	
 	}
 	
-	.sidepadding ol li ol {
+	#sidebar ol li ol {
 		background: none;
 	}	
 	
-	#checknav:checked ~ #sidebar{
+	#checknav:checked ~ #left-page{
     	left: 0px;
     }    
 	
-	.sidepadding{
+	#sidebar{
 		padding: 0;
 	}	
 	
 	#content{
-		top: 60px;
+		/*top: 60px;*/
+		position: fixed;
+		height: 100%;
+		width: 100%;
 	}		
 		
 	table, thead, tbody, th, td, tr { 
