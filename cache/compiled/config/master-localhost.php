@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\Config',
-    'timestamp' => 1428928778,
-    'checksum' => '72717e7815bad82d5c1632e205d07cb5',
+    'timestamp' => 1429091816,
+    'checksum' => 'ee0cc024f3716d3ce7fc0fe55fc036de',
     'data' => [
         'streams' => [
             'schemes' => [
@@ -296,7 +296,7 @@ return [
                 'alias' => '/home'
             ],
             'pages' => [
-                'theme' => 'zemwiki',
+                'theme' => 'zemwikimobile',
                 'order' => [
                     'by' => 'defaults',
                     'dir' => 'asc'

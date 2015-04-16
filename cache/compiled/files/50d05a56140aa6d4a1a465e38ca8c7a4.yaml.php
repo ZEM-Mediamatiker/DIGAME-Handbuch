@@ -2,13 +2,13 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'user/config/system.yaml',
-    'modified' => 1409295202,
+    'modified' => 1429091721,
     'data' => [
         'home' => [
             'alias' => '/home'
         ],
         'pages' => [
-            'theme' => 'zemwiki',
+            'theme' => 'zemwikimobile',
             'process' => [
                 'markdown' => true,
                 'twig' => false
