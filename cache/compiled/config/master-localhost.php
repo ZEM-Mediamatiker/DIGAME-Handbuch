@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\Config',
-    'timestamp' => 1429091816,
-    'checksum' => 'ee0cc024f3716d3ce7fc0fe55fc036de',
+    'timestamp' => 1429176168,
+    'checksum' => 'aec7c77e5d926fa9e0f1a73c8f7132e6',
     'data' => [
         'streams' => [
             'schemes' => [
@@ -296,7 +296,7 @@ return [
                 'alias' => '/home'
             ],
             'pages' => [
-                'theme' => 'zemwikimobile',
+                'theme' => 'zemwiki',
                 'order' => [
                     'by' => 'defaults',
                     'dir' => 'asc'
@@ -326,7 +326,9 @@ return [
                         '>' => 'gt',
                         '<' => 'lt'
                     ]
-                ]
+                ],
+                'types' => 'txt|xml|html|json|rss|atom',
+                'expires' => 604800
             ],
             'cache' => [
                 'enabled' => true,
@@ -356,7 +358,8 @@ return [
                 'js_minify' => true,
                 'collections' => [
                     'jquery' => 'system://assets/jquery/jquery-2.1.3.min.js'
-                ]
+                ],
+                'enable_asset_timestamp' => false
             ],
             'errors' => [
                 'display' => true,
@@ -377,6 +380,9 @@ return [
             'images' => [
                 'default_image_quality' => 85,
                 'debug' => false
+            ],
+            'media' => [
+                'enable_media_timestamp' => false
             ]
         ]
     ]

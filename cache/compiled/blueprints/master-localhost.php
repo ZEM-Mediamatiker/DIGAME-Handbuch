@@ -1,7 +1,7 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\Config',
-    'checksum' => '80d5f87d585a3927b67762677412261a:66b769f1ec748262174d9487d223e7c8',
+    'checksum' => '80d5f87d585a3927b67762677412261a:d77824aae30ceee013c22aab0a757f9c',
     'files' => [
         'user/plugins' => [
             'plugins/error' => [
@@ -20,19 +20,19 @@ return [
         'system/blueprints/config' => [
             'media' => [
                 'file' => 'system/blueprints/config/media.yaml',
-                'modified' => 1428577404
+                'modified' => 1429106252
             ],
             'site' => [
                 'file' => 'system/blueprints/config/site.yaml',
-                'modified' => 1428577404
+                'modified' => 1429106252
             ],
             'streams' => [
                 'file' => 'system/blueprints/config/streams.yaml',
-                'modified' => 1428577404
+                'modified' => 1429106252
             ],
             'system' => [
                 'file' => 'system/blueprints/config/system.yaml',
-                'modified' => 1428577404
+                'modified' => 1429106252
             ]
         ]
     ],

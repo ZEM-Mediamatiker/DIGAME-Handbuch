@@ -48,37 +48,7 @@
       
       	<input type="checkbox" id="navbtn">
       	
-      	<section id="left-page">
-      		
-      		
-      		<section id="sidebar">
-      			<!--<div class="sidepadding">-->
-      			
-      			<div class="searchwrapper">
-      				<form method="POST" action="{{ base_url_relative }}/search/query:" onsubmit="onSearch(this)">     				
-      					<input id="searchfield" type="text" placeholder="Suche." >
-      				</form>				
-      			</div>
-      		
-      			{# include the header + navigation #}
-        		{% include 'partials/header.html.twig' %}
-        		
-        		
-      		
-      			<!--</div>-->
-      			<div class="clearfix"></div>
-      			<div class="copywrapper">
-      				&copy; 2015 | <a href="http://zem.ch" target="_blank" alt="Zentrum elektronische Medien">Zentrum elektronische Medien</a><br>
-      				Version: 2.0	
-      			</div>
-      		</section>
-      		
-      	
-      	</section>
-      	
-      	
-      	
-      	<section id="right-page" class="cbp-spmenu-push">
+      	<section id="page">
       	
       	
       		<header id="header">      			
@@ -86,7 +56,7 @@
       			<div id="logo">      			
       			</div> 	
       			
-      			<div class="clearfix"></div>
+      			
       			
       			<div id="title">
       				<h3 class="header-title"><a href="{{ base_url_absolute}}">{{ config.site.title }}</a></h3>
@@ -94,24 +64,18 @@
       			
       			<a class="print" href="javascript:window.print()">
       			<div id="print_icon">
-      				<div class="menutransform2">
-            			 
+      				<div class="menutransform2">            			 
             		</div>
       			</div> 
-      			</a> 				     	
+      			</a> 
       			
-       			<div id="showLeftPush" class="menu">
-       				<label id="label" for="navbtn">
-       				<div class="menutransform">
-            			<div class="linie top left"></div>
-           				<div class="linie top right"></div>
-            			<div class="linie mid left"></div>
-            			<div class="linie mid right"></div>  
-            			<div class="linie bottom left"></div>
-            			<div class="linie bottom right"></div>  
-            		</div> 
-            		</label>
-        		</div>   		 		
+      			<div id="showSearchOverlay" class="search_icon">
+      				<div class="menutransform3"> 
+      					          			 
+            		</div>
+      			</div> 				     	
+      			
+       			   		 		
       		</header>
       		
       		<div class="clearfix"></div>
@@ -138,17 +102,87 @@
       			</div>
       			
       			<div class="clearfix"></div>
-      			
-      			
-      			
-      			
-      			
+      			  			
       		</section>
       		
       		<div class="clearfix"></div>
       	
       	
       	</section>
+      	
+      	<section id="menu-overlay">
+      		
+      		<section id="menucontainer">
+      		
+      			<div id="menu-navigation">
+      				
+      				{# include the header + navigation #}
+        			{% include 'partials/header.html.twig' %}
+        			<div class="clearfix"></div>
+      			
+      			
+      			</div>
+      		
+      		
+      		</section>    	
+      	
+      	</section>
+      	
+      	
+      	<section id="search-overlay">
+      		
+      		<section id="searchcontainer">
+      		
+      		
+      			<div id="search-searchconatiner">
+      				
+      				<form method="POST" action="{{ base_url_relative }}/search/query:" onsubmit="onSearch(this)">     				
+      					<input id="searchfield" type="text" placeholder="Suche..." >
+      				</form>
+      				
+      			</div>     			    		
+      		
+      		</section>
+      		
+      		<div id="closeSearchOverlay" class="searchmenubutton">
+       				<div class="menutransform">
+            		<div class="linie top left"></div>
+           			<div class="linie top right"></div> 
+            		<div class="linie bottom left"></div>
+            		<div class="linie bottom right"></div>  
+            	</div> 
+            </div>
+            
+           
+      		
+      	
+      	</section>
+      	     	
+      	<div id="showOverlay" class="menu">
+       		<label id="label" for="navbtn">
+       			<div class="menutransform">
+            		<div class="linie top left"></div>
+           			<div class="linie top right"></div>
+            		<div class="linie mid left"></div>
+            		<div class="linie mid right"></div>  
+            		<div class="linie bottom left"></div>
+            		<div class="linie bottom right"></div>  
+            	</div> 
+            </label>
+        </div>
+        
+        
+      	
+      	<!--<div class="copywrapper">
+      				&copy; 2015 | <a href="http://zem.ch" target="_blank" alt="Zentrum elektronische Medien">Zentrum elektronische Medien</a><br>
+      				Version: 2.0	
+      			</div>-->
+      			
+		<!--<div class="searchwrapper">
+      				<form method="POST" action="{{ base_url_relative }}/search/query:" onsubmit="onSearch(this)">     				
+      					<input id="searchfield" type="text" placeholder="Suche." >
+      				</form>				
+      			</div>-->
       
       	
       	
@@ -166,27 +200,58 @@
         
         <script src="{{ theme_url }}/js/classie.js"></script>
 		<script>
-			var menuLeft = document.getElementById( 'left-page' ),
-				bodyContainer = document.getElementById( 'right-page' ),
-				showLeftPush = document.getElementById( 'showLeftPush' ),
+			var overlay = document.getElementById( 'menu-overlay' ),
+				bodyContainer = document.getElementById( 'page' ),
+				showOverlay = document.getElementById( 'showOverlay' ),
 
 				body = document.body;			
 	
-			showLeftPush.onclick = function() {
+			showOverlay.onclick = function() {
 				classie.toggle( this, 'active' );
-				classie.toggle( bodyContainer, 'cbp-spmenu-push-toright' );
-				classie.toggle( menuLeft, 'cbp-spmenu-open' );
-				disableOther( 'showLeftPush' );
+				classie.toggle( bodyContainer, 'fixbody' );
+				classie.toggle( overlay, 'open-overlay' );
+				disableOther( 'showOverlay' );
 			};
 	
 
 			function disableOther( button ) {	
-				if( button !== 'showLeftPush' ) {
-					classie.toggle( showLeftPush, 'disabled' );
+				if( button !== 'showOverlay' ) {
+					classie.toggle( showOverlay, 'disabled' );
 				}
 				
 			}
 		</script>
+		<script>
+			var searchoverlay = document.getElementById( 'search-overlay' ),
+				bodyContainer = document.getElementById( 'page' ),
+				showSearchOverlay = document.getElementById( 'showSearchOverlay' );
+			
+	
+			showSearchOverlay.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( bodyContainer, 'fixbody' );
+				classie.toggle( searchoverlay, 'open-searchoverlay' );
+				
+				disableOther( 'showSearchOverlay' );
+			};
+	
+
+			function disableOther( button ) {	
+				if( button !== 'showSearchOverlay' ) {
+					classie.toggle( showOverlay, 'disabled' );
+				}
+				
+			}
+		</script>
+		
+		<script>
+			$('#closeSearchOverlay').on('click', function(){
+    		$('#search-overlay').removeClass('open-searchoverlay');
+    		$('#page').removeClass('fixbody');
+			});
+		
+		</script>
+		
 		<script>
 			function onSearch(form) {
     			form.action += form.querySelector('#searchfield').value;

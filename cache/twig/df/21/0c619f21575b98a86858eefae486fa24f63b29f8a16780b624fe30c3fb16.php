@@ -31,43 +31,7 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
       
       \t<input type=\"checkbox\" id=\"navbtn\">
       \t
-      \t<section id=\"left-page\">
-      \t\t
-      \t\t
-      \t\t<section id=\"sidebar\">
-      \t\t\t<!--<div class=\"sidepadding\">-->
-      \t\t\t
-      \t\t\t<div class=\"searchwrapper\">
-      \t\t\t\t<form method=\"POST\" action=\"";
-        // line 58
-        echo (isset($context["base_url_relative"]) ? $context["base_url_relative"] : null);
-        echo "/search/query:\" onsubmit=\"onSearch(this)\">     \t\t\t\t
-      \t\t\t\t\t<input id=\"searchfield\" type=\"text\" placeholder=\"Suche.\" >
-      \t\t\t\t</form>\t\t\t\t
-      \t\t\t</div>
-      \t\t
-      \t\t\t";
-        // line 64
-        echo "        \t\t";
-        $this->env->loadTemplate("partials/header.html.twig")->display($context);
-        // line 65
-        echo "        \t\t
-        \t\t
-      \t\t
-      \t\t\t<!--</div>-->
-      \t\t\t<div class=\"clearfix\"></div>
-      \t\t\t<div class=\"copywrapper\">
-      \t\t\t\t&copy; 2015 | <a href=\"http://zem.ch\" target=\"_blank\" alt=\"Zentrum elektronische Medien\">Zentrum elektronische Medien</a><br>
-      \t\t\t\tVersion: 2.0\t
-      \t\t\t</div>
-      \t\t</section>
-      \t\t
-      \t
-      \t</section>
-      \t
-      \t
-      \t
-      \t<section id=\"right-page\" class=\"cbp-spmenu-push\">
+      \t<section id=\"page\">
       \t
       \t
       \t\t<header id=\"header\">      \t\t\t
@@ -75,11 +39,11 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
       \t\t\t<div id=\"logo\">      \t\t\t
       \t\t\t</div> \t
       \t\t\t
-      \t\t\t<div class=\"clearfix\"></div>
+      \t\t\t
       \t\t\t
       \t\t\t<div id=\"title\">
       \t\t\t\t<h3 class=\"header-title\"><a href=\"";
-        // line 92
+        // line 62
         echo (isset($context["base_url_absolute"]) ? $context["base_url_absolute"] : null);
         echo "\">";
         echo $this->getAttribute($this->getAttribute((isset($context["config"]) ? $context["config"] : null), "site", array()), "title", array());
@@ -88,24 +52,18 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
       \t\t\t
       \t\t\t<a class=\"print\" href=\"javascript:window.print()\">
       \t\t\t<div id=\"print_icon\">
-      \t\t\t\t<div class=\"menutransform2\">
-            \t\t\t 
+      \t\t\t\t<div class=\"menutransform2\">            \t\t\t 
             \t\t</div>
       \t\t\t</div> 
-      \t\t\t</a> \t\t\t\t     \t
+      \t\t\t</a> 
       \t\t\t
-       \t\t\t<div id=\"showLeftPush\" class=\"menu\">
-       \t\t\t\t<label id=\"label\" for=\"navbtn\">
-       \t\t\t\t<div class=\"menutransform\">
-            \t\t\t<div class=\"linie top left\"></div>
-           \t\t\t\t<div class=\"linie top right\"></div>
-            \t\t\t<div class=\"linie mid left\"></div>
-            \t\t\t<div class=\"linie mid right\"></div>  
-            \t\t\t<div class=\"linie bottom left\"></div>
-            \t\t\t<div class=\"linie bottom right\"></div>  
-            \t\t</div> 
-            \t\t</label>
-        \t\t</div>   \t\t \t\t
+      \t\t\t<div id=\"showSearchOverlay\" class=\"search_icon\">
+      \t\t\t\t<div class=\"menutransform3\"> 
+      \t\t\t\t\t          \t\t\t 
+            \t\t</div>
+      \t\t\t</div> \t\t\t\t     \t
+      \t\t\t
+       \t\t\t   \t\t \t\t
       \t\t</header>
       \t\t
       \t\t<div class=\"clearfix\"></div>
@@ -114,55 +72,134 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
       \t\t\t<div class=\"padding\">
       \t\t
       \t\t\t";
-        // line 122
+        // line 86
         $this->displayBlock('content', $context, $blocks);
-        // line 123
+        // line 87
         echo "      \t\t
       \t\t\t</div>
       \t\t\t
       \t\t\t";
-        // line 126
+        // line 90
         $context["progress"] = $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "collection", array(0 => array("items" => array("@taxonomy.category" => "digame"), "order" => array("by" => "default", "dir" => "asc"))), "method");
-        // line 127
+        // line 91
         echo "      \t\t\t
       \t\t\t<div id=\"navigation\">
       \t\t\t
       \t\t\t\t";
-        // line 130
+        // line 94
         if ( !$this->getAttribute((isset($context["progress"]) ? $context["progress"] : null), "isFirst", array(0 => $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "path", array())), "method")) {
-            // line 131
+            // line 95
             echo "      \t\t\t\t<a class=\"nav nav-prev\" href=\"";
             echo $this->getAttribute($this->getAttribute((isset($context["progress"]) ? $context["progress"] : null), "nextSibling", array(0 => $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "path", array())), "method"), "url", array());
             echo "\"><i class=\"icon-navigation-arrows\">&#59237;</i></a>
       \t\t\t\t";
         }
-        // line 133
+        // line 97
         echo "      \t\t\t\t
       \t\t\t\t";
-        // line 134
+        // line 98
         if ( !$this->getAttribute((isset($context["progress"]) ? $context["progress"] : null), "isLast", array(0 => $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "path", array())), "method")) {
-            // line 135
+            // line 99
             echo "      \t\t\t\t<a class=\"nav nav-next\" href=\"";
             echo $this->getAttribute($this->getAttribute((isset($context["progress"]) ? $context["progress"] : null), "prevSibling", array(0 => $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "path", array())), "method"), "url", array());
             echo "\"><i class=\"icon-navigation-arrows\">&#59238;</i></a>
       \t\t\t\t";
         }
-        // line 137
+        // line 101
         echo "      \t\t\t\t
       \t\t\t</div>
       \t\t\t
       \t\t\t<div class=\"clearfix\"></div>
-      \t\t\t
-      \t\t\t
-      \t\t\t
-      \t\t\t
-      \t\t\t
+      \t\t\t  \t\t\t
       \t\t</section>
       \t\t
       \t\t<div class=\"clearfix\"></div>
       \t
       \t
       \t</section>
+      \t
+      \t<section id=\"menu-overlay\">
+      \t\t
+      \t\t<section id=\"menucontainer\">
+      \t\t
+      \t\t\t<div id=\"menu-navigation\">
+      \t\t\t\t
+      \t\t\t\t";
+        // line 120
+        echo "        \t\t\t";
+        $this->env->loadTemplate("partials/header.html.twig")->display($context);
+        // line 121
+        echo "        \t\t\t<div class=\"clearfix\"></div>
+      \t\t\t
+      \t\t\t
+      \t\t\t</div>
+      \t\t
+      \t\t
+      \t\t</section>    \t
+      \t
+      \t</section>
+      \t
+      \t
+      \t<section id=\"search-overlay\">
+      \t\t
+      \t\t<section id=\"searchcontainer\">
+      \t\t
+      \t\t
+      \t\t\t<div id=\"search-searchconatiner\">
+      \t\t\t\t
+      \t\t\t\t<form method=\"POST\" action=\"";
+        // line 139
+        echo (isset($context["base_url_relative"]) ? $context["base_url_relative"] : null);
+        echo "/search/query:\" onsubmit=\"onSearch(this)\">     \t\t\t\t
+      \t\t\t\t\t<input id=\"searchfield\" type=\"text\" placeholder=\"Suche...\" >
+      \t\t\t\t</form>
+      \t\t\t\t
+      \t\t\t</div>     \t\t\t    \t\t
+      \t\t
+      \t\t</section>
+      \t\t
+      \t\t<div id=\"closeSearchOverlay\" class=\"searchmenubutton\">
+       \t\t\t\t<div class=\"menutransform\">
+            \t\t<div class=\"linie top left\"></div>
+           \t\t\t<div class=\"linie top right\"></div> 
+            \t\t<div class=\"linie bottom left\"></div>
+            \t\t<div class=\"linie bottom right\"></div>  
+            \t</div> 
+            </div>
+            
+           
+      \t\t
+      \t
+      \t</section>
+      \t     \t
+      \t<div id=\"showOverlay\" class=\"menu\">
+       \t\t<label id=\"label\" for=\"navbtn\">
+       \t\t\t<div class=\"menutransform\">
+            \t\t<div class=\"linie top left\"></div>
+           \t\t\t<div class=\"linie top right\"></div>
+            \t\t<div class=\"linie mid left\"></div>
+            \t\t<div class=\"linie mid right\"></div>  
+            \t\t<div class=\"linie bottom left\"></div>
+            \t\t<div class=\"linie bottom right\"></div>  
+            \t</div> 
+            </label>
+        </div>
+        
+        
+      \t
+      \t<!--<div class=\"copywrapper\">
+      \t\t\t\t&copy; 2015 | <a href=\"http://zem.ch\" target=\"_blank\" alt=\"Zentrum elektronische Medien\">Zentrum elektronische Medien</a><br>
+      \t\t\t\tVersion: 2.0\t
+      \t\t\t</div>-->
+      \t\t\t
+\t\t<!--<div class=\"searchwrapper\">
+      \t\t\t\t<form method=\"POST\" action=\"";
+        // line 182
+        echo (isset($context["base_url_relative"]) ? $context["base_url_relative"] : null);
+        echo "/search/query:\" onsubmit=\"onSearch(this)\">     \t\t\t\t
+      \t\t\t\t\t<input id=\"searchfield\" type=\"text\" placeholder=\"Suche.\" >
+      \t\t\t\t</form>\t\t\t\t
+      \t\t\t</div>-->
       
       \t
       \t
@@ -173,43 +210,74 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
       \t\t     
 
         ";
-        // line 162
+        // line 196
         echo "        ";
-        // line 163
+        // line 197
         echo "        ";
-        // line 164
+        // line 198
         echo "        <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js\"></script>       
         <script src=\"";
-        // line 165
+        // line 199
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
         echo "/js/bootstrap.min.js\"></script>
         
         <script src=\"";
-        // line 167
+        // line 201
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
         echo "/js/classie.js\"></script>
 \t\t<script>
-\t\t\tvar menuLeft = document.getElementById( 'left-page' ),
-\t\t\t\tbodyContainer = document.getElementById( 'right-page' ),
-\t\t\t\tshowLeftPush = document.getElementById( 'showLeftPush' ),
+\t\t\tvar overlay = document.getElementById( 'menu-overlay' ),
+\t\t\t\tbodyContainer = document.getElementById( 'page' ),
+\t\t\t\tshowOverlay = document.getElementById( 'showOverlay' ),
 
 \t\t\t\tbody = document.body;\t\t\t
 \t
-\t\t\tshowLeftPush.onclick = function() {
+\t\t\tshowOverlay.onclick = function() {
 \t\t\t\tclassie.toggle( this, 'active' );
-\t\t\t\tclassie.toggle( bodyContainer, 'cbp-spmenu-push-toright' );
-\t\t\t\tclassie.toggle( menuLeft, 'cbp-spmenu-open' );
-\t\t\t\tdisableOther( 'showLeftPush' );
+\t\t\t\tclassie.toggle( bodyContainer, 'fixbody' );
+\t\t\t\tclassie.toggle( overlay, 'open-overlay' );
+\t\t\t\tdisableOther( 'showOverlay' );
 \t\t\t};
 \t
 
 \t\t\tfunction disableOther( button ) {\t
-\t\t\t\tif( button !== 'showLeftPush' ) {
-\t\t\t\t\tclassie.toggle( showLeftPush, 'disabled' );
+\t\t\t\tif( button !== 'showOverlay' ) {
+\t\t\t\t\tclassie.toggle( showOverlay, 'disabled' );
 \t\t\t\t}
 \t\t\t\t
 \t\t\t}
 \t\t</script>
+\t\t<script>
+\t\t\tvar searchoverlay = document.getElementById( 'search-overlay' ),
+\t\t\t\tbodyContainer = document.getElementById( 'page' ),
+\t\t\t\tshowSearchOverlay = document.getElementById( 'showSearchOverlay' );
+\t\t\t
+\t
+\t\t\tshowSearchOverlay.onclick = function() {
+\t\t\t\tclassie.toggle( this, 'active' );
+\t\t\t\tclassie.toggle( bodyContainer, 'fixbody' );
+\t\t\t\tclassie.toggle( searchoverlay, 'open-searchoverlay' );
+\t\t\t\t
+\t\t\t\tdisableOther( 'showSearchOverlay' );
+\t\t\t};
+\t
+
+\t\t\tfunction disableOther( button ) {\t
+\t\t\t\tif( button !== 'showSearchOverlay' ) {
+\t\t\t\t\tclassie.toggle( showOverlay, 'disabled' );
+\t\t\t\t}
+\t\t\t\t
+\t\t\t}
+\t\t</script>
+\t\t
+\t\t<script>
+\t\t\t\$('#closeSearchOverlay').on('click', function(){
+    \t\t\$('#search-overlay').removeClass('open-searchoverlay');
+    \t\t\$('#page').removeClass('fixbody');
+\t\t\t});
+\t\t
+\t\t</script>
+\t\t
 \t\t<script>
 \t\t\tfunction onSearch(form) {
     \t\t\tform.action += form.querySelector('#searchfield').value;
@@ -329,7 +397,7 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
         ";
     }
 
-    // line 122
+    // line 86
     public function block_content($context, array $blocks = array())
     {
     }
@@ -346,6 +414,6 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
 
     public function getDebugInfo()
     {
-        return array (  333 => 122,  325 => 40,  319 => 36,  315 => 35,  311 => 34,  307 => 33,  303 => 32,  299 => 31,  295 => 30,  291 => 29,  287 => 28,  281 => 25,  276 => 24,  270 => 21,  261 => 18,  255 => 16,  249 => 14,  246 => 13,  240 => 11,  234 => 9,  232 => 8,  227 => 5,  224 => 4,  189 => 167,  184 => 165,  181 => 164,  179 => 163,  177 => 162,  151 => 137,  145 => 135,  143 => 134,  140 => 133,  134 => 131,  132 => 130,  127 => 127,  125 => 126,  120 => 123,  118 => 122,  83 => 92,  54 => 65,  51 => 64,  43 => 58,  28 => 45,  26 => 4,  21 => 1,);
+        return array (  401 => 86,  393 => 40,  387 => 36,  383 => 35,  379 => 34,  375 => 33,  371 => 32,  367 => 31,  363 => 30,  359 => 29,  355 => 28,  349 => 25,  344 => 24,  338 => 21,  329 => 18,  323 => 16,  317 => 14,  314 => 13,  308 => 11,  302 => 9,  300 => 8,  295 => 5,  292 => 4,  226 => 201,  221 => 199,  218 => 198,  216 => 197,  214 => 196,  198 => 182,  152 => 139,  132 => 121,  129 => 120,  109 => 101,  103 => 99,  101 => 98,  98 => 97,  92 => 95,  90 => 94,  85 => 91,  83 => 90,  78 => 87,  76 => 86,  47 => 62,  28 => 45,  26 => 4,  21 => 1,);
     }
 }

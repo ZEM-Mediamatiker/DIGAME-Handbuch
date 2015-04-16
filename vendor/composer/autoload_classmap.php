@@ -71,6 +71,7 @@ return array(
     'Doctrine\\Common\\Cache\\RiakCache' => $vendorDir . '/doctrine/cache/lib/Doctrine/Common/Cache/RiakCache.php',
     'Doctrine\\Common\\Cache\\SQLite3Cache' => $vendorDir . '/doctrine/cache/lib/Doctrine/Common/Cache/SQLite3Cache.php',
     'Doctrine\\Common\\Cache\\Version' => $vendorDir . '/doctrine/cache/lib/Doctrine/Common/Cache/Version.php',
+    'Doctrine\\Common\\Cache\\VoidCache' => $vendorDir . '/doctrine/cache/lib/Doctrine/Common/Cache/VoidCache.php',
     'Doctrine\\Common\\Cache\\WinCacheCache' => $vendorDir . '/doctrine/cache/lib/Doctrine/Common/Cache/WinCacheCache.php',
     'Doctrine\\Common\\Cache\\XcacheCache' => $vendorDir . '/doctrine/cache/lib/Doctrine/Common/Cache/XcacheCache.php',
     'Doctrine\\Common\\Cache\\ZendDataCache' => $vendorDir . '/doctrine/cache/lib/Doctrine/Common/Cache/ZendDataCache.php',
