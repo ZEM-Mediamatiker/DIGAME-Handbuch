@@ -137,7 +137,7 @@
       			<div id="search-searchconatiner">
       				
       				<form method="POST" action="{{ base_url_relative }}/search/query:" onsubmit="onSearch(this)">     				
-      					<input id="searchfield" type="text" placeholder="Suche..." >
+      					<input id="searchfield" type="text" placeholder="Suche...">
       				</form>
       				
       			</div>     			    		
@@ -231,6 +231,7 @@
 				classie.toggle( this, 'active' );
 				classie.toggle( bodyContainer, 'fixbody' );
 				classie.toggle( searchoverlay, 'open-searchoverlay' );
+				document.getElementsByTagName("searchfield")[0].setAttribute('autofocus','autofocus');
 				
 				disableOther( 'showSearchOverlay' );
 			};

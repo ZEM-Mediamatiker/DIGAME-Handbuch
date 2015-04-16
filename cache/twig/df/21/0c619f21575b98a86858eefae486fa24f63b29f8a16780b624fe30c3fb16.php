@@ -151,7 +151,7 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
         // line 139
         echo (isset($context["base_url_relative"]) ? $context["base_url_relative"] : null);
         echo "/search/query:\" onsubmit=\"onSearch(this)\">     \t\t\t\t
-      \t\t\t\t\t<input id=\"searchfield\" type=\"text\" placeholder=\"Suche...\" >
+      \t\t\t\t\t<input id=\"searchfield\" type=\"text\" placeholder=\"Suche...\">
       \t\t\t\t</form>
       \t\t\t\t
       \t\t\t</div>     \t\t\t    \t\t
@@ -257,6 +257,7 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
 \t\t\t\tclassie.toggle( this, 'active' );
 \t\t\t\tclassie.toggle( bodyContainer, 'fixbody' );
 \t\t\t\tclassie.toggle( searchoverlay, 'open-searchoverlay' );
+\t\t\t\tdocument.getElementsByTagName(\"searchfield\")[0].setAttribute('autofocus','autofocus');
 \t\t\t\t
 \t\t\t\tdisableOther( 'showSearchOverlay' );
 \t\t\t};
@@ -414,6 +415,6 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
 
     public function getDebugInfo()
     {
-        return array (  401 => 86,  393 => 40,  387 => 36,  383 => 35,  379 => 34,  375 => 33,  371 => 32,  367 => 31,  363 => 30,  359 => 29,  355 => 28,  349 => 25,  344 => 24,  338 => 21,  329 => 18,  323 => 16,  317 => 14,  314 => 13,  308 => 11,  302 => 9,  300 => 8,  295 => 5,  292 => 4,  226 => 201,  221 => 199,  218 => 198,  216 => 197,  214 => 196,  198 => 182,  152 => 139,  132 => 121,  129 => 120,  109 => 101,  103 => 99,  101 => 98,  98 => 97,  92 => 95,  90 => 94,  85 => 91,  83 => 90,  78 => 87,  76 => 86,  47 => 62,  28 => 45,  26 => 4,  21 => 1,);
+        return array (  402 => 86,  394 => 40,  388 => 36,  384 => 35,  380 => 34,  376 => 33,  372 => 32,  368 => 31,  364 => 30,  360 => 29,  356 => 28,  350 => 25,  345 => 24,  339 => 21,  330 => 18,  324 => 16,  318 => 14,  315 => 13,  309 => 11,  303 => 9,  301 => 8,  296 => 5,  293 => 4,  226 => 201,  221 => 199,  218 => 198,  216 => 197,  214 => 196,  198 => 182,  152 => 139,  132 => 121,  129 => 120,  109 => 101,  103 => 99,  101 => 98,  98 => 97,  92 => 95,  90 => 94,  85 => 91,  83 => 90,  78 => 87,  76 => 86,  47 => 62,  28 => 45,  26 => 4,  21 => 1,);
     }
 }
