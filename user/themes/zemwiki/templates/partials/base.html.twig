@@ -133,11 +133,13 @@
       		
       		<section id="searchcontainer">
       		
+      			<p class="searchdescription">Geben Sie einen Suchbegriff ein</p>      		
       		
       			<div id="search-searchconatiner">
       				
       				<form method="POST" action="{{ base_url_relative }}/search/query:" onsubmit="onSearch(this)">     				
-      					<input id="searchfield" type="text" placeholder="Suche...">
+      					<input id="searchfield" type="text" placeholder="Suche..." required>
+      					<input type="submit" value=" ">
       				</form>
       				
       			</div>     			    		
@@ -231,7 +233,6 @@
 				classie.toggle( this, 'active' );
 				classie.toggle( bodyContainer, 'fixbody' );
 				classie.toggle( searchoverlay, 'open-searchoverlay' );
-				document.getElementsByTagName("searchfield")[0].setAttribute('autofocus','autofocus');
 				
 				disableOther( 'showSearchOverlay' );
 			};
@@ -246,6 +247,9 @@
 		</script>
 		
 		<script>
+			$('#showSearchOverlay').on('click', function(){
+				$('#searchfield').focus();
+			});
 			$('#closeSearchOverlay').on('click', function(){
     		$('#search-overlay').removeClass('open-searchoverlay');
     		$('#page').removeClass('fixbody');
@@ -258,6 +262,6 @@
     			form.action += form.querySelector('#searchfield').value;
 			}
 		</script>
-        
+		        
     </body>
 </html>

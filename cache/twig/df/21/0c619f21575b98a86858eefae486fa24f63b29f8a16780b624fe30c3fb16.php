@@ -144,14 +144,16 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
       \t\t
       \t\t<section id=\"searchcontainer\">
       \t\t
+      \t\t\t<p class=\"searchdescription\">Geben Sie einen Suchbegriff ein</p>      \t\t
       \t\t
       \t\t\t<div id=\"search-searchconatiner\">
       \t\t\t\t
       \t\t\t\t<form method=\"POST\" action=\"";
-        // line 139
+        // line 140
         echo (isset($context["base_url_relative"]) ? $context["base_url_relative"] : null);
         echo "/search/query:\" onsubmit=\"onSearch(this)\">     \t\t\t\t
-      \t\t\t\t\t<input id=\"searchfield\" type=\"text\" placeholder=\"Suche...\">
+      \t\t\t\t\t<input id=\"searchfield\" type=\"text\" placeholder=\"Suche...\" required>
+      \t\t\t\t\t<input type=\"submit\" value=\" \">
       \t\t\t\t</form>
       \t\t\t\t
       \t\t\t</div>     \t\t\t    \t\t
@@ -194,7 +196,7 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
       \t\t\t
 \t\t<!--<div class=\"searchwrapper\">
       \t\t\t\t<form method=\"POST\" action=\"";
-        // line 182
+        // line 184
         echo (isset($context["base_url_relative"]) ? $context["base_url_relative"] : null);
         echo "/search/query:\" onsubmit=\"onSearch(this)\">     \t\t\t\t
       \t\t\t\t\t<input id=\"searchfield\" type=\"text\" placeholder=\"Suche.\" >
@@ -210,19 +212,19 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
       \t\t     
 
         ";
-        // line 196
-        echo "        ";
-        // line 197
-        echo "        ";
         // line 198
+        echo "        ";
+        // line 199
+        echo "        ";
+        // line 200
         echo "        <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js\"></script>       
         <script src=\"";
-        // line 199
+        // line 201
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
         echo "/js/bootstrap.min.js\"></script>
         
         <script src=\"";
-        // line 201
+        // line 203
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
         echo "/js/classie.js\"></script>
 \t\t<script>
@@ -257,7 +259,6 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
 \t\t\t\tclassie.toggle( this, 'active' );
 \t\t\t\tclassie.toggle( bodyContainer, 'fixbody' );
 \t\t\t\tclassie.toggle( searchoverlay, 'open-searchoverlay' );
-\t\t\t\tdocument.getElementsByTagName(\"searchfield\")[0].setAttribute('autofocus','autofocus');
 \t\t\t\t
 \t\t\t\tdisableOther( 'showSearchOverlay' );
 \t\t\t};
@@ -272,6 +273,9 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
 \t\t</script>
 \t\t
 \t\t<script>
+\t\t\t\$('#showSearchOverlay').on('click', function(){
+\t\t\t\t\$('#searchfield').focus();
+\t\t\t});
 \t\t\t\$('#closeSearchOverlay').on('click', function(){
     \t\t\$('#search-overlay').removeClass('open-searchoverlay');
     \t\t\$('#page').removeClass('fixbody');
@@ -284,7 +288,7 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
     \t\t\tform.action += form.querySelector('#searchfield').value;
 \t\t\t}
 \t\t</script>
-        
+\t\t        
     </body>
 </html>";
     }
@@ -415,6 +419,6 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
 
     public function getDebugInfo()
     {
-        return array (  402 => 86,  394 => 40,  388 => 36,  384 => 35,  380 => 34,  376 => 33,  372 => 32,  368 => 31,  364 => 30,  360 => 29,  356 => 28,  350 => 25,  345 => 24,  339 => 21,  330 => 18,  324 => 16,  318 => 14,  315 => 13,  309 => 11,  303 => 9,  301 => 8,  296 => 5,  293 => 4,  226 => 201,  221 => 199,  218 => 198,  216 => 197,  214 => 196,  198 => 182,  152 => 139,  132 => 121,  129 => 120,  109 => 101,  103 => 99,  101 => 98,  98 => 97,  92 => 95,  90 => 94,  85 => 91,  83 => 90,  78 => 87,  76 => 86,  47 => 62,  28 => 45,  26 => 4,  21 => 1,);
+        return array (  406 => 86,  398 => 40,  392 => 36,  388 => 35,  384 => 34,  380 => 33,  376 => 32,  372 => 31,  368 => 30,  364 => 29,  360 => 28,  354 => 25,  349 => 24,  343 => 21,  334 => 18,  328 => 16,  322 => 14,  319 => 13,  313 => 11,  307 => 9,  305 => 8,  300 => 5,  297 => 4,  228 => 203,  223 => 201,  220 => 200,  218 => 199,  216 => 198,  200 => 184,  153 => 140,  132 => 121,  129 => 120,  109 => 101,  103 => 99,  101 => 98,  98 => 97,  92 => 95,  90 => 94,  85 => 91,  83 => 90,  78 => 87,  76 => 86,  47 => 62,  28 => 45,  26 => 4,  21 => 1,);
     }
 }
