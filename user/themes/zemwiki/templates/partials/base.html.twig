@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
     <head>
-        {% block head %}
-        <meta charset="utf-8">
+		{% block head %}
+		<meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         {% if header.description %}
@@ -84,8 +84,15 @@
       			<div class="padding">
       		
       			{% block content %}{% endblock %}
+      			
+      			<div class="copywrapper">
+      			&copy; 2015 | <a href="http://zem.ch" target="_blank" alt="Zentrum elektronische Medien">Zentrum elektronische Medien</a><br>
+      			Version: 2.0	
+      			</div>
       		
       			</div>
+      			
+      			
       			
       			{% set progress = page.collection({'items':{'@taxonomy.category': 'digame'},'order': {'by': 'default', 'dir': 'asc'}}) %}
       			
@@ -106,7 +113,8 @@
       		</section>
       		
       		<div class="clearfix"></div>
-      	
+      		
+      		      	
       	
       	</section>
       	
@@ -138,7 +146,7 @@
       			<div id="search-searchconatiner">
       				
       				<form method="POST" action="{{ base_url_relative }}/search/query:" onsubmit="onSearch(this)">     				
-      					<input id="searchfield" type="text" placeholder="Suche..." required>
+      					<input id="searchfield" type="text" placeholder="Suche..." autocomplete="off" required>
       					<input type="submit" value=" ">
       				</form>
       				
@@ -173,25 +181,7 @@
             </label>
         </div>
         
-        
-      	
-      	<!--<div class="copywrapper">
-      				&copy; 2015 | <a href="http://zem.ch" target="_blank" alt="Zentrum elektronische Medien">Zentrum elektronische Medien</a><br>
-      				Version: 2.0	
-      			</div>-->
-      			
-		<!--<div class="searchwrapper">
-      				<form method="POST" action="{{ base_url_relative }}/search/query:" onsubmit="onSearch(this)">     				
-      					<input id="searchfield" type="text" placeholder="Suche." >
-      				</form>				
-      			</div>-->
-      
-      	
-      	
-      	
-      	
-      		
-      	
+
       		     
 
         {# Bootstrap core JavaScript #}
@@ -199,9 +189,10 @@
         {# Placed at the end of the document so the pages load faster #}
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>       
         <script src="{{ theme_url }}/js/bootstrap.min.js"></script>
-        
+        <script src="{{ theme_url }}/js/mousetrap.min.js"></script>
+        <script src="{{ theme_url }}/js/scripts.js"></script>
         <script src="{{ theme_url }}/js/classie.js"></script>
-		<script>
+		<!--<script>
 			var overlay = document.getElementById( 'menu-overlay' ),
 				bodyContainer = document.getElementById( 'page' ),
 				showOverlay = document.getElementById( 'showOverlay' ),
@@ -261,7 +252,41 @@
 			function onSearch(form) {
     			form.action += form.querySelector('#searchfield').value;
 			}
+		</script>-->
+		
+		
+		<script>
+			Mousetrap.bind('s', function(e){
+				$('#search-overlay').addClass('open-searchoverlay');
+				$('#searchfield').focus();
+			});
+			
+			Mousetrap.bind('m', function(e){
+				$('#page').addClass('fixbody');
+				$('#menu-overlay').addClass('open-overlay');
+				$('#navbtn').prop('checked', true);
+			});
+			Mousetrap.bind('p', function(e){
+				window.print();
+			});	
+			Mousetrap.bind('right', function(e){
+				window.location.href = "{{ progress.prevSibling(page.path).url }}";
+			});	
+			Mousetrap.bind('left', function(e){
+				window.location.href = "{{ progress.nextSibling(page.path).url }}";
+			});
+			Mousetrap.bind('esc', function(e){
+				$('#page').removeClass('fixbody');
+				$('#menu-overlay').removeClass('open-overlay');
+				$('#navbtn').prop('checked', false);
+				$('#search-overlay').removeClass('open-searchoverlay');
+			});
+			
+		
 		</script>
+		
+		
+		
 		        
     </body>
 </html>

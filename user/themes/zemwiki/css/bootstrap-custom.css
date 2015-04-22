@@ -18,11 +18,12 @@ textarea:focus, input:focus{
 }
 
 
+
 #menu-overlay{
 	position: absolute;
 	width: 100%;
 	z-index: 110;
-	background: rgba(0,0,0,0.85);
+	background: rgba(0,0,0,0.89);
 	top: 0px;
   	visibility:hidden;
   	opacity:0;
@@ -31,10 +32,16 @@ textarea:focus, input:focus{
 }
 
 #menucontainer{
-	padding: 20px;
-	margin: 20px 10%;
+	padding: 50px;
 	/*background: rgba(255,255,255,1);*/
 	z-index: 121;
+	width: 500px;
+	margin: 0 auto;
+}
+
+#menu-navigation li{
+	line-height: 30px;
+	text-align: center;
 }
 
 #menu-navigation{
@@ -42,42 +49,77 @@ textarea:focus, input:focus{
 }
 
 #menu-navigation ol {
-    counter-reset: item;
+    /*counter-reset: item;*/
     /*background: url(../images/layout/nav_line.png);*/
+    padding: 0;
+    margin: 20px 0px;
 }
 
 #menu-navigation ol li {
     display: block;
     position: relative;
-    line-height: 50px;
+    /*background: purple;*/
+    margin: 50px 0px;
 }
+
+/*#menu-navigation ol li:first-child {
+	margin: 20px 0px 5px 0px;
+}*/
 	
-#menu-navigation ol li:before {
+/*#menu-navigation ol li:before {
 	color: #afafaf;
 	font-size: 14px;
     content: counters(item, ".")".";
     counter-increment: item;
     position: absolute;
     margin-right: 100%;
-    right: 5px; /* Abstand zwischen Nummer und Text */
-}
+    right: 5px; Abstand zwischen Nummer und Text 
+}*/
 
 #menu-navigation ol li a {
-	margin: -15px 0px -17px -100%;
-    padding: 17px 0px 17px 100%;
-    letter-spacing: 1.2px;
-    font-size: 16px;
-	color: #838383;
+	margin: 0;
+    padding: 0;
+	color: rgba(255,255,255,1);
 	transition: 0.2s;
+	font-family: "Raleway","Helvetica","Tahoma","Geneva","Arial",sans-serif;
+	font-size: 2em;
+	font-weight: 500;
+	text-transform: ;
 }
 
 #menu-navigation ol li a:hover{
-	color: rgb(60,60,60);	
+	text-decoration: none;
+	color: rgba(255,255,255,1);
 }
 
+/*#menu-navigation ol li:first-child a{
+	color: white;
+}*/
+
 #menu-navigation ol li ol {
-	background: none;
+	margin: 0px;
 }
+
+#menu-navigation ol li ol li {
+	/*background: red !important;*/
+	margin: 0px;
+}
+
+#menu-navigation ol li ol li a {
+	font-size: 1.5em;
+	font-family: "ralewaylight","Helvetica","Tahoma","Geneva","Arial",sans-serif;
+	color: rgba(255,255,255,0.5);
+	text-transform: none;
+}
+
+#menu-navigation ol li ol li ol li {
+	/*background: green !important;*/
+}
+
+#menu-navigation ol li ol li ol li a {
+	/*font-size: 1em;*/
+}
+
 
 .fixbody{
 	overflow: hidden;
@@ -117,7 +159,7 @@ textarea:focus, input:focus{
 	width: 100%;
 	height: 100%;
 	z-index: 120;
-	background: rgba(0,0,0,0.85);
+	background: rgba(0,0,0,0.89);
 	top: 0px;
   	visibility:hidden;
   	opacity:0;
@@ -165,6 +207,7 @@ input[type=submit] {
     -webkit-border-radius: 5px;
     border-radius: 5px; 
     margin-top: 24px;
+    transition:0.2s ease;
 }
 
 input[type=submit]:hover{
@@ -231,6 +274,20 @@ input[type=submit]:hover{
 		-ms-transform: translate(1px, -2px) rotate(-45deg) scaleX(1.25);
 		width: 50%;
 	}
+	
+	
+	.copywrapper{
+	margin: 0 auto;
+	/*width: 300px;*/
+	bottom: 0px;
+	padding: 25px 0px;
+	text-align: center;
+	color: rgba(131,131,131,0.3);
+	}
+
+	.copywrapper a{
+		color: rgba(131,131,131,0.3);
+	}
 
 
 
@@ -250,12 +307,12 @@ input[type=submit]:hover{
 		+ GENERAL +
 --------------------------------------------------------------*/
 
-/*@media print  
+@media print  
 {
     img{
         page-break-inside: avoid;
     }
-}*/
+}
 
 html{
 	height: 100%;
@@ -382,7 +439,7 @@ header{
 }
 	
 #title h3{
-	padding: 0px 70px 0px 40px;
+	/*padding: 0px 70px 0px 40px;*/
 }
 	
 #title h3 a{
@@ -394,6 +451,7 @@ header{
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
+	white-space:nowrap;
 }
 
 
@@ -620,23 +678,6 @@ header{
     background: rgba(255,255,255,1);
 }
 
-
-/*	Alle Formatierungen im Zusammenhang mit der Sidebar / Navigationsbar. */
-
-
-
-.copywrapper{
-	width: 300px;
-	background: red;
-	bottom: 0px;
-	background: rgba(255,255,255,1);
-	padding: 15px 15px 15px 25px;
-	text-align: center;
-}
-
-.copywrapper a{
-	color: #838383;
-}
 
 /*	Alle Formatierungen im Zusammenhang mit dem Hauptbereich / Body. */
 
@@ -865,18 +906,19 @@ header{
 	#title{
 		position: relative;
 		padding: 0;
-		float: none;
+		float: left;
 		margin: 0 auto;
 		display: block;
-    	margin-top: -65px;
+    	margin-top: -5px;
+    	white-space:nowrap;
 	}
 	
 	#title h3{
-		padding: 0px 70px 0px 40px;
+		/*padding: 0px 70px 0px 40px;*/
 	}
 	
 	#title h3 a{
-		text-align: center;
+		text-align: left;
 		margin: 0 auto;
 		margin-left: auto;
 		margin-right: auto;
@@ -965,44 +1007,33 @@ header{
 		transition: 0.2s;
 	}
 	
+	h1{
+		font-size: 25px;
+		letter-spacing: -1px;
+	}
+	
 	#title{
 		position: relative;
 		padding: 0;
-		float: none;
 		margin: 0 auto;
 		display: block;
-    	margin-top: -65px;
+    	margin-top: -5px;
 	}
 	
 	#title h3{
-		padding: 0px 70px 0px 40px;
+		/*padding: 0px 70px 0px 40px;*/
 	}
 	
 	#title h3 a{
-		text-align: center;
 		margin: 0 auto;
 		margin-left: auto;
 		margin-right: auto;
 		display: block;
 	}
 	
-	/*.menu{
-		float: right;
-   		position: fixed;
-    	z-index: 100;
-    	top: 0;
-    	right: 0px;
-    	padding: 10px;
-    	padding-top: 7px;
-    	display: inline;  
-	}*/
-	
-	
 	.menutransform2{
 		display: none;
-	}
-	
-	
+	}	
 	
 	.menu_line{
    		width: 45px;
@@ -1011,13 +1042,6 @@ header{
     	background: rgb(87, 87, 87);
     	transition: 0.2s;
 }
-	
-	#content{
-		/*top: 60px;*/
-		/*position: fixed;
-		height: 100%;
-		width: 100%;*/
-	}		
 		
 	table, thead, tbody, th, td, tr { 
 		/*display: block; */
@@ -1185,6 +1209,7 @@ blockquote > blockquote > blockquote > blockquote > blockquote > blockquote > p 
 		+ WEBFONTS +
 --------------------------------------------------------------*/
 
+/*@import url(http://fonts.googleapis.com/css?family=Raleway:200,100);*/
 
 @font-face {
   font-family: 'Montserrat';
@@ -1209,6 +1234,32 @@ blockquote > blockquote > blockquote > blockquote > blockquote > blockquote > p 
   font-style: normal;
   font-weight: 600;
   src: local('Raleway SemiBold'), local('Raleway-SemiBold'), url(http://fonts.gstatic.com/s/raleway/v8/xkvoNo9fC8O2RDydKj12b73hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'ralewayextralight';
+    src: url('../fonts/raleway-extralight-webfont.eot');
+    src: url('../fonts/raleway-extralight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-extralight-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-extralight-webfont.woff') format('woff'),
+         url('../fonts/raleway-extralight-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-extralight-webfont.svg#ralewayextralight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('../fonts/raleway-light-webfont.eot');
+    src: url('../fonts/raleway-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-light-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-light-webfont.woff') format('woff'),
+         url('../fonts/raleway-light-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-light-webfont.svg#ralewaylight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 @font-face {
