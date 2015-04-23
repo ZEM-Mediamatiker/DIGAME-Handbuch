@@ -13,5 +13,5 @@ visible: true
 ---
 
 
-## Funktionen Bearbeiten-Bereich
-***
+# Funktionen Bearbeiten-Bereich
+###Im folgenden Abschnitt finden Sie alle Funktionen aus dem Bearbeiten-Bereich von DIGAME im Detail erklärt.

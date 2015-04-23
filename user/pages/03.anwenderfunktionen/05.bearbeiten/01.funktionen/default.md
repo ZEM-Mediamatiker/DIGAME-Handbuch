@@ -1,5 +1,5 @@
 ---
-title: Bearbeiten
+title: Funktionen
 menu: Funktionen
 description: Your page description goes here
 keywords: [1,2]

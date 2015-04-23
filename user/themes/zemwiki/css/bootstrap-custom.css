@@ -17,8 +17,6 @@ textarea:focus, input:focus{
     outline: 0;
 }
 
-
-
 #menu-overlay{
 	position: absolute;
 	width: 100%;
@@ -28,29 +26,22 @@ textarea:focus, input:focus{
   	visibility:hidden;
   	opacity:0;
   	transition:visibility 0s ease 0.3s,opacity 0.3s ease;
-	
+  	overflow: hidden;
+  	bottom: 0px;	
 }
 
 #menucontainer{
-	padding: 50px;
-	/*background: rgba(255,255,255,1);*/
+	padding: 50px 0px;
 	z-index: 121;
-	width: 500px;
 	margin: 0 auto;
 }
 
 #menu-navigation li{
-	line-height: 30px;
+	line-height: 45px;
 	text-align: center;
 }
 
-#menu-navigation{
-	/*overflow-y: scroll;*/
-}
-
 #menu-navigation ol {
-    /*counter-reset: item;*/
-    /*background: url(../images/layout/nav_line.png);*/
     padding: 0;
     margin: 20px 0px;
 }
@@ -92,16 +83,11 @@ textarea:focus, input:focus{
 	color: rgba(255,255,255,1);
 }
 
-/*#menu-navigation ol li:first-child a{
-	color: white;
-}*/
-
 #menu-navigation ol li ol {
 	margin: 0px;
 }
 
 #menu-navigation ol li ol li {
-	/*background: red !important;*/
 	margin: 0px;
 }
 
@@ -112,25 +98,11 @@ textarea:focus, input:focus{
 	text-transform: none;
 }
 
-#menu-navigation ol li ol li ol li {
-	/*background: green !important;*/
-}
-
-#menu-navigation ol li ol li ol li a {
-	/*font-size: 1em;*/
-}
-
-
-.fixbody{
-	overflow: hidden;
-	position: fixed;
-	
-}
-
 .open-overlay{
   	visibility:visible !important;
 	opacity: 1!important;
 	transition-delay: 0s !important;
+	bottom: initial !important;
 }
 
 .overlaylogo{
@@ -152,7 +124,6 @@ textarea:focus, input:focus{
 	margin: 0px 0px -5px;
 }
 
-
 #search-overlay{
 	position: fixed;
 	overflow: hidden;
@@ -163,14 +134,11 @@ textarea:focus, input:focus{
 	top: 0px;
   	visibility:hidden;
   	opacity:0;
-  	transition:visibility 0s ease 0.3s,opacity 0.3s ease;
-	
+  	transition:visibility 0s ease 0.3s,opacity 0.3s ease;	
 }
 
 #searchcontainer{
 	padding: 20px;
-	/*margin: 70px 10%;*/
-	/*background: rgba(255,255,255,1);*/
 	z-index: 121;
 	width: 1000px;
 	margin: 0 auto;
@@ -188,8 +156,6 @@ textarea:focus, input:focus{
 	width: 80%;
 	float: left;
 	background: rgba(255,255,255,0);
-	/*padding: 15px 15px 15px 0px;*/
-	/*border-bottom: 1px solid rgb(255,255,255);*/
 	font-size: 80px;
 	color: rgba(255,255,255,1);
 	text-transform: uppercase;
@@ -214,7 +180,6 @@ input[type=submit]:hover{
 	background: rgba(255,255,255,0.9) url(../images/layout/search.svg) no-repeat center center;
 }
 
-
 .searchwrapper{
 	width: 300px;
 	height: 80px;	
@@ -234,74 +199,69 @@ input[type=submit]:hover{
     cursor: pointer;
 }
 
-	.searchmenubutton .menutransform .linie.top.left {
-		background: rgba(255,255,255,1);
-		transform: translate(1px, 2px) rotate(45deg) scaleX(1.25);
-		-o-transform: translate(1px, 2px) rotate(45deg) scaleX(1.25);
-		-webkit-transform: translate(1px, 2px) rotate(45deg) scaleX(1.25);
-		-moz-transform: translate(1px, 2px) rotate(45deg) scaleX(1.25);
-		-ms-transform: translate(1px, 2px) rotate(45deg) scaleX(1.25);
-		width: 50%;
-	}
+.searchmenubutton .menutransform .linie.top.left {
+	background: rgba(255,255,255,1);
+	transform: translate(1px, 2px) rotate(45deg) scaleX(1.25);
+	-o-transform: translate(1px, 2px) rotate(45deg) scaleX(1.25);
+	-webkit-transform: translate(1px, 2px) rotate(45deg) scaleX(1.25);
+	-moz-transform: translate(1px, 2px) rotate(45deg) scaleX(1.25);
+	-ms-transform: translate(1px, 2px) rotate(45deg) scaleX(1.25);
+	width: 50%;
+}
 
-	.searchmenubutton .menutransform .linie.top.right{
-		background: rgba(255,255,255,1);
-		transform: translate(0px, 2px) rotate(-45deg) scaleX(1.25);
-		-o-transform: translate(0px, 2px) rotate(-45deg) scaleX(1.25);
-		-webkit-transform: translate(0px, 2px) rotate(-45deg) scaleX(1.25);
-		-moz-transform: translate(0px, 2px) rotate(-45deg) scaleX(1.25);
-		-ms-transform: translate(0px, 2px) rotate(-45deg) scaleX(1.25);
-		width: 50%;
-	}
+.searchmenubutton .menutransform .linie.top.right{
+	background: rgba(255,255,255,1);
+	transform: translate(0px, 2px) rotate(-45deg) scaleX(1.25);
+	-o-transform: translate(0px, 2px) rotate(-45deg) scaleX(1.25);
+	-webkit-transform: translate(0px, 2px) rotate(-45deg) scaleX(1.25);
+	-moz-transform: translate(0px, 2px) rotate(-45deg) scaleX(1.25);
+	-ms-transform: translate(0px, 2px) rotate(-45deg) scaleX(1.25);
+	width: 50%;
+}	
 	
+.searchmenubutton .menutransform .linie.bottom.right{
+	background: rgba(255,255,255,1);
+	transform: translate(0px, -2px) rotate(45deg) scaleX(1.25);
+	-o-transform: translate(0px, -2px) rotate(45deg) scaleX(1.25);
+	-webkit-transform: translate(0px, -2px) rotate(45deg) scaleX(1.25);
+	-moz-transform: translate(0px, -2px) rotate(45deg) scaleX(1.25);
+	-ms-transform: translate(0px, -2px) rotate(45deg) scaleX(1.25);
+	width: 50%;
+}
 	
-	.searchmenubutton .menutransform .linie.bottom.right{
-		background: rgba(255,255,255,1);
-		transform: translate(0px, -2px) rotate(45deg) scaleX(1.25);
-		-o-transform: translate(0px, -2px) rotate(45deg) scaleX(1.25);
-		-webkit-transform: translate(0px, -2px) rotate(45deg) scaleX(1.25);
-		-moz-transform: translate(0px, -2px) rotate(45deg) scaleX(1.25);
-		-ms-transform: translate(0px, -2px) rotate(45deg) scaleX(1.25);
-		width: 50%;
-	}
+.searchmenubutton .menutransform .linie.bottom.left{
+	background: rgba(255,255,255,1);
+	transform: translate(1px, -2px) rotate(-45deg) scaleX(1.25);
+	-o-transform: translate(1px, -2px) rotate(-45deg) scaleX(1.25);
+	-webkit-transform: translate(1px, -2px) rotate(-45deg) scaleX(1.25);
+	-moz-transform: translate(1px, -2px) rotate(-45deg) scaleX(1.25);
+	-ms-transform: translate(1px, -2px) rotate(-45deg) scaleX(1.25);
+	width: 50%;
+}	
 	
-	.searchmenubutton .menutransform .linie.bottom.left{
-		background: rgba(255,255,255,1);
-		transform: translate(1px, -2px) rotate(-45deg) scaleX(1.25);
-		-o-transform: translate(1px, -2px) rotate(-45deg) scaleX(1.25);
-		-webkit-transform: translate(1px, -2px) rotate(-45deg) scaleX(1.25);
-		-moz-transform: translate(1px, -2px) rotate(-45deg) scaleX(1.25);
-		-ms-transform: translate(1px, -2px) rotate(-45deg) scaleX(1.25);
-		width: 50%;
-	}
-	
-	
-	.copywrapper{
+.copywrapper{
 	margin: 0 auto;
-	/*width: 300px;*/
 	bottom: 0px;
 	padding: 25px 0px;
 	text-align: center;
 	color: rgba(131,131,131,0.3);
-	}
+}
 
-	.copywrapper a{
-		color: rgba(131,131,131,0.3);
-	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.copywrapper a{
+	color: rgba(131,131,131,0.3);
+}	
+	
+.printmenubutton{
+	position: fixed;
+    z-index: 126;
+   	width: 60px;
+    height: 60px;
+    top: 0px;
+    left: 0px;
+    padding: 22px 20px;
+    display: inline;
+    cursor: pointer;
+}
 
 /* -------------------------------------------------------------
 		+ GENERAL +
@@ -319,7 +279,6 @@ html{
 }
 
 body{
-	/*height: 100%;*/
 	font-family: "Raleway","Helvetica","Tahoma","Geneva","Arial",sans-serif;
 	font-weight: 400;
 	color: #838383;
@@ -390,10 +349,9 @@ p {
 
 
 /* -------------------------------------------------------------
-		+ LAYOUT +
+		+ PAGE +
 --------------------------------------------------------------*/
 
-/*	Alle Formatierungen im Zusammenhang mit dem Header. */
 
 #page{
 	/*overflow-y: auto;*/
@@ -401,6 +359,16 @@ p {
 	background: rgb(255,255,255);
 	transition: 0.2s ease;
 }
+
+.fixbody{
+	overflow: hidden;
+	position: fixed;
+	
+}
+
+/* -------------------------------------------------------------
+		+ HEADER +
+--------------------------------------------------------------*/
 
 
 header{
@@ -434,12 +402,8 @@ header{
 	float: none;
 	margin: 0 auto;
 	display: block;
-	width: 30%;
 	margin: 0 auto;
-}
-	
-#title h3{
-	/*padding: 0px 70px 0px 40px;*/
+	width: 30%;
 }
 	
 #title h3 a{
@@ -516,7 +480,6 @@ header{
 	transition: background 0.5s linear;
 }
 
-
 .smalllinie {
 	height: 1px;
 	position: absolute;
@@ -540,9 +503,6 @@ header{
 	opacity: 0.3;
 }
 
-
-
-
 /*	Alle Formatierungen im Zusammenhang mit dem Navigationsbutton. */
 
 .menu{
@@ -552,8 +512,6 @@ header{
     height: 80px;
     top: 0px;
     right: 0px;
-    /*padding: 10px;
-    padding-top: 15px;*/
     display: inline;
     background: #484848;
 }
@@ -566,11 +524,9 @@ header{
     padding: 15px 10px 10px;
 }
 
-
 #navbtn{
     display: none;
 }
-
 
 /*	Diese Formatierungen formen mit dem CSS-Checkbox-Hack die Menulinien
 	zu einem X um. Der Checkbox-Hack ist dafür zuständig, dass die Form
@@ -678,11 +634,10 @@ header{
     background: rgba(255,255,255,1);
 }
 
-
 /*	Alle Formatierungen im Zusammenhang mit dem Hauptbereich / Body. */
 
 #content{
-	padding-top: 80px;
+	padding-top: 60px;
 }
 
 .padding{
@@ -713,10 +668,11 @@ header{
 	font-size: 50px;
 	text-decoration: none;
 	transition: all 0.6s ease 0s;
+	background: rgba(247,247,247,0.6);
 }
 
 #content .nav:hover{
-	background: rgba(247,247,247,0.6);
+	background: rgba(222,222,222,0.6);
 }
 
 #content .nav .icon-navigation-arrows{
@@ -750,34 +706,6 @@ header{
 
 
 /* -------------------------------------------------------------
-		+ Endgeräte über 1024px +
---------------------------------------------------------------*/
-
-/*@media only screen and (min-width: 1024px){
-	
-	#content{
-		/*position: absolute;
-		left: 300px;
-	}
-	
-	/cbp-spmenu-push-toright {
-    	left: 0px !important;
-	}
-}
-
-@media only screen and (min-width: 1400px){
-		
-	.padding{
-		padding: 3em 25% 3em 6em;
-	}
-	
-	#content{
-		position: relative;
-		min-height: 100%;
-	}
-}*/
-
-/* -------------------------------------------------------------
 		+ Endgeräte unter 1024px +
 --------------------------------------------------------------*/
 
@@ -805,6 +733,10 @@ header{
 		width: 60px;
 		height: 60px;
 	}
+	
+	#title{
+		width: initial;
+	}
 
 	.menu{
    		position: fixed;
@@ -813,8 +745,6 @@ header{
     	height: 60px;
     	top: 0;
     	right: 0px;
-    	/*padding: 10px;
-    	padding-top: 15px;*/
     	display: inline;  
 	}	
 	
@@ -823,7 +753,7 @@ header{
     	margin:0px; 
     	width: 60px;
     	height: 60px;
-    padding: 15px 10px 10px;
+    	padding: 15px 10px 10px;
 	}
 	
 	.menutransform{
@@ -913,22 +843,15 @@ header{
     	white-space:nowrap;
 	}
 	
-	#title h3{
-		/*padding: 0px 70px 0px 40px;*/
-	}
-	
 	#title h3 a{
 		text-align: left;
 		margin: 0 auto;
 		margin-left: auto;
 		margin-right: auto;
 		display: block;
-	}
-	
+	}	
     
     #content{
-		/*top: 60px;*/
-		/*height: 100%;*/
 		width: 100%;
 	}  
     
@@ -942,19 +865,17 @@ header{
 		display: table;
 		background: rgba(247,247,247,0.9);
 		bottom: 0px;
-}
+	}
 	
 	#content .nav{
 		position: relative;
 		top: auto;
 		width: 50%;
 		height: 10px;
-		/*background: rgba(247,247,247,0.9);*/
-		
 	}
 	
 	#content .nav:hover{
-		background: rgba(247,247,247,0.9);
+		background: rgba(222,222,222,0.6);
 	}
 	
 	#content .nav.nav-prev{
@@ -1032,8 +953,12 @@ header{
 	}
 	
 	.menutransform2{
-		display: none;
+		/*display: none;*/
 	}	
+	
+	#print_icon{
+		display: none;
+	}
 	
 	.menu_line{
    		width: 45px;
@@ -1044,13 +969,13 @@ header{
 }
 		
 	table, thead, tbody, th, td, tr { 
-		/*display: block; */
+		display: block;
 	}
 	
 	thead tr { 
-		/*position: absolute;
+		position: absolute;
 		top: -9999px;
-		left: -9999px;*/
+		left: -9999px;
 		background: red;
 	}	
 	
@@ -1095,20 +1020,6 @@ header{
 }
 
 
-/* predefined Styles from learn.getgrav.org
--------------------------------------------------- */
-/* Constrain the width */
-.container {
-  width: auto;
-  max-width: 960px;
-  padding: 0 15px;
-}
-
-/* Center the footer text */
-.container .text-muted {
-  margin: 20px 0;
-  text-align: center;
-}
 
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -1116,22 +1027,6 @@ html {
   position: relative;
   min-height: 100%;
 }
-
-body {
-  /* Margin bottom by footer height */
-  /*margin-bottom: 60px;*/
-}
-
-.footer { 
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  background-color: #f5f5f5;
-}
-
-/* Typography */
 
 /* Tables */
 table {
@@ -1246,7 +1141,6 @@ blockquote > blockquote > blockquote > blockquote > blockquote > blockquote > p 
          url('../fonts/raleway-extralight-webfont.svg#ralewayextralight') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
@@ -1259,7 +1153,6 @@ blockquote > blockquote > blockquote > blockquote > blockquote > blockquote > p 
          url('../fonts/raleway-light-webfont.svg#ralewaylight') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
@@ -1271,7 +1164,6 @@ blockquote > blockquote > blockquote > blockquote > blockquote > blockquote > p 
          url('../fonts/entypo.svg#open_sansregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 /* -------------------------------------------------------------

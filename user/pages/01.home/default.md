@@ -1,8 +1,8 @@
 ---
 title: Home
 menu: Home
-description: Your page description goes here
-keywords: [1,2]
+description: Die Webbasierte Anleitung für DIGAME vom Zentrum elektronische Medien ZEM.
+keywords: DIGAME,ZEM,Zentrum elektronische Medien,Mediathek Admin,Mediathek,Bilddatenbank,Bildverwaltung,Bundesverwaltung,Eidgenossenschaft,Schweizerische Eidgenossenschaft,VBS,Bundesamt für Verteidigung, Bevölkerungsschutz und Sport
 author: Stefan Eckstein
 process:
 	twig: true
