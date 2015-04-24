@@ -327,7 +327,7 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
         // line 24
         echo "        <link href=\"";
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
-        echo "/css/print.css\" rel=\"stylesheet\" media=\"print\">
+        echo "/css/print.min.css\" rel=\"stylesheet\" media=\"print\">
         <link href=\"";
         // line 25
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);

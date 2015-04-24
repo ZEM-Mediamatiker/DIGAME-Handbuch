@@ -263,6 +263,10 @@ input[type=submit]:hover{
     cursor: pointer;
 }
 
+a.print{
+	display: none;
+}
+
 /* -------------------------------------------------------------
 		+ GENERAL +
 --------------------------------------------------------------*/
@@ -916,6 +920,10 @@ header{
 		box-shadow: 1px -19px 55px 2px #343434;
 		z-index: 85;
 		transition: 0.5s ease-in-out;
+	}
+	
+	a.print{
+		display: inline;
 	}
 	
 	#logo{
