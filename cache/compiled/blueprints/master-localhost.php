@@ -1,38 +1,38 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\Config',
-    'checksum' => '80d5f87d585a3927b67762677412261a:d77824aae30ceee013c22aab0a757f9c',
+    'checksum' => '80d5f87d585a3927b67762677412261a:552ba0f70287102b1ba8e3c722add60d',
     'files' => [
         'user/plugins' => [
             'plugins/error' => [
                 'file' => 'user/plugins/error/blueprints.yaml',
-                'modified' => 1407969320
+                'modified' => 1429869231
             ],
             'plugins/pagination' => [
                 'file' => 'user/plugins/pagination/blueprints.yaml',
-                'modified' => 1407934220
+                'modified' => 1429869231
             ],
             'plugins/simplesearch' => [
                 'file' => 'user/plugins/simplesearch/blueprints.yaml',
-                'modified' => 1424351618
+                'modified' => 1429869231
             ]
         ],
         'system/blueprints/config' => [
             'media' => [
                 'file' => 'system/blueprints/config/media.yaml',
-                'modified' => 1429106252
+                'modified' => 1429869230
             ],
             'site' => [
                 'file' => 'system/blueprints/config/site.yaml',
-                'modified' => 1429106252
+                'modified' => 1429869230
             ],
             'streams' => [
                 'file' => 'system/blueprints/config/streams.yaml',
-                'modified' => 1429106252
+                'modified' => 1429869230
             ],
             'system' => [
                 'file' => 'system/blueprints/config/system.yaml',
-                'modified' => 1429106252
+                'modified' => 1429869230
             ]
         ]
     ],

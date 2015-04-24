@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'user/config/site.yaml',
-    'modified' => 1429168246,
+    'modified' => 1429869231,
     'data' => [
         'title' => 'Anleitung DIGAME',
         'author' => [
