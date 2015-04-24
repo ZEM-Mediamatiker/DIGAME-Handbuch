@@ -26,6 +26,16 @@ visible: true
 
 <br>
 
+>>>>>Version 2.1<br>
+
+
+|  | Change |
+| --- | --- |
+| + | Steuerung über die Tastatur hinzugefügt. Mit den Pfeiltasten links und rechts kann jetzt durch die Seiten navigiert werden. Die S-Taste öffnet die Suche, die M-Taste das Menu und die P-Taste öffnet das Druckermenu.
+| + | Favicon hinzugefügt |
+| ^ | Navigationsmenu umgebaut |
+| ^ | Responsive CSS verbessert |
+
 >>>>>Version 2.0<br>
 
 

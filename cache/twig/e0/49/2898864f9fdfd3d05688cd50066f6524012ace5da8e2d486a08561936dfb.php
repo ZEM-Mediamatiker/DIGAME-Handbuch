@@ -1,6 +1,6 @@
 <?php
 
-/* @Page:/Applications/MAMP/htdocs/gravTest/user/pages/02.uebersicht */
+/* @Page:/Applications/MAMP/htdocs/DIGAME/user/pages/02.uebersicht */
 class __TwigTemplate_e0492898864f9fdfd3d05688cd50066f6524012ace5da8e2d486a08561936dfb extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -121,7 +121,7 @@ class __TwigTemplate_e0492898864f9fdfd3d05688cd50066f6524012ace5da8e2d486a085619
 
     public function getTemplateName()
     {
-        return "@Page:/Applications/MAMP/htdocs/gravTest/user/pages/02.uebersicht";
+        return "@Page:/Applications/MAMP/htdocs/DIGAME/user/pages/02.uebersicht";
     }
 
     public function getDebugInfo()

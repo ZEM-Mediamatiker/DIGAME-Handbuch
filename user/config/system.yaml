@@ -2,7 +2,7 @@ home:
   alias: '/home'
 
 pages:
-  theme: zemwikimobile
+  theme: zemwiki
   process:
     markdown: true
     twig: false

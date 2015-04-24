@@ -43,8 +43,7 @@ hr{
   margin-top: 20px;
   margin-bottom: 20px;
   border-bottom: 2px solid #F0F2F4;
-}	
-
+}
 
 #navbtn{
     display: none;
@@ -55,15 +54,10 @@ header{
 	margin-bottom: 20px;
 }
 
-
-
 ul, ol{
 	margin-top: 0px;
 	margin-bottom: 10px;
 }
-
-
-
 
 #logo{
 	margin: 10px 10px 10px 20px;
@@ -80,21 +74,21 @@ ul, ol{
 }
 
 #title{
-	float: right;
 	padding: 0;
 	margin: 0 auto;
-    margin-top: -75px;
+	float: left;
+	margin-left: -440px;
+	margin-top: 10px;
 }
 	
 #title h3{
-	padding: 0px 70px 0px 40px;
+	/*padding: 0px 70px 0px 40px;*/
 }
 
 #title h3 a{
 	color: #838383;
 	font-family: "Raleway","Helvetica","Tahoma","Geneva","Arial",sans-serif;
-	font-size: 18px;
-	text-align: center;
+	font-size: 12px;
 	/*margin: 0 auto;*/
 
 }
@@ -124,27 +118,48 @@ h3{
 h6{
 	color: #838383;;
 	font-family: "Raleway","Helvetica","Tahoma","Geneva","Arial",sans-serif;
-	font-size: 1.1em;
+	font-size: 9pt;
 	line-height: 1.3em;
+	margin: 10px 0px;
 	text-align: center;
 }
 
 p {
 	font-family: "Raleway","Helvetica","Tahoma","Geneva","Arial",sans-serif;
-	font-size: 1.1em;
-	line-height: 1.5em;	
+	font-size: 11pt;
+	line-height: 16pt;	
 	margin: 0px 0px 10px;
 }
 
+#content{
+	padding: 20px 20px 40px 80px;
+}
+
+
+.copywrapper{
+	margin: 0 auto;
+	bottom: 0px;
+	padding: 25px 0px;
+	text-align: center;
+	color: rgba(131,131,131,0.8);
+}
+
+.copywrapper a{
+	color: rgba(131,131,131,0.8);
+}
+
+
+hr{	
+	border-bottom: 2px solid #F0F2F4;	
+}
 
 
 
 img{
 	max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
     display: block;
-    page-break-inside: always;
+    margin: 0 auto;
+    page-break-inside: avoid;
     white-space: nowrap;
 }
 
@@ -160,6 +175,13 @@ th {
 	text-align: left;
 }
 
+#search-overlay{
+	display: none;
+}
+
+#menu-overlay{
+	display: none;
+}
 
 
 /* -------------------------------------------------------------
@@ -203,7 +225,6 @@ th {
     font-style: normal;
 
 }
-
 
 
 /* Typography */

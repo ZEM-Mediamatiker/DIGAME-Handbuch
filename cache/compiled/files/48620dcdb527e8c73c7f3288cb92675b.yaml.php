@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'system/config/system.yaml',
-    'modified' => 1428577404,
+    'modified' => 1429106252,
     'data' => [
         'absolute_urls' => false,
         'timezone' => '',
@@ -41,7 +41,9 @@ return [
                     '>' => 'gt',
                     '<' => 'lt'
                 ]
-            ]
+            ],
+            'types' => 'txt|xml|html|json|rss|atom',
+            'expires' => 604800
         ],
         'cache' => [
             'enabled' => true,
@@ -68,6 +70,7 @@ return [
             'css_rewrite' => true,
             'js_pipeline' => false,
             'js_minify' => true,
+            'enable_asset_timestamp' => false,
             'collections' => [
                 'jquery' => 'system://assets/jquery/jquery-2.1.3.min.js'
             ]
@@ -86,6 +89,9 @@ return [
         'images' => [
             'default_image_quality' => 85,
             'debug' => false
+        ],
+        'media' => [
+            'enable_media_timestamp' => false
         ]
     ]
 ];

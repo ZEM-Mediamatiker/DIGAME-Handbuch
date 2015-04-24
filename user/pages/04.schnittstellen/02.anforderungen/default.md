@@ -12,9 +12,8 @@ taxonomy:
 visible: true
 ---
 
-## Anforderungen
+# Anforderungen
 
-***
 
 
 

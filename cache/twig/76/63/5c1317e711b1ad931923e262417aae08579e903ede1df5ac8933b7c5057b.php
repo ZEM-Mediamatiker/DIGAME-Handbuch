@@ -1,6 +1,6 @@
 <?php
 
-/* @Page:/Applications/MAMP/htdocs/gravTest/user/pages/03.anwenderfunktionen/05.bearbeiten/04.stichworte */
+/* @Page:/Applications/MAMP/htdocs/DIGAME/user/pages/03.anwenderfunktionen/05.bearbeiten/04.stichworte */
 class __TwigTemplate_76635c1317e711b1ad931923e262417aae08579e903ede1df5ac8933b7c5057b extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -33,7 +33,7 @@ Mit (2) kann eine Zuweisung gespeichert werden. Mit (3) gehen die nicht gespeich
 
     public function getTemplateName()
     {
-        return "@Page:/Applications/MAMP/htdocs/gravTest/user/pages/03.anwenderfunktionen/05.bearbeiten/04.stichworte";
+        return "@Page:/Applications/MAMP/htdocs/DIGAME/user/pages/03.anwenderfunktionen/05.bearbeiten/04.stichworte";
     }
 
     public function isTraitable()

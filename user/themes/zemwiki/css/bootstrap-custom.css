@@ -1,11 +1,271 @@
 /* -------------------------------------------------------------
-		+ BOOTSTRAP CUSTOM CSS +
+		+ BOOTSTRAP CUSTOM CeSS +
 		+ ----------------------
 		+ Dieses CSS-File überschreibt die von
 		+ Bootstrap vorgegebenen und vor-
 		+ definierten Klassen.
 --------------------------------------------------------------*/
 
+input:required,
+input[required] {
+  	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+textarea:focus, input:focus{
+    outline: 0;
+}
+
+#menu-overlay{
+	position: absolute;
+	width: 100%;
+	z-index: 110;
+	background: rgba(0,0,0,0.89);
+	top: 0px;
+  	visibility:hidden;
+  	opacity:0;
+  	transition:visibility 0s ease 0.3s,opacity 0.3s ease;
+  	overflow: hidden;
+  	bottom: 0px;	
+}
+
+#menucontainer{
+	padding: 50px 0px;
+	z-index: 121;
+	margin: 0 auto;
+}
+
+#menu-navigation li{
+	line-height: 45px;
+	text-align: center;
+}
+
+#menu-navigation ol {
+    padding: 0;
+    margin: 20px 0px;
+}
+
+#menu-navigation ol li {
+    display: block;
+    position: relative;
+    /*background: purple;*/
+    margin: 50px 0px;
+}
+
+/*#menu-navigation ol li:first-child {
+	margin: 20px 0px 5px 0px;
+}*/
+	
+/*#menu-navigation ol li:before {
+	color: #afafaf;
+	font-size: 14px;
+    content: counters(item, ".")".";
+    counter-increment: item;
+    position: absolute;
+    margin-right: 100%;
+    right: 5px; Abstand zwischen Nummer und Text 
+}*/
+
+#menu-navigation ol li a {
+	margin: 0;
+    padding: 0;
+	color: rgba(255,255,255,1);
+	transition: 0.2s;
+	font-family: "Raleway","Helvetica","Tahoma","Geneva","Arial",sans-serif;
+	font-size: 2em;
+	font-weight: 500;
+	text-transform: ;
+}
+
+#menu-navigation ol li a:hover{
+	text-decoration: none;
+	color: rgba(255,255,255,1);
+}
+
+#menu-navigation ol li ol {
+	margin: 0px;
+}
+
+#menu-navigation ol li ol li {
+	margin: 0px;
+}
+
+#menu-navigation ol li ol li a {
+	font-size: 1.5em;
+	font-family: "ralewaylight","Helvetica","Tahoma","Geneva","Arial",sans-serif;
+	color: rgba(255,255,255,0.5);
+	text-transform: none;
+}
+
+.open-overlay{
+  	visibility:visible !important;
+	opacity: 1!important;
+	transition-delay: 0s !important;
+	bottom: initial !important;
+}
+
+.overlaylogo{
+	position: fixed;
+    z-index: 125;
+   	width: 80px;
+    height: 80px;
+    top: 0px;
+    left: 0px;
+    padding: 10px;
+    padding-top: 15px;
+    display: inline;
+    background: #484848;
+}
+
+.searchdescription{
+	color: rgba(255,255,255,0.5);
+	font-size: 1em;
+	margin: 0px 0px -5px;
+}
+
+#search-overlay{
+	position: fixed;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	z-index: 120;
+	background: rgba(0,0,0,0.89);
+	top: 0px;
+  	visibility:hidden;
+  	opacity:0;
+  	transition:visibility 0s ease 0.3s,opacity 0.3s ease;	
+}
+
+#searchcontainer{
+	padding: 20px;
+	z-index: 121;
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 70px;
+}
+
+.open-searchoverlay{
+  	visibility:visible !important;
+	opacity: 1!important;
+	transition-delay: 0s !important;
+}
+
+#searchfield{
+	border: none;
+	width: 80%;
+	float: left;
+	background: rgba(255,255,255,0);
+	font-size: 80px;
+	color: rgba(255,255,255,1);
+	text-transform: uppercase;
+	font-family: "Montserrat","Helvetica","Tahoma","Geneva","Arial",sans-serif;
+	font-weight: 400
+}
+
+input[type=submit] {
+	height: 63px;
+	width: 63px;
+	border:0 none;
+	float: right;
+	cursor:pointer;
+	background: rgba(255,255,255,0.5) url(../images/layout/search.svg) no-repeat center center; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+    margin-top: 24px;
+    transition:0.2s ease;
+}
+
+input[type=submit]:hover{
+	background: rgba(255,255,255,0.9) url(../images/layout/search.svg) no-repeat center center;
+}
+
+.searchwrapper{
+	width: 300px;
+	height: 80px;	
+}
+
+.searchmenubutton{
+	position: fixed;
+    z-index: 126;
+   	width: 80px;
+    height: 80px;
+    top: 0px;
+    right: 0px;
+    padding: 10px;
+    padding-top: 15px;
+    display: inline;
+    background: #484848;
+    cursor: pointer;
+}
+
+.searchmenubutton .menutransform .linie.top.left {
+	background: rgba(255,255,255,1);
+	transform: translate(1px, 2px) rotate(45deg) scaleX(1.25);
+	-o-transform: translate(1px, 2px) rotate(45deg) scaleX(1.25);
+	-webkit-transform: translate(1px, 2px) rotate(45deg) scaleX(1.25);
+	-moz-transform: translate(1px, 2px) rotate(45deg) scaleX(1.25);
+	-ms-transform: translate(1px, 2px) rotate(45deg) scaleX(1.25);
+	width: 50%;
+}
+
+.searchmenubutton .menutransform .linie.top.right{
+	background: rgba(255,255,255,1);
+	transform: translate(0px, 2px) rotate(-45deg) scaleX(1.25);
+	-o-transform: translate(0px, 2px) rotate(-45deg) scaleX(1.25);
+	-webkit-transform: translate(0px, 2px) rotate(-45deg) scaleX(1.25);
+	-moz-transform: translate(0px, 2px) rotate(-45deg) scaleX(1.25);
+	-ms-transform: translate(0px, 2px) rotate(-45deg) scaleX(1.25);
+	width: 50%;
+}	
+	
+.searchmenubutton .menutransform .linie.bottom.right{
+	background: rgba(255,255,255,1);
+	transform: translate(0px, -2px) rotate(45deg) scaleX(1.25);
+	-o-transform: translate(0px, -2px) rotate(45deg) scaleX(1.25);
+	-webkit-transform: translate(0px, -2px) rotate(45deg) scaleX(1.25);
+	-moz-transform: translate(0px, -2px) rotate(45deg) scaleX(1.25);
+	-ms-transform: translate(0px, -2px) rotate(45deg) scaleX(1.25);
+	width: 50%;
+}
+	
+.searchmenubutton .menutransform .linie.bottom.left{
+	background: rgba(255,255,255,1);
+	transform: translate(1px, -2px) rotate(-45deg) scaleX(1.25);
+	-o-transform: translate(1px, -2px) rotate(-45deg) scaleX(1.25);
+	-webkit-transform: translate(1px, -2px) rotate(-45deg) scaleX(1.25);
+	-moz-transform: translate(1px, -2px) rotate(-45deg) scaleX(1.25);
+	-ms-transform: translate(1px, -2px) rotate(-45deg) scaleX(1.25);
+	width: 50%;
+}	
+	
+.copywrapper{
+	margin: 0 auto;
+	bottom: 0px;
+	padding: 25px 0px;
+	text-align: center;
+	color: rgba(131,131,131,0.3);
+}
+
+.copywrapper a{
+	color: rgba(131,131,131,0.3);
+}	
+	
+.printmenubutton{
+	position: fixed;
+    z-index: 126;
+   	width: 60px;
+    height: 60px;
+    top: 0px;
+    left: 0px;
+    padding: 22px 20px;
+    display: inline;
+    cursor: pointer;
+}
+
+a.print{
+	display: none;
+}
 
 /* -------------------------------------------------------------
 		+ GENERAL +
@@ -23,11 +283,9 @@ html{
 }
 
 body{
-	height: 100%;
 	font-family: "Raleway","Helvetica","Tahoma","Geneva","Arial",sans-serif;
 	font-weight: 400;
 	color: #838383;
-	overflow: hidden;	
 }
 
 /*	Alle Bilder sollen sich an die Grösse des Containers anpassen. 
@@ -90,48 +348,31 @@ h6{
 p {
 	font-family: "Raleway","Helvetica","Tahoma","Geneva","Arial",sans-serif;
 	font-size: 1.2em;
-	line-height: 1.5em;	
+	line-height: 1.8em;	
 }
 
 
 /* -------------------------------------------------------------
-		+ LAYOUT +
+		+ PAGE +
 --------------------------------------------------------------*/
 
-/*	Alle Formatierungen im Zusammenhang mit dem Header. */
 
-#left-page{
-	width: 300px;
-	height: 100%;
-	background: red;
-	background: rgba(247,247,247,1);
-	left: 0px;
-	z-index: 80;
-	bottom: 0px;
-	top: 0px;
-	overflow-y: auto;
-	position: fixed;
-	transition: 0.5s ease-in-out;
-}
-
-.button-box{
-	width:300px;
-	height:80px;
-	background: #484848;
-}
-
-#right-page{
+#page{
 	/*overflow-y: auto;*/
-	top: 0px;
-	right: 0px;
-	bottom: 0px;
-	/*left: 300px;*/
-	z-index: 81;
+	width: 100%;
 	background: rgb(255,255,255);
-	-webkit-box-shadow: -5px 0 55px 2px #343434;
-	box-shadow: 30px 0 55px 2px #343434;
-	position: fixed;
+	transition: 0.2s ease;
 }
+
+.fixbody{
+	overflow: hidden;
+	position: fixed;
+	
+}
+
+/* -------------------------------------------------------------
+		+ HEADER +
+--------------------------------------------------------------*/
 
 
 header{
@@ -165,11 +406,8 @@ header{
 	float: none;
 	margin: 0 auto;
 	display: block;
-    margin-top: -75px;
-}
-	
-#title h3{
-	padding: 0px 70px 0px 40px;
+	margin: 0 auto;
+	width: 30%;
 }
 	
 #title h3 a{
@@ -181,6 +419,7 @@ header{
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
+	white-space:nowrap;
 }
 
 
@@ -189,20 +428,24 @@ header{
 #print_icon{
 	position: absolute;
     z-index: 100;
-   	width: 60px;
+   	/*width: 80px;*/
     height: 80px;
     top: 0;
-    right: 60px;
+    right: 160px;
     padding: 10px;
     padding-top: 15px;
     display: inline;
+}
+
+#print_icon:hover .menutransform2{
+	background: url(../images/layout/print_white.png) no-repeat;
 }
 
 .menutransform2{
 	position: relative;
 	width: 18px;
 	height: 14px;
-	margin: 18px 14px;
+	margin: 18px 0px;
 	background: rgba(80, 125, 200, 0.55);
 	background: url(../images/layout/print.png) no-repeat;	
 	-webkit-transition: background 0.5s linear;
@@ -211,8 +454,34 @@ header{
 	transition: background 0.5s linear;
 }
 
-.menutransform2:hover{
-	background: url(../images/layout/print_white.png) no-repeat;
+
+.search_icon{
+	position: absolute;
+    z-index: 100;
+   	/*width: 80px;*/
+    height: 80px;
+    top: 0;
+    right: 100px;
+    padding: 10px;
+    padding-top: 15px;
+    display: inline;
+}
+
+.search_icon:hover .menutransform3{
+	background: url(../images/layout/search_white.svg) no-repeat center center;
+}
+
+.menutransform3{
+	position: relative;
+	width: 18px;
+	height: 14px;
+	margin: 18px 0px;
+	background: rgba(80, 125, 200, 0.55);
+	background: url(../images/layout/search.svg) no-repeat center center; 
+	-webkit-transition: background 0.5s linear;
+	-moz-transition: background 0.5s linear;
+	-o-transition: background 0.5s linear;
+	transition: background 0.5s linear;
 }
 
 .smalllinie {
@@ -238,26 +507,25 @@ header{
 	opacity: 0.3;
 }
 
-
-
-
 /*	Alle Formatierungen im Zusammenhang mit dem Navigationsbutton. */
 
 .menu{
 	position: fixed;
-    z-index: 100;
-   	width: 60px;
+    z-index: 110;
+   	width: 80px;
     height: 80px;
-    top: 0;
+    top: 0px;
     right: 0px;
-    padding: 10px;
-    padding-top: 15px;
     display: inline;
     background: #484848;
 }
 
 #label{
-    cursor: pointer;   
+    cursor: pointer; 
+    margin:0px; 
+    width: 80px;
+    height: 80px;
+    padding: 15px 10px 10px;
 }
 
 #navbtn{
@@ -268,35 +536,65 @@ header{
 	zu einem X um. Der Checkbox-Hack ist dafür zuständig, dass die Form
 	auch nach dem und bis zum nächsten Klicken erhalten bleibt. */
 
-#navbtn:checked ~ #right-page #header .menu .menutransform .linie.top.left {
-	width: 20%;
-}
+	#navbtn:checked ~ .menu .menutransform .linie.top.left {
+		transform: translate(1px, 2px) rotate(45deg) scaleX(1.25);
+		-o-transform: translate(1px, 2px) rotate(45deg) scaleX(1.25);
+		-webkit-transform: translate(1px, 2px) rotate(45deg) scaleX(1.25);
+		-moz-transform: translate(1px, 2px) rotate(45deg) scaleX(1.25);
+		-ms-transform: translate(1px, 2px) rotate(45deg) scaleX(1.25);
+		width: 50%;
+	}
 
-#navbtn:checked ~ #right-page #header .menu .menutransform .linie.top.right{
-	width: 65%;
-}
-
-#navbtn:checked ~ #right-page #header .menu .menutransform .linie.mid.left{
-    width: 20%;
-}
-
-#navbtn:checked ~ #right-page #header .menu .menutransform .linie.mid.right{
-    width: 65%;
-}
-
-#navbtn:checked ~ #right-page #header .menu .menutransform .linie.bottom.right{
-   width: 65%;
-}
-
-#navbtn:checked ~ #right-page #header .menu .menutransform .linie.bottom.left{
-    width: 20%;
-}
+	#navbtn:checked ~ .menu .menutransform .linie.top.right{
+		transform: translate(0px, 2px) rotate(-45deg) scaleX(1.25);
+		-o-transform: translate(0px, 2px) rotate(-45deg) scaleX(1.25);
+		-webkit-transform: translate(0px, 2px) rotate(-45deg) scaleX(1.25);
+		-moz-transform: translate(0px, 2px) rotate(-45deg) scaleX(1.25);
+		-ms-transform: translate(0px, 2px) rotate(-45deg) scaleX(1.25);
+		width: 50%;
+	}
+	
+	#navbtn:checked ~ .menu .menutransform .linie.mid.left{
+		transform: translate(3px, 0px) scaleX(0);
+		-o-transform: translate(3px, 0px) scaleX(0);
+		-webkit-transform: translate(3px, 0px) scaleX(0);
+		-moz-transform: translate(3px, 0px) scaleX(0);
+		-ms-transform: translate(3px, 0px) scaleX(0);
+		width: 50%;
+	}
+	
+	#navbtn:checked ~ .menu .menutransform .linie.mid.right{
+		transform: translate(-3px, 0px) scaleX(0);
+		-o-transform: translate(-3px, 0px) scaleX(0);
+		-webkit-transform: translate(-3px, 0px) scaleX(0);
+		-moz-transform: translate(-3px, 0px) scaleX(0);
+		-ms-transform: translate(-3px, 0px) scaleX(0);
+		width: 50%;
+	}
+	
+	#navbtn:checked ~ .menu .menutransform .linie.bottom.right{
+		transform: translate(0px, -2px) rotate(45deg) scaleX(1.25);
+		-o-transform: translate(0px, -2px) rotate(45deg) scaleX(1.25);
+		-webkit-transform: translate(0px, -2px) rotate(45deg) scaleX(1.25);
+		-moz-transform: translate(0px, -2px) rotate(45deg) scaleX(1.25);
+		-ms-transform: translate(0px, -2px) rotate(45deg) scaleX(1.25);
+		width: 50%;
+	}
+	
+	#navbtn:checked ~ .menu .menutransform .linie.bottom.left{
+		transform: translate(1px, -2px) rotate(-45deg) scaleX(1.25);
+		-o-transform: translate(1px, -2px) rotate(-45deg) scaleX(1.25);
+		-webkit-transform: translate(1px, -2px) rotate(-45deg) scaleX(1.25);
+		-moz-transform: translate(1px, -2px) rotate(-45deg) scaleX(1.25);
+		-ms-transform: translate(1px, -2px) rotate(-45deg) scaleX(1.25);
+		width: 50%;
+	}
 
 .menutransform{
 	position: relative;
 	width: 18px;
 	height: 14px;
-	margin: 18px 14px;
+	margin: 18px 19px;
 }
 
 .linie {
@@ -340,108 +638,16 @@ header{
     background: rgba(255,255,255,1);
 }
 
-
-/*	Alle Formatierungen im Zusammenhang mit der Sidebar / Navigationsbar. */
-
-#sidebar{
-	/*background: rgba(247,247,247,1);
-	left: 0px;
-	z-index: 80;
-	bottom: 0px;
-	top: 0px;
-	overflow-y: auto;
-	position: absloute;
-	transition: 0.3s ease-in-out;*/
-}
-
-#searchfield{
-	border: none;
-	width: 100%;
-	height: 80px;
-	background: rgba(255,255,255,1);
-	padding: 15px 15px 15px 25px;
-}
-
-.sidepadding{
-	padding: 0;
-	overflow-x: hidden;
-}
-
-#sidebar ol {
-    counter-reset: item;
-    background: url(../images/layout/nav_line.png);
-}
-
-#sidebar ol li {
-    display: block;
-    position: relative;
-    line-height: 50px;
-}
-
-/*	Diese Eigenschaften nummerieren die ordered-list mit fortlaufenden Nummern.
-	Die passen sich an der jeweiligen Stufe an. */
-	
-#sidebar ol li:before {
-	color: #afafaf;
-	font-size: 14px;
-    content: counters(item, ".")".";
-    counter-increment: item;
-    position: absolute;
-    margin-right: 100%;
-    right: 5px; /* Abstand zwischen Nummer und Text */
-}
-
-#sidebar ol li a {
-	margin: -15px 0px -17px -100%;
-    padding: 17px 0px 17px 100%;
-    letter-spacing: 1.2px;
-    font-size: 16px;
-	color: #838383;
-	transition: 0.2s;
-}
-
-#sidebar ol li a:hover{
-	color: rgb(60,60,60);	
-}
-
-#sidebar ol li ol {
-	background: none;
-}
-
-.searchwrapper{
-	width: 300px;
-	height: 80px;	
-}
-
-.copywrapper{
-	width: 300px;
-	background: red;
-	bottom: 0px;
-	background: rgba(255,255,255,1);
-	padding: 15px 15px 15px 25px;
-	text-align: center;
-}
-
-.copywrapper a{
-	color: #838383;
-}
-
 /*	Alle Formatierungen im Zusammenhang mit dem Hauptbereich / Body. */
 
 #content{
-	overflow-y: scroll;
-	padding-top: 80px;
-	height: 100%;
-	/*right: 0px;
-	bottom: 0px;
-	z-index: 81;
-	background: rgb(255,255,255);
-	-webkit-box-shadow: -5px 0 55px 2px #343434;
-	box-shadow: 30px 0 55px 2px #343434;*/
+	padding-top: 60px;
 }
 
 .padding{
 	padding: 3em 6em 3em 6em;
+	max-width: 1160px;
+	margin: 0 auto;
 }
 
 .padding li{
@@ -466,10 +672,11 @@ header{
 	font-size: 50px;
 	text-decoration: none;
 	transition: all 0.6s ease 0s;
+	background: rgba(247,247,247,0.6);
 }
 
 #content .nav:hover{
-	background: rgba(247,247,247,0.6);
+	background: rgba(222,222,222,0.6);
 }
 
 #content .nav .icon-navigation-arrows{
@@ -494,81 +701,7 @@ header{
 }
 
 
-/* -------------------------------------------------------------
-		+ DEFINITIONEN PUSH-MENU +
---------------------------------------------------------------*/
 
-.cbp-spmenu {
-    background: #47a3da;
-    position: fixed;
-}
- 
-/* Orientation-dependent styles for the content of the menu */
- 
-.cbp-spmenu-vertical {
-    width: 300px;
-    height: 100%;
-    z-index: 1000;
-}
- 
-.cbp-spmenu-vertical a {
-    border-bottom: 1px solid #258ecd;
-    padding: 1em;
-}
- 
-.cbp-spmenu-horizontal {
-    width: 100%;
-    height: 150px;
-    left: 0;
-    z-index: 1000;
-    overflow: hidden;
-}
- 
-.cbp-spmenu-horizontal h3 {
-    height: 100%;
-    width: 20%;
-    float: left;
-}
- 
-.cbp-spmenu-horizontal a {
-    float: left;
-    width: 20%;
-    padding: 0.8em;
-    border-left: 1px solid #258ecd;
-}
- 
-#left-page.cbp-spmenu-open {
-    left: -100px;
-}
- 
-.cbp-spmenu-right.cbp-spmenu-open {
-    right: 0px;
-}
- 
-/* Push classes applied to the body */
- 
-.cbp-spmenu-push {
-    overflow-x: hidden;
-    position: relative;
-    left: 300px;
-}
- 
-.cbp-spmenu-push-toright {
-    left: 0px;
-}
- 
-.cbp-spmenu-push-toleft {
-    left: -240px;
-}
- 
-/* Transitions */
- 
-.cbp-spmenu,
-.cbp-spmenu-push {
-    -webkit-transition: 0.5s ease-in-out;
-    -moz-transition: 0.5s ease-in-out;
-    transition: 0.5s ease-in-out;
-}
 
 
 /* -------------------------------------------------------------
@@ -577,142 +710,11 @@ header{
 
 
 /* -------------------------------------------------------------
-		+ Endgeräte über 1024px +
---------------------------------------------------------------*/
-
-@media only screen and (min-width: 1024px){
-	
-	#content{
-		/*position: absolute;
-		left: 300px;*/
-	}
-	
-	/*.cbp-spmenu-push-toright {
-    	left: 0px !important;
-	}*/
-}
-
-@media only screen and (min-width: 1400px){
-		
-	.padding{
-		padding: 3em 25% 3em 6em;
-	}
-	
-	#content{
-		/*position: relative;
-		min-height: 100%;*/
-	}
-}
-
-/* -------------------------------------------------------------
 		+ Endgeräte unter 1024px +
 --------------------------------------------------------------*/
 
 @media only screen and (max-width: 1024px){
 
-	#left-page{
-		width: 300px;
-		height: 100%;
-		background: red;
-		background: rgba(247,247,247,1);
-		left: -100px;
-		z-index: 80;
-		bottom: 0px;
-		top: 0px;
-		overflow-y: auto;
-		position: fixed;
-		transition: 0.5s ease-in-out;
-	}
-
-	#right-page{
-		overflow-y: auto;
-		top: 0px;
-		right: 0px;
-		bottom: 0px;
-		/*left: 300px;*/
-		z-index: 81;
-		background: rgb(255,255,255);
-		-webkit-box-shadow: -5px 0 55px 2px #343434;
-		box-shadow: 30px 0 55px 2px #343434;
-		position: relative;
-		min-height: 100%;
-	}
-	
-	#searchfield{
-		border: none;
-		width: 100%;
-		height: 60px;
-		background: rgba(255,255,255,1);
-		padding: 15px 15px 15px 25px;
-	}
-
-	
-	.cbp-spmenu {
-    	background: #47a3da;
-    	position: fixed;
-	} 
- 
-	.cbp-spmenu-vertical {
-  	 	width: 300px;
-    	height: 100%;
-    	z-index: 1000;
-	}
- 
-	.cbp-spmenu-vertical a {
-    	border-bottom: 1px solid #258ecd;
-    	padding: 1em;
-	}
- 
-	.cbp-spmenu-horizontal {
-    	width: 100%;
-    	height: 150px;
-    	left: 0;
-    	z-index: 1000;
-    	overflow: hidden;
-	}
- 
-	.cbp-spmenu-horizontal h3 {
-    	height: 100%;
-    	width: 20%;
-    	float: left;
-	}
- 
-	.cbp-spmenu-horizontal a {
-    	float: left;
-    	width: 20%;
-    	padding: 0.8em;
-    	border-left: 1px solid #258ecd;
-	}
- 
-	#left-page.cbp-spmenu-open {
-    	left: 0px;
-	}
- 
-	.cbp-spmenu-right.cbp-spmenu-open {
-    	right: 0px;
-	}
- 
-	.cbp-spmenu-push {
-    	overflow-x: hidden;
-    	position: relative;
-    	left: 0;
-	}
- 
-	.cbp-spmenu-push-toright {
-    	left: 300px;
-	}
- 
-	.cbp-spmenu-push-toleft {
-    	left: -240px;
-	} 
- 
-	.cbp-spmenu,
-	.cbp-spmenu-push {
-    	-webkit-transition: 0.5s ease-in-out;
-    	-moz-transition: 0.5s ease-in-out;
-    	transition: 0.5s ease-in-out;
-	}
-	
 	#header{
 		height: 60px;
 		-webkit-box-shadow: 1px -19px 55px 2px #343434;
@@ -720,18 +722,43 @@ header{
 		z-index: 85;
 		transition: 0.5s ease-in-out;
 	}
+	
+	#print_icon{
+    	right: 120px;
+    	height: 60px;
+	}
+	
+	.search_icon{
+    	right: 75px;
+    	height: 60px;
+	}
+	
+	.searchmenubutton{
+		width: 60px;
+		height: 60px;
+	}
+	
+	#title{
+		width: initial;
+	}
 
 	.menu{
    		position: fixed;
-    	z-index: 100;
+    	z-index: 110;
    		width: 60px;
     	height: 60px;
     	top: 0;
     	right: 0px;
-    	padding: 10px;
-    	padding-top: 15px;
     	display: inline;  
 	}	
+	
+	#label{
+    	cursor: pointer; 
+    	margin:0px; 
+    	width: 60px;
+    	height: 60px;
+    	padding: 15px 10px 10px;
+	}
 	
 	.menutransform{
 		position: relative;
@@ -744,73 +771,30 @@ header{
 		position: relative;
 		width: 18px;
 		height: 14px;
-		margin: 8px 14px;
+		margin: 0px 0px 0px;
 	}
 	
-	
-	/*	Diese Formatierungen formen mit dem CSS-Checkbox-Hack die Menulinien
-	zu einem X um. Der Checkbox-Hack ist dafür zuständig, dass die Form
-	auch nach dem und bis zum nächsten Klicken erhalten bleibt. */
-
-	#navbtn:checked ~ #right-page #header .menu .menutransform .linie.top.left {
-		transform: translate(1px, 2px) rotate(45deg) scaleX(1.25);
-		-o-transform: translate(1px, 2px) rotate(45deg) scaleX(1.25);
-		-webkit-transform: translate(1px, 2px) rotate(45deg) scaleX(1.25);
-		-moz-transform: translate(1px, 2px) rotate(45deg) scaleX(1.25);
-		-ms-transform: translate(1px, 2px) rotate(45deg) scaleX(1.25);
-		width: 50%;
-	}
-
-	#navbtn:checked ~ #right-page #header .menu .menutransform .linie.top.right{
-		transform: translate(0px, 2px) rotate(-45deg) scaleX(1.25);
-		-o-transform: translate(0px, 2px) rotate(-45deg) scaleX(1.25);
-		-webkit-transform: translate(0px, 2px) rotate(-45deg) scaleX(1.25);
-		-moz-transform: translate(0px, 2px) rotate(-45deg) scaleX(1.25);
-		-ms-transform: translate(0px, 2px) rotate(-45deg) scaleX(1.25);
-		width: 50%;
+	#print_icon{
+		padding-top: 23px;
 	}
 	
-	#navbtn:checked ~ #right-page #header .menu .menutransform .linie.mid.left{
-		transform: translate(3px, 0px) scaleX(0);
-		-o-transform: translate(3px, 0px) scaleX(0);
-		-webkit-transform: translate(3px, 0px) scaleX(0);
-		-moz-transform: translate(3px, 0px) scaleX(0);
-		-ms-transform: translate(3px, 0px) scaleX(0);
-		width: 50%;
+	#showSearchOverlay{
+		padding-top: 23px;
 	}
 	
-	#navbtn:checked ~ #right-page #header .menu .menutransform .linie.mid.right{
-		transform: translate(-3px, 0px) scaleX(0);
-		-o-transform: translate(-3px, 0px) scaleX(0);
-		-webkit-transform: translate(-3px, 0px) scaleX(0);
-		-moz-transform: translate(-3px, 0px) scaleX(0);
-		-ms-transform: translate(-3px, 0px) scaleX(0);
-		width: 50%;
+	#searchcontainer{
+		width: 100%;
 	}
 	
-	#navbtn:checked ~ #right-page #header .menu .menutransform .linie.bottom.right{
-		transform: translate(0px, -2px) rotate(45deg) scaleX(1.25);
-		-o-transform: translate(0px, -2px) rotate(45deg) scaleX(1.25);
-		-webkit-transform: translate(0px, -2px) rotate(45deg) scaleX(1.25);
-		-moz-transform: translate(0px, -2px) rotate(45deg) scaleX(1.25);
-		-ms-transform: translate(0px, -2px) rotate(45deg) scaleX(1.25);
-		width: 50%;
+	#searchfield{
+		width: 650px
 	}
 	
-	#navbtn:checked ~ #right-page #header .menu .menutransform .linie.bottom.left{
-		transform: translate(1px, -2px) rotate(-45deg) scaleX(1.25);
-		-o-transform: translate(1px, -2px) rotate(-45deg) scaleX(1.25);
-		-webkit-transform: translate(1px, -2px) rotate(-45deg) scaleX(1.25);
-		-moz-transform: translate(1px, -2px) rotate(-45deg) scaleX(1.25);
-		-ms-transform: translate(1px, -2px) rotate(-45deg) scaleX(1.25);
-		width: 50%;
-	}
-	
-	.menutransform{
+	.menutransform3{
 		position: relative;
 		width: 18px;
 		height: 14px;
-		margin: 8px 14px;
+		margin: 0px 0px 0px;
 	}
 	
 	.linie {
@@ -856,68 +840,22 @@ header{
 	#title{
 		position: relative;
 		padding: 0;
-		float: none;
+		float: left;
 		margin: 0 auto;
 		display: block;
-    	margin-top: -65px;
-	}
-	
-	#title h3{
-		padding: 0px 70px 0px 40px;
+    	margin-top: -5px;
+    	white-space:nowrap;
 	}
 	
 	#title h3 a{
-		text-align: center;
+		text-align: left;
 		margin: 0 auto;
 		margin-left: auto;
 		margin-right: auto;
 		display: block;
-	}
-		
-	/*#sidebar{
-		width: 300px;
-		position: absolute;
-		position: fixed;
-		background: rgba(247,247,247,1);
-		left: -100px;
-		z-index: 1;
-		top: 60px;
-		z-index: 80;
-		bottom: 0px;
-		overflow-y: auto;
-		transition: 0.3s ease-in-out;		
-	}*/
-	
-	#sidebar ol{
-		background: url(../images/layout/nav_line.png);	
-	}
-	
-	#sidebar ol li{
-		line-height: 50px;
-	}
-	
-	#sidebar ol li a {
-		margin: -15px -100% -17px -100%;
-    	padding: 17px 100% 17px 100%;
-    	letter-spacing: 1.2px;
-    	font-size: 16px;
-		color: #838383;
-	}
-	
-	#sidebar ol li ol li a {
-		margin: -15px 100% -17px -100%;
-    	padding: 17px 100% 17px 100%;
-		color: #838383;
-	}
-	
-	#sidebar ol li ol {
-		background: none;
-	}
+	}	
     
     #content{
-		/*top: 60px;*/
-		position: fixed;
-		height: 100%;
 		width: 100%;
 	}  
     
@@ -931,19 +869,17 @@ header{
 		display: table;
 		background: rgba(247,247,247,0.9);
 		bottom: 0px;
-}
+	}
 	
 	#content .nav{
 		position: relative;
 		top: auto;
 		width: 50%;
 		height: 10px;
-		/*background: rgba(247,247,247,0.9);*/
-		
 	}
 	
 	#content .nav:hover{
-		background: rgba(247,247,247,0.9);
+		background: rgba(222,222,222,0.6);
 	}
 	
 	#content .nav.nav-prev{
@@ -953,6 +889,22 @@ header{
 	#content .nav.nav-next{
 		float: none;
 		border-left: 1px solid rgba(60,60,60,0.2);
+	}
+}
+
+@media only screen and (max-width: 770px){
+	
+	#searchfield{
+		width: 100%;
+		font-size: 50px;
+	}
+	
+	input[type=submit] {
+	height: 63px;
+	width: 120px;
+	border:0 none;
+	float: none;
+    margin-top: 24px;
 	}
 }
 
@@ -970,6 +922,10 @@ header{
 		transition: 0.5s ease-in-out;
 	}
 	
+	a.print{
+		display: inline;
+	}
+	
 	#logo{
 		margin: 10px 10px 10px 10px;
 		height: 40px;
@@ -980,50 +936,37 @@ header{
 		transition: 0.2s;
 	}
 	
+	h1{
+		font-size: 25px;
+		letter-spacing: -1px;
+	}
+	
 	#title{
 		position: relative;
 		padding: 0;
-		float: none;
 		margin: 0 auto;
 		display: block;
-    	margin-top: -65px;
+    	margin-top: -5px;
 	}
 	
 	#title h3{
-		padding: 0px 70px 0px 40px;
+		/*padding: 0px 70px 0px 40px;*/
 	}
 	
 	#title h3 a{
-		text-align: center;
 		margin: 0 auto;
 		margin-left: auto;
 		margin-right: auto;
 		display: block;
 	}
 	
-	.menu{
-		float: right;
-   		position: fixed;
-    	z-index: 100;
-    	top: 0;
-    	right: 0px;
-    	padding: 10px;
-    	padding-top: 7px;
-    	display: inline;  
-	}
-	
-	.menutransform{
-		position: relative;
-		width: 18px;
-		height: 14px;
-		margin: 16px 14px;
-	}
-	
 	.menutransform2{
+		/*display: none;*/
+	}	
+	
+	#print_icon{
 		display: none;
 	}
-	
-	
 	
 	.menu_line{
    		width: 45px;
@@ -1032,67 +975,15 @@ header{
     	background: rgb(87, 87, 87);
     	transition: 0.2s;
 }
-	
-	#left-page{
-		width: 300px;
-		background: rgba(247,247,247,1);
-		top: 0px;
-		left: -100px;
-	}	
-	
-	#sidebar ol{
-		background: url(../images/layout/nav_line.png);	
-	}
-	
-	#sidebar ol li{
-		line-height: 50px;
-	}
-	
-	#sidebar ol li a {
-		margin: -15px -100% -17px -100%;
-    	padding: 17px 100% 17px 100%;
-    	letter-spacing: 1.2px;
-    	font-size: 16px;
-		color: #838383;
-	}
-	
-	#sidebar ol li ol li a {
-		margin: -15px 100% -17px -100%;
-    	padding: 17px 100% 17px 100%;
-		color: #838383;
-	}
-	
-	#sidebar ol li a:hover{
-		color: #838383;	
-	}
-	
-	#sidebar ol li ol {
-		background: none;
-	}	
-	
-	#checknav:checked ~ #left-page{
-    	left: 0px;
-    }    
-	
-	#sidebar{
-		padding: 0;
-	}	
-	
-	#content{
-		/*top: 60px;*/
-		position: fixed;
-		height: 100%;
-		width: 100%;
-	}		
 		
 	table, thead, tbody, th, td, tr { 
-		/*display: block; */
+		display: block;
 	}
 	
 	thead tr { 
-		/*position: absolute;
+		position: absolute;
 		top: -9999px;
-		left: -9999px;*/
+		left: -9999px;
 		background: red;
 	}	
 	
@@ -1137,20 +1028,6 @@ header{
 }
 
 
-/* predefined Styles from learn.getgrav.org
--------------------------------------------------- */
-/* Constrain the width */
-.container {
-  width: auto;
-  max-width: 960px;
-  padding: 0 15px;
-}
-
-/* Center the footer text */
-.container .text-muted {
-  margin: 20px 0;
-  text-align: center;
-}
 
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -1158,22 +1035,6 @@ html {
   position: relative;
   min-height: 100%;
 }
-
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-}
-
-.footer { 
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  background-color: #f5f5f5;
-}
-
-/* Typography */
 
 /* Tables */
 table {
@@ -1251,6 +1112,7 @@ blockquote > blockquote > blockquote > blockquote > blockquote > blockquote > p 
 		+ WEBFONTS +
 --------------------------------------------------------------*/
 
+/*@import url(http://fonts.googleapis.com/css?family=Raleway:200,100);*/
 
 @font-face {
   font-family: 'Montserrat';
@@ -1278,6 +1140,30 @@ blockquote > blockquote > blockquote > blockquote > blockquote > blockquote > p 
 }
 
 @font-face {
+    font-family: 'ralewayextralight';
+    src: url('../fonts/raleway-extralight-webfont.eot');
+    src: url('../fonts/raleway-extralight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-extralight-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-extralight-webfont.woff') format('woff'),
+         url('../fonts/raleway-extralight-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-extralight-webfont.svg#ralewayextralight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('../fonts/raleway-light-webfont.eot');
+    src: url('../fonts/raleway-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-light-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-light-webfont.woff') format('woff'),
+         url('../fonts/raleway-light-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-light-webfont.svg#ralewaylight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'entypo';
     src: url('../fonts/entypo.eot');
     src: url('../fonts/entypo.eot?#iefix') format('embedded-opentype'),
@@ -1286,7 +1172,6 @@ blockquote > blockquote > blockquote > blockquote > blockquote > blockquote > p 
          url('../fonts/entypo.svg#open_sansregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 /* -------------------------------------------------------------
