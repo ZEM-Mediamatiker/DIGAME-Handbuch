@@ -3,10 +3,10 @@
 {% block content %}
 	<div id="error">
 		<div>
-			<h1>Error {{ page.header.code }}</h1>
-			<p>
+			<h1>Error {{ page.header.http_response_code }}</h1>
+			<h3>
 				{{ page.content }}
-			</p>
+			</h3>
 		</div>
 	</div>
 {% endblock %}

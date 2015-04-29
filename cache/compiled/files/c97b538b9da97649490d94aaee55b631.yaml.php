@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'user/plugins/simplesearch/blueprints.yaml',
-    'modified' => 1429885364,
+    'modified' => 1429869231,
     'data' => [
         'name' => 'SimpleSearch',
-        'version' => '1.2.5',
+        'version' => '1.2.4',
         'description' => 'Don\'t be fooled, the **SimpleSearch** plugin provides a **fast** and highly **configurable** way to search your content.',
         'icon' => 'search',
         'author' => [

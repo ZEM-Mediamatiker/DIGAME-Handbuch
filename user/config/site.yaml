@@ -1,6 +1,7 @@
-title: Anleitung DIGAME
+title: Anleitung DIGAME o.o
 author:
   name: Stefan Eckstein
   email: 'stefan.eckstein@zem.ch'
-description: 'Dies ist die Beschreibung meiner Seite.'
+metadata:
+    description: 'Anleitung DIGAME'
 

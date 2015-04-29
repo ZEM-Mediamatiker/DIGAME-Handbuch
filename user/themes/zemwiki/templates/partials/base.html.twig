@@ -1,14 +1,15 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!--WOAH-->
 <html lang="de">
     <head>
 		{% block head %}
+		{% include 'partials/metadata.html.twig' %}
 		<meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         {% if header.description %}
-        <meta name="description" content="{{ header.description }}">
+        <!--<meta name="description" content="{{ header.description }}">-->
         {% else %}
-        <meta name="description" content="{{ site.description }}">
+        <!--<meta name="description" content="{{ site.description }}">-->
         {% endif %}
         {% if header.robots %}
         <meta name="robots" content="{{ header.robots }}">
@@ -74,7 +75,7 @@
       				{% block content %}{% endblock %}
       				<div class="copywrapper">
       					&copy; 2015 | <a href="http://zem.ch" target="_blank" alt="Zentrum elektronische Medien">Zentrum elektronische Medien</a><br>
-      					Version: 2.1	
+      					Version: 2.1.1	
       				</div>
       			</div>
       			{% set progress = page.collection({'items':{'@taxonomy.category': 'digame'},'order': {'by': 'default', 'dir': 'asc'}}) %}

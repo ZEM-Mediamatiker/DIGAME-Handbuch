@@ -32,14 +32,14 @@ class __TwigTemplate_9cf5334b8fab45febd98881e0f373448bfaacd13354535c7321f2752433
 \t\t<div>
 \t\t\t<h1>Error ";
         // line 6
-        echo $this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "code", array());
+        echo $this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "http_response_code", array());
         echo "</h1>
-\t\t\t<p>
+\t\t\t<h3>
 \t\t\t\t";
         // line 8
         echo $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "content", array());
         echo "
-\t\t\t</p>
+\t\t\t</h3>
 \t\t</div>
 \t</div>
 ";

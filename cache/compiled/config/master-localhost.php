@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\Config',
-    'timestamp' => 1430292740,
-    'checksum' => '8c5701c189c9ee0035fa55bf6a886888',
+    'timestamp' => 1430309545,
+    'checksum' => 'f2db1ddde7976740557857e14945ccc5',
     'data' => [
         'streams' => [
             'schemes' => [
@@ -257,7 +257,7 @@ return [
             ]
         ],
         'site' => [
-            'title' => 'Anleitung DIGAME',
+            'title' => 'Anleitung DIGAME o.o',
             'author' => [
                 'name' => 'Stefan Eckstein',
                 'email' => 'stefan.eckstein@zem.ch'
@@ -270,7 +270,7 @@ return [
                 'route' => '/blog'
             ],
             'metadata' => [
-                'description' => 'My Grav Site'
+                'description' => 'Anleitung DIGAME'
             ],
             'summary' => [
                 'enabled' => true,
@@ -282,8 +282,7 @@ return [
                 '/something/else' => '/blog/sample-3',
                 '/another/one/here' => '/blog/sample-3',
                 '/new/*' => '/blog/*'
-            ],
-            'description' => 'Dies ist die Beschreibung meiner Seite.'
+            ]
         ],
         'system' => [
             'absolute_urls' => false,
@@ -308,10 +307,10 @@ return [
                 'publish_dates' => true,
                 'process' => [
                     'markdown' => true,
-                    'twig' => false
+                    'twig' => true
                 ],
                 'events' => [
-                    'page' => false,
+                    'page' => true,
                     'twig' => true
                 ],
                 'markdown' => [
@@ -325,7 +324,8 @@ return [
                     ]
                 ],
                 'types' => 'txt|xml|html|json|rss|atom',
-                'expires' => 0
+                'expires' => 0,
+                'markdown_extra' => false
             ],
             'cache' => [
                 'enabled' => true,
@@ -383,6 +383,52 @@ return [
             ],
             'security' => [
                 'default_hash' => '$2y$10$kwsyMVwM8/7j0K/6LHT.g.Fs49xOCTp2b8hh/S5.dPJuJcJB6T.UK'
+            ]
+        ],
+        'system.yaml.old' => [
+            'absolute_urls' => false,
+            'home' => [
+                'alias' => '/home'
+            ],
+            'pages' => [
+                'theme' => 'zemwiki',
+                'markdown_extra' => false,
+                'process' => [
+                    'markdown' => true,
+                    'twig' => true
+                ]
+            ],
+            'cache' => [
+                'enabled' => true,
+                'check' => [
+                    'method' => 'file'
+                ],
+                'driver' => 'auto',
+                'prefix' => 'g'
+            ],
+            'twig' => [
+                'cache' => true,
+                'debug' => true,
+                'auto_reload' => true,
+                'autoescape' => false
+            ],
+            'assets' => [
+                'css_pipeline' => false,
+                'css_minify' => true,
+                'css_rewrite' => true,
+                'js_pipeline' => false,
+                'js_minify' => true
+            ],
+            'errors' => [
+                'display' => true,
+                'log' => true
+            ],
+            'debugger' => [
+                'enabled' => false,
+                'twig' => true,
+                'shutdown' => [
+                    'close_connection' => true
+                ]
             ]
         ]
     ]

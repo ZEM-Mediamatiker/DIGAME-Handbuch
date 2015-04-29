@@ -72,7 +72,8 @@ class __TwigTemplate_c3a56e35a53f2a6112a5d9fe7b54ad25920fba0ebd9caa59f94b10204fa
 
         
     </div>
-</section>";
+</section>
+";
     }
 
     public function getTemplateName()

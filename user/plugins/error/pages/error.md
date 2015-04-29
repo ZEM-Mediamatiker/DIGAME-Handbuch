@@ -1,8 +1,8 @@
 ---
-title: Seite wurde nicht gefunden.
+title: Woops.
 robots: noindex,nofollow
 template: error
 routable: false
 http_response_code: 404
 ---
-Woops. Diese Seite wurde nicht gefunden. [Kehren Sie zur Startseite zurück.](/)
+Woops. Scheint, als würde diese Seite nicht existieren. [Schnell zurück zur Startseite](/)

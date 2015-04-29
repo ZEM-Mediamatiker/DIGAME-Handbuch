@@ -18,13 +18,13 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo "<!DOCTYPE html>
+        echo "<!DOCTYPE html><!--WOAH-->
 <html lang=\"de\">
     <head>
 \t\t";
         // line 4
         $this->displayBlock('head', $context, $blocks);
-        // line 47
+        // line 48
         echo "    </head>
 
       <body>
@@ -36,7 +36,7 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
       \t\t\t</div> \t
       \t\t\t<div id=\"title\">
       \t\t\t\t<h3 class=\"header-title\"><a href=\"";
-        // line 57
+        // line 58
         echo (isset($context["base_url_absolute"]) ? $context["base_url_absolute"] : null);
         echo "\">";
         echo $this->getAttribute($this->getAttribute((isset($context["config"]) ? $context["config"] : null), "site", array()), "title", array());
@@ -58,38 +58,38 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
       \t\t<section id=\"content\">
       \t\t\t<div class=\"padding\">
       \t\t\t\t";
-        // line 74
-        $this->displayBlock('content', $context, $blocks);
         // line 75
+        $this->displayBlock('content', $context, $blocks);
+        // line 76
         echo "      \t\t\t\t<div class=\"copywrapper\">
       \t\t\t\t\t&copy; 2015 | <a href=\"http://zem.ch\" target=\"_blank\" alt=\"Zentrum elektronische Medien\">Zentrum elektronische Medien</a><br>
-      \t\t\t\t\tVersion: 2.1\t
+      \t\t\t\t\tVersion: 2.1.1\t
       \t\t\t\t</div>
       \t\t\t</div>
       \t\t\t";
-        // line 80
-        $context["progress"] = $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "collection", array(0 => array("items" => array("@taxonomy.category" => "digame"), "order" => array("by" => "default", "dir" => "asc"))), "method");
         // line 81
+        $context["progress"] = $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "collection", array(0 => array("items" => array("@taxonomy.category" => "digame"), "order" => array("by" => "default", "dir" => "asc"))), "method");
+        // line 82
         echo "      \t\t\t<div id=\"navigation\">
       \t\t\t\t";
-        // line 82
+        // line 83
         if ( !$this->getAttribute((isset($context["progress"]) ? $context["progress"] : null), "isFirst", array(0 => $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "path", array())), "method")) {
-            // line 83
+            // line 84
             echo "      \t\t\t\t<a class=\"nav nav-prev\" href=\"";
             echo $this->getAttribute($this->getAttribute((isset($context["progress"]) ? $context["progress"] : null), "nextSibling", array(0 => $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "path", array())), "method"), "url", array());
             echo "\"><i class=\"icon-navigation-arrows\">&#59237;</i></a>
       \t\t\t\t";
         }
-        // line 85
+        // line 86
         echo "      \t\t\t\t";
         if ( !$this->getAttribute((isset($context["progress"]) ? $context["progress"] : null), "isLast", array(0 => $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "path", array())), "method")) {
-            // line 86
+            // line 87
             echo "      \t\t\t\t<a class=\"nav nav-next\" href=\"";
             echo $this->getAttribute($this->getAttribute((isset($context["progress"]) ? $context["progress"] : null), "prevSibling", array(0 => $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "path", array())), "method"), "url", array());
             echo "\"><i class=\"icon-navigation-arrows\">&#59238;</i></a>
       \t\t\t\t";
         }
-        // line 88
+        // line 89
         echo "      \t\t\t</div>
       \t\t\t<div class=\"clearfix\"></div>
       \t\t</section>
@@ -100,10 +100,10 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
       \t\t<section id=\"menucontainer\">
       \t\t\t<div id=\"menu-navigation\">
       \t\t\t\t";
-        // line 98
-        echo "        \t\t\t";
-        $this->loadTemplate("partials/header.html.twig", "partials/base.html.twig", 98)->display($context);
         // line 99
+        echo "        \t\t\t";
+        $this->loadTemplate("partials/header.html.twig", "partials/base.html.twig", 99)->display($context);
+        // line 100
         echo "        \t\t\t<div class=\"clearfix\"></div>
       \t\t\t</div>
       \t\t</section>
@@ -120,7 +120,7 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
       \t\t\t<p class=\"searchdescription\">Geben Sie einen Suchbegriff ein</p>      \t\t
       \t\t\t\t<div id=\"search-searchconatiner\">
       \t\t\t\t<form method=\"POST\" action=\"";
-        // line 114
+        // line 115
         echo (isset($context["base_url_relative"]) ? $context["base_url_relative"] : null);
         echo "/search/query:\" onsubmit=\"onSearch(this)\">     \t\t\t\t
       \t\t\t\t\t<input id=\"searchfield\" type=\"text\" placeholder=\"Suche...\" autocomplete=\"off\" required>
@@ -153,26 +153,26 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
         </div>     \t\t     
 
         ";
-        // line 145
-        echo "        ";
         // line 146
         echo "        ";
         // line 147
-        echo "        <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js\"></script>       
-        <script src=\"";
+        echo "        ";
         // line 148
-        echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
-        echo "/js/bootstrap.min.js\"></script>
+        echo "        <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js\"></script>       
         <script src=\"";
         // line 149
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
-        echo "/js/mousetrap.min.js\"></script>
+        echo "/js/bootstrap.min.js\"></script>
         <script src=\"";
         // line 150
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
-        echo "/js/scripts.js\"></script>
+        echo "/js/mousetrap.min.js\"></script>
         <script src=\"";
         // line 151
+        echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
+        echo "/js/scripts.js\"></script>
+        <script src=\"";
+        // line 152
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
         echo "/js/classie.js\"></script>
 \t\t<!--<script>
@@ -253,13 +253,13 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
 \t\t\t});\t
 \t\t\tMousetrap.bind('right', function(e){
 \t\t\t\twindow.location.href = \"";
-        // line 229
+        // line 230
         echo $this->getAttribute($this->getAttribute((isset($context["progress"]) ? $context["progress"] : null), "prevSibling", array(0 => $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "path", array())), "method"), "url", array());
         echo "\";
 \t\t\t});\t
 \t\t\tMousetrap.bind('left', function(e){
 \t\t\t\twindow.location.href = \"";
-        // line 232
+        // line 233
         echo $this->getAttribute($this->getAttribute((isset($context["progress"]) ? $context["progress"] : null), "nextSibling", array(0 => $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "path", array())), "method"), "url", array());
         echo "\";
 \t\t\t});
@@ -278,38 +278,41 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
     public function block_head($context, array $blocks = array())
     {
         // line 5
+        echo "\t\t";
+        $this->loadTemplate("partials/metadata.html.twig", "partials/base.html.twig", 5)->display($context);
+        // line 6
         echo "\t\t<meta charset=\"utf-8\">
         <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
         ";
-        // line 8
+        // line 9
         if ($this->getAttribute((isset($context["header"]) ? $context["header"] : null), "description", array())) {
-            // line 9
-            echo "        <meta name=\"description\" content=\"";
+            // line 10
+            echo "        <!--<meta name=\"description\" content=\"";
             echo $this->getAttribute((isset($context["header"]) ? $context["header"] : null), "description", array());
-            echo "\">
+            echo "\">-->
         ";
         } else {
-            // line 11
-            echo "        <meta name=\"description\" content=\"";
+            // line 12
+            echo "        <!--<meta name=\"description\" content=\"";
             echo $this->getAttribute((isset($context["site"]) ? $context["site"] : null), "description", array());
-            echo "\">
+            echo "\">-->
         ";
         }
-        // line 13
+        // line 14
         echo "        ";
         if ($this->getAttribute((isset($context["header"]) ? $context["header"] : null), "robots", array())) {
-            // line 14
+            // line 15
             echo "        <meta name=\"robots\" content=\"";
             echo $this->getAttribute((isset($context["header"]) ? $context["header"] : null), "robots", array());
             echo "\">
         ";
         }
-        // line 16
+        // line 17
         echo "        <meta http-equiv=\"expires\" content=\"0\">
 
         <title>";
-        // line 18
+        // line 19
         if ($this->getAttribute((isset($context["header"]) ? $context["header"] : null), "title", array())) {
             echo $this->getAttribute((isset($context["header"]) ? $context["header"] : null), "title", array());
             echo " | ";
@@ -318,70 +321,70 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
         echo "</title>
 
         ";
-        // line 21
+        // line 22
         echo "        <link href=\"";
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
         echo "/css/bootstrap.min.css\" rel=\"stylesheet\" media=\"screen\">
 
         ";
-        // line 24
+        // line 25
         echo "        <link href=\"";
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
         echo "/css/print.min.css\" rel=\"stylesheet\" media=\"print\">
         <link href=\"";
-        // line 25
+        // line 26
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
         echo "/css/bootstrap-custom.css\" rel=\"stylesheet\" media=\"screen\">
         
         <link rel=\"shortcut icon\" href=\"";
-        // line 27
+        // line 28
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
         echo "/images/layout/favicon.ico\" type=\"image/x-icon\" />
 \t\t<link rel=\"icon\" href=\"";
-        // line 28
+        // line 29
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
         echo "/images/layout/favicon.ico\" type=\"image/x-icon\" />        
         
         <link rel=\"apple-touch-icon\" href=\"";
-        // line 30
+        // line 31
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
         echo "/images/touch-images/apple-touch-icon.png\" />
     \t<link rel=\"apple-touch-icon\" sizes=\"57x57\" href=\"";
-        // line 31
+        // line 32
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
         echo "/images/touch-images/apple-touch-icon-57x57.png\" />
     \t<link rel=\"apple-touch-icon\" sizes=\"60x60\" href=\"";
-        // line 32
+        // line 33
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
         echo "/images/touch-images/apple-touch-icon-60x60.png\" />
     \t<link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"";
-        // line 33
+        // line 34
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
         echo "/images/touch-images/apple-touch-icon-72x72.png\" />
     \t<link rel=\"apple-touch-icon\" sizes=\"76x76\" href=\"";
-        // line 34
+        // line 35
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
         echo "/images/touch-images/apple-touch-icon-76x76.png\" />
     \t<link rel=\"apple-touch-icon\" sizes=\"114x114\" href=\"";
-        // line 35
+        // line 36
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
         echo "/images/touch-images/apple-touch-icon-114x114.png\" />
     \t<link rel=\"apple-touch-icon\" sizes=\"120x120\" href=\"";
-        // line 36
+        // line 37
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
         echo "/images/touch-images/apple-touch-icon-120x120.png\" />
     \t<link rel=\"apple-touch-icon\" sizes=\"144x144\" href=\"";
-        // line 37
+        // line 38
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
         echo "/images/touch-images/apple-touch-icon-144x144.png\" />
     \t<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"";
-        // line 38
+        // line 39
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
         echo "/images/touch-images/apple-touch-icon-152x152.png\" />
         
 
         ";
-        // line 42
+        // line 43
         echo "        <!--[if lt IE 9]>
         <script src=\"https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js\"></script>
         <script src=\"https://oss.maxcdn.com/respond/1.4.2/respond.min.js\"></script>
@@ -389,7 +392,7 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
         ";
     }
 
-    // line 74
+    // line 75
     public function block_content($context, array $blocks = array())
     {
     }
@@ -406,6 +409,6 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
 
     public function getDebugInfo()
     {
-        return array (  393 => 74,  385 => 42,  379 => 38,  375 => 37,  371 => 36,  367 => 35,  363 => 34,  359 => 33,  355 => 32,  351 => 31,  347 => 30,  342 => 28,  338 => 27,  333 => 25,  328 => 24,  322 => 21,  313 => 18,  309 => 16,  303 => 14,  300 => 13,  294 => 11,  288 => 9,  286 => 8,  281 => 5,  278 => 4,  263 => 232,  257 => 229,  176 => 151,  172 => 150,  168 => 149,  164 => 148,  161 => 147,  159 => 146,  157 => 145,  124 => 114,  107 => 99,  104 => 98,  93 => 88,  87 => 86,  84 => 85,  78 => 83,  76 => 82,  73 => 81,  71 => 80,  64 => 75,  62 => 74,  40 => 57,  28 => 47,  26 => 4,  21 => 1,);
+        return array (  396 => 75,  388 => 43,  382 => 39,  378 => 38,  374 => 37,  370 => 36,  366 => 35,  362 => 34,  358 => 33,  354 => 32,  350 => 31,  345 => 29,  341 => 28,  336 => 26,  331 => 25,  325 => 22,  316 => 19,  312 => 17,  306 => 15,  303 => 14,  297 => 12,  291 => 10,  289 => 9,  284 => 6,  281 => 5,  278 => 4,  263 => 233,  257 => 230,  176 => 152,  172 => 151,  168 => 150,  164 => 149,  161 => 148,  159 => 147,  157 => 146,  124 => 115,  107 => 100,  104 => 99,  93 => 89,  87 => 87,  84 => 86,  78 => 84,  76 => 83,  73 => 82,  71 => 81,  64 => 76,  62 => 75,  40 => 58,  28 => 48,  26 => 4,  21 => 1,);
     }
 }

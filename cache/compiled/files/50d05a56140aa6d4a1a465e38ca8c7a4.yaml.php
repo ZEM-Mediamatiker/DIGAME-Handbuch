@@ -2,26 +2,24 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'user/config/system.yaml',
-    'modified' => 1430292682,
+    'modified' => 1430305159,
     'data' => [
+        'absolute_urls' => false,
         'home' => [
             'alias' => '/home'
         ],
         'pages' => [
             'theme' => 'zemwiki',
+            'markdown_extra' => false,
             'process' => [
                 'markdown' => true,
-                'twig' => false
-            ],
-            'events' => [
-                'page' => false,
                 'twig' => true
             ]
         ],
         'cache' => [
             'enabled' => true,
             'check' => [
-                'pages' => true
+                'method' => 'file'
             ],
             'driver' => 'auto',
             'prefix' => 'g'
@@ -32,12 +30,22 @@ return [
             'auto_reload' => true,
             'autoescape' => false
         ],
+        'assets' => [
+            'css_pipeline' => false,
+            'css_minify' => true,
+            'css_rewrite' => true,
+            'js_pipeline' => false,
+            'js_minify' => true
+        ],
+        'errors' => [
+            'display' => true,
+            'log' => true
+        ],
         'debugger' => [
             'enabled' => false,
-            'max_depth' => 10,
-            'log' => [
-                'enabled' => false,
-                'timing' => false
+            'twig' => true,
+            'shutdown' => [
+                'close_connection' => true
             ]
         ]
     ]

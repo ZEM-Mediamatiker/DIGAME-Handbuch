@@ -1,7 +1,7 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\Config',
-    'checksum' => '80d5f87d585a3927b67762677412261a:d5c7d42126cdb140136cea7a161333ef',
+    'checksum' => '80d5f87d585a3927b67762677412261a:74b98ae93895e8f75b0fdb4563303edc',
     'files' => [
         'user/plugins' => [
             'plugins/cachebuster' => [
@@ -18,7 +18,7 @@ return [
             ],
             'plugins/simplesearch' => [
                 'file' => 'user/plugins/simplesearch/blueprints.yaml',
-                'modified' => 1429885364
+                'modified' => 1429869231
             ]
         ],
         'system/blueprints/config' => [
