@@ -102,7 +102,7 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
       \t\t\t\t";
         // line 98
         echo "        \t\t\t";
-        $this->env->loadTemplate("partials/header.html.twig")->display($context);
+        $this->loadTemplate("partials/header.html.twig", "partials/base.html.twig", 98)->display($context);
         // line 99
         echo "        \t\t\t<div class=\"clearfix\"></div>
       \t\t\t</div>

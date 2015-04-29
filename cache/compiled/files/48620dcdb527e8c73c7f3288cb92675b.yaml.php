@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'system/config/system.yaml',
-    'modified' => 1429869230,
+    'modified' => 1429889526,
     'data' => [
         'absolute_urls' => false,
         'timezone' => '',
@@ -43,7 +43,7 @@ return [
                 ]
             ],
             'types' => 'txt|xml|html|json|rss|atom',
-            'expires' => 604800
+            'expires' => 0
         ],
         'cache' => [
             'enabled' => true,
@@ -92,6 +92,9 @@ return [
         ],
         'media' => [
             'enable_media_timestamp' => false
+        ],
+        'security' => [
+            'default_hash' => '$2y$10$kwsyMVwM8/7j0K/6LHT.g.Fs49xOCTp2b8hh/S5.dPJuJcJB6T.UK'
         ]
     ]
 ];

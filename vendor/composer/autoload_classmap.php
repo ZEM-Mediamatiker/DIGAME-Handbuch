@@ -96,7 +96,6 @@ return array(
     'Grav\\Common\\File\\CompiledMarkdownFile' => $baseDir . '/system/src/Grav/Common/File/CompiledMarkdownFile.php',
     'Grav\\Common\\File\\CompiledYamlFile' => $baseDir . '/system/src/Grav/Common/File/CompiledYamlFile.php',
     'Grav\\Common\\Filesystem\\Folder' => $baseDir . '/system/src/Grav/Common/Filesystem/Folder.php',
-    'Grav\\Common\\Filesystem\\RecursiveFileFilterIterator' => $baseDir . '/system/src/Grav/Common/Filesystem/RecursiveFileFilterIterator.php',
     'Grav\\Common\\Filesystem\\RecursiveFolderFilterIterator' => $baseDir . '/system/src/Grav/Common/Filesystem/RecursiveFolderFilterIterator.php',
     'Grav\\Common\\GPM\\AbstractCollection' => $baseDir . '/system/src/Grav/Common/GPM/AbstractCollection.php',
     'Grav\\Common\\GPM\\Common\\AbstractPackageCollection' => $baseDir . '/system/src/Grav/Common/GPM/Common/AbstractPackageCollection.php',

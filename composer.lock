@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ec93fd2f5300692af1f5a2070660f9e4",
+    "hash": "4f0a908af5fa6bd2e6275bf33192e682",
     "packages": [
         {
             "name": "doctrine/cache",
@@ -82,12 +82,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/donatj/PhpUserAgent.git",
-                "reference": "f410570f5ffe9a7017a9d4d6154384ddff94a4d0"
+                "reference": "596032b5f0502e06c613137cb6ce20acd604a4a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/donatj/PhpUserAgent/zipball/f410570f5ffe9a7017a9d4d6154384ddff94a4d0",
-                "reference": "f410570f5ffe9a7017a9d4d6154384ddff94a4d0",
+                "url": "https://api.github.com/repos/donatj/PhpUserAgent/zipball/596032b5f0502e06c613137cb6ce20acd604a4a0",
+                "reference": "596032b5f0502e06c613137cb6ce20acd604a4a0",
                 "shasum": ""
             },
             "require": {
@@ -122,7 +122,7 @@
                 "user agent",
                 "useragent"
             ],
-            "time": "2015-03-26 20:44:53"
+            "time": "2015-04-23 16:09:36"
         },
         {
             "name": "erusev/parsedown",
@@ -213,12 +213,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "c982fe62c44798c433229cb0425c61b487cc1883"
+                "reference": "285e5152b8be85ef7e141a8b4c669775c338dbc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/c982fe62c44798c433229cb0425c61b487cc1883",
-                "reference": "c982fe62c44798c433229cb0425c61b487cc1883",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/285e5152b8be85ef7e141a8b4c669775c338dbc1",
+                "reference": "285e5152b8be85ef7e141a8b4c669775c338dbc1",
                 "shasum": ""
             },
             "require": {
@@ -263,7 +263,7 @@
                 "whoops",
                 "zf2"
             ],
-            "time": "2015-03-30 15:26:59"
+            "time": "2015-04-12 16:35:52"
         },
         {
             "name": "gregwar/cache",
@@ -404,12 +404,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maximebf/php-debugbar.git",
-                "reference": "8318a65b2094afa7a7c58515e60113a1c1aad480"
+                "reference": "0d1fcdd087843cf1eba9927295254bc707eab7dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maximebf/php-debugbar/zipball/8318a65b2094afa7a7c58515e60113a1c1aad480",
-                "reference": "8318a65b2094afa7a7c58515e60113a1c1aad480",
+                "url": "https://api.github.com/repos/maximebf/php-debugbar/zipball/0d1fcdd087843cf1eba9927295254bc707eab7dc",
+                "reference": "0d1fcdd087843cf1eba9927295254bc707eab7dc",
                 "shasum": ""
             },
             "require": {
@@ -452,7 +452,7 @@
             "keywords": [
                 "debug"
             ],
-            "time": "2015-03-11 10:26:45"
+            "time": "2015-04-21 11:06:08"
         },
         {
             "name": "monolog/monolog",
@@ -533,12 +533,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mrclay/minify.git",
-                "reference": "3c11ba8232a2155a1a29552aafc528be5fb0a662"
+                "reference": "cabd595a5aebf87e5d229814564aa3b466908be1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mrclay/minify/zipball/3c11ba8232a2155a1a29552aafc528be5fb0a662",
-                "reference": "3c11ba8232a2155a1a29552aafc528be5fb0a662",
+                "url": "https://api.github.com/repos/mrclay/minify/zipball/cabd595a5aebf87e5d229814564aa3b466908be1",
+                "reference": "cabd595a5aebf87e5d229814564aa3b466908be1",
                 "shasum": ""
             },
             "require": {
@@ -570,7 +570,7 @@
             ],
             "description": "Minify is a PHP5 app that helps you follow several rules for client-side performance. It combines multiple CSS or Javascript files, removes unnecessary whitespace and comments, and serves them with gzip encoding and optimal client-side cache headers",
             "homepage": "http://code.google.com/p/minify/",
-            "time": "2014-10-30 22:58:02"
+            "time": "2015-04-20 11:49:55"
         },
         {
             "name": "pimple/pimple",
@@ -658,16 +658,16 @@
         },
         {
             "name": "rockettheme/toolbox",
-            "version": "dev-develop",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/rockettheme/toolbox",
-                "reference": "497bdb19a08cde36f1e3fd226cf251ca59f092b1"
+                "url": "https://github.com/rockettheme/toolbox.git",
+                "reference": "e45437877e296c23cbbc89cbd448fe7683450695"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rockettheme/toolbox/zipball/497bdb19a08cde36f1e3fd226cf251ca59f092b1",
-                "reference": "497bdb19a08cde36f1e3fd226cf251ca59f092b1",
+                "url": "https://api.github.com/repos/rockettheme/toolbox/zipball/e45437877e296c23cbbc89cbd448fe7683450695",
+                "reference": "e45437877e296c23cbbc89cbd448fe7683450695",
                 "shasum": ""
             },
             "require": {
@@ -693,6 +693,7 @@
                     "RocketTheme\\Toolbox\\StreamWrapper\\": "StreamWrapper/src"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -702,7 +703,7 @@
                 "php",
                 "rockettheme"
             ],
-            "time": "2015-03-18 16:43:08"
+            "time": "2015-04-22 18:25:07"
         },
         {
             "name": "symfony/console",
@@ -933,20 +934,20 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.18.0",
+            "version": "v1.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "4cf7464348e7f9893a93f7096a90b73722be99cf"
+                "reference": "9f70492f44398e276d1b81c1b43adfe6751c7b7f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/4cf7464348e7f9893a93f7096a90b73722be99cf",
-                "reference": "4cf7464348e7f9893a93f7096a90b73722be99cf",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/9f70492f44398e276d1b81c1b43adfe6751c7b7f",
+                "reference": "9f70492f44398e276d1b81c1b43adfe6751c7b7f",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.2.4"
+                "php": ">=5.2.7"
             },
             "type": "library",
             "extra": {
@@ -986,7 +987,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2015-01-25 17:32:08"
+            "time": "2015-04-19 08:30:27"
         }
     ],
     "packages-dev": [],
@@ -996,8 +997,7 @@
         "maximebf/debugbar": 20,
         "filp/whoops": 20,
         "mrclay/minify": 20,
-        "donatj/phpuseragentparser": 20,
-        "rockettheme/toolbox": 20
+        "donatj/phpuseragentparser": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

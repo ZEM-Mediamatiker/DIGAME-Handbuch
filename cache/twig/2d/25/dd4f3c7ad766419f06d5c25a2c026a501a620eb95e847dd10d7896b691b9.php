@@ -8,15 +8,7 @@ class __TwigTemplate_2d25dd4f3c7ad766419f06d5c25a2c026a501a620eb95e847dd10d7896b
         parent::__construct($env);
 
         // line 1
-        try {
-            $this->parent = $this->env->loadTemplate("partials/simplesearch_base.html.twig");
-        } catch (Twig_Error_Loader $e) {
-            $e->setTemplateFile($this->getTemplateName());
-            $e->setTemplateLine(1);
-
-            throw $e;
-        }
-
+        $this->parent = $this->loadTemplate("partials/simplesearch_base.html.twig", "simplesearch_results.html.twig", 1);
         $this->blocks = array(
             'content' => array($this, 'block_content'),
         );
@@ -67,7 +59,7 @@ class __TwigTemplate_2d25dd4f3c7ad766419f06d5c25a2c026a501a620eb95e847dd10d7896b
         foreach ($context['_seq'] as $context["_key"] => $context["page"]) {
             // line 9
             echo "        ";
-            $this->env->loadTemplate("partials/simplesearch_item.html.twig")->display(array_merge($context, array("page" => $context["page"])));
+            $this->loadTemplate("partials/simplesearch_item.html.twig", "simplesearch_results.html.twig", 9)->display(array_merge($context, array("page" => $context["page"])));
             // line 10
             echo "    ";
             ++$context['loop']['index0'];
@@ -99,6 +91,6 @@ class __TwigTemplate_2d25dd4f3c7ad766419f06d5c25a2c026a501a620eb95e847dd10d7896b
 
     public function getDebugInfo()
     {
-        return array (  86 => 11,  72 => 10,  69 => 9,  52 => 8,  43 => 6,  39 => 4,  36 => 3,  11 => 1,);
+        return array (  78 => 11,  64 => 10,  61 => 9,  44 => 8,  35 => 6,  31 => 4,  28 => 3,  11 => 1,);
     }
 }

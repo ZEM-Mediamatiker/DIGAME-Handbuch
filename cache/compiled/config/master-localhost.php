@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\Config',
-    'timestamp' => 1429869241,
-    'checksum' => '80b77194be396b3e3aa56f4984329a60',
+    'timestamp' => 1430289374,
+    'checksum' => 'bcd30a3f3b1249724c6f01b5c8dd7f30',
     'data' => [
         'streams' => [
             'schemes' => [
@@ -328,7 +328,7 @@ return [
                     ]
                 ],
                 'types' => 'txt|xml|html|json|rss|atom',
-                'expires' => 604800
+                'expires' => 0
             ],
             'cache' => [
                 'enabled' => true,
@@ -383,6 +383,9 @@ return [
             ],
             'media' => [
                 'enable_media_timestamp' => false
+            ],
+            'security' => [
+                'default_hash' => '$2y$10$kwsyMVwM8/7j0K/6LHT.g.Fs49xOCTp2b8hh/S5.dPJuJcJB6T.UK'
             ]
         ]
     ]
