@@ -1,9 +1,14 @@
 {% extends 'partials/base.html.twig' %}
 
 {% block content %}
-	<div id="error">
+	<style>
+		#navigation{
+			display: none;
+		}
+	</style>
+	<div id="error" class="errorwrapper">
 		<div>
-			<h1>Error {{ page.header.http_response_code }}</h1>
+			<h1>{{ page.header.http_response_code }}</h1>
 			<h3>
 				{{ page.content }}
 			</h3>

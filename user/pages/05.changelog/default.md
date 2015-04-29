@@ -26,6 +26,17 @@ visible: true
 
 <br>
 
+>>>>>Version 2.1.1<br>
+
+
+|  | Change |
+| --- | --- |
+| + | 404-Seite hinzugefügt |
+| # | Printicon  ist nun wieder sichtbar |
+| ^ | Update auf GRAV-Version 0.9.26 sowie Update der Plugins Simplesearch und Pagination |
+| ^ | In den Suchergebnissen wird nun die Pfeilnavigation nicht mehr angezeigt. Gleiches gilt für die 404-Seite |
+| ^ | Diverse Dateien auf die neue Version von GRAV aktualisiert |
+
 >>>>>Version 2.1<br>
 
 

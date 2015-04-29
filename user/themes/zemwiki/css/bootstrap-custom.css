@@ -17,6 +17,12 @@ textarea:focus, input:focus{
     outline: 0;
 }
 
+#error{
+	height:512px;
+	background: url(../images/layout/404.png) no-repeat center;
+	padding-top: 120px;
+}
+
 #menu-overlay{
 	position: absolute;
 	width: 100%;

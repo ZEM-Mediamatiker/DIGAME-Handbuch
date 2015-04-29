@@ -5,4 +5,4 @@ template: error
 routable: false
 http_response_code: 404
 ---
-Woops. Scheint, als würde diese Seite nicht existieren. [Schnell zurück zur Startseite](/)
+Woops. Scheint, als würde diese Seite nicht existieren. <br>[Schnell zurück zur Startseite](/)
