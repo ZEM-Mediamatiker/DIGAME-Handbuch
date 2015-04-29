@@ -39,11 +39,16 @@ class __TwigTemplate_c3a56e35a53f2a6112a5d9fe7b54ad25920fba0ebd9caa59f94b10204fa
         }
         // line 9
         echo "-->
+    <style>
+\t\t#navigation{
+\t\tdisplay: none;
+\t\t}
+\t</style>
     <div class=\"search-item\">
     \t<div class=\"search-result-header\">
         \t<div class=\"search-title\">
             \t<h3 class=\"searchresulttitle\"><a href=\"";
-        // line 13
+        // line 18
         echo $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "url", array());
         echo "\">";
         echo $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "title", array());
@@ -52,7 +57,7 @@ class __TwigTemplate_c3a56e35a53f2a6112a5d9fe7b54ad25920fba0ebd9caa59f94b10204fa
 
         \t<div class=\"search-details\">
             \t<span class=\"search-date\">Geändert: ";
-        // line 17
+        // line 22
         echo twig_date_format_filter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "date", array()), $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["config"]) ? $context["config"] : null), "system", array()), "pages", array()), "dateformat", array()), "short", array()));
         echo "</span>
         \t</div>
@@ -60,15 +65,14 @@ class __TwigTemplate_c3a56e35a53f2a6112a5d9fe7b54ad25920fba0ebd9caa59f94b10204fa
 \t\t
 \t\t<div class=\"search-result\">
         \t<p>";
-        // line 22
+        // line 27
         echo $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "summary", array());
         echo "</p>
         </div>
 
         
     </div>
-</section>
-";
+</section>";
     }
 
     public function getTemplateName()
@@ -83,6 +87,6 @@ class __TwigTemplate_c3a56e35a53f2a6112a5d9fe7b54ad25920fba0ebd9caa59f94b10204fa
 
     public function getDebugInfo()
     {
-        return array (  64 => 22,  56 => 17,  47 => 13,  41 => 9,  33 => 7,  30 => 6,  28 => 5,  25 => 4,  23 => 3,  19 => 1,);
+        return array (  69 => 27,  61 => 22,  52 => 18,  41 => 9,  33 => 7,  30 => 6,  28 => 5,  25 => 4,  23 => 3,  19 => 1,);
     }
 }

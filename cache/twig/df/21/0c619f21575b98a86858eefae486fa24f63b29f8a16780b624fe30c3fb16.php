@@ -107,7 +107,7 @@ class __TwigTemplate_df210c619f21575b98a86858eefae486fa24f63b29f8a16780b624fe30c
         echo "        \t\t\t<div class=\"clearfix\"></div>
       \t\t\t</div>
       \t\t</section>
-      \t\t<a class=\"print\" href=\"javascript:window.print()\">
+      \t\t<a class=\"printmenu\" href=\"javascript:window.print()\">
       \t\t<div class=\"printmenubutton\">
       \t\t\t<div class=\"menutransform2\">            \t\t\t 
             \t</div>

@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\Config',
-    'timestamp' => 1430289374,
-    'checksum' => 'bcd30a3f3b1249724c6f01b5c8dd7f30',
+    'timestamp' => 1430292740,
+    'checksum' => '8c5701c189c9ee0035fa55bf6a886888',
     'data' => [
         'streams' => [
             'schemes' => [
@@ -111,9 +111,11 @@ return [
             ]
         ],
         'plugins' => [
+            'cachebuster' => [
+                'enabled' => true,
+                'route' => '/resetcache'
+            ],
             'error' => [
-                'name' => '404 Not Found',
-                'description' => '404 Not found',
                 'enabled' => true,
                 'routes' => [
                     404 => '/error'
@@ -122,11 +124,6 @@ return [
             'pagination' => [
                 'enabled' => true,
                 'path' => '/blog',
-                'built_in_css' => true,
-                'delta' => 0
-            ],
-            'problems' => [
-                'enabled' => true,
                 'built_in_css' => true
             ],
             'simplesearch' => [
@@ -356,10 +353,10 @@ return [
                 'css_rewrite' => true,
                 'js_pipeline' => false,
                 'js_minify' => true,
+                'enable_asset_timestamp' => false,
                 'collections' => [
                     'jquery' => 'system://assets/jquery/jquery-2.1.3.min.js'
-                ],
-                'enable_asset_timestamp' => false
+                ]
             ],
             'errors' => [
                 'display' => true,

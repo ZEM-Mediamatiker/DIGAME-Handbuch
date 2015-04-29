@@ -2,12 +2,23 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'user/plugins/error/blueprints.yaml',
-    'modified' => 1429869231,
+    'modified' => 1420535186,
     'data' => [
-        'name' => 'Error Page',
-        'version' => '1.0.0',
-        'description' => 'Displays error page.',
+        'name' => 'Error',
+        'version' => '1.2.2',
+        'description' => 'Displays the error page.',
+        'icon' => 'warning',
+        'author' => [
+            'name' => 'Team Grav',
+            'email' => 'devs@getgrav.org',
+            'url' => 'http://getgrav.org'
+        ],
+        'homepage' => 'https://github.com/getgrav/grav-plugin-error',
+        'keywords' => 'error, plugin, required',
+        'bugs' => 'https://github.com/getgrav/grav-plugin-error/issues',
+        'license' => 'MIT',
         'form' => [
+            'validation' => 'strict',
             'fields' => [
                 'enabled' => [
                     'type' => 'toggle',

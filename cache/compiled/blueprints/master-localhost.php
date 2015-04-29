@@ -1,12 +1,16 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\Config',
-    'checksum' => '80d5f87d585a3927b67762677412261a:016f8f5de28260f11833be6fff5f6cea',
+    'checksum' => '80d5f87d585a3927b67762677412261a:d5c7d42126cdb140136cea7a161333ef',
     'files' => [
         'user/plugins' => [
+            'plugins/cachebuster' => [
+                'file' => 'user/plugins/cachebuster/blueprints.yaml',
+                'modified' => 1430225064
+            ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/blueprints.yaml',
-                'modified' => 1429869231
+                'modified' => 1420535186
             ],
             'plugins/pagination' => [
                 'file' => 'user/plugins/pagination/blueprints.yaml',
@@ -14,7 +18,7 @@ return [
             ],
             'plugins/simplesearch' => [
                 'file' => 'user/plugins/simplesearch/blueprints.yaml',
-                'modified' => 1429869231
+                'modified' => 1429885364
             ]
         ],
         'system/blueprints/config' => [
@@ -38,6 +42,26 @@ return [
     ],
     'data' => [
         'items' => [
+            'plugins.cachebuster.enabled' => [
+                'type' => 'toggle',
+                'label' => 'Plugin status',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.cachebuster.enabled'
+            ],
+            'plugins.cachebuster.route' => [
+                'type' => 'text',
+                'label' => 'Route',
+                'placeholder' => '/cachebuster',
+                'name' => 'plugins.cachebuster.route'
+            ],
             'plugins.error.enabled' => [
                 'type' => 'toggle',
                 'label' => 'Plugin status',
@@ -606,6 +630,10 @@ return [
         ],
         'nested' => [
             'plugins' => [
+                'cachebuster' => [
+                    'enabled' => 'plugins.cachebuster.enabled',
+                    'route' => 'plugins.cachebuster.route'
+                ],
                 'error' => [
                     'enabled' => 'plugins.error.enabled'
                 ],
