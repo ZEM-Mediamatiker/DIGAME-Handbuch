@@ -1,9 +1,11 @@
 ---
 title: Media Assets
 menu: Gruppen
-description: Your page description goes here
-keywords: [1,2]
-author: Stefan Eckstein
+metadata:
+    description: Die Webbasierte Anleitung für DIGAME vom Zentrum elektronische Medien ZEM.
+    keywords: DIGAME,ZEM,Zentrum elektronische Medien,Mediathek Admin,Mediathek,Bilddatenbank,Bildverwaltung,Bundesverwaltung,Eidgenossenschaft,Schweizerische Eidgenossenschaft,VBS,Bundesamt für Verteidigung, Bevölkerungsschutz und Sport
+    author: Stefan Eckstein | Zentrum elektronische Medien (ZEM)
+    robots: index, follow
 process:
 	twig: true
 taxonomy:
@@ -14,7 +16,8 @@ visible: true
 
 ## Gruppieren
 ***
-Mehrere Media Assets können zu Gruppen zusammengefasst werden. Eine Gruppe ist meist thematisch.(2) zeigt alle Media Assets an die in der Gruppe zusammengefasst sind. Mit (3) kann die Gruppierung wieder aufgehoben werden. Mit (4) werden nur die Media Assets im Anzeige-Bereich angezeigt welche sich in dieser Gruppe befinden.
+Mehrere Media Assets können zu Gruppen zusammengefasst werden. Eine Gruppe ist meist thematisch.
+(2) zeigt alle Media Assets an die in der Gruppe zusammengefasst sind. Mit (3) kann die Gruppierung wieder aufgehoben werden. Mit (4) werden nur die Media Assets im Anzeige-Bereich angezeigt welche sich in dieser Gruppe befinden.
 
 <br>
 {{ media['gruppe.png'].html() }}

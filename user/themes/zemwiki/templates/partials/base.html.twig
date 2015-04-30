@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--WOAH-->
+<!DOCTYPE html>
 <html lang="de">
     <head>
 		{% block head %}
@@ -6,15 +6,9 @@
 		<meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        {% if header.description %}
-        <!--<meta name="description" content="{{ header.description }}">-->
-        {% else %}
-        <!--<meta name="description" content="{{ site.description }}">-->
-        {% endif %}
         {% if header.robots %}
         <meta name="robots" content="{{ header.robots }}">
         {% endif %}
-        <meta http-equiv="expires" content="0">
 
         <title>{% if header.title %}{{ header.title }} | {% endif %}{{ site.title }}</title>
 
@@ -145,74 +139,12 @@
         {# Bootstrap core JavaScript #}
         {# ================================================== #}
         {# Placed at the end of the document so the pages load faster #}
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>       
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="{{ theme_url }}/js/modernizr.js"></script>       
         <script src="{{ theme_url }}/js/bootstrap.min.js"></script>
         <script src="{{ theme_url }}/js/mousetrap.min.js"></script>
         <script src="{{ theme_url }}/js/scripts.js"></script>
         <script src="{{ theme_url }}/js/classie.js"></script>
-		<!--<script>
-			var overlay = document.getElementById( 'menu-overlay' ),
-				bodyContainer = document.getElementById( 'page' ),
-				showOverlay = document.getElementById( 'showOverlay' ),
-
-				body = document.body;			
-	
-			showOverlay.onclick = function() {
-				classie.toggle( this, 'active' );
-				classie.toggle( bodyContainer, 'fixbody' );
-				classie.toggle( overlay, 'open-overlay' );
-				disableOther( 'showOverlay' );
-			};
-	
-
-			function disableOther( button ) {	
-				if( button !== 'showOverlay' ) {
-					classie.toggle( showOverlay, 'disabled' );
-				}
-				
-			}
-		</script>
-		<script>
-			var searchoverlay = document.getElementById( 'search-overlay' ),
-				bodyContainer = document.getElementById( 'page' ),
-				showSearchOverlay = document.getElementById( 'showSearchOverlay' );
-			
-	
-			showSearchOverlay.onclick = function() {
-				classie.toggle( this, 'active' );
-				classie.toggle( bodyContainer, 'fixbody' );
-				classie.toggle( searchoverlay, 'open-searchoverlay' );
-				
-				disableOther( 'showSearchOverlay' );
-			};
-	
-
-			function disableOther( button ) {	
-				if( button !== 'showSearchOverlay' ) {
-					classie.toggle( showOverlay, 'disabled' );
-				}
-				
-			}
-		</script>
-		
-		<script>
-			$('#showSearchOverlay').on('click', function(){
-				$('#searchfield').focus();
-			});
-			$('#closeSearchOverlay').on('click', function(){
-    		$('#search-overlay').removeClass('open-searchoverlay');
-    		$('#page').removeClass('fixbody');
-			});
-		
-		</script>
-		
-		<script>
-			function onSearch(form) {
-    			form.action += form.querySelector('#searchfield').value;
-			}
-		</script>-->
-		
-		
 		<script>
 			Mousetrap.bind('s', function(e){
 				$('#search-overlay').addClass('open-searchoverlay');
