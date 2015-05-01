@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\Config',
-    'timestamp' => 1430376751,
-    'checksum' => '9d7b3e5980e12b69874311cbe076e148',
+    'timestamp' => 1430483845,
+    'checksum' => 'fea6ad194921d6f4a7cb09b93516c96a',
     'data' => [
         'streams' => [
             'schemes' => [

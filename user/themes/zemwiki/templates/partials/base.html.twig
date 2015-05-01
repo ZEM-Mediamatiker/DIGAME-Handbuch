@@ -11,13 +11,17 @@
         {% endif %}
 
         <title>{% if header.title %}{{ header.title }} | {% endif %}{{ site.title }}</title>
-
+		
         {# Bootstrap core CSS #}
         <link href="{{ theme_url }}/css/bootstrap.min.css" rel="stylesheet" media="screen">
 
         {# Custom styles for this theme #}
         <link href="{{ theme_url }}/css/print.min.css" rel="stylesheet" media="print">
         <link href="{{ theme_url }}/css/bootstrap-custom.css" rel="stylesheet" media="screen">
+        
+
+	<link rel="stylesheet" type="text/css" href="{{ theme_url }}/css/ie.css" />
+
         
         <link rel="shortcut icon" href="{{ theme_url }}/images/layout/favicon.ico" type="image/x-icon" />
 		<link rel="icon" href="{{ theme_url }}/images/layout/favicon.ico" type="image/x-icon" />        
@@ -170,6 +174,15 @@
 				$('#navbtn').prop('checked', false);
 				$('#search-overlay').removeClass('open-searchoverlay');
 			});
-		</script>	        
+		</script>
+
+		<!--[if IE]>
+		<script>
+        	$('#showOverlay').on('click', function(){
+				$("#menu-overlay").css("top","auto");
+				$("#menu-overlay").css("bottom","auto");
+			});
+        </script>
+        <![endif]-->	        
     </body>
 </html>

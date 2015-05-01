@@ -53,10 +53,7 @@ var overlay = document.getElementById( 'menu-overlay' ),
 			});
 			
 			
-			
-			
-			
-			
+						
 			function onSearch(form) {
     			form.action += form.querySelector('#searchfield').value;
 			}
