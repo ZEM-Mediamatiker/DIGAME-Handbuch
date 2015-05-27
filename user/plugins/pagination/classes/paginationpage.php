@@ -1,10 +1,12 @@
 <?php
 namespace Grav\Plugin;
 
-use \Grav\Common\Registry;
+use \Grav\Common\GravTrait;
 
 class PaginationPage
 {
+    use GravTrait;
+
     /**
      * @var int
      */
@@ -16,6 +18,11 @@ class PaginationPage
     public $url;
 
     /**
+     * @var int
+     */
+    protected $delta=0;
+
+    /**
      * Constructor
      *
      * @param int $number
@@ -25,6 +32,7 @@ class PaginationPage
     {
         $this->number = $number;
         $this->url = $url;
+        $this->delta = self::getGrav()['config']->get('plugins.pagination.delta');
     }
 
     /**
@@ -34,10 +42,39 @@ class PaginationPage
      */
     public function isCurrent()
     {
-        if (Registry::get('Uri')->currentPage() == $this->number) {
+        if (self::getGrav()['uri']->currentPage() == $this->number) {
             return true;
         } else {
             return false;
+        }
+    }
+
+    /**
+     * Returns true if the page is within a configurable delta of the current one
+     *
+     * @return bool
+     */
+    public function isInDelta()
+    {
+        if (!$this->delta) {
+            return true;
+        } else {
+            return abs(self::getGrav()['uri']->currentPage() - $this->number) < $this->delta;
+        }
+    }
+
+    /**
+     * Returns true is this page is the last/first one at the border of the delta range
+     * (Used to display a "gap" li element ...)
+     *
+     * @return bool
+     */
+    public function isDeltaBorder()
+    {
+        if (!$this->delta) {
+            return false;
+        } else {
+            return abs(self::getGrav()['uri']->currentPage() - $this->number) == $this->delta;
         }
     }
 }

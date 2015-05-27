@@ -3,13 +3,18 @@ namespace Grav\Plugin;
 
 use Grav\Common\Iterator;
 use Grav\Common\Page\Collection;
-use Grav\Common\Registry;
+use Grav\Common\GravTrait;
+use Grav\Common\Uri;
 
 class PaginationHelper extends Iterator
 {
+    use GravTrait;
+
     protected $current;
     protected $items_per_page;
     protected $page_count;
+
+    protected $url_params;
 
     /**
      * Create and initialize pagination.
@@ -20,16 +25,31 @@ class PaginationHelper extends Iterator
     {
         require_once __DIR__ . '/paginationpage.php';
 
-        $params = $collection->params();
-
-        $uri = Registry::get('Uri');
+        /** @var Uri $uri */
+        $uri = self::getGrav()['uri'];
+        $config = self::getGrav()['config'];
         $this->current = $uri->currentPage();
 
+        // get params
+        $url_params = explode('/', ltrim($uri->params(), '/'));
+        foreach ($url_params as $key => $value) {
+            if (strpos($value, 'page' . $config->get('system.param_sep')) !== false) {
+                unset($url_params[$key]);
+            }
+        }
+        $this->url_params = '/'.implode('/', $url_params);
+
+        // check for empty params
+        if ($this->url_params == '/') {
+            $this->url_params = '';
+        }
+
+        $params = $collection->params();
         $this->items_per_page = $params['limit'];
         $this->page_count = ceil($collection->count() / $this->items_per_page);
 
         for ($x=1; $x <= $this->page_count; $x++) {
-            $this->items[$x] = new PaginationPage($x, '/page:'.$x);
+            $this->items[$x] = new PaginationPage($x, '/page' . $config->get('system.param_sep') . $x);
         }
     }
 
@@ -87,5 +107,10 @@ class PaginationHelper extends Iterator
         }
 
         return null;
+    }
+
+    public function params()
+    {
+        return $this->url_params;
     }
 }
