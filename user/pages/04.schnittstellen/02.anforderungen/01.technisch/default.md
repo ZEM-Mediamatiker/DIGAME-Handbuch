@@ -53,6 +53,7 @@ Jeder Methodenaufruf, der vom System nicht behandelt werden kann, wird mit einer
 | | | | | |
 | Search | Unauthorized | 401 | Missing usertoken | Usertoken ist in HttpHeader nicht verfügbar |
 | Search | LengthRequired | 411 | Missing search query | Kein gültiger Suchtext vorhanden |
+| Search | BadRequest | 400 | Unknown Organisation | Der Name der Organisation ist ungültig |
 | | | | | |
 | Usertoken | Forbidden | 403 | Https required | SSL ist für dieses Query nötig |
 | Usertoken | Unauthorized | 401 | Action not allowed | Dieses Query ist für diesen Benutzer nicht erlaubt. |
