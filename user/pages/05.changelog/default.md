@@ -36,6 +36,7 @@ visible: true
 | + | .gitignore hinzugefügt |
 | ^ | Update auf GRAV-Version 0.9.27 |
 | ^ | Update Simplesearch- und Pagination-Plugin. |
+| ^ | Inhalt der Schnittstellendokumentation aktualisiert |
 
 >>>>>Version 2.1.1<br>
 
