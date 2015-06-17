@@ -6,7 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    $vendorDir . '/symfony/var-dumper/Symfony/Component/VarDumper/Resources/functions/dump.php',
+    $vendorDir . '/symfony/var-dumper/Resources/functions/dump.php',
     $vendorDir . '/ircmaxell/password-compat/lib/password.php',
     $vendorDir . '/donatj/phpuseragentparser/Source/UserAgentParser.php',
     $baseDir . '/system/defines.php',

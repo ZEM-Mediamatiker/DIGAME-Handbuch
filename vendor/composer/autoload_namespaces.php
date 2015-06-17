@@ -8,10 +8,6 @@ $baseDir = dirname($vendorDir);
 return array(
     'Whoops' => array($vendorDir . '/filp/whoops/src'),
     'Twig_' => array($vendorDir . '/twig/twig/lib'),
-    'Symfony\\Component\\Yaml\\' => array($vendorDir . '/symfony/yaml'),
-    'Symfony\\Component\\VarDumper\\' => array($vendorDir . '/symfony/var-dumper'),
-    'Symfony\\Component\\EventDispatcher\\' => array($vendorDir . '/symfony/event-dispatcher'),
-    'Symfony\\Component\\Console\\' => array($vendorDir . '/symfony/console'),
     'Psr\\Log\\' => array($vendorDir . '/psr/log'),
     'Pimple' => array($vendorDir . '/pimple/pimple/src'),
     'ParsedownExtra' => array($vendorDir . '/erusev/parsedown-extra'),

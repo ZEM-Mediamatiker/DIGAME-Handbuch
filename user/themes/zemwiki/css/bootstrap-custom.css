@@ -1153,7 +1153,6 @@ blockquote > blockquote > blockquote > blockquote > blockquote > blockquote > p 
     font-family: 'mulilight';
     src: url('../fonts/muli-light-webfont.eot');
     src: url('../fonts/muli-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/muli-light-webfont.woff2') format('woff2'),
          url('../fonts/muli-light-webfont.woff') format('woff'),
          url('../fonts/muli-light-webfont.ttf') format('truetype'),
          url('../fonts/muli-light-webfont.svg#mulilight') format('svg');

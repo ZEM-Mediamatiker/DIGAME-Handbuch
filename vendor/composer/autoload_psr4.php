@@ -6,6 +6,10 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Symfony\\Component\\Yaml\\' => array($vendorDir . '/symfony/yaml'),
+    'Symfony\\Component\\VarDumper\\' => array($vendorDir . '/symfony/var-dumper'),
+    'Symfony\\Component\\EventDispatcher\\' => array($vendorDir . '/symfony/event-dispatcher'),
+    'Symfony\\Component\\Console\\' => array($vendorDir . '/symfony/console'),
     'RocketTheme\\Toolbox\\StreamWrapper\\' => array($vendorDir . '/rockettheme/toolbox/StreamWrapper/src'),
     'RocketTheme\\Toolbox\\Session\\' => array($vendorDir . '/rockettheme/toolbox/Session/src'),
     'RocketTheme\\Toolbox\\ResourceLocator\\' => array($vendorDir . '/rockettheme/toolbox/ResourceLocator/src'),

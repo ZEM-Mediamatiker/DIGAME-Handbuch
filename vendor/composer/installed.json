@@ -88,22 +88,21 @@
     },
     {
         "name": "symfony/var-dumper",
-        "version": "v2.6.6",
-        "version_normalized": "2.6.6.0",
-        "target-dir": "Symfony/Component/VarDumper",
+        "version": "v2.7.1",
+        "version_normalized": "2.7.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/var-dumper.git",
-            "reference": "aafae00236e147568832de3c65ccb94cfc836278"
+            "reference": "c509921f260353bf07b257f84017777c8b0aa4bc"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/var-dumper/zipball/aafae00236e147568832de3c65ccb94cfc836278",
-            "reference": "aafae00236e147568832de3c65ccb94cfc836278",
+            "url": "https://api.github.com/repos/symfony/var-dumper/zipball/c509921f260353bf07b257f84017777c8b0aa4bc",
+            "reference": "c509921f260353bf07b257f84017777c8b0aa4bc",
             "shasum": ""
         },
         "require": {
-            "php": ">=5.3.3"
+            "php": ">=5.3.9"
         },
         "require-dev": {
             "symfony/phpunit-bridge": "~2.7"
@@ -111,11 +110,11 @@
         "suggest": {
             "ext-symfony_debug": ""
         },
-        "time": "2015-03-31 08:12:29",
+        "time": "2015-06-08 09:37:21",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "2.6-dev"
+                "dev-master": "2.7-dev"
             }
         },
         "installation-source": "dist",
@@ -123,7 +122,7 @@
             "files": [
                 "Resources/functions/dump.php"
             ],
-            "psr-0": {
+            "psr-4": {
                 "Symfony\\Component\\VarDumper\\": ""
             }
         },
@@ -133,16 +132,16 @@
         ],
         "authors": [
             {
-                "name": "Symfony Community",
-                "homepage": "http://symfony.com/contributors"
-            },
-            {
                 "name": "Nicolas Grekas",
                 "email": "p@tchwork.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
             }
         ],
         "description": "Symfony mechanism for exploring and dumping PHP variables",
-        "homepage": "http://symfony.com",
+        "homepage": "https://symfony.com",
         "keywords": [
             "debug",
             "dump"
@@ -195,12 +194,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/maximebf/php-debugbar.git",
-            "reference": "0d1fcdd087843cf1eba9927295254bc707eab7dc"
+            "reference": "e5d9c677175d147b72a05087b916dfd103e1df74"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/maximebf/php-debugbar/zipball/0d1fcdd087843cf1eba9927295254bc707eab7dc",
-            "reference": "0d1fcdd087843cf1eba9927295254bc707eab7dc",
+            "url": "https://api.github.com/repos/maximebf/php-debugbar/zipball/e5d9c677175d147b72a05087b916dfd103e1df74",
+            "reference": "e5d9c677175d147b72a05087b916dfd103e1df74",
             "shasum": ""
         },
         "require": {
@@ -216,7 +215,7 @@
             "monolog/monolog": "Log using Monolog",
             "predis/predis": "Redis storage"
         },
-        "time": "2015-04-21 11:06:08",
+        "time": "2015-06-07 19:27:13",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -253,12 +252,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/filp/whoops.git",
-            "reference": "285e5152b8be85ef7e141a8b4c669775c338dbc1"
+            "reference": "37b5e653c99cbb9113108d7dc59a0ddc306acc46"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/filp/whoops/zipball/285e5152b8be85ef7e141a8b4c669775c338dbc1",
-            "reference": "285e5152b8be85ef7e141a8b4c669775c338dbc1",
+            "url": "https://api.github.com/repos/filp/whoops/zipball/37b5e653c99cbb9113108d7dc59a0ddc306acc46",
+            "reference": "37b5e653c99cbb9113108d7dc59a0ddc306acc46",
             "shasum": ""
         },
         "require": {
@@ -267,7 +266,7 @@
         "require-dev": {
             "mockery/mockery": "0.9.*"
         },
-        "time": "2015-04-12 16:35:52",
+        "time": "2015-05-29 15:12:07",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -405,22 +404,21 @@
     },
     {
         "name": "symfony/event-dispatcher",
-        "version": "v2.6.6",
-        "version_normalized": "2.6.6.0",
-        "target-dir": "Symfony/Component/EventDispatcher",
+        "version": "v2.7.1",
+        "version_normalized": "2.7.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/EventDispatcher.git",
-            "reference": "70f7c8478739ad21e3deef0d977b38c77f1fb284"
+            "reference": "be3c5ff8d503c46768aeb78ce6333051aa6f26d9"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/70f7c8478739ad21e3deef0d977b38c77f1fb284",
-            "reference": "70f7c8478739ad21e3deef0d977b38c77f1fb284",
+            "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/be3c5ff8d503c46768aeb78ce6333051aa6f26d9",
+            "reference": "be3c5ff8d503c46768aeb78ce6333051aa6f26d9",
             "shasum": ""
         },
         "require": {
-            "php": ">=5.3.3"
+            "php": ">=5.3.9"
         },
         "require-dev": {
             "psr/log": "~1.0",
@@ -434,16 +432,16 @@
             "symfony/dependency-injection": "",
             "symfony/http-kernel": ""
         },
-        "time": "2015-03-13 17:37:22",
+        "time": "2015-06-08 09:37:21",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "2.6-dev"
+                "dev-master": "2.7-dev"
             }
         },
         "installation-source": "dist",
         "autoload": {
-            "psr-0": {
+            "psr-4": {
                 "Symfony\\Component\\EventDispatcher\\": ""
             }
         },
@@ -453,49 +451,48 @@
         ],
         "authors": [
             {
-                "name": "Symfony Community",
-                "homepage": "http://symfony.com/contributors"
-            },
-            {
                 "name": "Fabien Potencier",
                 "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
             }
         ],
         "description": "Symfony EventDispatcher Component",
-        "homepage": "http://symfony.com"
+        "homepage": "https://symfony.com"
     },
     {
         "name": "symfony/yaml",
-        "version": "v2.6.6",
-        "version_normalized": "2.6.6.0",
-        "target-dir": "Symfony/Component/Yaml",
+        "version": "v2.7.1",
+        "version_normalized": "2.7.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/Yaml.git",
-            "reference": "174f009ed36379a801109955fc5a71a49fe62dd4"
+            "reference": "9808e75c609a14f6db02f70fccf4ca4aab53c160"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/Yaml/zipball/174f009ed36379a801109955fc5a71a49fe62dd4",
-            "reference": "174f009ed36379a801109955fc5a71a49fe62dd4",
+            "url": "https://api.github.com/repos/symfony/Yaml/zipball/9808e75c609a14f6db02f70fccf4ca4aab53c160",
+            "reference": "9808e75c609a14f6db02f70fccf4ca4aab53c160",
             "shasum": ""
         },
         "require": {
-            "php": ">=5.3.3"
+            "php": ">=5.3.9"
         },
         "require-dev": {
             "symfony/phpunit-bridge": "~2.7"
         },
-        "time": "2015-03-30 15:54:10",
+        "time": "2015-06-10 15:30:22",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "2.6-dev"
+                "dev-master": "2.7-dev"
             }
         },
         "installation-source": "dist",
         "autoload": {
-            "psr-0": {
+            "psr-4": {
                 "Symfony\\Component\\Yaml\\": ""
             }
         },
@@ -505,16 +502,16 @@
         ],
         "authors": [
             {
-                "name": "Symfony Community",
-                "homepage": "http://symfony.com/contributors"
-            },
-            {
                 "name": "Fabien Potencier",
                 "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
             }
         ],
         "description": "Symfony Yaml Component",
-        "homepage": "http://symfony.com"
+        "homepage": "https://symfony.com"
     },
     {
         "name": "pimple/pimple",
@@ -661,23 +658,23 @@
     },
     {
         "name": "twig/twig",
-        "version": "v1.18.1",
-        "version_normalized": "1.18.1.0",
+        "version": "v1.18.2",
+        "version_normalized": "1.18.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/twigphp/Twig.git",
-            "reference": "9f70492f44398e276d1b81c1b43adfe6751c7b7f"
+            "reference": "e8e6575abf6102af53ec283f7f14b89e304fa602"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/twigphp/Twig/zipball/9f70492f44398e276d1b81c1b43adfe6751c7b7f",
-            "reference": "9f70492f44398e276d1b81c1b43adfe6751c7b7f",
+            "url": "https://api.github.com/repos/twigphp/Twig/zipball/e8e6575abf6102af53ec283f7f14b89e304fa602",
+            "reference": "e8e6575abf6102af53ec283f7f14b89e304fa602",
             "shasum": ""
         },
         "require": {
             "php": ">=5.2.7"
         },
-        "time": "2015-04-19 08:30:27",
+        "time": "2015-06-06 23:31:24",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -720,22 +717,21 @@
     },
     {
         "name": "symfony/console",
-        "version": "v2.6.6",
-        "version_normalized": "2.6.6.0",
-        "target-dir": "Symfony/Component/Console",
+        "version": "v2.7.1",
+        "version_normalized": "2.7.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/Console.git",
-            "reference": "5b91dc4ed5eb08553f57f6df04c4730a73992667"
+            "reference": "564398bc1f33faf92fc2ec86859983d30eb81806"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/Console/zipball/5b91dc4ed5eb08553f57f6df04c4730a73992667",
-            "reference": "5b91dc4ed5eb08553f57f6df04c4730a73992667",
+            "url": "https://api.github.com/repos/symfony/Console/zipball/564398bc1f33faf92fc2ec86859983d30eb81806",
+            "reference": "564398bc1f33faf92fc2ec86859983d30eb81806",
             "shasum": ""
         },
         "require": {
-            "php": ">=5.3.3"
+            "php": ">=5.3.9"
         },
         "require-dev": {
             "psr/log": "~1.0",
@@ -748,16 +744,16 @@
             "symfony/event-dispatcher": "",
             "symfony/process": ""
         },
-        "time": "2015-03-30 15:54:10",
+        "time": "2015-06-10 15:30:22",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "2.6-dev"
+                "dev-master": "2.7-dev"
             }
         },
         "installation-source": "dist",
         "autoload": {
-            "psr-0": {
+            "psr-4": {
                 "Symfony\\Component\\Console\\": ""
             }
         },
@@ -767,16 +763,16 @@
         ],
         "authors": [
             {
-                "name": "Symfony Community",
-                "homepage": "http://symfony.com/contributors"
-            },
-            {
                 "name": "Fabien Potencier",
                 "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
             }
         ],
         "description": "Symfony Console Component",
-        "homepage": "http://symfony.com"
+        "homepage": "https://symfony.com"
     },
     {
         "name": "doctrine/cache",
@@ -972,18 +968,18 @@
     },
     {
         "name": "gregwar/image",
-        "version": "v2.0.19",
-        "version_normalized": "2.0.19.0",
+        "version": "v2.0.20",
+        "version_normalized": "2.0.20.0",
         "target-dir": "Gregwar/Image",
         "source": {
             "type": "git",
             "url": "https://github.com/Gregwar/Image.git",
-            "reference": "8faeedfc211162bef5cddc93bea58700c32e06f6"
+            "reference": "2c6bf2fb3b0eb844f0568d6ee55eeb86fc799414"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/Gregwar/Image/zipball/8faeedfc211162bef5cddc93bea58700c32e06f6",
-            "reference": "8faeedfc211162bef5cddc93bea58700c32e06f6",
+            "url": "https://api.github.com/repos/Gregwar/Image/zipball/2c6bf2fb3b0eb844f0568d6ee55eeb86fc799414",
+            "reference": "2c6bf2fb3b0eb844f0568d6ee55eeb86fc799414",
             "shasum": ""
         },
         "require": {
@@ -994,7 +990,7 @@
         "suggest": {
             "behat/transliterator": "Transliterator provides ability to set non-latin1 pretty names"
         },
-        "time": "2015-02-03 16:44:33",
+        "time": "2015-05-30 19:24:37",
         "type": "library",
         "installation-source": "dist",
         "autoload": {

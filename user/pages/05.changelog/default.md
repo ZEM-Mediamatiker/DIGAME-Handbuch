@@ -28,6 +28,15 @@ visible: true
 
 <br>
 
+>>>>>Version 2.1.3<br>
+
+
+|  | Change |
+| --- | --- |
+| ^ | Update auf GRAV-Version 0.9.28 |
+| ^ | Bug in Firefox Mobile gefixt, der ein Inputfeld generiert hat, welches das Layout zerstört |
+| ^ | Ladezeit optimiert |
+
 >>>>>Version 2.1.2<br>
 
 
@@ -69,7 +78,7 @@ visible: true
 | ^ | Update auf die GRAV-Version 0.9.23 |
 | ^ | Suchergebnisse übersichtlicher gestaltet |
 | ^ | Diverse Verbesserungen und Anpassungen in Dateien und CSS-Formatierungen |
-| ! | Die Mobile-Version funktioniert seit den letzten Updates von Safari unter iOS und Google Chrome / Firefox unter Android nicht mehr wie gewünscht. Diverse Verbesserungen habennoch nicht zum gewünschten Ziel geführt.  |
+| ! | Die Mobile-Version funktioniert seit den letzten Updates von Safari unter iOS und Google Chrome / Firefox unter Android nicht mehr wie gewünscht. Diverse Verbesserungen haben noch nicht zum gewünschten Ziel geführt.  |
 
 >>>>>Version 1.2<br>
 
