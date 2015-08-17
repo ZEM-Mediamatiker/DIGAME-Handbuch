@@ -1,20 +1,20 @@
 [
     {
         "name": "erusev/parsedown",
-        "version": "1.5.3",
-        "version_normalized": "1.5.3.0",
+        "version": "1.5.4",
+        "version_normalized": "1.5.4.0",
         "source": {
             "type": "git",
             "url": "https://github.com/erusev/parsedown.git",
-            "reference": "b9e5228e92e5f5c17d7774cfb2de8e5e8362de1a"
+            "reference": "0e89e3714bda18973184d30646306bb0a482bd96"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/erusev/parsedown/zipball/b9e5228e92e5f5c17d7774cfb2de8e5e8362de1a",
-            "reference": "b9e5228e92e5f5c17d7774cfb2de8e5e8362de1a",
+            "url": "https://api.github.com/repos/erusev/parsedown/zipball/0e89e3714bda18973184d30646306bb0a482bd96",
+            "reference": "0e89e3714bda18973184d30646306bb0a482bd96",
             "shasum": ""
         },
-        "time": "2015-04-29 20:22:24",
+        "time": "2015-08-03 09:24:05",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -87,18 +87,77 @@
         ]
     },
     {
-        "name": "symfony/var-dumper",
-        "version": "v2.7.1",
-        "version_normalized": "2.7.1.0",
+        "name": "symfony/console",
+        "version": "v2.7.3",
+        "version_normalized": "2.7.3.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/symfony/var-dumper.git",
-            "reference": "c509921f260353bf07b257f84017777c8b0aa4bc"
+            "url": "https://github.com/symfony/Console.git",
+            "reference": "d6cf02fe73634c96677e428f840704bfbcaec29e"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/var-dumper/zipball/c509921f260353bf07b257f84017777c8b0aa4bc",
-            "reference": "c509921f260353bf07b257f84017777c8b0aa4bc",
+            "url": "https://api.github.com/repos/symfony/Console/zipball/d6cf02fe73634c96677e428f840704bfbcaec29e",
+            "reference": "d6cf02fe73634c96677e428f840704bfbcaec29e",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.9"
+        },
+        "require-dev": {
+            "psr/log": "~1.0",
+            "symfony/event-dispatcher": "~2.1",
+            "symfony/phpunit-bridge": "~2.7",
+            "symfony/process": "~2.1"
+        },
+        "suggest": {
+            "psr/log": "For using the console logger",
+            "symfony/event-dispatcher": "",
+            "symfony/process": ""
+        },
+        "time": "2015-07-28 15:18:12",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.7-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\Console\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Console Component",
+        "homepage": "https://symfony.com"
+    },
+    {
+        "name": "symfony/var-dumper",
+        "version": "v2.7.3",
+        "version_normalized": "2.7.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/var-dumper.git",
+            "reference": "e8903ebba5eb019f5886ffce739ea9e3b7519579"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/var-dumper/zipball/e8903ebba5eb019f5886ffce739ea9e3b7519579",
+            "reference": "e8903ebba5eb019f5886ffce739ea9e3b7519579",
             "shasum": ""
         },
         "require": {
@@ -110,7 +169,7 @@
         "suggest": {
             "ext-symfony_debug": ""
         },
-        "time": "2015-06-08 09:37:21",
+        "time": "2015-07-28 15:18:12",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -194,12 +253,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/maximebf/php-debugbar.git",
-            "reference": "e5d9c677175d147b72a05087b916dfd103e1df74"
+            "reference": "ab12b6f57dd33b1fffa875046fd17c34d88388b9"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/maximebf/php-debugbar/zipball/e5d9c677175d147b72a05087b916dfd103e1df74",
-            "reference": "e5d9c677175d147b72a05087b916dfd103e1df74",
+            "url": "https://api.github.com/repos/maximebf/php-debugbar/zipball/ab12b6f57dd33b1fffa875046fd17c34d88388b9",
+            "reference": "ab12b6f57dd33b1fffa875046fd17c34d88388b9",
             "shasum": ""
         },
         "require": {
@@ -215,7 +274,7 @@
             "monolog/monolog": "Log using Monolog",
             "predis/predis": "Redis storage"
         },
-        "time": "2015-06-07 19:27:13",
+        "time": "2015-07-09 18:15:09",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -252,12 +311,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/filp/whoops.git",
-            "reference": "37b5e653c99cbb9113108d7dc59a0ddc306acc46"
+            "reference": "494fa733db16e2ac66c514621150bd97a0a4eb37"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/filp/whoops/zipball/37b5e653c99cbb9113108d7dc59a0ddc306acc46",
-            "reference": "37b5e653c99cbb9113108d7dc59a0ddc306acc46",
+            "url": "https://api.github.com/repos/filp/whoops/zipball/494fa733db16e2ac66c514621150bd97a0a4eb37",
+            "reference": "494fa733db16e2ac66c514621150bd97a0a4eb37",
             "shasum": ""
         },
         "require": {
@@ -266,7 +325,7 @@
         "require-dev": {
             "mockery/mockery": "0.9.*"
         },
-        "time": "2015-05-29 15:12:07",
+        "time": "2015-06-30 08:10:58",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -306,115 +365,18 @@
         ]
     },
     {
-        "name": "mrclay/minify",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/mrclay/minify.git",
-            "reference": "cabd595a5aebf87e5d229814564aa3b466908be1"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/mrclay/minify/zipball/cabd595a5aebf87e5d229814564aa3b466908be1",
-            "reference": "cabd595a5aebf87e5d229814564aa3b466908be1",
-            "shasum": ""
-        },
-        "require": {
-            "ext-pcre": "*",
-            "php": ">=5.2.1"
-        },
-        "require-dev": {
-            "tubalmartin/cssmin": "~2.4.8"
-        },
-        "suggest": {
-            "tubalmartin/cssmin": "Support minify with CSSMin (YUI PHP port)"
-        },
-        "time": "2015-04-20 11:49:55",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "classmap": [
-                "min/lib/"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD-3-Clause"
-        ],
-        "authors": [
-            {
-                "name": "Stephen Clay",
-                "email": "steve@mrclay.org",
-                "role": "Developer"
-            }
-        ],
-        "description": "Minify is a PHP5 app that helps you follow several rules for client-side performance. It combines multiple CSS or Javascript files, removes unnecessary whitespace and comments, and serves them with gzip encoding and optimal client-side cache headers",
-        "homepage": "http://code.google.com/p/minify/"
-    },
-    {
-        "name": "donatj/phpuseragentparser",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/donatj/PhpUserAgent.git",
-            "reference": "596032b5f0502e06c613137cb6ce20acd604a4a0"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/donatj/PhpUserAgent/zipball/596032b5f0502e06c613137cb6ce20acd604a4a0",
-            "reference": "596032b5f0502e06c613137cb6ce20acd604a4a0",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.0"
-        },
-        "require-dev": {
-            "camspiers/json-pretty": "0.1.*",
-            "donatj/drop": "*"
-        },
-        "time": "2015-04-23 16:09:36",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "files": [
-                "Source/UserAgentParser.php"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Jesse G. Donat",
-                "email": "donatj@gmail.com",
-                "homepage": "http://donatstudios.com",
-                "role": "Developer"
-            }
-        ],
-        "description": "Simple, streamlined PHP user-agent parser",
-        "homepage": "http://donatstudios.com/PHP-Parser-HTTP_USER_AGENT",
-        "keywords": [
-            "parser",
-            "user agent",
-            "useragent"
-        ]
-    },
-    {
         "name": "symfony/event-dispatcher",
-        "version": "v2.7.1",
-        "version_normalized": "2.7.1.0",
+        "version": "v2.7.3",
+        "version_normalized": "2.7.3.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/EventDispatcher.git",
-            "reference": "be3c5ff8d503c46768aeb78ce6333051aa6f26d9"
+            "reference": "9310b5f9a87ec2ea75d20fec0b0017c77c66dac3"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/be3c5ff8d503c46768aeb78ce6333051aa6f26d9",
-            "reference": "be3c5ff8d503c46768aeb78ce6333051aa6f26d9",
+            "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/9310b5f9a87ec2ea75d20fec0b0017c77c66dac3",
+            "reference": "9310b5f9a87ec2ea75d20fec0b0017c77c66dac3",
             "shasum": ""
         },
         "require": {
@@ -432,7 +394,7 @@
             "symfony/dependency-injection": "",
             "symfony/http-kernel": ""
         },
-        "time": "2015-06-08 09:37:21",
+        "time": "2015-06-18 19:21:56",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -464,17 +426,17 @@
     },
     {
         "name": "symfony/yaml",
-        "version": "v2.7.1",
-        "version_normalized": "2.7.1.0",
+        "version": "v2.7.3",
+        "version_normalized": "2.7.3.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/Yaml.git",
-            "reference": "9808e75c609a14f6db02f70fccf4ca4aab53c160"
+            "reference": "71340e996171474a53f3d29111d046be4ad8a0ff"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/Yaml/zipball/9808e75c609a14f6db02f70fccf4ca4aab53c160",
-            "reference": "9808e75c609a14f6db02f70fccf4ca4aab53c160",
+            "url": "https://api.github.com/repos/symfony/Yaml/zipball/71340e996171474a53f3d29111d046be4ad8a0ff",
+            "reference": "71340e996171474a53f3d29111d046be4ad8a0ff",
             "shasum": ""
         },
         "require": {
@@ -483,7 +445,7 @@
         "require-dev": {
             "symfony/phpunit-bridge": "~2.7"
         },
-        "time": "2015-06-10 15:30:22",
+        "time": "2015-07-28 14:07:07",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -515,23 +477,23 @@
     },
     {
         "name": "pimple/pimple",
-        "version": "v3.0.0",
-        "version_normalized": "3.0.0.0",
+        "version": "v3.0.1",
+        "version_normalized": "3.0.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/silexphp/Pimple.git",
-            "reference": "876bf0899d01feacd2a2e83f04641e51350099ef"
+            "reference": "3313af5935dbc560fab845b76a1ca351b47855af"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/silexphp/Pimple/zipball/876bf0899d01feacd2a2e83f04641e51350099ef",
-            "reference": "876bf0899d01feacd2a2e83f04641e51350099ef",
+            "url": "https://api.github.com/repos/silexphp/Pimple/zipball/3313af5935dbc560fab845b76a1ca351b47855af",
+            "reference": "3313af5935dbc560fab845b76a1ca351b47855af",
             "shasum": ""
         },
         "require": {
             "php": ">=5.3.0"
         },
-        "time": "2014-07-24 09:48:15",
+        "time": "2015-07-30 09:57:46",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -658,27 +620,27 @@
     },
     {
         "name": "twig/twig",
-        "version": "v1.18.2",
-        "version_normalized": "1.18.2.0",
+        "version": "v1.19.0",
+        "version_normalized": "1.19.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/twigphp/Twig.git",
-            "reference": "e8e6575abf6102af53ec283f7f14b89e304fa602"
+            "reference": "edbeaf43b0a606cdaadc32a11d2673614a377b90"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/twigphp/Twig/zipball/e8e6575abf6102af53ec283f7f14b89e304fa602",
-            "reference": "e8e6575abf6102af53ec283f7f14b89e304fa602",
+            "url": "https://api.github.com/repos/twigphp/Twig/zipball/edbeaf43b0a606cdaadc32a11d2673614a377b90",
+            "reference": "edbeaf43b0a606cdaadc32a11d2673614a377b90",
             "shasum": ""
         },
         "require": {
             "php": ">=5.2.7"
         },
-        "time": "2015-06-06 23:31:24",
+        "time": "2015-07-31 13:45:26",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "1.18-dev"
+                "dev-master": "1.19-dev"
             }
         },
         "installation-source": "dist",
@@ -714,65 +676,6 @@
         "keywords": [
             "templating"
         ]
-    },
-    {
-        "name": "symfony/console",
-        "version": "v2.7.1",
-        "version_normalized": "2.7.1.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/symfony/Console.git",
-            "reference": "564398bc1f33faf92fc2ec86859983d30eb81806"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/symfony/Console/zipball/564398bc1f33faf92fc2ec86859983d30eb81806",
-            "reference": "564398bc1f33faf92fc2ec86859983d30eb81806",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.9"
-        },
-        "require-dev": {
-            "psr/log": "~1.0",
-            "symfony/event-dispatcher": "~2.1",
-            "symfony/phpunit-bridge": "~2.7",
-            "symfony/process": "~2.1"
-        },
-        "suggest": {
-            "psr/log": "For using the console logger",
-            "symfony/event-dispatcher": "",
-            "symfony/process": ""
-        },
-        "time": "2015-06-10 15:30:22",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "2.7-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Symfony\\Component\\Console\\": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com"
-            },
-            {
-                "name": "Symfony Community",
-                "homepage": "https://symfony.com/contributors"
-            }
-        ],
-        "description": "Symfony Console Component",
-        "homepage": "https://symfony.com"
     },
     {
         "name": "doctrine/cache",
@@ -848,17 +751,17 @@
     },
     {
         "name": "monolog/monolog",
-        "version": "1.13.1",
-        "version_normalized": "1.13.1.0",
+        "version": "1.16.0",
+        "version_normalized": "1.16.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/Seldaek/monolog.git",
-            "reference": "c31a2c4e8db5da8b46c74cf275d7f109c0f249ac"
+            "reference": "c0c0b4bee3aabce7182876b0d912ef2595563db7"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/Seldaek/monolog/zipball/c31a2c4e8db5da8b46c74cf275d7f109c0f249ac",
-            "reference": "c31a2c4e8db5da8b46c74cf275d7f109c0f249ac",
+            "url": "https://api.github.com/repos/Seldaek/monolog/zipball/c0c0b4bee3aabce7182876b0d912ef2595563db7",
+            "reference": "c0c0b4bee3aabce7182876b0d912ef2595563db7",
             "shasum": ""
         },
         "require": {
@@ -869,12 +772,14 @@
             "psr/log-implementation": "1.0.0"
         },
         "require-dev": {
-            "aws/aws-sdk-php": "~2.4, >2.4.8",
+            "aws/aws-sdk-php": "^2.4.9",
             "doctrine/couchdb": "~1.0@dev",
             "graylog2/gelf-php": "~1.0",
-            "phpunit/phpunit": "~4.0",
-            "raven/raven": "~0.5",
-            "ruflin/elastica": "0.90.*",
+            "php-console/php-console": "^3.1.3",
+            "phpunit/phpunit": "~4.5",
+            "phpunit/phpunit-mock-objects": "2.3.0",
+            "raven/raven": "~0.8",
+            "ruflin/elastica": ">=0.90 <3.0",
             "swiftmailer/swiftmailer": "~5.3",
             "videlalvaro/php-amqplib": "~2.4"
         },
@@ -884,16 +789,17 @@
             "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
             "ext-mongo": "Allow sending log messages to a MongoDB server",
             "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
+            "php-console/php-console": "Allow sending log messages to Google Chrome",
             "raven/raven": "Allow sending log messages to a Sentry server",
             "rollbar/rollbar": "Allow sending log messages to Rollbar",
             "ruflin/elastica": "Allow sending log messages to an Elastic Search server",
             "videlalvaro/php-amqplib": "Allow sending log messages to an AMQP server using php-amqplib"
         },
-        "time": "2015-03-09 09:58:04",
+        "time": "2015-08-09 17:44:44",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "1.13.x-dev"
+                "dev-master": "1.16.x-dev"
             }
         },
         "installation-source": "dist",
@@ -1014,6 +920,103 @@
         "keywords": [
             "gd",
             "image"
+        ]
+    },
+    {
+        "name": "mrclay/minify",
+        "version": "2.2.1",
+        "version_normalized": "2.2.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/mrclay/minify.git",
+            "reference": "3c11ba8232a2155a1a29552aafc528be5fb0a662"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/mrclay/minify/zipball/3c11ba8232a2155a1a29552aafc528be5fb0a662",
+            "reference": "3c11ba8232a2155a1a29552aafc528be5fb0a662",
+            "shasum": ""
+        },
+        "require": {
+            "ext-pcre": "*",
+            "php": ">=5.2.1"
+        },
+        "require-dev": {
+            "tubalmartin/cssmin": "~2.4.8"
+        },
+        "suggest": {
+            "tubalmartin/cssmin": "Support minify with CSSMin (YUI PHP port)"
+        },
+        "time": "2014-10-30 22:58:02",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "min/lib/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Stephen Clay",
+                "email": "steve@mrclay.org",
+                "role": "Developer"
+            }
+        ],
+        "description": "Minify is a PHP5 app that helps you follow several rules for client-side performance. It combines multiple CSS or Javascript files, removes unnecessary whitespace and comments, and serves them with gzip encoding and optimal client-side cache headers",
+        "homepage": "http://code.google.com/p/minify/"
+    },
+    {
+        "name": "donatj/phpuseragentparser",
+        "version": "v0.3.6",
+        "version_normalized": "0.3.6.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/donatj/PhpUserAgent.git",
+            "reference": "4d52dd811016383d95c7dabfa29e824d7523e581"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/donatj/PhpUserAgent/zipball/4d52dd811016383d95c7dabfa29e824d7523e581",
+            "reference": "4d52dd811016383d95c7dabfa29e824d7523e581",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "require-dev": {
+            "camspiers/json-pretty": "0.1.*",
+            "donatj/drop": "*"
+        },
+        "time": "2015-04-23 16:02:12",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "Source/UserAgentParser.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Jesse G. Donat",
+                "email": "donatj@gmail.com",
+                "homepage": "http://donatstudios.com",
+                "role": "Developer"
+            }
+        ],
+        "description": "Simple, streamlined PHP user-agent parser",
+        "homepage": "http://donatstudios.com/PHP-Parser-HTTP_USER_AGENT",
+        "keywords": [
+            "parser",
+            "user agent",
+            "useragent"
         ]
     }
 ]

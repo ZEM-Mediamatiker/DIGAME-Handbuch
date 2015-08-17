@@ -1,3 +1,21 @@
+# v1.3.0
+## 07/21/2015
+
+1. [](#new)
+    * Added support for modular pages in results
+
+# v1.2.7
+## 07/17/2015
+
+1. [](#bugfix)
+    * Fixed "Undefined index: extension" error
+
+# v1.2.6
+## 07/14/2015
+
+1. [](#bugfix)
+    * Fixed URL issue that showed up with multi-languages
+
 # v1.2.5
 ## 04/24/2015
 
