@@ -28,13 +28,22 @@ visible: true
 
 <br>
 
+>>>>>Version 2.1.4<br>
+
+
+|  | Change |
+| --- | --- |
+| ^ | Update auf GRAV-Version 0.9.37 (+ Update der Plugins) |
+| ^ | Diverse kleine Layoutanpassungen |
+| # | Fehler behoben, bei dem man im Internet Explorer nicht in der Navigation scrollen konnte. |
+
 >>>>>Version 2.1.3<br>
 
 
 |  | Change |
 | --- | --- |
 | ^ | Update auf GRAV-Version 0.9.28 |
-| ^ | Bug in Firefox Mobile gefixt, der ein Inputfeld generiert hat, welches das Layout zerstört |
+| ^ | Bug in Firefox Mobile gefixt, der ein Inputfeld generiert hat, welches das Layout zerstörte. |
 | ^ | Ladezeit optimiert |
 
 >>>>>Version 2.1.2<br>
@@ -44,7 +53,7 @@ visible: true
 | --- | --- |
 | + | .gitignore hinzugefügt |
 | ^ | Update auf GRAV-Version 0.9.27 |
-| ^ | Update Simplesearch- und Pagination-Plugin. |
+| ^ | Update Simplesearch- und Pagination-Plugin |
 | ^ | Inhalt der Schnittstellendokumentation aktualisiert |
 
 >>>>>Version 2.1.1<br>
