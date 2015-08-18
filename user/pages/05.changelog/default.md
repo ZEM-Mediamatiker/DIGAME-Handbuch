@@ -28,6 +28,13 @@ visible: true
 
 <br>
 
+>>>>>Version 2.1.5<br>
+
+
+|  | Change |
+| --- | --- |
+| # | Fehler behoben, dass Suchfunktion nach Update auf Version 2.1.4 nicht mehr funktioniert hat. |
+
 >>>>>Version 2.1.4<br>
 
 
