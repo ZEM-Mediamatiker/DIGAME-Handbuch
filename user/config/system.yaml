@@ -9,6 +9,12 @@ pages:
   process:
     markdown: true
     twig: true
+    
+languages:
+  http_accept_language: true
+  supported:
+    - de
+    - fr
 
 cache:
   enabled: true

@@ -729,7 +729,22 @@ header{
 }
 
 
-
+.langswitcher{
+				padding: 0px;
+				list-style-type:none;
+				margin: 0 auto;
+				width: 151px;
+			}
+			
+			.langswitcher li{
+				float: left;
+				margin: 10px 10px;
+				text-align: center;
+			}
+			
+			.langswitcher li a{
+				color: rgba(255, 255, 255, 0.5)
+			}
 
 
 /* -------------------------------------------------------------

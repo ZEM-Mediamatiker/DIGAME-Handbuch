@@ -17,7 +17,7 @@
 
         {# Custom styles for this theme #}
         <link href="{{ theme_url }}/css/print.min.css" rel="stylesheet" media="print">
-        <link href="{{ theme_url }}/css/bootstrap-custom.min.css" rel="stylesheet" media="screen">
+        <link href="{{ theme_url }}/css/bootstrap-custom.css" rel="stylesheet" media="screen">
               
         <link rel="shortcut icon" href="{{ theme_url }}/images/layout/favicon.ico" type="image/x-icon" />
 		<link rel="icon" href="{{ theme_url }}/images/layout/favicon.ico" type="image/x-icon" />        
@@ -68,7 +68,7 @@
       				{% block content %}{% endblock %}
       				<div class="copywrapper">
       					&copy; 2015 | <a href="http://zem.ch" target="_blank" alt="Zentrum elektronische Medien">Zentrum elektronische Medien</a><br>
-      					<a href="{{ page.find('/changelog').url() }}">Version: 2.1.5</a>
+      					<a href="{{ page.find('/changelog').url() }}">Version: 2.2</a>
       				</div>
       			</div>
       			{% set progress = page.collection({'items':{'@taxonomy.category': 'digame'},'order': {'by': 'default', 'dir': 'asc'}}) %}
@@ -88,6 +88,7 @@
       	<section id="menu-overlay">
       		<section id="menucontainer">
       			<div id="menu-navigation">
+      				{% include 'partials/langswitcher.html.twig' %}
       				{# include the header + navigation #}
         			{% include 'partials/header.html.twig' %}
         			<div class="clearfix"></div>
