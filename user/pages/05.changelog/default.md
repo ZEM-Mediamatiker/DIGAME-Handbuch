@@ -28,6 +28,15 @@ visible: true
 
 <br>
 
+>>>>>Version 2.2<br>
+
+
+|  | Change |
+| --- | --- |
+| + | Unterstützung für Mehrsprachigkeit hinzugefügt |
+| + | Französisch hinzugefügt |
+| ^ | Update auf GRAV 0.9.40 |
+
 >>>>>Version 2.1.5<br>
 
 

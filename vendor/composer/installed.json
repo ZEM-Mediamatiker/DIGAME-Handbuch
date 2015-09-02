@@ -1,5 +1,130 @@
 [
     {
+        "name": "doctrine/cache",
+        "version": "v1.4.1",
+        "version_normalized": "1.4.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/doctrine/cache.git",
+            "reference": "c9eadeb743ac6199f7eec423cb9426bc518b7b03"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/doctrine/cache/zipball/c9eadeb743ac6199f7eec423cb9426bc518b7b03",
+            "reference": "c9eadeb743ac6199f7eec423cb9426bc518b7b03",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.2"
+        },
+        "conflict": {
+            "doctrine/common": ">2.2,<2.4"
+        },
+        "require-dev": {
+            "phpunit/phpunit": ">=3.7",
+            "predis/predis": "~1.0",
+            "satooshi/php-coveralls": "~0.6"
+        },
+        "time": "2015-04-15 00:11:59",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.5.x-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Doctrine\\Common\\Cache\\": "lib/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Roman Borschel",
+                "email": "roman@code-factory.org"
+            },
+            {
+                "name": "Benjamin Eberlei",
+                "email": "kontakt@beberlei.de"
+            },
+            {
+                "name": "Guilherme Blanco",
+                "email": "guilhermeblanco@gmail.com"
+            },
+            {
+                "name": "Jonathan Wage",
+                "email": "jonwage@gmail.com"
+            },
+            {
+                "name": "Johannes Schmitt",
+                "email": "schmittjoh@gmail.com"
+            }
+        ],
+        "description": "Caching library offering an object-oriented API for many cache backends",
+        "homepage": "http://www.doctrine-project.org",
+        "keywords": [
+            "cache",
+            "caching"
+        ]
+    },
+    {
+        "name": "donatj/phpuseragentparser",
+        "version": "v0.4.0",
+        "version_normalized": "0.4.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/donatj/PhpUserAgent.git",
+            "reference": "6392753c32f3d162897c02bd72c41e356b002a57"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/donatj/PhpUserAgent/zipball/6392753c32f3d162897c02bd72c41e356b002a57",
+            "reference": "6392753c32f3d162897c02bd72c41e356b002a57",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "require-dev": {
+            "camspiers/json-pretty": "0.1.*",
+            "donatj/drop": "*",
+            "phpunit/phpunit": "4.*"
+        },
+        "time": "2015-08-25 16:30:11",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "files": [
+                "Source/UserAgentParser.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Jesse G. Donat",
+                "email": "donatj@gmail.com",
+                "homepage": "http://donatstudios.com",
+                "role": "Developer"
+            }
+        ],
+        "description": "Simple, streamlined PHP user-agent parser",
+        "homepage": "http://donatstudios.com/PHP-Parser-HTTP_USER_AGENT",
+        "keywords": [
+            "browser",
+            "browser detection",
+            "parser",
+            "user agent",
+            "useragent"
+        ]
+    },
+    {
         "name": "erusev/parsedown",
         "version": "1.5.4",
         "version_normalized": "1.5.4.0",
@@ -16,7 +141,7 @@
         },
         "time": "2015-08-03 09:24:05",
         "type": "library",
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "psr-0": {
                 "Parsedown": ""
@@ -60,7 +185,7 @@
         },
         "time": "2015-01-25 14:52:34",
         "type": "library",
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "psr-0": {
                 "ParsedownExtra": ""
@@ -84,6 +209,161 @@
             "markdown extra",
             "parsedown",
             "parser"
+        ]
+    },
+    {
+        "name": "filp/whoops",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/filp/whoops.git",
+            "reference": "cfe9ce209d2705fece1743f0af45f58fec840458"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/filp/whoops/zipball/cfe9ce209d2705fece1743f0af45f58fec840458",
+            "reference": "cfe9ce209d2705fece1743f0af45f58fec840458",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "require-dev": {
+            "mockery/mockery": "0.9.*"
+        },
+        "time": "2015-07-23 15:48:15",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.2-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Whoops": "src/"
+            },
+            "classmap": [
+                "src/deprecated"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Filipe Dobreira",
+                "homepage": "https://github.com/filp",
+                "role": "Developer"
+            }
+        ],
+        "description": "php error handling for cool kids",
+        "homepage": "https://github.com/filp/whoops",
+        "keywords": [
+            "error",
+            "exception",
+            "handling",
+            "library",
+            "silex-provider",
+            "whoops",
+            "zf2"
+        ]
+    },
+    {
+        "name": "gregwar/cache",
+        "version": "v1.0.10",
+        "version_normalized": "1.0.10.0",
+        "target-dir": "Gregwar/Cache",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Gregwar/Cache.git",
+            "reference": "0a1a02e4943e95f491b3d2395609247385975622"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Gregwar/Cache/zipball/0a1a02e4943e95f491b3d2395609247385975622",
+            "reference": "0a1a02e4943e95f491b3d2395609247385975622",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3"
+        },
+        "time": "2014-09-24 11:23:30",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Gregwar\\Cache": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Gregwar",
+                "email": "g.passault@gmail.com"
+            }
+        ],
+        "description": "A lightweight file-system cache system",
+        "keywords": [
+            "cache",
+            "caching",
+            "file-system",
+            "system"
+        ]
+    },
+    {
+        "name": "gregwar/image",
+        "version": "v2.0.20",
+        "version_normalized": "2.0.20.0",
+        "target-dir": "Gregwar/Image",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Gregwar/Image.git",
+            "reference": "2c6bf2fb3b0eb844f0568d6ee55eeb86fc799414"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Gregwar/Image/zipball/2c6bf2fb3b0eb844f0568d6ee55eeb86fc799414",
+            "reference": "2c6bf2fb3b0eb844f0568d6ee55eeb86fc799414",
+            "shasum": ""
+        },
+        "require": {
+            "ext-gd": "*",
+            "gregwar/cache": "1.*",
+            "php": ">=5.3.0"
+        },
+        "suggest": {
+            "behat/transliterator": "Transliterator provides ability to set non-latin1 pretty names"
+        },
+        "time": "2015-05-30 19:24:37",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Gregwar\\Image": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Grégoire Passault",
+                "email": "g.passault@gmail.com",
+                "homepage": "http://www.gregwar.com/"
+            }
+        ],
+        "description": "Image handling",
+        "homepage": "https://github.com/Gregwar/Image",
+        "keywords": [
+            "gd",
+            "image"
         ]
     },
     {
@@ -117,7 +397,7 @@
                 "dev-master": "2.7-dev"
             }
         },
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "files": [
                 "Resources/functions/dump.php"
@@ -164,7 +444,7 @@
         },
         "time": "2012-12-21 11:40:51",
         "type": "library",
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "psr-0": {
                 "Psr\\Log\\": ""
@@ -222,7 +502,7 @@
                 "dev-master": "1.10-dev"
             }
         },
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "psr-0": {
                 "DebugBar": "src/"
@@ -243,260 +523,6 @@
         "homepage": "https://github.com/maximebf/php-debugbar",
         "keywords": [
             "debug"
-        ]
-    },
-    {
-        "name": "filp/whoops",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/filp/whoops.git",
-            "reference": "cfe9ce209d2705fece1743f0af45f58fec840458"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/filp/whoops/zipball/cfe9ce209d2705fece1743f0af45f58fec840458",
-            "reference": "cfe9ce209d2705fece1743f0af45f58fec840458",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.0"
-        },
-        "require-dev": {
-            "mockery/mockery": "0.9.*"
-        },
-        "time": "2015-07-23 15:48:15",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "1.2-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-0": {
-                "Whoops": "src/"
-            },
-            "classmap": [
-                "src/deprecated"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Filipe Dobreira",
-                "homepage": "https://github.com/filp",
-                "role": "Developer"
-            }
-        ],
-        "description": "php error handling for cool kids",
-        "homepage": "https://github.com/filp/whoops",
-        "keywords": [
-            "error",
-            "exception",
-            "handling",
-            "library",
-            "silex-provider",
-            "whoops",
-            "zf2"
-        ]
-    },
-    {
-        "name": "twig/twig",
-        "version": "v1.21.1",
-        "version_normalized": "1.21.1.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/twigphp/Twig.git",
-            "reference": "ca8d3aa90b6a01c82e07909fe815d6b443e75a23"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/twigphp/Twig/zipball/ca8d3aa90b6a01c82e07909fe815d6b443e75a23",
-            "reference": "ca8d3aa90b6a01c82e07909fe815d6b443e75a23",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.2.7"
-        },
-        "require-dev": {
-            "symfony/debug": "~2.7",
-            "symfony/phpunit-bridge": "~2.7"
-        },
-        "time": "2015-08-26 08:58:31",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "1.21-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-0": {
-                "Twig_": "lib/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD-3-Clause"
-        ],
-        "authors": [
-            {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com",
-                "homepage": "http://fabien.potencier.org",
-                "role": "Lead Developer"
-            },
-            {
-                "name": "Armin Ronacher",
-                "email": "armin.ronacher@active-4.com",
-                "role": "Project Founder"
-            },
-            {
-                "name": "Twig Team",
-                "homepage": "http://twig.sensiolabs.org/contributors",
-                "role": "Contributors"
-            }
-        ],
-        "description": "Twig, the flexible, fast, and secure template language for PHP",
-        "homepage": "http://twig.sensiolabs.org",
-        "keywords": [
-            "templating"
-        ]
-    },
-    {
-        "name": "symfony/console",
-        "version": "v2.7.3",
-        "version_normalized": "2.7.3.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/symfony/Console.git",
-            "reference": "d6cf02fe73634c96677e428f840704bfbcaec29e"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/symfony/Console/zipball/d6cf02fe73634c96677e428f840704bfbcaec29e",
-            "reference": "d6cf02fe73634c96677e428f840704bfbcaec29e",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.9"
-        },
-        "require-dev": {
-            "psr/log": "~1.0",
-            "symfony/event-dispatcher": "~2.1",
-            "symfony/phpunit-bridge": "~2.7",
-            "symfony/process": "~2.1"
-        },
-        "suggest": {
-            "psr/log": "For using the console logger",
-            "symfony/event-dispatcher": "",
-            "symfony/process": ""
-        },
-        "time": "2015-07-28 15:18:12",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "2.7-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Symfony\\Component\\Console\\": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com"
-            },
-            {
-                "name": "Symfony Community",
-                "homepage": "https://symfony.com/contributors"
-            }
-        ],
-        "description": "Symfony Console Component",
-        "homepage": "https://symfony.com"
-    },
-    {
-        "name": "doctrine/cache",
-        "version": "v1.4.1",
-        "version_normalized": "1.4.1.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/doctrine/cache.git",
-            "reference": "c9eadeb743ac6199f7eec423cb9426bc518b7b03"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/doctrine/cache/zipball/c9eadeb743ac6199f7eec423cb9426bc518b7b03",
-            "reference": "c9eadeb743ac6199f7eec423cb9426bc518b7b03",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.2"
-        },
-        "conflict": {
-            "doctrine/common": ">2.2,<2.4"
-        },
-        "require-dev": {
-            "phpunit/phpunit": ">=3.7",
-            "predis/predis": "~1.0",
-            "satooshi/php-coveralls": "~0.6"
-        },
-        "time": "2015-04-15 00:11:59",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "1.5.x-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-0": {
-                "Doctrine\\Common\\Cache\\": "lib/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Roman Borschel",
-                "email": "roman@code-factory.org"
-            },
-            {
-                "name": "Benjamin Eberlei",
-                "email": "kontakt@beberlei.de"
-            },
-            {
-                "name": "Guilherme Blanco",
-                "email": "guilhermeblanco@gmail.com"
-            },
-            {
-                "name": "Jonathan Wage",
-                "email": "jonwage@gmail.com"
-            },
-            {
-                "name": "Johannes Schmitt",
-                "email": "schmittjoh@gmail.com"
-            }
-        ],
-        "description": "Caching library offering an object-oriented API for many cache backends",
-        "homepage": "http://www.doctrine-project.org",
-        "keywords": [
-            "cache",
-            "caching"
         ]
     },
     {
@@ -552,7 +578,7 @@
                 "dev-master": "1.16.x-dev"
             }
         },
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "psr-4": {
                 "Monolog\\": "src/Monolog"
@@ -575,101 +601,6 @@
             "log",
             "logging",
             "psr-3"
-        ]
-    },
-    {
-        "name": "gregwar/cache",
-        "version": "v1.0.10",
-        "version_normalized": "1.0.10.0",
-        "target-dir": "Gregwar/Cache",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/Gregwar/Cache.git",
-            "reference": "0a1a02e4943e95f491b3d2395609247385975622"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/Gregwar/Cache/zipball/0a1a02e4943e95f491b3d2395609247385975622",
-            "reference": "0a1a02e4943e95f491b3d2395609247385975622",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3"
-        },
-        "time": "2014-09-24 11:23:30",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-0": {
-                "Gregwar\\Cache": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Gregwar",
-                "email": "g.passault@gmail.com"
-            }
-        ],
-        "description": "A lightweight file-system cache system",
-        "keywords": [
-            "cache",
-            "caching",
-            "file-system",
-            "system"
-        ]
-    },
-    {
-        "name": "gregwar/image",
-        "version": "v2.0.20",
-        "version_normalized": "2.0.20.0",
-        "target-dir": "Gregwar/Image",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/Gregwar/Image.git",
-            "reference": "2c6bf2fb3b0eb844f0568d6ee55eeb86fc799414"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/Gregwar/Image/zipball/2c6bf2fb3b0eb844f0568d6ee55eeb86fc799414",
-            "reference": "2c6bf2fb3b0eb844f0568d6ee55eeb86fc799414",
-            "shasum": ""
-        },
-        "require": {
-            "ext-gd": "*",
-            "gregwar/cache": "1.*",
-            "php": ">=5.3.0"
-        },
-        "suggest": {
-            "behat/transliterator": "Transliterator provides ability to set non-latin1 pretty names"
-        },
-        "time": "2015-05-30 19:24:37",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-0": {
-                "Gregwar\\Image": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Grégoire Passault",
-                "email": "g.passault@gmail.com",
-                "homepage": "http://www.gregwar.com/"
-            }
-        ],
-        "description": "Image handling",
-        "homepage": "https://github.com/Gregwar/Image",
-        "keywords": [
-            "gd",
-            "image"
         ]
     },
     {
@@ -699,7 +630,7 @@
         },
         "time": "2014-10-30 22:58:02",
         "type": "library",
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "classmap": [
                 "min/lib/"
@@ -720,35 +651,38 @@
         "homepage": "http://code.google.com/p/minify/"
     },
     {
-        "name": "donatj/phpuseragentparser",
-        "version": "v0.4.0",
-        "version_normalized": "0.4.0.0",
+        "name": "symfony/yaml",
+        "version": "v2.7.3",
+        "version_normalized": "2.7.3.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/donatj/PhpUserAgent.git",
-            "reference": "6392753c32f3d162897c02bd72c41e356b002a57"
+            "url": "https://github.com/symfony/Yaml.git",
+            "reference": "71340e996171474a53f3d29111d046be4ad8a0ff"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/donatj/PhpUserAgent/zipball/6392753c32f3d162897c02bd72c41e356b002a57",
-            "reference": "6392753c32f3d162897c02bd72c41e356b002a57",
+            "url": "https://api.github.com/repos/symfony/Yaml/zipball/71340e996171474a53f3d29111d046be4ad8a0ff",
+            "reference": "71340e996171474a53f3d29111d046be4ad8a0ff",
             "shasum": ""
         },
         "require": {
-            "php": ">=5.3.0"
+            "php": ">=5.3.9"
         },
         "require-dev": {
-            "camspiers/json-pretty": "0.1.*",
-            "donatj/drop": "*",
-            "phpunit/phpunit": "4.*"
+            "symfony/phpunit-bridge": "~2.7"
         },
-        "time": "2015-08-25 16:30:11",
+        "time": "2015-07-28 14:07:07",
         "type": "library",
-        "installation-source": "dist",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.7-dev"
+            }
+        },
+        "installation-source": "source",
         "autoload": {
-            "files": [
-                "Source/UserAgentParser.php"
-            ]
+            "psr-4": {
+                "Symfony\\Component\\Yaml\\": ""
+            }
         },
         "notification-url": "https://packagist.org/downloads/",
         "license": [
@@ -756,21 +690,16 @@
         ],
         "authors": [
             {
-                "name": "Jesse G. Donat",
-                "email": "donatj@gmail.com",
-                "homepage": "http://donatstudios.com",
-                "role": "Developer"
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
             }
         ],
-        "description": "Simple, streamlined PHP user-agent parser",
-        "homepage": "http://donatstudios.com/PHP-Parser-HTTP_USER_AGENT",
-        "keywords": [
-            "browser",
-            "browser detection",
-            "parser",
-            "user agent",
-            "useragent"
-        ]
+        "description": "Symfony Yaml Component",
+        "homepage": "https://symfony.com"
     },
     {
         "name": "symfony/event-dispatcher",
@@ -809,7 +738,7 @@
                 "dev-master": "2.7-dev"
             }
         },
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "psr-4": {
                 "Symfony\\Component\\EventDispatcher\\": ""
@@ -830,57 +759,6 @@
             }
         ],
         "description": "Symfony EventDispatcher Component",
-        "homepage": "https://symfony.com"
-    },
-    {
-        "name": "symfony/yaml",
-        "version": "v2.7.3",
-        "version_normalized": "2.7.3.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/symfony/Yaml.git",
-            "reference": "71340e996171474a53f3d29111d046be4ad8a0ff"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/symfony/Yaml/zipball/71340e996171474a53f3d29111d046be4ad8a0ff",
-            "reference": "71340e996171474a53f3d29111d046be4ad8a0ff",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.9"
-        },
-        "require-dev": {
-            "symfony/phpunit-bridge": "~2.7"
-        },
-        "time": "2015-07-28 14:07:07",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "2.7-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Symfony\\Component\\Yaml\\": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com"
-            },
-            {
-                "name": "Symfony Community",
-                "homepage": "https://symfony.com/contributors"
-            }
-        ],
-        "description": "Symfony Yaml Component",
         "homepage": "https://symfony.com"
     },
     {
@@ -908,7 +786,7 @@
                 "dev-master": "3.0.x-dev"
             }
         },
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "psr-0": {
                 "Pimple": "src/"
@@ -951,7 +829,7 @@
         },
         "time": "2014-11-20 16:49:30",
         "type": "library",
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "files": [
                 "lib/password.php"
@@ -1002,7 +880,7 @@
         },
         "time": "2015-08-27 18:36:50",
         "type": "library",
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "psr-4": {
                 "RocketTheme\\Toolbox\\ArrayTraits\\": "ArrayTraits/src",
@@ -1024,6 +902,128 @@
         "keywords": [
             "php",
             "rockettheme"
+        ]
+    },
+    {
+        "name": "symfony/console",
+        "version": "v2.7.3",
+        "version_normalized": "2.7.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/Console.git",
+            "reference": "d6cf02fe73634c96677e428f840704bfbcaec29e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/Console/zipball/d6cf02fe73634c96677e428f840704bfbcaec29e",
+            "reference": "d6cf02fe73634c96677e428f840704bfbcaec29e",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.9"
+        },
+        "require-dev": {
+            "psr/log": "~1.0",
+            "symfony/event-dispatcher": "~2.1",
+            "symfony/phpunit-bridge": "~2.7",
+            "symfony/process": "~2.1"
+        },
+        "suggest": {
+            "psr/log": "For using the console logger",
+            "symfony/event-dispatcher": "",
+            "symfony/process": ""
+        },
+        "time": "2015-07-28 15:18:12",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.7-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\Console\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Console Component",
+        "homepage": "https://symfony.com"
+    },
+    {
+        "name": "twig/twig",
+        "version": "v1.21.1",
+        "version_normalized": "1.21.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/twigphp/Twig.git",
+            "reference": "ca8d3aa90b6a01c82e07909fe815d6b443e75a23"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/twigphp/Twig/zipball/ca8d3aa90b6a01c82e07909fe815d6b443e75a23",
+            "reference": "ca8d3aa90b6a01c82e07909fe815d6b443e75a23",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.2.7"
+        },
+        "require-dev": {
+            "symfony/debug": "~2.7",
+            "symfony/phpunit-bridge": "~2.7"
+        },
+        "time": "2015-08-26 08:58:31",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.21-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Twig_": "lib/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com",
+                "homepage": "http://fabien.potencier.org",
+                "role": "Lead Developer"
+            },
+            {
+                "name": "Armin Ronacher",
+                "email": "armin.ronacher@active-4.com",
+                "role": "Project Founder"
+            },
+            {
+                "name": "Twig Team",
+                "homepage": "http://twig.sensiolabs.org/contributors",
+                "role": "Contributors"
+            }
+        ],
+        "description": "Twig, the flexible, fast, and secure template language for PHP",
+        "homepage": "http://twig.sensiolabs.org",
+        "keywords": [
+            "templating"
         ]
     }
 ]
