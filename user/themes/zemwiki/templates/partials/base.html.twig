@@ -56,10 +56,10 @@
             		</div>
       			</div> 
       			</a> 
-      			<div id="showSearchOverlay" class="search_icon">
+      			<!--<div id="showSearchOverlay" class="search_icon">
       				<div class="menutransform3">      				      					          			 
             		</div>
-      			</div>			     	
+      			</div>	-->		     	
       		</header>
       		<div class="clearfix"></div>
       		
@@ -102,7 +102,7 @@
       		</a>	
       	</section>      	
       	
-      	<section id="search-overlay">
+      	<!--<section id="search-overlay">
       		<section id="searchcontainer">
       			<p class="searchdescription">Geben Sie einen Suchbegriff ein</p>      		
       				<div id="search-searchconatiner">
@@ -110,6 +110,11 @@
       					<input id="searchfield" type="text" placeholder="Suche..." autocomplete="off" required>
       					<input type="submit" value=" ">
       				</form>
+      				
+      				{% include 'partials/simplesearch_searchbox.html.twig' %}
+      				
+      				
+      				
       			</div>
       		</section>
       		
@@ -121,7 +126,7 @@
             		<div class="linie bottom right"></div>  
             	</div> 
             </div>  
-        </section>
+        </section>-->
       	     	
       	<div id="showOverlay" class="menu">
        		<label id="label" for="navbtn">
@@ -139,7 +144,7 @@
         {# Bootstrap core JavaScript #}
         {# ================================================== #}
         {# Placed at the end of the document so the pages load faster #}
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script src="{{ theme_url }}/js/modernizr.min.js"></script> 
         <script src="{{ theme_url }}/js/bootstrap.min.js"></script>
         <script src="{{ theme_url }}/js/mousetrap.min.js"></script>

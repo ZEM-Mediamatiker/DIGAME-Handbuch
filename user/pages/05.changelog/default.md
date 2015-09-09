@@ -36,6 +36,7 @@ visible: true
 | + | Unterstützung für Mehrsprachigkeit hinzugefügt |
 | + | Französisch hinzugefügt |
 | ^ | Update auf GRAV 0.9.40 |
+| - | Suchfunktion aufgrund diverser auftretender Fehler deaktiviert | 
 
 >>>>>Version 2.1.5<br>
 
