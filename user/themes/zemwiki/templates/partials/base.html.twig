@@ -17,6 +17,7 @@
 
         {# Custom styles for this theme #}
         <link href="{{ theme_url }}/css/print.min.css" rel="stylesheet" media="print">
+        <link href="{{ theme_url }}/css/font-awesome.min.css" rel="stylesheet" media="screen">
         <link href="{{ theme_url }}/css/bootstrap-custom.css" rel="stylesheet" media="screen">
 
         <link rel="shortcut icon" href="{{ theme_url }}/images/layout/favicon.ico" type="image/x-icon" />
@@ -51,10 +52,13 @@
       				<h3 class="header-title"><a href="{{ base_url_absolute}}">{{ config.site.title }}</a></h3>
       			</div>
       			<a class="print" href="javascript:window.print()">
-      			<div id="print_icon">
-      				<div class="menutransform2">
+      			<div class="print_icon">
+
+                <i class="fa fa-lg fa-print"></i>
+
             		</div>
-      			</div>
+
+
       			</a>
       			<!--<div id="showSearchOverlay" class="search_icon">
       				<div class="menutransform3">
@@ -108,8 +112,7 @@
       		</section>
       		<a class="printmenu" href="javascript:window.print()">
       		<div class="printmenubutton">
-      			<div class="menutransform2">
-            	</div>
+              <i class="fa fa-lg fa-print"></i>
       		</div>
       		</a>
       	</section>

@@ -519,7 +519,7 @@ box-shadow: 0px 2px 4px 1px rgba(52,52,52,0.3);
 
 /* Alle Formatierungen im Zusammenhang mit dem Printbutton */
 
-#print_icon{
+.print_icon{
 	position: absolute;
     z-index: 100;
    	/*width: 80px;*/
@@ -527,26 +527,43 @@ box-shadow: 0px 2px 4px 1px rgba(52,52,52,0.3);
     top: 0;
     /*right: 160px; */
     right: 100px;
-    padding: 10px;
-    padding-top: 15px;
+    padding: 28px 10px 10px;
     display: inline;
 }
 
-#print_icon:hover .menutransform2{
+/*#print_icon:hover .menutransform2{
 	background: url(../images/layout/print_white.png) no-repeat;
-}
+}*/
 
 .menutransform2{
 	position: relative;
 	width: 18px;
 	height: 14px;
 	margin: 18px 0px;
-	background: rgba(80, 125, 200, 0.55);
-	background: url(../images/layout/print.png) no-repeat;
+	/*background: rgba(80, 125, 200, 0.55);
+	/*background: url(../images/layout/print.png) no-repeat;*/
 	-webkit-transition: background 0.5s linear;
 	-moz-transition: background 0.5s linear;
 	-o-transition: background 0.5s linear;
 	transition: background 0.5s linear;
+}
+
+.print_icon .fa{
+	color: #C8C8C8;
+	transition: 0.25s ease 0s;
+}
+
+.print_icon:hover .fa{
+	color: #fff;
+}
+
+.printmenubutton .fa{
+	color: #C8C8C8;
+	transition: 0.25s ease 0s;
+}
+
+.printmenubutton:hover .fa{
+	color: #fff;
 }
 
 
@@ -834,8 +851,9 @@ box-shadow: 0px 2px 4px 1px rgba(52,52,52,0.3);
 		z-index: 85;
 	}
 
-	#print_icon{
-    	right: 120px;
+	.print_icon{
+    	/*right: 120px;*/
+			right: 80px;
     	height: 60px;
 	}
 
@@ -889,7 +907,7 @@ box-shadow: 0px 2px 4px 1px rgba(52,52,52,0.3);
 		margin: 0px 0px 0px;
 	}
 
-	#print_icon{
+	.print_icon{
 		padding-top: 23px;
 	}
 
@@ -1078,7 +1096,7 @@ box-shadow: 0px 2px 4px 1px rgba(52,52,52,0.3);
 		/*display: none;*/
 	}
 
-	#print_icon{
+	.print_icon{
 		display: none;
 	}
 
