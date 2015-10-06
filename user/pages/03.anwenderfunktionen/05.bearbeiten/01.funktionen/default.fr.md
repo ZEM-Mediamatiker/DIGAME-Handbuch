@@ -1,6 +1,7 @@
 ---
-title: Funktionen
-menu: Funktionen
+title: Fonctionnalités du volet Modification
+slug: le-volet-modification
+menu: Le volet Modification
 metadata:
     description: Die Webbasierte Anleitung für DIGAME vom Zentrum elektronische Medien ZEM.
     keywords: DIGAME,ZEM,Zentrum elektronische Medien,Mediathek Admin,Mediathek,Bilddatenbank,Bildverwaltung,Bundesverwaltung,Eidgenossenschaft,Schweizerische Eidgenossenschaft,VBS,Bundesamt für Verteidigung, Bevölkerungsschutz und Sport
@@ -17,7 +18,7 @@ visible: true
 
 ## Fonctionnalités du volet Modification
 ***
-Dans le volet Modification (cf. image n°2, volet (6)), l’utilisateur trouve tous les outils de modification des ressources numériques. 
+Dans le volet Modification (cf. image n°2, volet (6)), l’utilisateur trouve tous les outils de modification des ressources numériques.
 Il peut définir ou modifier les données de n’importe quelle ressource, qu’il vienne de la créer ou qu’il l’ait trouvée dans le système, par l’une des multiples fonctions de recherche. Pour cela, il doit cliquer sur la ressource ; le cadre devient alors jaune et les données sont affichées dans le volet Modification.
 
 >>> Si plusieurs ressources ont les mêmes données, elles peuvent être modifiées en même temps. Pour cela, elles doivent toutes être sélectionnées simultanément (Ctrl + clic gauche ou Shift + clic gauche).
@@ -41,4 +42,3 @@ Les fonctionnalités et informations suivantes sont disponibles dans le volet Mo
 
 <br>
 ***
-

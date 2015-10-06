@@ -1,6 +1,7 @@
 ---
-title: Vorschau
-menu: Vorschau
+title: Vignettes
+slug: vignettes
+menu: Vignettes
 metadata:
     description: Die Webbasierte Anleitung für DIGAME vom Zentrum elektronische Medien ZEM.
     keywords: DIGAME,ZEM,Zentrum elektronische Medien,Mediathek Admin,Mediathek,Bilddatenbank,Bildverwaltung,Bundesverwaltung,Eidgenossenschaft,Schweizerische Eidgenossenschaft,VBS,Bundesamt für Verteidigung, Bevölkerungsschutz und Sport
@@ -36,4 +37,3 @@ L’utilisateur peut visionner les vidéos grâce à un lecteur intégré.
 
 <br>
 ***
-

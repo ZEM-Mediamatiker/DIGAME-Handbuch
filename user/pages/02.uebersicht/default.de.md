@@ -1,5 +1,6 @@
 ---
 title: Übersicht
+slug: uebersicht
 menu: Übersicht
 metadata:
     description: Die Webbasierte Anleitung für DIGAME vom Zentrum elektronische Medien ZEM.
@@ -44,6 +45,3 @@ visible: true
 
 <br>
 ***
-
-
-

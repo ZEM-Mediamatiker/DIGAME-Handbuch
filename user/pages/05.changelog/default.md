@@ -28,6 +28,15 @@ visible: true
 
 <br>
 
+>>>>>Version 2.2.1<br>
+
+
+|  | Change |
+| --- | --- |
+| ^ | Mehrsprachigkeit verbessert (Menü übersetzt, URLs angepasst, Hinweis auf Sprachwechsel, ...) |
+| ^ | Update auf GRAV 0.9.43 |
+| ^ | Visualisierung von Codesnippets durch highlight.js |
+
 >>>>>Version 2.2<br>
 
 
@@ -36,7 +45,7 @@ visible: true
 | + | Unterstützung für Mehrsprachigkeit hinzugefügt |
 | + | Französisch hinzugefügt |
 | ^ | Update auf GRAV 0.9.40 |
-| - | Suchfunktion aufgrund diverser auftretender Fehler deaktiviert | 
+| - | Suchfunktion aufgrund diverser auftretender Fehler deaktiviert |
 
 >>>>>Version 2.1.5<br>
 
@@ -126,6 +135,3 @@ visible: true
 
 <br>
 ***
-
-
-

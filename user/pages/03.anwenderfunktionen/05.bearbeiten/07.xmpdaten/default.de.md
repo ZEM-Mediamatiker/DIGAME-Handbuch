@@ -1,5 +1,6 @@
 ---
 title: XMP
+slug: xmp
 menu: XMP
 metadata:
     description: Die Webbasierte Anleitung für DIGAME vom Zentrum elektronische Medien ZEM.
@@ -25,4 +26,3 @@ Unter XMP werden alle Metadaten angezeigt welche für das Media Asset definiert 
 
 <br>
 ***
-

@@ -1,6 +1,7 @@
 ---
-title: Technische Anforderungen
-menu: technisch
+title: Exigences techniques
+slug: exigences-techniques
+menu: Exigences techniques
 metadata:
     description: Die Webbasierte Anleitung für DIGAME vom Zentrum elektronische Medien ZEM.
     keywords: DIGAME,ZEM,Zentrum elektronische Medien,Mediathek Admin,Mediathek,Bilddatenbank,Bildverwaltung,Bundesverwaltung,Eidgenossenschaft,Schweizerische Eidgenossenschaft,VBS,Bundesamt für Verteidigung, Bevölkerungsschutz und Sport
@@ -68,9 +69,9 @@ Toute communication entre l’utilisateur et le serveur de DIGAME se fait par re
 
 Les demandes sont envoyées sous forme de requêtes RESTful. Tous les paramètres sont présents, soit dans l’URL, soit dans l’en-tête HTTP. Ceux qui se trouvent dans l’URL doivent en respecter les conventions. Les caractères spéciaux (p. ex. pour une recherche) ne sont pas autorisés.<br>
 
-| Beispiel | | 
-| ------ | -- | 
-| Incorrect | Soldat avec un chien | 
+| Beispiel | |
+| ------ | -- |
+| Incorrect | Soldat avec un chien |
 | Correct | Soldat%20avec%20un%20chien |
 
 
@@ -82,7 +83,7 @@ Exemple de réponse à une demande de jeton d’authentification.<br>
     <UserToken xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
         <Token>PD94bWwgdmVyc2lvbj0iMS4wIj ... l6YWJsZT4=</Token>
     </UserToken>
-    
+
 Exemple de réponse à une demande de recherche de ressource (où une seule ressource a été trouvée).<br>
 
     <ArrayOfAssetSearchSummary xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
@@ -100,35 +101,31 @@ Exemple de réponse à une demande de recherche de ressource (où une seule ress
             <Title>Title</Title>
         </AssetSearchSummary>
     </ArrayOfAssetSearchSummary>
-    
+
 #### Formats Respondse (JSON)
 
 Exemple de réponse à une demande de jeton d’authentification.
 <br>
 
 
-    { 
-    "Token":"PD94bWwgdmVyc2lvbj ... Gl6YWJsZT4=" 
+    {
+    "Token":"PD94bWwgdmVyc2lvbj ... Gl6YWJsZT4="
     }
-    
+
 Exemple de réponse à une demande de recherche de ressource (où une seule ressource a été trouvée).<br>
 
-    [ 
-        { 
-            "AssetId": 17, 
-            "Title": "", 
-            "Description": 
-            "Beschreibung", 
-            "AssetType": "PIC", 
+    [
+        {
+            "AssetId": 17,
+            "Title": "",
+            "Description":
+            "Beschreibung",
+            "AssetType": "PIC",
             "PreviewUrl": "http://localhost:57824/AssetPreview.ashx?assetId=17&thumbnail=false",
             "DownloadUrl": "http://localhost:57824/AssetDownload.ashx?assetId=17&highRes=false
-            &usertoken=PD94bWwgdmVyc2 ... WJsZT4=" 
-        } 
+            &usertoken=PD94bWwgdmVyc2 ... WJsZT4="
+        }
     ]
-    
+
 <br>
 ***
-
-
-
-

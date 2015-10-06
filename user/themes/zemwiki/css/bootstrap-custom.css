@@ -15,6 +15,28 @@ table{
 	border-collapse: collapse;
 }
 
+pre{
+	border: none;
+	padding: 0px;
+
+}
+
+.hljs{
+	padding: 0.8em;
+}
+
+.langswitcher .active{
+		border-bottom: 1px solid white;
+}
+
+a:hover{
+	text-decoration: none;
+	border-bottom: 1px solid;
+}
+
+a.active:hover{
+	text-decoration: none;
+}
 
 
 input:required,
@@ -97,6 +119,7 @@ textarea:focus, input:focus{
 
 #menu-navigation ol li a:hover{
 	text-decoration: none;
+	border: none;
 	color: rgba(255,255,255,1);
 }
 

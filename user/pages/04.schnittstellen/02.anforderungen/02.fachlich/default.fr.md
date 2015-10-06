@@ -1,6 +1,7 @@
 ---
-title: Fachliche Anforderungen
-menu: fachlich
+title: Exigences spécialisées
+slug: exigences-specialisees
+menu: Exigences spécialisées
 metadata:
     description: Die Webbasierte Anleitung für DIGAME vom Zentrum elektronische Medien ZEM.
     keywords: DIGAME,ZEM,Zentrum elektronische Medien,Mediathek Admin,Mediathek,Bilddatenbank,Bildverwaltung,Bundesverwaltung,Eidgenossenschaft,Schweizerische Eidgenossenschaft,VBS,Bundesamt für Verteidigung, Bevölkerungsschutz und Sport
@@ -20,30 +21,30 @@ visible: true
 
 #### Appeler les services Web
 
-| Link | Beispiel | 
-| ------ | -- | 
-| Usertoken | Demander un jeton d’authentification valable | 
+| Liens | Beispiel |
+| ------ | -- |
+| Usertoken | Demander un jeton d’authentification valable |
 | Search | Chercher une ressource numérique |
 | Search All | Chercher dans toutes les ressources |
 
-#### Testsystem
-|  | | 
-| ------ | -- | 
-| URL: | https://www.digame.mediathek-admin.com/api | 
+#### Système test
+|  | |
+| ------ | -- |
+| URL: | https://www.digame.mediathek-admin.com/api |
 | User (Basic Authenticaiton): | cmsuser |
 | Mot de passe: |  |
 
-#### Integrationssystem
-|  | | 
-| ------ | -- | 
-| URL: | https://www.test.digame.mediathek-admin.ch/api | 
+#### Système d’intégration
+|  | |
+| ------ | -- |
+| URL: | https://www.test.digame.mediathek-admin.ch/api |
 | User (Basic Authenticaiton): | cmsuser |
-| Passwort: |  |
+| Mot de passe: |  |
 
-#### Produktivsystem (Livesystem)
-|  | | 
-| ------ | -- | 
-| URL: | https://www.digame.mediathek-admin.ch/api | 
+#### Système productif
+|  | |
+| ------ | -- |
+| URL: | https://www.digame.mediathek-admin.ch/api |
 | User (Basic Authenticaiton): | cmsuser |
 | Mot de passe: | [A définir] |
 
@@ -77,7 +78,7 @@ L’accessibilité des ressources est gérée par l’implémentation de ce que 
 Les ressources doivent obligatoirement se trouver dans ces conteneurs pour être visibles / accessibles par le système périphérique. Sinon, l’accès sera refusé.
  - ‚Internet‘ Container
  - ‚{UmsystemContainer}‘ Container (z.B.: ‚CMS-VBS‘ für VBS CMS)
- 
+
 {{ media['3sichtbarkeitvbscms.png'].html() }}
 ###### Image n°38 : accessibilité des ressources dans le CMS DDPS
 
@@ -86,7 +87,3 @@ Les ressources doivent obligatoirement se trouver dans ces conteneurs pour être
 
 <br>
 ***
-
-
-
-

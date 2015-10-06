@@ -1,6 +1,7 @@
 ---
-title: Schnittstellen
-menu: Schnittstellen
+title: Interfaces
+slug: interfaces
+menu: Interfaces
 metadata:
     description: Die Webbasierte Anleitung für DIGAME vom Zentrum elektronische Medien ZEM.
     keywords: DIGAME,ZEM,Zentrum elektronische Medien,Mediathek Admin,Mediathek,Bilddatenbank,Bildverwaltung,Bundesverwaltung,Eidgenossenschaft,Schweizerische Eidgenossenschaft,VBS,Bundesamt für Verteidigung, Bevölkerungsschutz und Sport
@@ -19,7 +20,3 @@ visible: true
 ### Vous trouverez ici toutes les informations relatives aux différentes interfaces de DIGAME.
 
 La documentation sur les interfaces contient toutes les informations dont peut avoir besoin un développeur pour relier son système (application tierce) à DIGAME. Toutes les opérations réalisables y sont décrites en détail, ainsi que les processus de gestion des erreurs et les points essentiels à une bonne utilisation des interfaces.
-
-
-
-

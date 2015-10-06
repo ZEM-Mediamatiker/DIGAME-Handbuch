@@ -1,6 +1,7 @@
 ---
-title: Übersicht
-menu: Übersicht
+title: aperçu
+slug: apercu
+menu: Aperçu
 metadata:
     description: Die Webbasierte Anleitung für DIGAME vom Zentrum elektronische Medien ZEM.
     keywords: DIGAME,ZEM,Zentrum elektronische Medien,Mediathek Admin,Mediathek,Bilddatenbank,Bildverwaltung,Bundesverwaltung,Eidgenossenschaft,Schweizerische Eidgenossenschaft,VBS,Bundesamt für Verteidigung, Bevölkerungsschutz und Sport
@@ -44,6 +45,3 @@ visible: true
 
 <br>
 ***
-
-
-

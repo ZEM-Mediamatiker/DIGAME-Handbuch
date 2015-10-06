@@ -1,6 +1,7 @@
 ---
-title: Arbeitsbereich
-menu: Arbeitsbereich
+title: Fonctions disponibles dans le volet Travail
+slug: le-volet-travail
+menu: Le volet Travail
 metadata:
     description: Die Webbasierte Anleitung für DIGAME vom Zentrum elektronische Medien ZEM.
     keywords: DIGAME,ZEM,Zentrum elektronische Medien,Mediathek Admin,Mediathek,Bilddatenbank,Bildverwaltung,Bundesverwaltung,Eidgenossenschaft,Schweizerische Eidgenossenschaft,VBS,Bundesamt für Verteidigung, Bevölkerungsschutz und Sport
@@ -31,7 +32,7 @@ En laissant le champ de texte (1) vide et en cliquant sur le bouton Chercher [Go
 
 ### Recherche avancée
 
-L’utilisateur peut configurer des paramètres de recherche avancée en cliquant sur Recherche avancée [Erweitere Suche] (3). Les possibilités seront les mêmes dans la fenêtre de recherche avancée qu’avec la création d’un filtre. Pour davantage d’informations à ce propos, veuillez vous référer au chapitre « Fonctionnalités du volet Filtre ». 
+L’utilisateur peut configurer des paramètres de recherche avancée en cliquant sur Recherche avancée [Erweitere Suche] (3). Les possibilités seront les mêmes dans la fenêtre de recherche avancée qu’avec la création d’un filtre. Pour davantage d’informations à ce propos, veuillez vous référer au chapitre « Fonctionnalités du volet Filtre ».
 
 ***
 
@@ -57,10 +58,3 @@ Attention : il n’y a pas d’aperçu automatique pour les données au format 
 
 <br>
 ***
-
-
-
-
-
-
-

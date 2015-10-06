@@ -1,6 +1,7 @@
 ---
-title: Stichworte
-menu: Stichworte
+title: Mots-clés
+slug: mots-cles
+menu: Mots-clés
 metadata:
     description: Die Webbasierte Anleitung für DIGAME vom Zentrum elektronische Medien ZEM.
     keywords: DIGAME,ZEM,Zentrum elektronische Medien,Mediathek Admin,Mediathek,Bilddatenbank,Bildverwaltung,Bundesverwaltung,Eidgenossenschaft,Schweizerische Eidgenossenschaft,VBS,Bundesamt für Verteidigung, Bevölkerungsschutz und Sport
@@ -26,6 +27,3 @@ Des mots-clés peuvent être attribués à une ressource numérique depuis l’a
 
 <br>
 ***
-
-
-

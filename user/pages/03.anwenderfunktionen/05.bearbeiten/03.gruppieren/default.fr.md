@@ -1,6 +1,7 @@
 ---
-title: Media Assets
-menu: Gruppen
+title: Regrouper
+slug: regrouper
+menu: Regrouper
 metadata:
     description: Die Webbasierte Anleitung für DIGAME vom Zentrum elektronische Medien ZEM.
     keywords: DIGAME,ZEM,Zentrum elektronische Medien,Mediathek Admin,Mediathek,Bilddatenbank,Bildverwaltung,Bundesverwaltung,Eidgenossenschaft,Schweizerische Eidgenossenschaft,VBS,Bundesamt für Verteidigung, Bevölkerungsschutz und Sport
@@ -32,6 +33,3 @@ Pour regrouper les ressources numériques sélectionnées (2), l’utilisateur d
 
 <br>
 ***
-
-
-

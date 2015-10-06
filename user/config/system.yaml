@@ -9,9 +9,10 @@ pages:
   process:
     markdown: true
     twig: true
-    
+
 languages:
   http_accept_language: true
+  session_store_active: true
   supported:
     - de
     - fr

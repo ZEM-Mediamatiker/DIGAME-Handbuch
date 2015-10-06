@@ -1,5 +1,5 @@
 ---
-title: Media Assets
+title: Gruppen
 menu: Gruppen
 metadata:
     description: Die Webbasierte Anleitung für DIGAME vom Zentrum elektronische Medien ZEM.
@@ -33,6 +33,3 @@ Die ausgewählten Media Assets (2) können durch Betätigung von (1) gruppiert w
 
 <br>
 ***
-
-
-

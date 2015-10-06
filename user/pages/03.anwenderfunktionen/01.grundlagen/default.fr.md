@@ -1,6 +1,7 @@
 ---
-title: Grundlagen DIGAME
-menu: Grundlagen&nbsp;DIGAME
+title: Structure de base de DIGAME
+slug: structure-de-base
+menu: Structure de base
 metadata:
     description: Die Webbasierte Anleitung für DIGAME vom Zentrum elektronische Medien ZEM.
     keywords: DIGAME,ZEM,Zentrum elektronische Medien,Mediathek Admin,Mediathek,Bilddatenbank,Bildverwaltung,Bundesverwaltung,Eidgenossenschaft,Schweizerische Eidgenossenschaft,VBS,Bundesamt für Verteidigung, Bevölkerungsschutz und Sport
@@ -54,7 +55,7 @@ L’identification de l’utilisateur est indiquée en haut à droite de l’éc
 
 L’utilisateur peut changer son mot de passe à tout moment. Pour cela, il doit choisir le menu Modifier le mot de passe [Passwort ändern] dans le volet Menus (2) (cf. image n°2)
 <br>
-     
+
 {{ media['password.png'].html() }}
 ###### Image n°4 : champs de modification du mot de passe
 
