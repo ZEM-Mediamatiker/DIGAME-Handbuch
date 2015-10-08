@@ -15,6 +15,28 @@ table{
 	border-collapse: collapse;
 }
 
+pre{
+	border: none;
+	padding: 0px;
+
+}
+
+.hljs{
+	padding: 0.8em;
+}
+
+.langswitcher .active{
+		border-bottom: 1px solid white;
+}
+
+a:hover{
+	text-decoration: none;
+	border-bottom: 1px solid;
+}
+
+a.active:hover{
+	text-decoration: none;
+}
 
 
 input:required,
@@ -73,7 +95,7 @@ textarea:focus, input:focus{
 /*#menu-navigation ol li:first-child {
 	margin: 20px 0px 5px 0px;
 }*/
-	
+
 /*#menu-navigation ol li:before {
 	color: #afafaf;
 	font-size: 14px;
@@ -81,7 +103,7 @@ textarea:focus, input:focus{
     counter-increment: item;
     position: absolute;
     margin-right: 100%;
-    right: 5px; Abstand zwischen Nummer und Text 
+    right: 5px; Abstand zwischen Nummer und Text
 }*/
 
 #menu-navigation ol li a {
@@ -97,6 +119,7 @@ textarea:focus, input:focus{
 
 #menu-navigation ol li a:hover{
 	text-decoration: none;
+	border: none;
 	color: rgba(255,255,255,1);
 }
 
@@ -152,7 +175,7 @@ textarea:focus, input:focus{
 	top: 0px;
   	visibility:hidden;
   	opacity:0;
-  	transition:visibility 0s ease 0.3s,opacity 0.3s ease;	
+  	transition:visibility 0s ease 0.3s,opacity 0.3s ease;
 }
 
 #searchcontainer{
@@ -187,9 +210,9 @@ input[type=submit] {
 	border:0 none;
 	float: right;
 	cursor:pointer;
-	background: rgba(255,255,255,0.5) url(../images/layout/search.svg) no-repeat center center; 
+	background: rgba(255,255,255,0.5) url(../images/layout/search.svg) no-repeat center center;
     -webkit-border-radius: 5px;
-    border-radius: 5px; 
+    border-radius: 5px;
     margin-top: 24px;
     transition:0.2s ease;
 }
@@ -200,7 +223,7 @@ input[type=submit]:hover{
 
 .searchwrapper{
 	width: 300px;
-	height: 80px;	
+	height: 80px;
 }
 
 .searchmenubutton{
@@ -235,8 +258,8 @@ input[type=submit]:hover{
 	-moz-transform: translate(0px, 2px) rotate(-45deg) scaleX(1.25);
 	-ms-transform: translate(0px, 2px) rotate(-45deg) scaleX(1.25);
 	width: 50%;
-}	
-	
+}
+
 .searchmenubutton .menutransform .linie.bottom.right{
 	background: rgba(255,255,255,1);
 	transform: translate(0px, -2px) rotate(45deg) scaleX(1.25);
@@ -246,7 +269,7 @@ input[type=submit]:hover{
 	-ms-transform: translate(0px, -2px) rotate(45deg) scaleX(1.25);
 	width: 50%;
 }
-	
+
 .searchmenubutton .menutransform .linie.bottom.left{
 	background: rgba(255,255,255,1);
 	transform: translate(1px, -2px) rotate(-45deg) scaleX(1.25);
@@ -255,8 +278,8 @@ input[type=submit]:hover{
 	-moz-transform: translate(1px, -2px) rotate(-45deg) scaleX(1.25);
 	-ms-transform: translate(1px, -2px) rotate(-45deg) scaleX(1.25);
 	width: 50%;
-}	
-	
+}
+
 .copywrapper{
 	margin: 0 auto;
 	bottom: 0px;
@@ -267,8 +290,8 @@ input[type=submit]:hover{
 
 .copywrapper a{
 	color: rgba(131,131,131,0.3);
-}	
-	
+}
+
 .printmenubutton{
 	position: fixed;
     z-index: 126;
@@ -289,7 +312,7 @@ a.printmenu{
 		+ GENERAL +
 --------------------------------------------------------------*/
 
-@media print  
+@media print
 {
     img{
         page-break-inside: avoid;
@@ -306,7 +329,7 @@ body{
 	color: #838383;
 }
 
-/*	Alle Bilder sollen sich an die Grösse des Containers anpassen. 
+/*	Alle Bilder sollen sich an die Grösse des Containers anpassen.
 	Zudem sollen alle Bilder immer mittig zentriert sein. */
 img{
 	max-width: 100%;
@@ -315,7 +338,7 @@ img{
     display: block;
 }
 
-hr{	
+hr{
 	border-bottom: 2px solid #F0F2F4;
 	margin-top: 20px;
 margin-bottom: 20px;
@@ -377,7 +400,7 @@ h6{
 p {
 	font-family: "mulilight","Helvetica","Tahoma","Geneva","Arial",sans-serif;
 	font-size: 1.2em;
-	line-height: 1.8em;	
+	line-height: 1.8em;
 }
 
 
@@ -396,7 +419,7 @@ p {
 .fixbody{
 	overflow: hidden;
 	position: fixed;
-	
+
 }
 
 /* -------------------------------------------------------------
@@ -410,7 +433,7 @@ header{
 	z-index: 85;
 	background: #343434;
 	background-position: left bottom;
-	position: fixed;	
+	position: fixed;
 	-webkit-box-shadow: 1px -19px 55px 2px #343434;
 	box-shadow: 1px -19px 55px 2px #343434;
 }
@@ -418,7 +441,7 @@ header{
 #logo{
 	margin: 13px 10px 10px 20px;
 	height: 50px;
-	width: 410px;	
+	width: 410px;
 	background: url(../images/layout/logo_vbs_quer1.png) no-repeat;
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
@@ -437,7 +460,7 @@ header{
 	margin: 0 auto;
 	width: 0;
 }
-	
+
 #title h3 a{
 	color: rgb(255,255,255);
 	font-family: "mulilight","Helvetica","Tahoma","Geneva","Arial",sans-serif;
@@ -451,35 +474,119 @@ header{
 }
 
 
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+	opacity:0;
+	-webkit-animation:fadeIn ease-in 1;
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+	-webkit-animation-duration:0.5s;
+	-moz-animation-duration:0.5s;
+	animation-duration:0.5s;
+}
+
+.fade-in.one {
+-webkit-animation-delay: 0.7s;
+-moz-animation-delay: 0.7s;
+animation-delay: 0.7s;
+}
+
+
+#lang-popup{
+	float: right;
+	margin: 30px 20px 0px 0px;
+	position: relative;
+
+}
+
+#lang-popup-arrow{
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid #fff;
+	position: absolute;
+	margin-top: -5px;
+	right: 18px;
+}
+
+#lang-popup-bubble{
+	background: #fff;
+	padding: 15px 10px 15px 15px;
+	float: left;
+	-webkit-box-shadow: 0px 2px 4px 1px rgba(52,52,52,0.3);
+-moz-box-shadow: 0px 2px 4px 1px rgba(52,52,52,0.3);
+box-shadow: 0px 2px 4px 1px rgba(52,52,52,0.3);
+
+}
+
+#lang-popup-bubble:after{
+	content: "x";
+	cursor: pointer;
+	margin-left: 10px;
+
+}
+
+#fvpp-close{
+	opacity: 0;
+}
+
+
 /* Alle Formatierungen im Zusammenhang mit dem Printbutton */
 
-#print_icon{
+.print_icon{
 	position: absolute;
     z-index: 100;
    	/*width: 80px;*/
     height: 80px;
     top: 0;
-    right: 160px;
-    padding: 10px;
-    padding-top: 15px;
+    /*right: 160px; */
+    right: 100px;
+    padding: 28px 10px 10px;
     display: inline;
 }
 
-#print_icon:hover .menutransform2{
+/*#print_icon:hover .menutransform2{
 	background: url(../images/layout/print_white.png) no-repeat;
-}
+}*/
 
 .menutransform2{
 	position: relative;
 	width: 18px;
 	height: 14px;
 	margin: 18px 0px;
-	background: rgba(80, 125, 200, 0.55);
-	background: url(../images/layout/print.png) no-repeat;	
+	/*background: rgba(80, 125, 200, 0.55);
+	/*background: url(../images/layout/print.png) no-repeat;*/
 	-webkit-transition: background 0.5s linear;
 	-moz-transition: background 0.5s linear;
 	-o-transition: background 0.5s linear;
 	transition: background 0.5s linear;
+}
+
+.print_icon .fa{
+	color: #C8C8C8;
+	transition: 0.25s ease 0s;
+}
+
+.print_icon:hover .fa{
+	color: #fff;
+}
+
+.printmenubutton .fa{
+	color: #C8C8C8;
+	transition: 0.25s ease 0s;
+}
+
+.printmenubutton:hover .fa{
+	color: #fff;
 }
 
 
@@ -505,7 +612,7 @@ header{
 	height: 14px;
 	margin: 18px 0px;
 	background: rgba(80, 125, 200, 0.55);
-	background: url(../images/layout/search.svg) no-repeat center center; 
+	background: url(../images/layout/search.svg) no-repeat center center;
 	-webkit-transition: background 0.5s linear;
 	-moz-transition: background 0.5s linear;
 	-o-transition: background 0.5s linear;
@@ -522,7 +629,7 @@ header{
 .search-row{
 	background: rgba(247,247,247,0.45);
 	margin-bottom: 50px;
-	
+
 }
 
 .search-result-header{
@@ -549,8 +656,8 @@ header{
 }
 
 #label{
-    cursor: pointer; 
-    margin:0px; 
+    cursor: pointer;
+    margin:0px;
     width: 80px;
     height: 80px;
     padding: 15px 10px 10px;
@@ -581,7 +688,7 @@ header{
 		-ms-transform: translate(0px, 2px) rotate(-45deg) scaleX(1.25);
 		width: 50%;
 	}
-	
+
 	#navbtn:checked ~ .menu .menutransform .linie.mid.left{
 		transform: translate(3px, 0px) scaleX(0);
 		-o-transform: translate(3px, 0px) scaleX(0);
@@ -590,7 +697,7 @@ header{
 		-ms-transform: translate(3px, 0px) scaleX(0);
 		width: 50%;
 	}
-	
+
 	#navbtn:checked ~ .menu .menutransform .linie.mid.right{
 		transform: translate(-3px, 0px) scaleX(0);
 		-o-transform: translate(-3px, 0px) scaleX(0);
@@ -599,7 +706,7 @@ header{
 		-ms-transform: translate(-3px, 0px) scaleX(0);
 		width: 50%;
 	}
-	
+
 	#navbtn:checked ~ .menu .menutransform .linie.bottom.right{
 		transform: translate(0px, -2px) rotate(45deg) scaleX(1.25);
 		-o-transform: translate(0px, -2px) rotate(45deg) scaleX(1.25);
@@ -608,7 +715,7 @@ header{
 		-ms-transform: translate(0px, -2px) rotate(45deg) scaleX(1.25);
 		width: 50%;
 	}
-	
+
 	#navbtn:checked ~ .menu .menutransform .linie.bottom.left{
 		transform: translate(1px, -2px) rotate(-45deg) scaleX(1.25);
 		-o-transform: translate(1px, -2px) rotate(-45deg) scaleX(1.25);
@@ -668,8 +775,10 @@ header{
 
 /*	Alle Formatierungen im Zusammenhang mit dem Hauptbereich / Body. */
 
+
+
 #content{
-	padding-top: 60px;
+	padding-top: 80px;
 }
 
 .padding{
@@ -729,7 +838,22 @@ header{
 }
 
 
+.langswitcher{
+				padding: 0px;
+				list-style-type:none;
+				margin: 0 auto;
+				width: 151px;
+			}
 
+			.langswitcher li{
+				float: left;
+				margin: 10px 10px;
+				text-align: center;
+			}
+
+			.langswitcher li a{
+				color: rgba(255, 255, 255, 0.5)
+			}
 
 
 /* -------------------------------------------------------------
@@ -749,22 +873,27 @@ header{
 		box-shadow: 1px -19px 55px 2px #343434;
 		z-index: 85;
 	}
-	
-	#print_icon{
-    	right: 120px;
+
+	.print_icon{
+    	/*right: 120px;*/
+			right: 80px;
     	height: 60px;
 	}
-	
+
 	.search_icon{
     	right: 75px;
     	height: 60px;
 	}
-	
+
 	.searchmenubutton{
 		width: 60px;
 		height: 60px;
 	}
-	
+
+	#lang-popup{
+		margin: 70px 10px 0px 0px;
+	}
+
 	#title{
 		width: initial;
 	}
@@ -776,93 +905,95 @@ header{
     	height: 60px;
     	top: 0;
     	right: 0px;
-    	display: inline;  
-	}	
-	
+    	display: inline;
+	}
+
 	#label{
-    	cursor: pointer; 
-    	margin:0px; 
+    	cursor: pointer;
+    	margin:0px;
     	width: 60px;
     	height: 60px;
     	padding: 15px 10px 10px;
 	}
-	
+
 	.menutransform{
 		position: relative;
 		width: 18px;
 		height: 14px;
 		margin: 8px 14px;
 	}
-	
+
 	.menutransform2{
 		position: relative;
 		width: 18px;
 		height: 14px;
 		margin: 0px 0px 0px;
 	}
-	
-	#print_icon{
+
+	.print_icon{
 		padding-top: 23px;
 	}
-	
+
 	#showSearchOverlay{
 		padding-top: 23px;
 	}
-	
+
 	#searchcontainer{
 		width: 100%;
 	}
-	
+
 	#searchfield{
 		width: 650px
 	}
-	
+
 	.menutransform3{
 		position: relative;
 		width: 18px;
 		height: 14px;
 		margin: 0px 0px 0px;
 	}
-	
+
 	.linie {
 		height: 2px;
 		position: absolute;
 		background: rgb(200, 200, 200);
 		transition: 0.25s ease 0s;
 	}
-	
+
 	.top{
 		width: 50%;
 		top: 0px;
 	}
-	
+
 	.mid{
 		width: 50%;
 		top: 6px;
 	}
-	
+
 	.bottom{
 		width: 50%;
 		top: 12px;
 	}
-	
+
 	.left{
 		left: 0px;
 	}
-	
+
 	.right{
 		right: 0px;
 	}
-	
+
 	#logo{
 		margin: 10px 10px 10px 10px;
 		height: 40px;
-		width: 40px;	
+		width: 40px;
 		background: url(../images/layout/logo_vbs.png);
 		background-size:cover;
 		background-repeat: no-repeat;
 	}
-	
+
+
+
 	#title{
 		position: relative;
 		padding: 0;
@@ -872,23 +1003,23 @@ header{
     	margin-top: -5px;
     	white-space:nowrap;
 	}
-	
+
 	#title h3 a{
 		text-align: left;
 		margin: 0 auto;
 		margin-left: auto;
 		margin-right: auto;
 		display: block;
-	}	
-    
+	}
+
     #content{
 		width: 100%;
-	}  
-    
+	}
+
     .padding{
 		padding: 1.7em 3em 10em 3em;
 	}
-	
+
 	#content #navigation{
 		position: fixed;
 		width: 100%;
@@ -896,22 +1027,22 @@ header{
 		background: rgba(247,247,247,0.9);
 		bottom: 0px;
 	}
-	
+
 	#content .nav{
 		position: relative;
 		top: auto;
 		width: 50%;
 		height: 10px;
 	}
-	
+
 	#content .nav:hover{
 		background: rgba(222,222,222,0.6);
 	}
-	
+
 	#content .nav.nav-prev{
 		float: left;
-	}	
-	
+	}
+
 	#content .nav.nav-next{
 		float: none;
 		border-left: 1px solid rgba(60,60,60,0.2);
@@ -919,12 +1050,12 @@ header{
 }
 
 @media only screen and (max-width: 770px){
-	
+
 	#searchfield{
 		width: 100%;
 		font-size: 50px;
 	}
-	
+
 	input[type=submit] {
 	height: 63px;
 	width: 120px;
@@ -939,32 +1070,32 @@ header{
 --------------------------------------------------------------*/
 
 @media only screen and (max-width: 650px){
-	
+
 	#header{
 		height: 60px;
 		-webkit-box-shadow: 1px -19px 55px 2px #343434;
 		box-shadow: 1px -19px 55px 2px #343434;
 		z-index: 85;
 	}
-	
+
 	a.printmenu{
 		display: inline;
 	}
-	
+
 	#logo{
 		margin: 10px 10px 10px 10px;
 		height: 40px;
-		width: 40px;	
+		width: 40px;
 		background: url(../images/layout/logo_vbs.png);
 		background-size:cover;
 		background-repeat: no-repeat;
 	}
-	
+
 	h1{
 		font-size: 25px;
 		letter-spacing: -1px;
 	}
-	
+
 	#title{
 		position: relative;
 		padding: 0;
@@ -972,26 +1103,26 @@ header{
 		display: block;
     	margin-top: -5px;
 	}
-	
+
 	#title h3{
 		/*padding: 0px 70px 0px 40px;*/
 	}
-	
+
 	#title h3 a{
 		margin: 0 auto;
 		margin-left: auto;
 		margin-right: auto;
 		display: block;
 	}
-	
+
 	.menutransform2{
 		/*display: none;*/
-	}	
-	
-	#print_icon{
+	}
+
+	.print_icon{
 		display: none;
 	}
-	
+
 	.menu_line{
    		width: 45px;
     	height: 7px;
@@ -999,32 +1130,43 @@ header{
     	background: rgb(87, 87, 87);
     	transition: 0.2s;
 }
-		
-	table, thead, tbody, th, td, tr { 
+
+	table, thead, tbody, th, td, tr {
 		display: block;
 	}
-	
-	thead tr { 
+
+	thead tr {
 		position: absolute;
 		top: -9999px;
 		left: -9999px;
 		background: red;
-	}	
-	
-	td { 
-		border: none;
-		border-bottom: 1px solid #eee; 
-		position: relative;
-		padding-left: 50%; 
 	}
-	
-	td:before { 
+
+	td {
+		border: none;
+		border-bottom: 1px solid #eee;
+		position: relative;
+		padding-left: 50%;
+	}
+
+	td:before {
 		position: absolute;
 		top: 6px;
 		left: 6px;
-		width: 45%; 
-		padding-right: 10px; 
+		width: 45%;
+		padding-right: 10px;
 		white-space: nowrap;
+	}
+}
+
+/* -------------------------------------------------------------
+		+ Endgeräte unter 390px +
+--------------------------------------------------------------*/
+
+@media only screen and (max-width: 400px){
+
+	#lang-popup{
+		display: none;
 	}
 }
 
@@ -1033,10 +1175,13 @@ header{
 --------------------------------------------------------------*/
 
 @media only screen and (max-width: 285px){
-		
+
 	#title h3 a{
 		font-size: 14px;
 		line-height: 1.3;
+	}
+	#lang-popup{
+		display: none;
 	}
 }
 
@@ -1045,9 +1190,12 @@ header{
 --------------------------------------------------------------*/
 
 @media only screen and (max-width: 195px){
-		
+
 	#title h3 a{
 		display: none;
+	}
+	#lang-popup{
+		margin: 10px 10px 0px 0px;
 	}
 }
 
