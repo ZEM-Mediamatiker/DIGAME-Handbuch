@@ -1,4 +1,4 @@
 # Anleitung DIGAME
-![http://digame.zem.ch](digame.zem.ch)
+[digame.zem.ch](http://digame.zem.ch)
 
 
