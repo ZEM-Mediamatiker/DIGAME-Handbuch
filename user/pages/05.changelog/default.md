@@ -34,7 +34,7 @@ visible: true
 |  | Change |
 | --- | --- |
 | ^ | Mehrsprachigkeit verbessert (Menü übersetzt, URLs angepasst, Hinweis auf Sprachwechsel, ...) |
-| ^ | Update auf GRAV 0.9.43 |
+| ^ | Update auf GRAV 0.9.44 |
 | ^ | Visualisierung von Codesnippets durch highlight.js |
 
 >>>>>Version 2.2<br>

@@ -1,3 +1,33 @@
+# v1.7.6
+## 10/07/2015
+
+1. [](#new)
+    * Added logic to include site.menu items in modular pages
+1. [](#improved)
+    * Removed unused `<p>` tags
+
+# v1.7.5
+## 09/16/2015
+
+1. [](#improved)
+    * Use new form plugin templates
+
+# v1.7.3
+## 09/11/2015
+
+1. [](#new)
+    * Added SCSS configurable notes colors
+1. [](#improved)
+    * Various typos
+
+# v1.7.3
+## 08/31/2015
+
+1. [](#new)
+    * Added header image control and blueprints to admin plugin
+1. [](#improved)
+    * Use new template field for modular pages
+
 # v1.7.2
 ## 08/24/2015
 
