@@ -50,6 +50,7 @@
 			<header id="header">
       			<div id="logo">
       			</div>
+            
       			<div id="title">
       				<h3 class="header-title"><a href="{{ base_url_absolute}}">{{ config.site.title }}</a></h3>
       			</div>
@@ -85,11 +86,11 @@
       				{% block content %}{% endblock %}
       				<div class="copywrapper">
       					&copy; 2015 | <a href="http://zem.ch" target="_blank" alt="Zentrum elektronische Medien">Zentrum elektronische Medien</a><br>
-      					<a href="{{ page.find('/changelog').url() }}">Version: 2.2</a>
+      					<a href="{{ page.find('/changelog').url() }}">Version: 2.2</a> | Powered by <a href="http://getgrav.org">Grav</a>
                 <!--<a id="show-language-alert">Show mesage again</a>-->
       				</div>
       			</div>
-      			{% set progress = page.collection({'items':{'@taxonomy.category': 'digame'},'order': {'by': 'default', 'dir': 'asc'}}) %}
+      			{% set progress = page.collection({'items':{'@taxonomy.category': 'backendanleitung'},'order': {'by': 'default', 'dir': 'asc'}}) %}
       			<div id="navigation">
       				{% if not progress.isFirst(page.path) %}
       				<a class="nav nav-prev" href="{{ progress.nextSibling(page.path).url }}"><i class="icon-navigation-arrows">&#59237;</i></a>
