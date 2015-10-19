@@ -548,8 +548,8 @@ box-shadow: 0px 2px 4px 1px rgba(52,52,52,0.3);
    	/*width: 80px;*/
     height: 80px;
     top: 0;
-    /*right: 160px; */
-    right: 100px;
+    right: 160px;
+    /*right: 100px;*/
     padding: 28px 10px 10px;
     display: inline;
 }

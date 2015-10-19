@@ -1,6 +1,6 @@
 enabled: true
 built_in_css: true
-route: /suche
+route: /search
 template: simplesearch_results
 filters:
     category: backendanleitung
