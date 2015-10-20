@@ -1,0 +1,18 @@
+{% extends 'partials/simplesearch_base.html.twig' %}
+
+{% block content %}
+    <div class="content-padding">
+    <style>
+    #navigation{
+    display: none;
+    }
+  </style>
+    <h1 class="search-header">{{ "THEME_ZEMWIKI.SEARCH_RESULTS"|t }}</h1>
+
+
+    <h3>"{{ query }}" : <strong>{{ search_results.count }} </strong> {{ "THEME_ZEMWIKI.SEARCH_RESULTS_TERM"|t }}</h3>
+    {% for page in search_results %}
+        {% include 'partials/simplesearch_item.html.twig' with {'page':page} %}
+    {% endfor %}
+    </div>
+{% endblock %}

@@ -1,0 +1,17 @@
+de:
+  THEME_ZEMWIKI:
+    ZEM: "Zentrum elektronische Medien"
+    ENTER_SEARCH_TERM: "Geben Sie einen Suchbegriff ein"
+    SEARCH_PLACEHOLDER: "Suche..."
+    SEARCH_RESULTS: "Suchresultate"
+    SEARCH_RESULTS_EDITED: "Seite zuletzt geändert:"
+    SEARCH_RESULTS_TERM: "Ergebnisse für diesen Suchbegriff gefunden."
+
+fr:
+  THEME_ZEMWIKI:
+    ZEM: "Centre des médias électroniques"
+    ENTER_SEARCH_TERM: "Entrez un terme de recherche"
+    SEARCH_PLACEHOLDER: "Recherche..."
+    SEARCH_RESULTS: "résultats de la recherche"
+    SEARCH_RESULTS_EDITED: "Page modifiée:"
+    SEARCH_RESULTS_TERM: "résultats pour ce terme de recherche."
