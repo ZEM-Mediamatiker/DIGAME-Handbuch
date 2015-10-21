@@ -28,6 +28,16 @@ visible: true
 
 <br>
 
+>>>>>Version 2.3<br>
+
+
+|  | Change |
+| --- | --- |
+| + | Verschiedene nicht seitenbasierte Inhalte mehrsprachig erstellt |
+| ^ | Suchfunktion wieder aktiviert. Es sollten nun keine Fehler mehr auftreten |
+| ^ | Update auf GRAV 0.9.45 |
+| ^ | Diverse Optimierungen |
+
 >>>>>Version 2.2.1<br>
 
 
@@ -52,7 +62,7 @@ visible: true
 
 |  | Change |
 | --- | --- |
-| # | Fehler behoben, dass Suchfunktion nach Update auf Version 2.1.4 nicht mehr funktioniert hat. |
+| # | Fehler behoben, dass Suchfunktion nach Update auf Version 2.1.4 nicht mehr funktioniert hat |
 
 >>>>>Version 2.1.4<br>
 
@@ -61,7 +71,7 @@ visible: true
 | --- | --- |
 | ^ | Update auf GRAV-Version 0.9.37 (+ Update der Plugins) |
 | ^ | Diverse kleine Layoutanpassungen |
-| # | Fehler behoben, bei dem man im Internet Explorer nicht in der Navigation scrollen konnte. |
+| # | Fehler behoben, bei dem man im Internet Explorer nicht in der Navigation scrollen konnte |
 
 >>>>>Version 2.1.3<br>
 
@@ -69,7 +79,7 @@ visible: true
 |  | Change |
 | --- | --- |
 | ^ | Update auf GRAV-Version 0.9.28 |
-| ^ | Bug in Firefox Mobile gefixt, der ein Inputfeld generiert hat, welches das Layout zerstörte. |
+| ^ | Bug in Firefox Mobile gefixt, der ein Inputfeld generiert hat, welches das Layout zerstörte |
 | ^ | Ladezeit optimiert |
 
 >>>>>Version 2.1.2<br>
@@ -98,7 +108,7 @@ visible: true
 
 |  | Change |
 | --- | --- |
-| + | Steuerung über die Tastatur hinzugefügt. Mit den Pfeiltasten links und rechts kann jetzt durch die Seiten navigiert werden. Die S-Taste öffnet die Suche, die M-Taste das Menu und die P-Taste öffnet das Druckermenu.
+| + | Steuerung über die Tastatur hinzugefügt. Mit den Pfeiltasten links und rechts kann jetzt durch die Seiten navigiert werden. Die S-Taste öffnet die Suche, die M-Taste das Menu und die P-Taste öffnet das Druckermenu
 | + | Favicon hinzugefügt |
 | ^ | Navigationsmenu umgebaut |
 | ^ | Responsive CSS verbessert |
@@ -113,7 +123,7 @@ visible: true
 | ^ | Update auf die GRAV-Version 0.9.23 |
 | ^ | Suchergebnisse übersichtlicher gestaltet |
 | ^ | Diverse Verbesserungen und Anpassungen in Dateien und CSS-Formatierungen |
-| ! | Die Mobile-Version funktioniert seit den letzten Updates von Safari unter iOS und Google Chrome / Firefox unter Android nicht mehr wie gewünscht. Diverse Verbesserungen haben noch nicht zum gewünschten Ziel geführt.  |
+| ! | Die Mobile-Version funktioniert seit den letzten Updates von Safari unter iOS und Google Chrome / Firefox unter Android nicht mehr wie gewünscht. Diverse Verbesserungen haben noch nicht zum gewünschten Ziel geführt  |
 
 >>>>>Version 1.2<br>
 
