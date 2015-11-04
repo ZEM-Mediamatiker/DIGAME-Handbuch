@@ -1142,12 +1142,12 @@ box-shadow: 0px 2px 4px 1px rgba(52,52,52,0.3);
 		display: block;
 	}
 
-	thead tr {
+	/*thead tr {
 		position: absolute;
 		top: -9999px;
 		left: -9999px;
 		background: red;
-	}
+	}*/
 
 	td {
 		border: none;
@@ -1219,7 +1219,8 @@ html {
 table {
     width: 100%;
     border: 1px solid #f0f0f0;
-    margin: 30px 0;
+    /*margin: 30px 0;*/
+	margin: 0px 0px 30px 0px;
 }
 
 th {
@@ -1231,6 +1232,10 @@ th {
 td {
     padding: 5px;
     border: 1px solid #f0f0f0;
+}
+
+@-moz-document url-prefix() {
+  fieldset { display: table-cell; }
 }
 
 /* Notice Styles */

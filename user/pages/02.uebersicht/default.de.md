@@ -21,7 +21,6 @@ visible: true
 
 >>>>>> Live-System <br>
 
-
 | Link | Art | Bemerkung |
 | --- | --- | --- |
 | [www.mediathek.admin.ch](https://www.mediathek.admin.ch/ "Frontend aufrufen") | Frontend | Live-Hardware |
