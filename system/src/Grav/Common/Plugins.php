@@ -4,7 +4,6 @@ namespace Grav\Common;
 use Grav\Common\Config\Config;
 use Grav\Common\Data\Blueprints;
 use Grav\Common\Data\Data;
-use Grav\Common\GravTrait;
 use Grav\Common\File\CompiledYamlFile;
 use RocketTheme\Toolbox\Event\EventDispatcher;
 use RocketTheme\Toolbox\Event\EventSubscriberInterface;
@@ -94,18 +93,21 @@ class Plugins extends Iterator
     {
         $list = array();
         $locator = Grav::instance()['locator'];
-        $iterator = new \DirectoryIterator($locator->findResource('plugins://', false));
 
-        /** @var \DirectoryIterator $directory */
-        foreach ($iterator as $directory) {
-            if (!$directory->isDir() || $directory->isDot()) {
-                continue;
+        $plugins = (array) $locator->findResources('plugins://', false);
+        foreach ($plugins as $path) {
+            $iterator = new \DirectoryIterator($path);
+
+            /** @var \DirectoryIterator $directory */
+            foreach ($iterator as $directory) {
+                if (!$directory->isDir() || $directory->isDot()) {
+                    continue;
+                }
+
+                $type = $directory->getBasename();
+                $list[$type] = self::get($type);
             }
-
-            $type = $directory->getBasename();
-            $list[$type] = self::get($type);
         }
-
         ksort($list);
 
         return $list;
@@ -119,6 +121,12 @@ class Plugins extends Iterator
 
         // Load default configuration.
         $file = CompiledYamlFile::instance("plugins://{$name}/{$name}.yaml");
+
+        // ensure the plugin exists physically
+        if (!$file->exists()) {
+            return null;
+        }
+
         $obj = new Data($file->content(), $blueprint);
 
         // Override with user configuration.

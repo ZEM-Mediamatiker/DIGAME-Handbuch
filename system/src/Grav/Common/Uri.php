@@ -2,7 +2,6 @@
 namespace Grav\Common;
 
 use Grav\Common\Page\Page;
-use Grav\Common\Page\Pages;
 
 /**
  * The URI object provides information about the current URL
@@ -12,6 +11,8 @@ use Grav\Common\Page\Pages;
  */
 class Uri
 {
+    const HOSTNAME_REGEX = '/^(([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9\-]*[a-zA-Z0-9])\.)*([A-Za-z0-9]|[A-Za-z0-9][A-Za-z0-9\-]*[A-Za-z0-9])$/';
+
     public $url;
 
     protected $basename;
@@ -31,19 +32,29 @@ class Uri
      */
     public function __construct()
     {
-        $base = 'http://';
-        $name = isset($_SERVER['SERVER_NAME']) ? $_SERVER['SERVER_NAME'] : 'localhost';
+        $name = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : (isset($_SERVER['SERVER_NAME']) ? $_SERVER['SERVER_NAME'] : 'localhost');
+        // Remove port from HTTP_HOST generated $name
+        $name = Utils::substrToString($name, ':');
+
+        // Validate the hostname
+        $name = preg_match(Uri::HOSTNAME_REGEX, $name) ? $name : 'unknown';
+
         $port = isset($_SERVER['SERVER_PORT']) ? $_SERVER['SERVER_PORT'] : 80;
         $uri  = isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : '';
 
         $root_path = str_replace(' ', '%20', rtrim(substr($_SERVER['PHP_SELF'], 0, strpos($_SERVER['PHP_SELF'], 'index.php')), '/'));
 
+        // set the base
         if (isset($_SERVER['HTTPS'])) {
             $base = (@$_SERVER['HTTPS'] == 'on') ? 'https://' : 'http://';
+        } else {
+            $base = 'http://';
         }
 
+        // add the sever name
         $base .= $name;
 
+        // add the port of needed
         if ($port != '80' && $port != '443') {
             $base .= ":".$port;
         }
@@ -66,7 +77,6 @@ class Uri
         $this->base = $base;
         $this->root = $base . $root_path;
         $this->url = $base . $uri;
-
     }
 
     /**
@@ -87,6 +97,9 @@ class Uri
         // get any params and remove them
         $uri = str_replace($this->root, '', $this->url);
 
+        // remove double slashes
+        $uri = preg_replace('#/{2,}#', '/', $uri);
+
         // remove the setup.php based base if set:
         $setup_base = $grav['pages']->base();
         if ($setup_base) {
@@ -104,23 +117,12 @@ class Uri
         // set active language
         $uri = $language->setActiveFromUri($uri);
 
-        // redirect to language specific homepage if configured to do so
-        if ($uri == '/' && $language->enabled()) {
-            if ($config->get('system.languages.home_redirect.include_route', true)) {
-                $prefix = $config->get('system.languages.home_redirect.include_lang', true) ? $language->getLanguage() . '/' : '';
-                $grav->redirect($prefix . Pages::getHomeRoute());
-            } elseif ($config->get('system.languages.home_redirect.include_lang', true)) {
-                $grav->redirect($language->getLanguage() . '/');
-            }
-        }
-
-
         // split the URL and params
         $bits = parse_url($uri);
 
         // process query string
-        if (isset($bits['query'])) {
-            parse_str($bits['query'], $this->query);
+        if (isset($bits['query']) && isset($bits['path'])) {
+            $this->query = filter_input_array(INPUT_GET, FILTER_SANITIZE_STRING);
             $uri = $bits['path'];
         }
 
@@ -130,11 +132,16 @@ class Uri
         // set the original basename
         $this->basename = $parts['basename'];
 
+        // set the extension
+        if (isset($parts['extension'])) {
+            $this->extension = $parts['extension'];
+        }
+
         $valid_page_types = implode('|', $config->get('system.pages.types'));
 
+        // Strip the file extension for valid page types
         if (preg_match("/\.(".$valid_page_types.")$/", $parts['basename'])) {
             $uri = rtrim(str_replace(DIRECTORY_SEPARATOR, DS, $parts['dirname']), DS). '/' .$parts['filename'];
-            $this->extension = $parts['extension'];
         }
 
         // set the new url
@@ -163,7 +170,8 @@ class Uri
                 if (strpos($bit, $delimiter) !== false) {
                     $param = explode($delimiter, $bit);
                     if (count($param) == 2) {
-                        $this->params[$param[0]] = str_replace(urlencode($delimiter), '/', filter_var($param[1], FILTER_SANITIZE_STRING));
+                        $plain_var = filter_var(urldecode($param[1]), FILTER_SANITIZE_STRING);
+                        $this->params[$param[0]] = $plain_var;
                     }
                 } else {
                     $path[] = $bit;
@@ -210,7 +218,7 @@ class Uri
     public function query($id = null, $raw = false)
     {
         if (isset($id)) {
-            return isset($this->query[$id]) ? filter_var($this->query[$id], FILTER_SANITIZE_STRING) : null;
+            return isset($this->query[$id]) ? $this->query[$id] : null;
         } else {
             if ($raw) {
                 return $this->query;
@@ -477,24 +485,34 @@ class Uri
     /**
      * Converts links from absolute '/' or relative (../..) to a grav friendly format
      *
-     * @param         $page         the current page to use as reference
+     * @param Page|the $page the current page to use as reference
      * @param  string $markdown_url the URL as it was written in the markdown
+     * @param string $type the type of URL, image | link
+     * @param null $relative if null, will use system default, if true will use relative links internally
      *
      * @return string the more friendly formatted url
      */
-    public static function convertUrl(Page $page, $markdown_url, $type = 'link')
+    public static function convertUrl(Page $page, $markdown_url, $type = 'link', $relative = null)
     {
         $grav = Grav::instance();
 
+        /** @var Grav\Common\Language\Language $language */
+        $language = $grav['language'];
+
         // Link processing should prepend language
         $language_append = '';
-        if ($type == 'link') {
-            $active_language = $grav['language']->getActive();
-            $language_append = $active_language ? '/'.$active_language : '';
+        if ($type == 'link' && $language->enabled()) {
+            $language_append = $language->getLanguageURLPrefix();
         }
 
         $pages_dir = $grav['locator']->findResource('page://');
-        $base_url = rtrim($grav['base_url'] . $grav['pages']->base(), '/') . $language_append;
+        if (is_null($relative)) {
+            $base = $grav['base_url'];
+        } else {
+            $base =  $relative ? $grav['base_url_relative'] : $grav['base_url_absolute'];
+        }
+
+        $base_url = rtrim($base . $grav['pages']->base(), '/') . $language_append;
 
         // if absolute and starts with a base_url move on
         if (pathinfo($markdown_url, PATHINFO_DIRNAME) == '.' && $page->url() == '/') {
@@ -562,4 +580,20 @@ class Uri
             return $normalized_url;
         }
     }
+
+    /**
+     * Adds the nonce to a URL for a specific action
+     *
+     * @param string $url the url
+     * @param string $action the action
+     * @param string $nonceParamName the param name to use
+     *
+     * @return string the url with the nonce
+     */
+    public static function addNonce($url, $action, $nonceParamName = 'nonce')
+    {
+        $urlWithNonce = $url . '/' . $nonceParamName . Grav::instance()['config']->get('system.param_sep', ':') . Utils::getNonce($action);
+        return $urlWithNonce;
+    }
+
 }

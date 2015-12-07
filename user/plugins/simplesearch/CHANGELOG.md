@@ -1,3 +1,36 @@
+# v1.6.1
+## 11/11/2015
+
+1. [](#improved)
+    * Strip HTML tags from title and content before searching
+
+# v1.6.0
+## 11/11/2015
+
+1. [](#new)
+    * Removing `filter:` from configuration will search **ALL** pages
+
+# v1.5.1
+## 10/15/2015
+
+1. [](#improved)
+    * Minor performance fix
+    * Updated README.md with more help
+1. [](#bugfix)
+    * Fix for special character searches    
+
+# v1.5.0
+## 10/07/2015
+
+1. [](#new)
+    * Allow simplesearch to work with on-page collections
+
+# v1.4.1
+## 08/31/2015
+
+1. [](#improved)
+    * Fixed some blueprint issues
+
 # v1.4.0
 ## 08/25/2015
 

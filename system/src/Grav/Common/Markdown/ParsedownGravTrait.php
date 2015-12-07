@@ -1,12 +1,8 @@
 <?php
 namespace Grav\Common\Markdown;
 
-use Grav\Common\Config\Config;
-use Grav\Common\Debugger;
 use Grav\Common\GravTrait;
-use Grav\Common\Page\Medium\Medium;
 use Grav\Common\Uri;
-use Grav\Common\Utils;
 
 /**
  * A trait to add some custom processing to the identifyLink() method in Parsedown and ParsedownExtra
@@ -134,7 +130,7 @@ trait ParsedownGravTrait
 
                 // get the local path to page media if possible
                 if ($path_parts['dirname'] == $this->page->url(false, false, false)) {
-                    $url['path'] = $path_parts['basename'];
+                    $url['path'] = urldecode($path_parts['basename']);
                     // get the media objects for this page
                     $media = $this->page->media();
                 } else {
@@ -144,7 +140,7 @@ trait ParsedownGravTrait
                     $ext_page = $this->pages->dispatch($page_route, true);
                     if ($ext_page) {
                         $media = $ext_page->media();
-                        $url['path'] = $path_parts['basename'];
+                        $url['path'] = urldecode($path_parts['basename']);
                     }
                 }
 
@@ -166,7 +162,7 @@ trait ParsedownGravTrait
 
                     // loop through actions for the image and call them
                     foreach ($actions as $action) {
-                        $medium = call_user_func_array(array($medium, $action['method']), explode(',', $action['params']));
+                        $medium = call_user_func_array(array($medium, $action['method']), explode(',', urldecode($action['params'])));
                     }
 
                     if (isset($url['fragment'])) {
@@ -211,7 +207,7 @@ trait ParsedownGravTrait
             // if there is no scheme, the file is local
             if (!isset($url['scheme']) && (count($url) > 0)) {
                 // convert the URl is required
-                $excerpt['element']['attributes']['href'] = Uri::convertUrl($this->page, Uri::buildUrl($url), $type);
+                $excerpt['element']['attributes']['href'] = Uri::convertUrl($this->page, Uri::buildUrl($url), $type, true);
             }
         }
 

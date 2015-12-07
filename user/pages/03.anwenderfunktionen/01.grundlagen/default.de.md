@@ -9,14 +9,14 @@ metadata:
 process:
 	twig: true
 taxonomy:
-    category: digame
+    category: backendanleitung
     tag: [digame, Anleitung, ZEM]
 visible: true
 ---
 
 ## Grundaufbau DIGAME
 ***
-DIGAME kann in 5 Grundbereiche aufgeteilt werden:
+DIGAME kann in 4 Grundbereiche aufgeteilt werden:
 
 - Im Menü-Bereich (2) sind alle Menus aufgeführt über welche ein Benutzer verfügt. Für die tägliche Arbeit reicht das Menü Katalog. In diesem befindet sich der Anwender nachdem er sich angemeldet hat. Das Menü Passwort ändern kann vom Anwender zum Ändern seines Passworts verwendet werden. Der Benutzer wird jedoch nicht automatisch dazu aufgefordert. Die restlichen Menüs bieten administrative Funktionalitäten an. Im Arbeits-Bereich (3) kann mit einer einfachen Suche nach bestimmten Media Assets gesucht werden. Über die Erweiterte Suche können die Suchparameter verfeinert werden. Über den Knopf Asset erzeugen kann ein neues Media Asset erstellt werden.
 
@@ -24,7 +24,7 @@ DIGAME kann in 5 Grundbereiche aufgeteilt werden:
 
 - Im Anzeige-Bereich (5) werden alle über (3 oder 4) gefundenen Media Assets angezeigt.
 
-- Im Filter-Bereich (4) werden Media Assets nach bestimmten Kriterien aufgelistet. Die gefundenen Assets können auf Datei Typ und Rechte Publikation eingeschränkt werden.
+- Im Bearbeiten-Bereich können die Daten eines Media Assets, welches im Anzeige-Bereich gewählt wurde, bearbeitet werden.
 
 <br>
 

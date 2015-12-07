@@ -65,6 +65,7 @@ class Pages
 
     protected $ignore_files;
     protected $ignore_folders;
+    protected $ignore_hidden;
 
     /**
      * @var Types
@@ -108,6 +109,7 @@ class Pages
         $config = $this->grav['config'];
         $this->ignore_files = $config->get('system.pages.ignore_files');
         $this->ignore_folders = $config->get('system.pages.ignore_folders');
+        $this->ignore_hidden = $config->get('system.pages.ignore_hidden');
 
         $this->buildPages();
     }
@@ -270,6 +272,10 @@ class Pages
     {
         // Fetch page if there's a defined route to it.
         $page = isset($this->routes[$url]) ? $this->get($this->routes[$url]) : null;
+        // Try without trailing slash
+        if (!$page && Utils::endsWith($url, '/')) {
+            $page = isset($this->routes[rtrim($url, '/')]) ? $this->get($this->routes[rtrim($url, '/')]) : null;
+        }
 
         // Are we in the admin? this is important!
         $not_admin = !isset($this->grav['admin']);
@@ -481,6 +487,36 @@ class Pages
     }
 
     /**
+     * Get access levels of the site pages
+     *
+     * @return array
+     */
+    public function accessLevels()
+    {
+        $accessLevels = [];
+        foreach($this->all() as $page) {
+            if (isset($page->header()->access)) {
+                if (is_array($page->header()->access)) {
+                    foreach($page->header()->access as $index => $accessLevel) {
+                        if (is_array($accessLevel)) {
+                            foreach($accessLevel as $innerIndex => $innerAccessLevel) {
+                                array_push($accessLevels, $innerIndex);
+                            }
+                        } else {
+                            array_push($accessLevels, $index);
+                        }
+                    }
+                } else {
+
+                    array_push($accessLevels, $page->header()->access);
+                }
+            }
+        }
+
+        return array_unique($accessLevels);
+    }
+
+    /**
      * Get available parents.
      *
      * @return array
@@ -492,7 +528,22 @@ class Pages
         /** @var Pages $pages */
         $pages = $grav['pages'];
 
-        return $pages->getList();
+        $parents = $pages->getList();
+
+        /** @var Admin $admin */
+        $admin = $grav['admin'];
+
+        // Remove current route from parents
+        if (isset($admin)) {
+            $page = $admin->getPage($admin->route);
+            $page_route = $page->route();
+            if (isset($parents[$page_route])) {
+                unset($parents[$page_route]);
+            }
+
+        }
+
+        return $parents;
     }
 
     /**
@@ -701,6 +752,13 @@ class Pages
         /** @var \DirectoryIterator $file */
         foreach (new \FilesystemIterator($directory) as $file) {
             $name = $file->getFilename();
+
+            // Ignore all hidden files if set.
+            if ($this->ignore_hidden) {
+                if ($name && $name[0] == '.') {
+                    continue;
+                }
+            }
 
             if ($file->isFile()) {
                 // Update the last modified if it's newer than already found

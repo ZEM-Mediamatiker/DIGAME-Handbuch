@@ -9,7 +9,7 @@ metadata:
 process:
 	twig: true
 taxonomy:
-    category: digame
+    category: backendanleitung
     tag: [digame, Anleitung, ZEM]
 visible: true
 ---

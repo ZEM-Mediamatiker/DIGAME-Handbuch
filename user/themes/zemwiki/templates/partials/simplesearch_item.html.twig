@@ -1,0 +1,47 @@
+<section class="search-row">
+
+
+    <div class="search-item">
+    	<div class="search-result-header">
+        	<div class="search-title">
+            	<h3 class="searchresulttitle"><a href="{{ page.url }}">{{ page.title }}</a></h3>
+        	</div>
+
+        	<div class="search-details">
+            	<span class="search-date">{{ "THEME_ZEMWIKI.SEARCH_RESULTS_EDITED"|t }} {{ page.date|date(config.system.pages.dateformat.short) }}</span>
+        	</div>
+        </div>
+
+		<div class="search-result">
+        	<p>{{ page.summary }}</p>
+        </div>
+
+
+    </div>
+</section>
+
+{#
+ <section class="search-row">
+
+    <!--{% set banner = page.media.images|first %}
+
+    {% if banner %}
+    <div class="search-image">
+        <a href="{{ page.url }}">{{ banner.cropZoom(100,100).html }}</a>
+    </div>
+    {% endif %}-->
+    <div class="search-item">
+        <div class="search-title">
+            <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
+        </div>
+
+        <div class="search-details">
+            <span class="search-date">{{ page.date|date(config.system.pages.dateformat.short) }}</span>
+        </div>
+
+        <p>{{ page.summary }}</p>
+
+        <hr />
+    </div>
+</section>
+#}

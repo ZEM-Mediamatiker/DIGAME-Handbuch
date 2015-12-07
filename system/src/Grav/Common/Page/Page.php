@@ -41,6 +41,7 @@ class Page
     protected $folder;
     protected $path;
     protected $extension;
+    protected $url_extension;
 
     protected $id;
     protected $parent;
@@ -128,6 +129,7 @@ class Page
         $this->modularTwig($this->slug[0] == '_');
         $this->setPublishState();
         $this->published();
+        $this->urlExtension();
 
         // some extension logic
         if (empty($extension)) {
@@ -135,6 +137,7 @@ class Page
         } else {
             $this->extension($extension);
         }
+
 
         // extract page language from page extension
         $language = trim(basename($this->extension(), 'md'), '.') ?: null;
@@ -259,6 +262,8 @@ class Page
         if (!$this->header) {
             $file = $this->file();
             if ($file) {
+                // Set some options
+                $file->settings(['native' => true, 'compat' => true]);
                 try {
                     $this->raw_content = $file->markdown();
                     $this->frontmatter = $file->frontmatter();
@@ -347,7 +352,6 @@ class Page
             if (isset($this->header->last_modified)) {
                 $this->last_modified = (bool) $this->header->last_modified;
             }
-
         }
 
         return $this->header;
@@ -821,7 +825,9 @@ class Page
     {
         $blueprints = $this->blueprints();
         $values = $blueprints->filter($this->toArray());
-        $this->header($values['header']);
+        if ($values && isset($values['header'])) {
+        	$this->header($values['header']);
+        }
     }
 
     /**
@@ -951,6 +957,17 @@ class Page
             $this->extension = '.' . pathinfo($this->name(), PATHINFO_EXTENSION);
         }
         return $this->extension;
+    }
+
+    public function urlExtension()
+    {
+        // if not set in the page get the value from system config
+        if (empty($this->url_extension)) {
+            $this->url_extension = trim(isset($this->header->append_url_extension) ? $this->header->append_url_extension : self::getGrav()['config']->get('system.pages.append_url_extension', false));
+        }
+
+        return $this->url_extension;
+
     }
 
     /**
@@ -1133,7 +1150,7 @@ class Page
             $this->metadata = [];
 
             // Set the Generator tag
-            $this->metadata['generator'] = array('name'=>'generator', 'content'=>'GravCMS ' . GRAV_VERSION);
+            $this->metadata['generator'] = array('name'=>'generator', 'content'=>'GravCMS');
 
             // Get initial metadata for the page
             $metadata  = self::getGrav()['config']->get('site.metadata');
@@ -1240,8 +1257,8 @@ class Page
         $language = self::getGrav()['language'];
 
         // get pre-route
-        if ($include_lang) {
-            $pre_route = $language->enabled() && $language->getActive() ? '/' . $language->getActive() : '';
+        if ($include_lang && $language->enabled()) {
+           $pre_route = $language->getLanguageURLPrefix();
         } else {
             $pre_route = '';
         }
@@ -1258,7 +1275,7 @@ class Page
 
         $rootUrl = $uri->rootUrl($include_host) . $pages->base();
 
-        $url = $rootUrl.'/'.trim($route, '/');
+        $url = $rootUrl.'/'.trim($route, '/') . $this->urlExtension();
 
         // trim trailing / if not root
         if ($url !== '/') {
@@ -1467,7 +1484,17 @@ class Page
      */
     public function filePathClean()
     {
-        return str_replace(ROOT_DIR, '', $this->filePath());
+        $path = str_replace(ROOT_DIR, '', $this->filePath());
+        return $path;
+    }
+
+    /**
+     * Returns the clean path to the page file
+     */
+    public function relativePagePath()
+    {
+        $path = str_replace('/'.$this->name, '', $this->filePathClean());
+        return $path;
     }
 
     /**
@@ -1859,20 +1886,24 @@ class Page
         /** @var Config $config */
         $config = self::getGrav()['config'];
 
-        foreach ((array) $config->get('site.taxonomies') as $taxonomy) {
-            if ($uri->param($taxonomy)) {
-                $items = explode(',', $uri->param($taxonomy));
-                $collection->setParams(['taxonomies' => [$taxonomy => $items]]);
+        $process_taxonomy = isset($params['url_taxonomy_filters']) ? $params['url_taxonomy_filters'] : $config->get('system.pages.url_taxonomy_filters');
 
-                foreach ($collection as $page) {
-                    // Don't filter modular pages
-                    if ($page->modular()) {
-                        continue;
-                    }
-                    foreach ($items as $item) {
-                        if (empty($page->taxonomy[$taxonomy])
-                            || !in_array(htmlspecialchars_decode($item, ENT_QUOTES), $page->taxonomy[$taxonomy])) {
-                            $collection->remove();
+        if ($process_taxonomy) {
+            foreach ((array) $config->get('site.taxonomies') as $taxonomy) {
+                if ($uri->param($taxonomy)) {
+                    $items = explode(',', $uri->param($taxonomy));
+                    $collection->setParams(['taxonomies' => [$taxonomy => $items]]);
+
+                    foreach ($collection as $page) {
+                        // Don't filter modular pages
+                        if ($page->modular()) {
+                            continue;
+                        }
+                        foreach ($items as $item) {
+                            if (empty($page->taxonomy[$taxonomy])
+                                || !in_array(htmlspecialchars_decode($item, ENT_QUOTES), $page->taxonomy[$taxonomy])) {
+                                $collection->remove();
+                            }
                         }
                     }
                 }
@@ -1927,14 +1958,19 @@ class Page
             // Format: @command.param
             $cmd = $value;
             $params = array();
-        } elseif (is_array($value) && count($value) == 1) {
+        } elseif (is_array($value) && count($value) == 1 && !is_int(key($value))) {
             // Format: @command.param: { attr1: value1, attr2: value2 }
             $cmd = (string) key($value);
             $params = (array) current($value);
         } else {
             $result = [];
             foreach($value as $key => $val) {
-                $result = $result + $this->evaluate([$key=>$val])->toArray();
+                if (is_int($key)) {
+                    $result = $result + $this->evaluate($val)->toArray();
+                } else {
+                    $result = $result + $this->evaluate([$key=>$val])->toArray();
+                }
+
             }
             return new Collection($result);
         }
@@ -1944,32 +1980,91 @@ class Page
             return $value;
         }
 
+        /** @var Pages $pages */
+        $pages = self::getGrav()['pages'];
+
         $parts = explode('.', $cmd);
         $current = array_shift($parts);
 
-        $results = null;
+        $results = new Collection();
         switch ($current) {
             case '@self':
                 if (!empty($parts)) {
                     switch ($parts[0]) {
                         case 'modular':
-                            $results = $this->children()->modular()->published();
+                            // @self.modular: false (alternative to @self.children)
+                            if (!empty($params) && $params[0] === false) {
+                                $results = $this->children()->nonModular();
+                                break;
+                            }
+                            $results = $this->children()->modular();
                             break;
                         case 'children':
-                            $results = $this->children()->nonModular()->published();
+                            $results = $this->children()->nonModular();
+                            break;
+                        case 'all':
+                            $results = $this->children();
+                            break;
+                        case 'parent':
+                            $collection = new Collection();
+                            $results = $collection->addPage($this->parent());
+                            break;
+                        case 'siblings':
+                            $results = $this->parent()->children()->remove($this->path());
+                            break;
+                        case 'descendants':
+                            $results = $pages->all($this)->remove($this->path())->nonModular();
                             break;
                     }
                 }
+
+                $results = $results->published();
                 break;
 
             case '@page':
+                $page = null;
+
                 if (!empty($params)) {
                     $page = $this->find($params[0]);
-                    if ($page) {
-                        $results = $page->children()->nonModular()->published();
+                }
+
+                // safety check in case page is not found
+                if (!isset($page)) {
+                    return $results;
+                }
+
+                // Handle a @page.descendants
+                if (!empty($parts)) {
+                    switch ($parts[0]) {
+                        case 'self':
+                            $results = new Collection();
+                            $results = $results->addPage($page);
+                            break;
+
+                        case 'descendants':
+                            $results = $pages->all($page)->remove($page->path());
+                            break;
+
+                        case 'children':
+                            $results = $page->children();
+                            break;
                     }
+                } else {
+                    $results = $page->children();
+                }
+
+                $results = $results->nonModular()->published();
+
+                break;
+
+            case '@root':
+                if (!empty($parts) && $parts[0] == 'descendants') {
+                    $results = $pages->all($pages->root())->nonModular()->published();
+                } else {
+                    $results = $pages->root()->children()->nonModular()->published();
                 }
                 break;
+
 
             case '@taxonomy':
                 // Gets a collection of pages by using one of the following formats:

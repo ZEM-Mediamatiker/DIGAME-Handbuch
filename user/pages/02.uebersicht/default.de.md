@@ -10,7 +10,7 @@ metadata:
 process:
 	twig: true
 taxonomy:
-    category: digame
+    category: backendanleitung
     tag: [digame, Anleitung, ZEM]
 visible: true
 ---
@@ -20,7 +20,6 @@ visible: true
 <br>
 
 >>>>>> Live-System <br>
-
 
 | Link | Art | Bemerkung |
 | --- | --- | --- |

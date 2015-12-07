@@ -3,4 +3,8 @@ built_in_css: true
 route: /search
 template: simplesearch_results
 filters:
-    category: digame
+    category: backendanleitung
+filter_combinator: and
+order:
+    by: date
+    dir: desc

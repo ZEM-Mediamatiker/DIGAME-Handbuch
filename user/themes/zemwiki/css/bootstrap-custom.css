@@ -199,26 +199,26 @@ textarea:focus, input:focus{
 	background: rgba(255,255,255,0);
 	font-size: 80px;
 	color: rgba(255,255,255,1);
-	text-transform: uppercase;
 	font-family: "Montserrat","Helvetica","Tahoma","Geneva","Arial",sans-serif;
 	font-weight: 400
 }
 
-input[type=submit] {
+button[type=submit] {
 	height: 63px;
 	width: 63px;
 	border:0 none;
 	float: right;
 	cursor:pointer;
-	background: rgba(255,255,255,0.5) url(../images/layout/search.svg) no-repeat center center;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
+	background: none;
+	border: none;
+	color: #c8c8c8;
     margin-top: 24px;
     transition:0.2s ease;
 }
 
-input[type=submit]:hover{
-	background: rgba(255,255,255,0.9) url(../images/layout/search.svg) no-repeat center center;
+button[type=submit]:hover{
+	color: #fff;
+	background: rgba(247, 247, 247, 0.05);
 }
 
 .searchwrapper{
@@ -286,6 +286,7 @@ input[type=submit]:hover{
 	padding: 25px 0px;
 	text-align: center;
 	color: rgba(131,131,131,0.3);
+	line-height: 1.8;
 }
 
 .copywrapper a{
@@ -548,8 +549,8 @@ box-shadow: 0px 2px 4px 1px rgba(52,52,52,0.3);
    	/*width: 80px;*/
     height: 80px;
     top: 0;
-    /*right: 160px; */
-    right: 100px;
+    right: 160px;
+    /*right: 100px;*/
     padding: 28px 10px 10px;
     display: inline;
 }
@@ -597,26 +598,33 @@ box-shadow: 0px 2px 4px 1px rgba(52,52,52,0.3);
     height: 80px;
     top: 0;
     right: 100px;
-    padding: 10px;
-    padding-top: 15px;
+    padding: 28px 10px 10px;
     display: inline;
+		cursor: pointer;
 }
 
 .search_icon:hover .menutransform3{
-	background: url(../images/layout/search_white.svg) no-repeat center center;
+	/*background: url(../images/layout/search_white.svg) no-repeat center center;*/
+}
+
+.search_icon:hover .fa{
+	color: #ffffff !important;
 }
 
 .menutransform3{
 	position: relative;
 	width: 18px;
 	height: 14px;
-	margin: 18px 0px;
-	background: rgba(80, 125, 200, 0.55);
-	background: url(../images/layout/search.svg) no-repeat center center;
+	cursor: pointer;
 	-webkit-transition: background 0.5s linear;
 	-moz-transition: background 0.5s linear;
 	-o-transition: background 0.5s linear;
 	transition: background 0.5s linear;
+}
+
+.menutransform3 .fa{
+	color: #C8C8C8;
+	transition: 0.25s ease 0s;
 }
 
 .smalllinie {
@@ -842,7 +850,7 @@ box-shadow: 0px 2px 4px 1px rgba(52,52,52,0.3);
 				padding: 0px;
 				list-style-type:none;
 				margin: 0 auto;
-				width: 151px;
+				width: 220px;
 			}
 
 			.langswitcher li{
@@ -875,14 +883,15 @@ box-shadow: 0px 2px 4px 1px rgba(52,52,52,0.3);
 	}
 
 	.print_icon{
-    	/*right: 120px;*/
-			right: 80px;
+    	right: 120px;
     	height: 60px;
+			padding-top: 18px;
 	}
 
 	.search_icon{
     	right: 75px;
     	height: 60px;
+			padding-top: 20px;
 	}
 
 	.searchmenubutton{
@@ -930,12 +939,9 @@ box-shadow: 0px 2px 4px 1px rgba(52,52,52,0.3);
 		margin: 0px 0px 0px;
 	}
 
-	.print_icon{
-		padding-top: 23px;
-	}
-
 	#showSearchOverlay{
-		padding-top: 23px;
+		padding-top: 18px;
+		cursor: pointer;
 	}
 
 	#searchcontainer{
@@ -1049,6 +1055,10 @@ box-shadow: 0px 2px 4px 1px rgba(52,52,52,0.3);
 	}
 }
 
+/* -------------------------------------------------------------
+		+ Endgeräte unter 770px +
+--------------------------------------------------------------*/
+
 @media only screen and (max-width: 770px){
 
 	#searchfield{
@@ -1056,12 +1066,9 @@ box-shadow: 0px 2px 4px 1px rgba(52,52,52,0.3);
 		font-size: 50px;
 	}
 
-	input[type=submit] {
-	height: 63px;
-	width: 120px;
-	border:0 none;
-	float: none;
-    margin-top: 24px;
+	button[type=submit]{
+		width: 100%;
+		background: rgba(247, 247, 247, 0.05);
 	}
 }
 
@@ -1135,12 +1142,12 @@ box-shadow: 0px 2px 4px 1px rgba(52,52,52,0.3);
 		display: block;
 	}
 
-	thead tr {
+	/*thead tr {
 		position: absolute;
 		top: -9999px;
 		left: -9999px;
 		background: red;
-	}
+	}*/
 
 	td {
 		border: none;
@@ -1212,7 +1219,8 @@ html {
 table {
     width: 100%;
     border: 1px solid #f0f0f0;
-    margin: 30px 0;
+    /*margin: 30px 0;*/
+	margin: 0px 0px 30px 0px;
 }
 
 th {
@@ -1224,6 +1232,10 @@ th {
 td {
     padding: 5px;
     border: 1px solid #f0f0f0;
+}
+
+@-moz-document url-prefix() {
+  fieldset { display: table-cell; }
 }
 
 /* Notice Styles */

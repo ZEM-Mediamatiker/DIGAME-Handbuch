@@ -20,4 +20,5 @@ return array(
     'RocketTheme\\Toolbox\\ArrayTraits\\' => array($vendorDir . '/rockettheme/toolbox/ArrayTraits/src'),
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
     'Grav\\' => array($baseDir . '/system/src/Grav'),
+    'Doctrine\\Common\\Cache\\' => array($vendorDir . '/doctrine/cache/lib/Doctrine/Common/Cache'),
 );
