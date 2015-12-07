@@ -1,3 +1,72 @@
+# v1.0.0-rc.6
+## 12/01/2015
+
+1. [](#new)
+    * Refactor Config classes for improved performance!
+    * Refactor Data classes to use `NestedArrayAccess` instead of `DataMutatorTrait`
+    * Added support for `classes` and `id` on medium objects to set CSS values
+    * Data objects: Allow function call chaining
+    * Data objects: Lazy load blueprints only if needed
+    * Automatically create unique security salt for each configuration
+    * Added Hungarian translation
+    * Added support for User groups
+1. [](#improved)   
+    * Improved robots.txt to disallow crawling of non-user folders
+    * Nonces only generated once per action and process
+    * Added IP into Nonce string calculation
+    * Nonces now use random string with random salt to improve performance
+    * Improved list form handling #475
+    * Vendor library updates
+1. [](#bugfix)
+    * Fixed help output for `bin/plugin`
+    * Fix for nested logic for lists and form parsing #273
+    * Fix for array form fields and last entry not getting deleted
+    * Should not be able to set parent to self #308
+
+# v1.0.0-rc.5
+## 11/20/2015
+
+1. [](#new)
+    * Added **nonce** functionality for all admin forms for improved security
+    * Implemented the ability for Plugins to provide their own CLI commands through `bin/plugin`
+    * Added Croatian translation
+    * Added missing `umask_fix` property to `system.yaml`
+    * Added current theme's config to global config. E.g. `config.theme.dropdown_enabled`
+    * Added `append_url_extension` option to system config & page headers
+    * Users have a new `state` property to allow disabling/banning
+    * Added new `Page.relativePagePath()` helper method
+    * Added new `|pad` Twig filter for strings (uses `str_pad()`)
+    * Added `lighttpd.conf` for Lightly web server
+1. [](#improved)
+    * Clear previously applied operations when doing a reset on image media
+    * Password no longer required when editing user
+    * Improved support for trailing `/` URLs
+    * Improved `.nginx.conf` configuration file
+    * Improved `.htaccess` security
+    * Updated vendor libs
+    * Updated `composer.phar`
+    * Use streams instead of paths for `clearCache()`
+    * Use PCRE_UTF8 so unicode strings can be regexed in Truncator
+    * Handle case when login plugin is disabled
+    * Improved `quality` functionality in media handling
+    * Added some missing translation strings
+    * Deprecated `bin/grav newuser` in favor of `bin/plugin login new-user`
+    * Moved fallback types to use any valid media type
+    * Renamed `system.pages.fallback_types` to `system.media.allowed_fallback_types`
+    * Removed version number in default `generator` meta tag
+    * Disable time limit in case of slow downloads
+    * Removed default hash in `system.yaml`
+1. [](#bugfix)
+    * Fix for media using absolute URLs causing broken links
+    * Fix theme auto-loading #432
+    * Don't create empty `<style>` or `<script>` scripts if no data
+    * Code cleanups
+    * Fix undefined variable in Config class
+    * Fix exception message when label is not set
+    * Check in `Plugins::get()` to ensure plugins exists
+    * Fixed GZip compression making output buffering work correctly with all servers and browsers
+    * Fixed date representation in system config
+
 # v1.0.0-rc.4
 ## 10/29/2015
 
@@ -34,7 +103,7 @@
     * German language improvements
     * Updated bundled composer
 1. [](#bugfix)
-    * Accept variety of `true` values in `User.authorize()` method 
+    * Accept variety of `true` values in `User.authorize()` method
     * Fix for `Validation` throwing an error if no label set
 
 # v1.0.0-rc.1

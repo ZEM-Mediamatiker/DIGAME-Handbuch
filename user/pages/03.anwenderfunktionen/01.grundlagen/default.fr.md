@@ -17,7 +17,7 @@ visible: true
 
 ## Structure de base de DIGAME
 ***
-La page principale de DIGAME est découpée en cinq volets:
+La page principale de DIGAME est découpée en quatre volets:
 
 - Le volet Menus (2) regroupe tous les menus auxquels l’utilisateur a accès. Le menu Catalogue [Katalog] est suffisant pour le travail au quotidien. C’est dans ce menu que l’utilisateur se trouve après s’être connecté. S’il le souhaite, l’utilisateur peut cliquer sur le menu Modifier le mot de passe [Passwort ändern] pour changer de mot de passe. Les autres menus offrent des fonctionnalités administratives.
 

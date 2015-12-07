@@ -6,8 +6,8 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    $vendorDir . '/symfony/var-dumper/Resources/functions/dump.php',
-    $vendorDir . '/ircmaxell/password-compat/lib/password.php',
-    $vendorDir . '/donatj/phpuseragentparser/Source/UserAgentParser.php',
-    $baseDir . '/system/defines.php',
+    '667aeda72477189d0494fecd327c3641' => $vendorDir . '/symfony/var-dumper/Resources/functions/dump.php',
+    'e40631d46120a9c38ea139981f8dab26' => $vendorDir . '/ircmaxell/password-compat/lib/password.php',
+    '19cefe1485315b72c45605e5be32d866' => $vendorDir . '/donatj/phpuseragentparser/Source/UserAgentParser.php',
+    'a686abd6bcd0f7067184e090d1174003' => $baseDir . '/system/defines.php',
 );

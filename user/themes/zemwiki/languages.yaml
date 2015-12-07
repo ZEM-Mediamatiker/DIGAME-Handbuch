@@ -15,3 +15,12 @@ fr:
     SEARCH_RESULTS: "résultats de la recherche"
     SEARCH_RESULTS_EDITED: "Page modifiée:"
     SEARCH_RESULTS_TERM: "résultats pour ce terme de recherche."
+
+en:
+  THEME_ZEMWIKI:
+    ZEM: "Electronic media center"
+    ENTER_SEARCH_TERM: "Enter search term"
+    SEARCH_PLACEHOLDER: "search..."
+    SEARCH_RESULTS: "search results"
+    SEARCH_RESULTS_EDITED: "Page modified:"
+    SEARCH_RESULTS_TERM: "results for your search term."
