@@ -1,3 +1,59 @@
+# v1.0.4
+## 12/12/2015
+
+1. [](#bugfix)
+    * Needed to put default image folder permissions for YAML compatibility
+
+# v1.0.3
+## 12/11/2015
+
+1. [](#bugfix)
+    * Fixed issue when saving config causing incorrect image cache folder perms
+
+# v1.0.2
+## 12/11/2015
+
+1. [](#bugfix)
+    * Fix for timing display in debugbar
+
+# v1.0.1
+## 12/11/2015
+
+1. [](#improved)   
+    * Reduced package sizes by removing extra vendor dev bits
+1. [](#bugfix)
+    * Fix issue when you enable debugger from admin plugin
+
+# v1.0.0
+## 12/11/2015
+
+1. [](#new)
+    * Add new link attributes via markdown media
+    * Added setters to set state of CSS/JS pipelining
+    * Added `user/accounts` to `.gitignore`
+    * Added configurable permissions option for Image cache
+1. [](#improved)   
+    * Hungarian translation updated
+    * Refactored Theme initialization for improved flexibility
+    * Wrapped security section of account blueprints in an 'super user' authorize check
+    * Minor performance optimizations
+    * Updated core page blueprints with markdown preview option
+    * Added useful cache info output to Debugbar
+    * Added `iconv` polyfill library used by Symfony 2.8
+    * Force lowercase of username in a few places for case sensitive filesystems
+1. [](#bugfix)
+    * Fix for GPM problems "Call to a member function set() on null"
+    * Fix for individual asset pipeline values not functioning
+    * Fix `Page::copy()` and `Page::move()` to support multiple moves at once
+    * Fixed page moving of a page with no content
+    * Fix for wrong ordering when moving many pages
+    * Escape root path in page medium files to work with special characters
+    * Add missing parent constructor to Themes class
+    * Fix missing file error in `bin/grav sandbox` command
+    * Fixed changelog differ when upgrading Grav
+    * Fixed a logic error in `Validation->validate()`
+    * Make `$container` available in `setup.php` to fix multi-site
+
 # v1.0.0-rc.6
 ## 12/01/2015
 
@@ -78,7 +134,7 @@
 
 1. [](#new)
     * New Page collection options! `@self.parent, @self.siblings, @self.descendants` + more
-    * Whitelist of file types for fallback route functionality (images by default)
+    * White list of file types for fallback route functionality (images by default)
 1. [](#improved)
     * Assets switched from defines to streams
 1. [](#bugfix)

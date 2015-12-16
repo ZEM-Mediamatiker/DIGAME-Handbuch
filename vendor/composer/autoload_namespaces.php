@@ -14,5 +14,4 @@ return array(
     'Parsedown' => array($vendorDir . '/erusev/parsedown'),
     'Gregwar\\Image' => array($vendorDir . '/gregwar/image'),
     'Gregwar\\Cache' => array($vendorDir . '/gregwar/cache'),
-    'DebugBar' => array($vendorDir . '/maximebf/debugbar/src'),
 );
