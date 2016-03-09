@@ -28,6 +28,19 @@ visible: true
 
 <br>
 
+>>>>>Version 2.4.2<br>
+
+|  | Change |
+| --- | --- |
+| ^ | KleinereFehler im Text behoben |
+| ^ | Update auf Grav 1.0.10 |
+
+>>>>>Version 2.4.1<br>
+
+|  | Change |
+| --- | --- |
+| ^ | Update auf Grav 1.0.4 |
+
 >>>>>Version 2.4<br>
 
 |  | Change |

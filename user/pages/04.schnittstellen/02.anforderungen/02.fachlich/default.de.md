@@ -36,7 +36,7 @@ visible: true
 #### Integrationssystem
 |  | | 
 | ------ | -- | 
-| URL: | https://www.test.digame.mediathek-admin.ch/api | 
+| URL: | https://www.test.digame.mediathek.admin.ch/api | 
 | User (Basic Authenticaiton): | cmsuser |
 | Passwort: |  |
 

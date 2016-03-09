@@ -118,8 +118,8 @@ The user can export one or several selected media assets into a Word document. B
 The user can delete a media asset. It is, however, not finally removed from the system, but merely transferred to the trash bin and flagged accordingly. To finally delete a media asset in the trash bin, the user must possess the respective access rights. Only a few users per organisation have these rights. They are usually administrators or users that are in charge of the system.
 
 <br>
-{{ media['functions.png'].html() }}
-###### Image n°25 : ressource dans la corbeille
+{{ media['papierkorb.png'].html() }}
+###### Fig. 25 : asset in the trash
 <br>
 
 <br>

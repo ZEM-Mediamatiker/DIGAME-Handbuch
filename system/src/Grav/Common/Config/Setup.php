@@ -113,8 +113,13 @@ class Setup extends Data
         ],
     ];
 
-    public function __construct($environment = 'localhost')
+    public function __construct($container)
     {
+        $environment = $container['uri']->environment();
+        if (!$environment) {
+            $environment = 'localhost';
+        }
+
         // Pre-load setup.php which contains our initial configuration.
         // Configuration may contain dynamic parts, which is why we need to always load it.
         $file = GRAV_ROOT . '/setup.php';
@@ -153,7 +158,7 @@ class Setup extends Data
             }
 
             // Update streams.
-            foreach ($files as $path) {
+            foreach (array_reverse($files) as $path) {
                 $file = CompiledYamlFile::instance($path);
                 $content = $file->content();
                 if (!empty($content['schemes'])) {

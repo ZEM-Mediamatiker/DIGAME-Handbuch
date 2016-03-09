@@ -118,7 +118,7 @@ L’utilisateur peut sélectionner une ou plusieurs ressources numériques et le
 L’utilisateur peut supprimer une ressource numérique. Celle-ci ne disparaitra pas du système mais sera simplement déplacée vers la corbeille et signalée comme telle. Pour supprimer définitivement une ressource se trouvant dans la corbeille, l’utilisateur doit disposer de certains droits d’accès. En générale, seules quelques personnes par organisation sont concernées. Il s’agit le plus souvent des administrateurs ou des utilisateurs responsables du système.
 
 <br>
-{{ media['functions.png'].html() }}
+{{ media['papierkorb.png'].html() }}
 ###### Image n°25 : ressource dans la corbeille
 <br>
 

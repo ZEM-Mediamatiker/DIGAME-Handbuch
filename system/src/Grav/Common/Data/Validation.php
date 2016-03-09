@@ -32,7 +32,7 @@ class Validation
         }
 
         // special case for files, value is never empty and errors with code 4 instead
-        if (empty($validate['required']) && $field['type'] == 'file' && (isset($value['error']) && ($value['error'] == UPLOAD_ERR_NO_FILE) || in_array(UPLOAD_ERR_NO_FILE, $value['error']))) {
+        if (empty($validate['required']) && $field['type'] == 'file' && (isset($value['error']) && ($value['error'] == UPLOAD_ERR_NO_FILE || in_array(UPLOAD_ERR_NO_FILE, $value['error'])))) {
             return;
         }
 
@@ -43,7 +43,7 @@ class Validation
         $type = (string) isset($field['validate']['type']) ? $field['validate']['type'] : $field['type'];
         $method = 'type'.strtr($type, '-', '_');
         $name = ucfirst(isset($field['label']) ? $field['label'] : $field['name']);
-        $message = (string) isset($field['validate']['message']) ? $field['validate']['message'] : $language->translate('FORM.INVALID_INPUT', null, true) . ' "' . $language->translate($name) . '"';
+        $message = (string) isset($field['validate']['message']) ? $language->translate($field['validate']['message']) : $language->translate('FORM.INVALID_INPUT', null, true) . ' "' . $language->translate($name) . '"';
 
         if (method_exists(__CLASS__, $method)) {
             $success = self::$method($value, $validate, $field);
@@ -84,7 +84,7 @@ class Validation
         }
 
         // special case for files, value is never empty and errors with code 4 instead
-        if (empty($validate['required']) && $field['type'] == 'file' && (isset($value['error']) && ($value['error'] == UPLOAD_ERR_NO_FILE) || in_array(UPLOAD_ERR_NO_FILE, $value['error']))) {
+        if (empty($validate['required']) && $field['type'] == 'file' && (isset($value['error']) && ($value['error'] == UPLOAD_ERR_NO_FILE || in_array(UPLOAD_ERR_NO_FILE, $value['error'])))) {
             return null;
         }
 
@@ -283,7 +283,15 @@ class Validation
 
     protected static function filterFile($value, array $params, array $field)
     {
-        return (array) $value;
+        if (isset($field['multiple']) && $field['multiple'] === true) {
+            return (array) $value;
+        }
+
+        if (is_array($value)) {
+            return reset($value);
+        }
+
+        return $value;
     }
 
     /**
@@ -551,6 +559,10 @@ class Validation
         $options = isset($field['options']) ? array_keys($field['options']) : array();
         $multi = isset($field['multiple']) ? $field['multiple'] : false;
 
+        if (count($values) == 1 && isset($values[0]) && $values[0] == '') {
+            return null;
+        }
+
         if ($options) {
             $useKey = isset($field['use']) && $field['use'] == 'keys';
             foreach ($values as $key => $value) {
@@ -620,7 +632,7 @@ class Validation
         if (is_string($value)) {
             $value = trim($value);
         }
-        
+
         return (bool) $params !== true || !empty($value);
     }
 

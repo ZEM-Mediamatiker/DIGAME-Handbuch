@@ -114,7 +114,7 @@ Der Benutzer kann eines oder mehrere selektierte Media Assets in ein Worddokumen
 Der Benutzer kann ein Media Asset löschen. Das Media Asset wird jedoch nicht definitiv aus dem System entfernt sondern nur in den Papierkorb verschoben und mit einer entsprechenden Anzeige versehen Abbildung 25: Asset im Papierkorb. Um ein Media Asset im Papierkorb definitiv löschen zu können muss der Benutzer über die entsprechenden Zugriffsrechte verfügen. Diese Rechte haben pro Organisation meistens nur ein paar wenige Benutzer meistens sind dies die Administratoren oder die Benutzer die für das System verantwortlich sind.
 
 <br>
-{{ media['functions.png'].html() }}
+{{ media['papierkorb.png'].html() }}
 ###### Bild 25: Asset im Papierkorb.
 <br>
 

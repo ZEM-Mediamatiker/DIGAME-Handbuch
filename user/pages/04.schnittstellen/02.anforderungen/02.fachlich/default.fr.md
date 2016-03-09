@@ -37,14 +37,14 @@ visible: true
 #### Système d’intégration
 |  | |
 | ------ | -- |
-| URL: | https://www.test.digame.mediathek-admin.ch/api |
+| URL: | https://www.test.digame.mediathek.admin.ch/api |
 | User (Basic Authenticaiton): | cmsuser |
 | Mot de passe: |  |
 
 #### Système productif
 |  | |
 | ------ | -- |
-| URL: | https://www.digame.mediathek-admin.ch/api |
+| URL: | https://www.digame.mediathek.admin.ch/api |
 | User (Basic Authenticaiton): | cmsuser |
 | Mot de passe: | [A définir] |
 

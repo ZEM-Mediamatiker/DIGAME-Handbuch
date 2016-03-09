@@ -35,8 +35,6 @@ class SandboxCommand extends ConsoleCommand
     protected $files = array(
         '/.dependencies',
         '/.htaccess',
-        '/nginx.conf',
-        '/web.config',
         '/user/config/site.yaml',
         '/user/config/system.yaml',
     );
@@ -45,16 +43,19 @@ class SandboxCommand extends ConsoleCommand
      * @var array
      */
     protected $mappings = array(
-        '/.editorconfig' => '/.editorconfig',
-        '/.gitignore' => '/.gitignore',
-        '/CHANGELOG.md' => '/CHANGELOG.md',
-        '/LICENSE' => '/LICENSE',
-        '/README.md' => '/README.md',
-        '/index.php'     => '/index.php',
-        '/composer.json' => '/composer.json',
-        '/bin'           => '/bin',
-        '/system'        => '/system',
-        '/vendor'        => '/vendor',
+        '/.editorconfig'        => '/.editorconfig',
+        '/.gitignore'           => '/.gitignore',
+        '/CHANGELOG.md'         => '/CHANGELOG.md',
+        '/LICENSE.txt'          => '/LICENSE.txt',
+        '/README.md'            => '/README.md',
+        '/CONTRIBUTING.md'      => '/CONTRIBUTING.md',
+        '/index.php'            => '/index.php',
+        '/composer.json'        => '/composer.json',
+        '/bin'                  => '/bin',
+        '/system'               => '/system',
+        '/vendor'               => '/vendor',
+        '/webserver-configs'    => '/webserver-configs',
+        '/codeception.yml'      => '/codeception.yml',
     );
 
     /**
@@ -162,7 +163,7 @@ class SandboxCommand extends ConsoleCommand
             $to = $this->destination . $target;
 
             $this->output->writeln('    <cyan>' . $source . '</cyan> <comment>-></comment> ' . $to);
-            Folder::rcopy($from, $to);
+            @Folder::rcopy($from, $to);
         }
     }
 
