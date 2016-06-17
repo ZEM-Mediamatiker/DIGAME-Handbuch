@@ -82,15 +82,16 @@ textarea:focus, input:focus{
 
 #menu-navigation ol {
     padding: 0;
-    margin: 20px 0px;
+    margin: 80px 0px;
 }
 
 #menu-navigation ol li {
     display: block;
     position: relative;
     /*background: purple;*/
-    margin: 50px 0px;
+    margin: 35px 0px;
 }
+
 
 /*#menu-navigation ol li:first-child {
 	margin: 20px 0px 5px 0px;

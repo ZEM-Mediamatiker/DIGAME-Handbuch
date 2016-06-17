@@ -1,0 +1,12 @@
+email: roger.perren@vtg.admin.ch
+access:
+  admin:
+    login: 'true'
+    super: 'true'
+  site:
+    login: 'true'
+fullname: 'Roger Perren'
+title: 'Programm Manager'
+state: enabled
+hashed_password: $2y$10$qYHJkwwN9nVQQm67fqDS4uDP2bfMPguriRnorA8FC9sfPQrQKdR8i
+language: de
