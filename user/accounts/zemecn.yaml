@@ -1,0 +1,11 @@
+email: stefan.eckstein@zem.ch
+fullname: 'Stefan Eckstein'
+title: Mediamatiker
+state: enabled
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$eX.pFTGXFO4YfkNH79MpJ.12.GaSDcB0CV9aKZUx.pyJSE5lE2pvq

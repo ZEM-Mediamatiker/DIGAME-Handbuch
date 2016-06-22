@@ -82,15 +82,16 @@ textarea:focus, input:focus{
 
 #menu-navigation ol {
     padding: 0;
-    margin: 20px 0px;
+    margin: 80px 0px;
 }
 
 #menu-navigation ol li {
     display: block;
     position: relative;
     /*background: purple;*/
-    margin: 50px 0px;
+    margin: 35px 0px;
 }
+
 
 /*#menu-navigation ol li:first-child {
 	margin: 20px 0px 5px 0px;
@@ -199,7 +200,7 @@ textarea:focus, input:focus{
 	background: rgba(255,255,255,0);
 	font-size: 80px;
 	color: rgba(255,255,255,1);
-	font-family: "Montserrat","Helvetica","Tahoma","Geneva","Arial",sans-serif;
+	font-family: "mulilight","Montserrat","Helvetica","Tahoma","Geneva","Arial",sans-serif;
 	font-weight: 400
 }
 
@@ -339,6 +340,10 @@ img{
     display: block;
 }
 
+.padding img{
+    margin-top, margin-bottom: 25px;
+}
+
 hr{
 	border-bottom: 2px solid #F0F2F4;
 	margin-top: 20px;
@@ -359,7 +364,7 @@ border-image: none;
 --------------------------------------------------------------*/
 
 h1, h2, h3, h4, h5, h6{
-	font-family: "Montserrat","Helvetica","Tahoma","Geneva","Arial",sans-serif;
+	font-family: "mulilight","Montserrat","Helvetica","Tahoma","Geneva","Arial",sans-serif;
 	font-weight: 400;
 	line-height: 150%;
 	letter-spacing: 0;
@@ -432,11 +437,12 @@ header{
 	width: 100%;
 	height: 80px;
 	z-index: 85;
-	background: #343434;
+	/*background: #e2e2e2;*/
+    background: #343434;
 	background-position: left bottom;
 	position: fixed;
-	-webkit-box-shadow: 1px -19px 55px 2px #343434;
-	box-shadow: 1px -19px 55px 2px #343434;
+	-webkit-box-shadow: 1px -19px 35px 2px #343434;
+	box-shadow: 1px -19px 35px 2px #343434;
 }
 
 #logo{
@@ -661,6 +667,7 @@ box-shadow: 0px 2px 4px 1px rgba(52,52,52,0.3);
     right: 0px;
     display: inline;
     background: #484848;
+    /*background: #C8C8C8;*/
 }
 
 #label{
@@ -744,6 +751,7 @@ box-shadow: 0px 2px 4px 1px rgba(52,52,52,0.3);
 	height: 2px;
 	position: absolute;
 	background: rgb(200, 200, 200);
+    /*background: #e2e2e2;*/
 	transition: 0.25s ease 0s;
 }
 
@@ -1230,7 +1238,7 @@ th {
 }
 
 td {
-    padding: 5px;
+    padding: 8px;
     border: 1px solid #f0f0f0;
 }
 
