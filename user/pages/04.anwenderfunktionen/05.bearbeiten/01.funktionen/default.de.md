@@ -1,21 +1,25 @@
 ---
 title: Funktionen
-menu: Funktionen
 metadata:
-    description: Die Webbasierte Anleitung für DIGAME vom Zentrum elektronische Medien ZEM.
-    keywords: DIGAME,ZEM,Zentrum elektronische Medien,Mediathek Admin,Mediathek,Bilddatenbank,Bildverwaltung,Bundesverwaltung,Eidgenossenschaft,Schweizerische Eidgenossenschaft,VBS,Bundesamt für Verteidigung, Bevölkerungsschutz und Sport
-    author: Stefan Eckstein | Zentrum elektronische Medien (ZEM)
-    robots: index, follow
+    description: 'Die Webbasierte Anleitung für DIGAME vom Zentrum elektronische Medien ZEM.'
+    keywords: 'DIGAME,ZEM,Zentrum elektronische Medien,Mediathek Admin,Mediathek,Bilddatenbank,Bildverwaltung,Bundesverwaltung,Eidgenossenschaft,Schweizerische Eidgenossenschaft,VBS,Bundesamt für Verteidigung, Bevölkerungsschutz und Sport'
+    author: 'Stefan Eckstein | Zentrum elektronische Medien (ZEM)'
+    robots: 'index, follow'
+menu: Funktionen
 process:
-	twig: true
-taxonomy:
-    category: backendanleitung
-    tag: [digame, Anleitung, ZEM]
+    markdown: true
+    twig: true
 visible: true
+taxonomy:
+    tag:
+        - digame
+        - Anleitung
+        - ZEM
+    category:
+        - backendanleitung
 ---
 
-
-## Funktionen Bearbeiten-Bereich
+## Funktionen "Bearbeiten-Bereich"
 ***
 Der Bearbeiten-Bereich (6) aus Abbildung 2: Grundaufbau enthält alle Möglichkeiten um ein Media Asset zu bearbeiten. Nachdem ein Media Asset erstellt wurde oder ein bestehendes Media Asset über eine der Suchmöglichkeiten gefunden wurde, können dessen Daten definiert oder bestehende bearbeitet werden. Dazu muss das entsprechende Media Asset mit der Maus angewählt werden. Das angewählte Media Asset wird zur Markierung mit einem gelben Rahmen umgeben. Im Bearbeiten-Bereich werden die Daten des markierten Media Assets dargestellt.
 

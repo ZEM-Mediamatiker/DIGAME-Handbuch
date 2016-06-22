@@ -46,6 +46,7 @@ taxonomy:
 | Berechtigung | Beschreibung |
 | --- | --- |
 | Permissions ändern | Der Administrator kann Bildberechtigungen ändern |
+| Stichworte verwalten | Es können Stichworte hinzugefügt, bearbeitet und gelöscht werden |
 | wiederherstellen | Gelöschte Assets können wiederhergestellt werden | 
 
 ***

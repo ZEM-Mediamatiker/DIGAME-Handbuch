@@ -1,22 +1,29 @@
 ---
 title: Filtern
-menu: Filtern
 metadata:
-    description: Die Webbasierte Anleitung für DIGAME vom Zentrum elektronische Medien ZEM.
-    keywords: DIGAME,ZEM,Zentrum elektronische Medien,Mediathek Admin,Mediathek,Bilddatenbank,Bildverwaltung,Bundesverwaltung,Eidgenossenschaft,Schweizerische Eidgenossenschaft,VBS,Bundesamt für Verteidigung, Bevölkerungsschutz und Sport
-    author: Stefan Eckstein | Zentrum elektronische Medien (ZEM)
-    robots: index, follow
+    description: 'Die Webbasierte Anleitung für DIGAME vom Zentrum elektronische Medien ZEM.'
+    keywords: 'DIGAME,ZEM,Zentrum elektronische Medien,Mediathek Admin,Mediathek,Bilddatenbank,Bildverwaltung,Bundesverwaltung,Eidgenossenschaft,Schweizerische Eidgenossenschaft,VBS,Bundesamt für Verteidigung, Bevölkerungsschutz und Sport'
+    author: 'Stefan Eckstein | Zentrum elektronische Medien (ZEM)'
+    robots: 'index, follow'
+menu: Filtern
 process:
-	twig: true
-taxonomy:
-    category: backendanleitung
-    tag: [digame, Anleitung, ZEM]
+    markdown: true
+    twig: true
 visible: true
+taxonomy:
+    tag:
+        - digame
+        - Anleitung
+        - ZEM
+    category:
+        - backendanleitung
 ---
 
 ## Funktionen Filterbereich
 
 ***
+
+>>> Hinweis. Die Funktion, Filter zu erstellen, bearbeiten oder zu löschen, erfordert ein Benutzerkonto mit der Rolle Redaktor.
 
 Der Bereich Filter dient dazu die Anzahl Media Assets anhand bestimmter Merkmale zu reduzieren.
 
@@ -33,16 +40,6 @@ Es gibt dazu 4 Bereiche welche eine Einschränkung erlauben.
 
 ***
 
-## Stichworte
-
-Ordner (1) bildet den Stichwortbaum ab, dieser wird in 3.7.3 Stichworte beschrieben. Wählt der Benutzer einen bestimmten Ordner werden genau die Assets im Anzeige-Bereich (2) angezeigt welchen dieses Stichwort zugeordnet wurde.
-
-<br>
-{{ media['stichworte.png'].html() }}
-###### Bild 10: Stichwortbaum.
-<br>
-
-***
 
 ## Benutzerdefinierte Filter
 
@@ -90,6 +87,8 @@ Wird (10) betätigt gehen die Änderungen verloren oder der neue benutzerdefinie
 ###### Bild 13: Filter erstellen.
 <br>
 
+
+
 Wählt man mit der Maus nun einen benutzerdefinierten Filter aus, in unserem Beispiel den Filter mit dem Namen „Internet“, werden im Bereich (5) aus Abbildung 2: Grundaufbau alle Media Assets angezeigt welche diesem Filter entsprechen.
 
 <br>
@@ -97,6 +96,16 @@ Wählt man mit der Maus nun einen benutzerdefinierten Filter aus, in unserem Bei
 ###### Bild 14: Übersicht Filter.
 <br>
 
+***
+
+## Filter bearbeiten
+Bereits vorhandene Filter können im Nachhinein jederzeit bearbeitet werden. Über den „Filter Bearbeiten“ (1)-Button wird das entsprechende Fenster geöffnet. 
+
+Es können nun vorhandene Bedingungen angepasst (1) oder entfernt (2) sowie neue Bedingungen hinzugefügt (3) werden. Ein Filter kann so auch nachträglich noch umbenannt (4) oder als eigener Filter gespeichert (5) werden. Wichtig ist, dass die Änderungen nur übernommen werden, wenn der Button „Speichern“ (6) bestätigt wurde. Über die Schaltfläche "Abbrechen" (7) können die Änderungen verworfen werden.
+<br>
+{{ media['filter-bearbeiten.jpg'].html() }}
+###### Filter bearbeiten
+<br>
 ***
 
 ## Vordefinierte Filter
@@ -126,8 +135,8 @@ Die Einstellungen die der Benutzer in den Bereichen (2) und (3) vornimmt haben E
 - Ergebnisse aus dem Stichwortbaum
 - Ergebnisse der benutzerdefinierten Filter
 - Ergebnisse des vordefinierten Filters
-- Ergebnisse der einfachen Suche (3.4.1)
-- Ergebnisse der erweiterten Suche (3.4.2)
+- Ergebnisse der einfachen Suche
+- Ergebnisse der erweiterten Suche
 
 
 <br>

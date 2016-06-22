@@ -1,20 +1,22 @@
 ---
 title: Changelog
-menu: Changelog
 metadata:
     description: 'Die Webbasierte Anleitung für DIGAME vom Zentrum elektronische Medien ZEM.'
     keywords: 'DIGAME,ZEM,Zentrum elektronische Medien,Mediathek Admin,Mediathek,Bilddatenbank,Bildverwaltung,Bundesverwaltung,Eidgenossenschaft,Schweizerische Eidgenossenschaft,VBS,Bundesamt für Verteidigung, Bevölkerungsschutz und Sport'
     author: 'Stefan Eckstein | Zentrum elektronische Medien (ZEM)'
     robots: 'index, follow'
+menu: Changelog
 process:
+    markdown: true
     twig: true
+visible: true
 taxonomy:
-    category: backendanleitung
     tag:
         - digame
         - Anleitung
         - ZEM
-visible: true
+    category:
+        - backendanleitung
 ---
 
 # Changelog
@@ -31,11 +33,20 @@ visible: true
 
 <br>
 
+>>>>>Version 2.4.3<br>
+
+|  | Change |
+| --- | --- |
+| ^ | Diverse Plugins aktualisiert |
+| ^ | Inhaltliche Anpassungen und Ergänzungen | 
+| + | Grav Admin zur einfacheren Administrieren installiert
+
+
 >>>>>Version 2.4.2<br>
 
 |  | Change |
 | --- | --- |
-| ^ | KleinereFehler im Text behoben |
+| ^ | Kleinere Fehler im Text behoben |
 | ^ | Update auf Grav 1.0.10 |
 
 >>>>>Version 2.4.1<br>
